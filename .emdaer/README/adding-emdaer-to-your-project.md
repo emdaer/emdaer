@@ -13,7 +13,7 @@ Add a `prepublish` script:
 ```json
   "scripts": {
     "emdaer": "emdaer && git add *.md",
-    "prepublish": "npm run emdaer"
+    "precommit": "npm run emdaer"
   }
 ```
 
