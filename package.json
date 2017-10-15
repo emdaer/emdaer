@@ -1,13 +1,8 @@
 {
   "name": "emdaer",
   "description": "📓 emdaer is a tool for creating and maintaining better READMEs",
-  "version": "1.0.0-alpha.0",
-  "repository": "emdaer/emdaer",
-  "homepage": "https://emdaer.me/",
-  "keywords": [
-    "README"
-  ],
   "license": "MIT",
+  "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "emdaer": "emdaer && git add *.md",
