@@ -1,0 +1,50 @@
+{
+  "name": "emdaer",
+  "description": "📓 emdaer is a tool for creating and maintaining better READMEs",
+  "version": "1.0.0-alpha.0",
+  "repository": "emdaer/emdaer",
+  "homepage": "https://emdaer.me/",
+  "keywords": [
+    "README"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "emdaer": "emdaer && git add *.md",
+    "lint": "eslint .",
+    "precommit": "lint-staged && npm run type && npm run test && npm run emdaer",
+    "ship": "lerna publish",
+    "test": "jest",
+    "type": "flow status"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@emdaer/cli": "file:packages/cli",
+    "@emdaer/core": "file:packages/core",
+    "@emdaer/plugin-import": "file:packages/plugin-import",
+    "@emdaer/plugin-value-from-package": "file:packages/plugin-value-from-package",
+    "@emdaer/transform-smartypants": "file:packages/transform-smartypants",
+    "babel-eslint": "7.2.3",
+    "eslint": "3.16.0",
+    "eslint-config-airbnb-base": "11.1.0",
+    "eslint-config-prettier": "2.0.0",
+    "eslint-plugin-flowtype": "2.34.1",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jest": "20.0.0",
+    "eslint-plugin-prettier": "2.0.1",
+    "flow-bin": "0.45.0",
+    "flow-remove-types": "1.2.1",
+    "husky": "0.13.3",
+    "jest": "^21.2.1",
+    "jest-flow-transform": "^1.0.1",
+    "lerna": "2.0.0-rc.5",
+    "lint-staged": "3.4.1",
+    "prettier": "1.7.0"
+  },
+  "dependencies": {
+    "fs-extra": "^4.0.2",
+    "glob": "^7.1.2"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "@emdaer/plugin-table",
+  "description": "an emdaer plugin to generate tables",
+  "version": "1.0.0-alpha.17",
+  "repository": "emdaer/emdaer",
+  "homepage": "https://emdaer.me/",
+  "keywords": [
+    "emdaer-plugin"
+  ],
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "scripts": {
+    "prepublish": "flow-remove-types -p src -i .test.js -d lib"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
