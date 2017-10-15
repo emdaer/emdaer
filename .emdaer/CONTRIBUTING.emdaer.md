@@ -15,22 +15,12 @@
   - path: .emdaer/CONTRIBUTING/testing-and-linting.md
 -->
 
-### Plugins & Transforms
-
-When creating a plugin or transform, any dependencies must be stubbed for flow.
-
-First try:
-
-```sh
-flow-typed install dependency-name@x.x.x
-```
-
-Then, if the libdef doesn't exist:
-
-```sh
-flow-typed create-stub dependency-name@x.x.x
-```
+<!--emdaer-p
+  - '@emdaer/plugin-import'
+  - path: .emdaer/CONTRIBUTING/plugins-and-transforms.md
+-->
 
 <!--emdaer-t
   - '@emdaer/transform-smartypants'
+  - options: q
 -->

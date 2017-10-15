@@ -38,6 +38,7 @@ Hello, World!
 
 <!--emdaer-t
   - '@emdaer/transform-smartypants'
+  - options: q
 -->
 
 ```
@@ -58,7 +59,7 @@ We recommend using emdaer with [husky](https://github.com/typicode/husky).
 Install dependencies:
 
 ```sh
-npm install &#8212;save-dev @emdaer/cli @emdaer/plugin-value-from-package husky
+npm install --save-dev @emdaer/cli @emdaer/plugin-value-from-package husky
 ```
 
 Add a `prepublish` script:
@@ -94,4 +95,5 @@ If you&#8217;d like to make emdaer better, please read our [guide to contributin
 
 <!--emdaer-t
   - '@emdaer/transform-smartypants'
+  - options: q
 -->

@@ -28,7 +28,7 @@ npm run type # run the type checker
 ```
 
 
-### Plugins & Transforms
+## Plugins & Transforms
 
 When creating a plugin or transform, any dependencies must be stubbed for flow.
 
@@ -44,6 +44,8 @@ Then, if the libdef doesn&#8217;t exist:
 flow-typed create-stub dependency-name@x.x.x
 ```
 
+
 <!--emdaer-t
   - '@emdaer/transform-smartypants'
+  - options: q
 -->
