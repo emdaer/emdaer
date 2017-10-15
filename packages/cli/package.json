@@ -1,7 +1,7 @@
 {
   "name": "@emdaer/cli",
   "description": "emdaer CLI",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0-beta.2",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.me/",
   "keywords": [
