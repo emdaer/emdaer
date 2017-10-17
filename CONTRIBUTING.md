@@ -15,16 +15,16 @@ Before contributing, please read our [code of conduct](./CODE_OF_CONDUCT.md)
 
 ```sh
 npm install # installs dependencies for emdaer
-npm run bootstrap # installs dependencies for emdaer/packages/*
+make bootstrap # installs dependencies for emdaer/packages/*
 ```
 
 
 ## Testing & Linting
 
 ```sh
-npm run test # run the tests
-npm run lint # run the linter
-npm run type # run the type checker
+make test # run the tests
+make lint # run the linter
+make type # run the type checker
 ```
 
 

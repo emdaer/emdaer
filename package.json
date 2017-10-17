@@ -4,13 +4,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "emdaer": "emdaer && git add *.md",
-    "lint": "eslint .",
-    "precommit": "lint-staged && npm run type && npm run test && npm run emdaer",
-    "ship": "lerna publish",
-    "test": "jest",
-    "type": "flow status"
+    "precommit": "make precommit"
   },
   "engines": {
     "node": ">=8.0.0"
