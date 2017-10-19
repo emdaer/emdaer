@@ -2,7 +2,7 @@ jest.mock('fs-extra');
 
 const fs = require('fs-extra');
 
-const valueFromPackage = require('../src');
+const valueFromPackage = require('./');
 
 describe('@emdaer/plugin-value-from-package', () => {
   test('gets name from root package.json', async () => {

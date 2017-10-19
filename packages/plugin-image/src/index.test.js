@@ -1,4 +1,4 @@
-const image = require('../src');
+const image = require('./');
 
 describe('@emdaer/plugin-image', () => {
   test('generates image with just src', async () => {

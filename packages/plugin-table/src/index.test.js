@@ -1,4 +1,4 @@
-const table = require('../src');
+const table = require('./');
 
 describe('@emdaer/plugin-table', () => {
   test('generates tables with headers', async () => {

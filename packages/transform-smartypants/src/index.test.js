@@ -1,4 +1,4 @@
-const smartypants = require('../src');
+const smartypants = require('./');
 
 describe('@emdaer/transform-smartypants', () => {
   test('does smartypants stuff', async () => {

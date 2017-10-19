@@ -1,4 +1,4 @@
-const documentation = require('../src');
+const documentation = require('./');
 
 describe('@emdaer/plugin-documentation', () => {
   test('generates documentation', async () => {

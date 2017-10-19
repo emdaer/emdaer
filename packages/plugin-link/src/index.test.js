@@ -1,4 +1,4 @@
-const link = require('../src');
+const link = require('./');
 
 describe('@emdaer/plugin-link', () => {
   test('creates a link using content and link and optionally title', async () => {

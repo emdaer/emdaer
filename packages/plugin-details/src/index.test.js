@@ -1,4 +1,4 @@
-const details = require('../src');
+const details = require('./');
 
 describe('@emdaer/plugin-details', () => {
   test('generates details without summary', async () => {

@@ -1,4 +1,4 @@
-const list = require('../src');
+const list = require('./');
 
 describe('@emdaer/plugin-list', () => {
   test('generates ordered lists', async () => {

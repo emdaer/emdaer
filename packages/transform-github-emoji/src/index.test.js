@@ -1,4 +1,4 @@
-const ghEmoji = require('../src');
+const ghEmoji = require('./');
 
 describe('@emdaer/transform-github-emoji', () => {
   test('transforms gh flavored text into respective image of emoji.', async () => {

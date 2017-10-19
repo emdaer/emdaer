@@ -2,7 +2,7 @@ jest.mock('fs-extra');
 
 const fs = require('fs-extra');
 
-const importPlugin = require('../src');
+const importPlugin = require('./');
 
 describe('@emdaer/plugin-import', () => {
   test('imports a file', async () => {
