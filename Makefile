@@ -3,17 +3,17 @@ export FORCE_COLOR = true
 precommit: lint-staged type test emdaer
 
 bootstrap:
-	lerna bootstrap
+	./node_modules/.bin/lerna bootstrap
 emdaer:
-	emdaer
+	./node_modules/.bin/emdaer
 	git add *.md
 lint:
-	eslint .
+	./node_modules/.bin/eslint .
 lint-staged:
-	lint-staged
+	./node_modules/.bin/lint-staged
 publish:
-	lerna publish
+	./node_modules/.bin/lerna publish
 test:
-	jest
+	./node_modules/.bin/jest
 type:
-	flow status
+	./node_modules/.bin/flow status
