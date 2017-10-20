@@ -20,6 +20,11 @@
   - path: .emdaer/CONTRIBUTING/plugins-and-transforms.md
 -->
 
+<!--emdaer-p
+  - '@emdaer/plugin-import'
+  - path: .emdaer/CONTRIBUTING/commits.md
+-->
+
 <!--emdaer-t
   - '@emdaer/transform-smartypants'
   - options: q

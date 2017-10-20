@@ -36,10 +36,7 @@ We match `.emdaer/(**/*).emdaer(.md)` and use the captured part of each matched 
 
 Hello, World!
 
-<!--emdaer-t
-  - '@emdaer/transform-smartypants'
-  - options: q
--->
+
 
 ```
 
