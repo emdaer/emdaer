@@ -1,4 +1,10 @@
 /* @flow */
+
+/**
+ * @class
+ * A custom error class which has a `code` property that
+ * should align with emdaer errors defined in ../_errors.js
+ */
 class EmdaerError extends Error {
   code: string;
   constructor(code: string, ...args: any) {
