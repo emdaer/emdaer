@@ -23,8 +23,19 @@ describe('applyTransforms', () => {
 
 ${TRANSFORM_CALL}
 `;
+    const CONTENT_WITHOUT_TRANSFORM_CALL = `# <!--emdaer-p
+  - '@emdaer/plugin-a'
+  - foo: 1
+-->
+
+---
+
+
+`;
     await applyTransforms(CONTENT, [TRANSFORM_CALL]);
-    expect(applyTransform).toHaveBeenCalledWith(CONTENT, [
+    expect(
+      applyTransform
+    ).toHaveBeenCalledWith(CONTENT_WITHOUT_TRANSFORM_CALL, [
       '@emdaer/transform-a',
       { foo: 1, bar: 2 },
     ]);
