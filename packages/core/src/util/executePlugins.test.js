@@ -1,6 +1,8 @@
 jest.mock('./executePlugin');
 const executePlugins = require('./executePlugins');
 const executePlugin = require('./executePlugin');
+const EmdaerError = require('./EmdaerError');
+const { NO_PLUGIN } = require('../_errors');
 
 describe('executePlugins', () => {
   test('returns unaltered content when no transforms are found', async () => {
@@ -25,5 +27,15 @@ describe('executePlugins', () => {
       [['@emdaer/plugin-a', { foo: 1 }]],
       [['@emdaer/plugin-b', { foo: 1, bar: 2 }]],
     ]);
+  });
+
+  test('can handle invalid comments', async () => {
+    const CONTENT = '<!--emdaer-p -->';
+    try {
+      await executePlugins(CONTENT);
+    } catch (err) {
+      expect(err).toBeInstanceOf(EmdaerError);
+      expect(err.code).toBe(NO_PLUGIN);
+    }
   });
 });
