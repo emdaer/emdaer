@@ -12,8 +12,7 @@ module.exports = function resolvePlugin(pluginName: string): Plugin {
   try {
     return require(pluginName);
   } catch (error) {
-    const err = new EmdaerError(`${NO_PLUGIN}: ${pluginName}`);
-    err.code = NO_PLUGIN;
+    const err = new EmdaerError(NO_PLUGIN, `${NO_PLUGIN}: ${pluginName}`);
     throw err;
   }
 };

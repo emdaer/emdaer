@@ -12,8 +12,10 @@ module.exports = function resolveTransform(transformName: string): Transform {
   try {
     return require(transformName);
   } catch (error) {
-    const err = new EmdaerError(`${NO_TRANSFORM}: ${transformName}`);
-    err.code = NO_TRANSFORM;
+    const err = new EmdaerError(
+      NO_TRANSFORM,
+      `${NO_TRANSFORM}: ${transformName}`
+    );
     throw err;
   }
 };

@@ -1,3 +1,4 @@
+const EmdaerError = require('./EmdaerError');
 const { NO_TRANSFORM } = require('../_errors');
 
 const resolveTransform = require('./resolveTransform');
@@ -7,5 +8,8 @@ describe('resolveTransform', () => {
     expect(() => {
       resolveTransform('not-a-thing');
     }).toThrow(NO_TRANSFORM);
+    expect(() => {
+      resolveTransform('not-a-thing');
+    }).toThrow(EmdaerError);
   });
 });
