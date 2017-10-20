@@ -18,5 +18,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "@emdaer/plugin-value-from-package": "^1.0.0-beta.0"
   }
 }
