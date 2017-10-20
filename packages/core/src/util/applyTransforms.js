@@ -17,7 +17,7 @@ module.exports = async function applyTransforms(
     const [, , body] = /(<!--emdaer-t)([\s\S]*?)(-->)/g.exec(match);
     return (async () => {
       const accContent = await acc;
-      return applyTransform(accContent, safeLoad(body));
+      return applyTransform(accContent.replace(match, ''), safeLoad(body));
     })();
   }, Promise.resolve(replacementContent));
 };

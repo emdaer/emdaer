@@ -39,9 +39,7 @@ describe('@emdaer/core', () => {
 
 # Hello, World!
 
-<!--emdaer-t
-  - '@emdaer/transform-bar'
--->
+
 `);
   });
 });
