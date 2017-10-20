@@ -8,7 +8,7 @@ Install dependencies:
 npm install --save-dev @emdaer/cli @emdaer/plugin-value-from-package husky
 ```
 
-Add a `prepublish` script:
+Add a `precommit` script:
 
 ```json
   "scripts": {
