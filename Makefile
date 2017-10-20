@@ -2,6 +2,8 @@ export FORCE_COLOR = true
 
 precommit: lint-staged type test emdaer
 
+ci: bootstrap lint type test
+
 bootstrap:
 	./node_modules/.bin/lerna bootstrap
 emdaer:
