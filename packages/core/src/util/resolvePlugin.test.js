@@ -1,3 +1,4 @@
+const EmdaerError = require('./EmdaerError');
 const { NO_PLUGIN } = require('../_errors');
 
 const resolvePlugin = require('./resolvePlugin');
@@ -7,5 +8,8 @@ describe('resolvePlugin', () => {
     expect(() => {
       resolvePlugin('not-a-thing');
     }).toThrow(NO_PLUGIN);
+    expect(() => {
+      resolvePlugin('not-a-thing');
+    }).toThrow(EmdaerError);
   });
 });

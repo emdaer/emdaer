@@ -2,6 +2,7 @@
 
 import type { Transform } from '../_types';
 
+const EmdaerError = require('./EmdaerError');
 const { NO_TRANSFORM } = require('../_errors');
 
 /**
@@ -11,6 +12,10 @@ module.exports = function resolveTransform(transformName: string): Transform {
   try {
     return require(transformName);
   } catch (error) {
-    throw new Error(`${NO_TRANSFORM}: ${transformName}`);
+    const err = new EmdaerError(
+      NO_TRANSFORM,
+      `${NO_TRANSFORM}: ${transformName}`
+    );
+    throw err;
   }
 };
