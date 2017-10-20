@@ -2,6 +2,7 @@
 
 import type { Plugin } from '../_types';
 
+const EmdaerError = require('./EmdaerError');
 const { NO_PLUGIN } = require('../_errors');
 
 /**
@@ -11,6 +12,8 @@ module.exports = function resolvePlugin(pluginName: string): Plugin {
   try {
     return require(pluginName);
   } catch (error) {
-    throw new Error(`${NO_PLUGIN}: ${pluginName}`);
+    const err = new EmdaerError(`${NO_PLUGIN}: ${pluginName}`);
+    err.code = NO_PLUGIN;
+    throw err;
   }
 };
