@@ -45,6 +45,11 @@ flow-typed create-stub dependency-name@x.x.x
 ```
 
 
+## Commits
+
+All commit messages must follow the [Conventional Commits Specification](https://conventionalcommits.org/).
+
+
 <!--emdaer-t
   - '@emdaer/transform-smartypants'
   - options: q
