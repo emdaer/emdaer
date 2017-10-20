@@ -47,7 +47,7 @@ ${TRANSFORM_CALL}
     const CONTENT = `<!--emdaer-t -->`;
 
     try {
-      await applyTransforms(CONTENT);
+      await applyTransforms(CONTENT, [CONTENT]);
     } catch (err) {
       expect(err).toBeInstanceOf(EmdaerError);
       expect(err.code).toBe(NO_TRANSFORM);
