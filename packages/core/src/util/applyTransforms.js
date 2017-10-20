@@ -8,12 +8,12 @@ const applyTransform = require('./applyTransform');
  * Applies transforms to generated content
  */
 module.exports = async function applyTransforms(
-  content: string
+  content: string,
+  transforms: Array<string>
 ): Promise<string> {
   const replacementContent = content;
-  const matches = replacementContent.match(/<!--emdaer-t[\s\S]*?-->/g) || [];
 
-  return matches.reduce((acc, match): Promise<string> => {
+  return transforms.reduce((acc, match): Promise<string> => {
     const [, , body] = /(<!--emdaer-t)([\s\S]*?)(-->)/g.exec(match);
     return (async () => {
       const accContent = await acc;
