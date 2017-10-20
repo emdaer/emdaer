@@ -13,6 +13,7 @@
     "@emdaer/cli": "file:packages/cli",
     "@emdaer/core": "file:packages/core",
     "@emdaer/plugin-import": "file:packages/plugin-import",
+    "@emdaer/plugin-license-reference": "file:packages/plugin-license-reference",
     "@emdaer/plugin-shields": "file:packages/plugin-shields",
     "@emdaer/plugin-value-from-package": "file:packages/plugin-value-from-package",
     "@emdaer/transform-smartypants": "file:packages/transform-smartypants",

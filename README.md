@@ -93,6 +93,10 @@ npm run emdaer
 If you&#8217;d like to make emdaer better, please read our [guide to contributing](./CONTRIBUTING.md).
 
 
+## License
+
+emdaer is [MIT licensed](./LICENSE).
+
 <!--emdaer-t
   - '@emdaer/transform-smartypants'
   - options: q

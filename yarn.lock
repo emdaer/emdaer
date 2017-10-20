@@ -27,8 +27,19 @@
   dependencies:
     fs-extra "3.0.1"
 
+"@emdaer/plugin-license-reference@file:packages/plugin-license-reference":
+  version "1.0.0-beta.0"
+  dependencies:
+    "@emdaer/plugin-value-from-package" "^1.0.0-beta.0"
+
 "@emdaer/plugin-shields@file:packages/plugin-shields":
   version "1.0.0-beta.0"
+
+"@emdaer/plugin-value-from-package@^1.0.0-beta.0":
+  version "1.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/@emdaer/plugin-value-from-package/-/plugin-value-from-package-1.0.0-beta.0.tgz#79fd03561dda31b51c5217a873850b79676781aa"
+  dependencies:
+    fs-extra "3.0.1"
 
 "@emdaer/plugin-value-from-package@file:packages/plugin-value-from-package":
   version "1.0.0-beta.0"

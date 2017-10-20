@@ -39,6 +39,12 @@
   - path: .emdaer/README/contributing.md
 -->
 
+## License
+
+<!--emdaer-p
+  - '@emdaer/plugin-license-reference'
+-->
+
 <!--emdaer-t
   - '@emdaer/transform-smartypants'
   - options: q
