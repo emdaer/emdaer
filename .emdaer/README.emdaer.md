@@ -1,7 +1,7 @@
 # <!--emdaer-p
   - '@emdaer/plugin-value-from-package'
   - value: name
---> • <!--emdaer-p
+--> · <!--emdaer-p
   - '@emdaer/plugin-shields'
   - shields:
       - alt: 'Travis'
