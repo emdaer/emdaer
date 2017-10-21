@@ -10,7 +10,7 @@
         style: 'flat-square'
       - alt: 'Documented with emdaer'
         image: 'badge/📓-documented%20with%20emdaer-F06632.svg'
-        link: 'https://emdaer.me/'
+        link: 'https://github.com/emdaer/emdaer'
         style: 'flat-square'
       - alt: 'Maintained with lerna'
         image: 'badge/🐉-maintained%20with%20lerna-cc00ff.svg'
