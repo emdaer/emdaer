@@ -57,10 +57,10 @@
   - path: .emdaer/README/contributing.md
 -->
 
-## License
-
 <!--emdaer-p
-  - '@emdaer/plugin-license-reference'
+  - '@emdaer/plugin-import'
+  - path: .emdaer/README/license.md
+    runEmdaer: true
 -->
 
 <!--emdaer-t
