@@ -1,8 +1,9 @@
-[options]
-module.ignore_non_literal_requires=true
-
 [ignore]
 .*/node_modules/.*
 
 [libs]
 /flow-typed
+
+[options]
+module.ignore_non_literal_requires=true
+suppress_comment= \\(.\\|\n\\)*\\💩
