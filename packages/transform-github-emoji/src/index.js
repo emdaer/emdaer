@@ -8,8 +8,8 @@ const { emojify } = require('node-emoji');
  * @param   {string}          content The content
  * @returns {Promise<string>}         The content with emojis in place of emoji codes
  */
-module.exports = async function githubEmojiTransform(
-  content: string
-): Promise<string> {
+async function githubEmojiTransform(content: string): Promise<string> {
   return emojify(content);
-};
+}
+
+module.exports = githubEmojiTransform;

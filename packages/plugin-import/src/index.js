@@ -11,7 +11,7 @@ const fs = require('fs-extra');
  * @param   {boolean}         [options.runEmdaer] Whether or not to run emdaer on the imported file.
  * @returns {Promise<string>}                     The contents of the imported file
  */
-module.exports = async function importPlugin({
+async function importPlugin({
   path,
   runEmdaer,
 }: {
@@ -20,4 +20,6 @@ module.exports = async function importPlugin({
 }): Promise<string> {
   const content = (await fs.readFile(path)).toString();
   return runEmdaer ? emdaer(path, content, false) : content;
-};
+}
+
+module.exports = importPlugin;

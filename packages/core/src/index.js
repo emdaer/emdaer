@@ -5,11 +5,7 @@ const executePlugins = require('./util/executePlugins');
 const applyTransforms = require('./util/applyTransforms');
 const identifyTransforms = require('./util/identifyTransforms');
 
-module.exports = async function emdaer(
-  origin: string,
-  content: string,
-  stamp: boolean = true
-) {
+async function emdaer(origin: string, content: string, stamp: boolean = true) {
   const transforms = await identifyTransforms(content);
   const contentWithPluginsExecuted = await executePlugins(content);
   const contentWithTransformsApplied = await applyTransforms(
@@ -20,4 +16,6 @@ module.exports = async function emdaer(
     ? await addStamp(contentWithTransformsApplied, origin)
     : contentWithTransformsApplied;
   return text;
-};
+}
+
+module.exports = emdaer;

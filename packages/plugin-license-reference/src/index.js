@@ -9,10 +9,12 @@ const valueFromPackage = require('@emdaer/plugin-value-from-package');
  *
  * @returns {Promise<string>} The license reference
  */
-module.exports = async function licenseReferencePlugin(): Promise<string> {
+async function licenseReferencePlugin(): Promise<string> {
   return `${await valueFromPackage({
     value: 'name',
   })} is [${await valueFromPackage({
     value: 'license',
   })} licensed](./LICENSE).`;
-};
+}
+
+module.exports = licenseReferencePlugin;
