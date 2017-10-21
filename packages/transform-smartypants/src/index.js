@@ -31,9 +31,11 @@ function revertQuotesInCode(content: string): string {
  * @param   {string}          content The content
  * @returns {Promise<string>}         The content with smartypants characters
  */
-module.exports = async function smartypantsTransform(
+async function smartypantsTransform(
   content: string,
   { options }: { options: string }
 ): Promise<string> {
   return revertQuotesInCode(smartypants(content, options));
-};
+}
+
+module.exports = smartypantsTransform;

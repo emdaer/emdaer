@@ -13,7 +13,7 @@ const glob = promisify(require('glob'));
  * @param   {string}          [options.descriptions] Whether to include the packages' description
  * @returns {Promise<string>}                        The list in markdown
  */
-module.exports = async function listLernaPackagesPlugin(options: {
+async function listLernaPackagesPlugin(options: {
   pattern?: string,
   links?: boolean,
   descriptions?: boolean,
@@ -31,4 +31,6 @@ module.exports = async function listLernaPackagesPlugin(options: {
       return `- **${preparedName}**${descriptions ? ` ${description}` : ''}`;
     })
   )).join('\n');
-};
+}
+
+module.exports = listLernaPackagesPlugin;

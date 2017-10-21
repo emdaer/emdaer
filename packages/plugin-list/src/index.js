@@ -8,7 +8,7 @@
  * @param   {Array<string>}   [options.items] The items to list
  * @returns {Promise<string>}                 The list element
  */
-module.exports = async function listPlugin({
+async function listPlugin({
   type,
   items,
 }: {
@@ -27,4 +27,6 @@ module.exports = async function listPlugin({
     )),
     `</${type}>`,
   ].join('\n');
-};
+}
+
+module.exports = listPlugin;

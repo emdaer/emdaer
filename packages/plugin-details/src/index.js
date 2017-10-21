@@ -12,7 +12,7 @@ function getSummary(summary) {
  * @param   {string}          [options.content]           The content of the details
  * @returns {Promise<string>}                             The details element
  */
-module.exports = async function detailsPlugin({
+async function detailsPlugin({
   summary,
   content,
 }: {
@@ -23,4 +23,6 @@ module.exports = async function detailsPlugin({
 ${getSummary(summary)}
 ${content}
 </details>`;
-};
+}
+
+module.exports = detailsPlugin;

@@ -14,7 +14,7 @@ const isHashAnchor = /^#{1}/;
  * @param   {string}          [options.id]                The id
  * @returns {Promise<string>}                             The link element in markdown
  */
-module.exports = async function linkPlugin({
+async function linkPlugin({
   content,
   link,
   title,
@@ -40,4 +40,6 @@ module.exports = async function linkPlugin({
   return `<a${href ? ` href="${href}"` : ''}${id ? ` id="${id}"` : ''}${title
     ? ` title="${title}"`
     : ''}>${content}</a>`;
-};
+}
+
+module.exports = linkPlugin;

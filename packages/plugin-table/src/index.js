@@ -8,7 +8,7 @@
  * @param   {Array<Array<string>>} [options.rows]    The rows of the table
  * @returns {Promise<string>}                        The table element
  */
-module.exports = async function tablePlugin({
+async function tablePlugin({
   headers,
   rows,
 }: {
@@ -30,4 +30,6 @@ module.exports = async function tablePlugin({
         ''
       )
     : ''}</table>`;
-};
+}
+
+module.exports = tablePlugin;

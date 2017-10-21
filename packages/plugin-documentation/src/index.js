@@ -9,10 +9,12 @@ const documentation = require('documentation');
  * @param   {string}          [options.sources] The sources of the documentation
  * @returns {Promise<string>}                   The documentation
  */
-module.exports = async function documentationPlugin({
+async function documentationPlugin({
   sources,
 }: {
   sources: Array<string>,
 }): Promise<string> {
   return documentation.formats.md(await documentation.build(sources, {}), {});
-};
+}
+
+module.exports = documentationPlugin;
