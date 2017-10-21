@@ -11,7 +11,7 @@
  * @param   {string}                      [options.height] The height of the image
  * @returns {Promise<string>}                              The image element
  */
-module.exports = async function linkPlugin({
+async function linkPlugin({
   src,
   alt,
   align,
@@ -29,4 +29,6 @@ module.exports = async function linkPlugin({
     : ''}${width ? ` width="${width}"` : ''}${height
     ? ` height="${height}"`
     : ''} />`;
-};
+}
+
+module.exports = linkPlugin;

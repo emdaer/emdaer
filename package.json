@@ -12,6 +12,7 @@
   "devDependencies": {
     "@emdaer/cli": "file:packages/cli",
     "@emdaer/core": "file:packages/core",
+    "@emdaer/plugin-documentation": "file:packages/plugin-documentation",
     "@emdaer/plugin-import": "file:packages/plugin-import",
     "@emdaer/plugin-license-reference": "file:packages/plugin-license-reference",
     "@emdaer/plugin-list-lerna-packages": "file:packages/plugin-list-lerna-packages",

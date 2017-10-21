@@ -10,7 +10,7 @@ const fs = require('fs-extra');
  * @param   {string}          options.path  The path to the directory in which to find the package.json
  * @returns {Promise<string>}               The value from package.json
  */
-module.exports = async function valueFromPackage({
+async function valueFromPackage({
   value,
   path,
 }: {
@@ -20,4 +20,6 @@ module.exports = async function valueFromPackage({
   return JSON.parse(await fs.readFile(`${path || ''}package.json`, 'utf8'))[
     value
   ];
-};
+}
+
+module.exports = valueFromPackage;

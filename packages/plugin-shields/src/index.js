@@ -14,7 +14,7 @@ type Shield = {
  * @param   {Array<Shield>}   [options.shields] The shields
  * @returns {Promise<string>}                   The table element
  */
-module.exports = async function shieldsPlugin({
+async function shieldsPlugin({
   shields,
 }: {
   shields: Array<Shield>,
@@ -25,4 +25,6 @@ module.exports = async function shieldsPlugin({
         `[![${alt}](https://img.shields.io/${image}${`?style=${style}`})](${link})`
     )
     .join(' ')}`;
-};
+}
+
+module.exports = shieldsPlugin;
