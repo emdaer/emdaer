@@ -17,52 +17,41 @@
         link: 'https://lernajs.io/'
         style: 'flat-square'
 -->
-
 <!--emdaer-p
   - '@emdaer/plugin-value-from-package'
   - value: description
 -->
-
 <!--emdaer-p
   - '@emdaer/plugin-import'
   - path: .emdaer/README/what-is-emdaer.md
 -->
-
 <!--emdaer-p
   - '@emdaer/plugin-import'
   - path: .emdaer/README/how-emdaer-works.md
 -->
-
 <!--emdaer-p
   - '@emdaer/plugin-import'
   - path: .emdaer/README/adding-emdaer-to-your-project.md
 -->
-
-## Core Plugins
-
 <!--emdaer-p
-  - '@emdaer/plugin-list-lerna-packages'
-  - pattern: packages/plugin-*
+  - '@emdaer/plugin-import'
+  - path: .emdaer/README/core-plugins.md
+    runEmdaer: true
 -->
-
-## Core Transforms
-
 <!--emdaer-p
-  - '@emdaer/plugin-list-lerna-packages'
-  - pattern: packages/transform-*
+  - '@emdaer/plugin-import'
+  - path: .emdaer/README/core-transforms.md
+    runEmdaer: true
 -->
-
 <!--emdaer-p
   - '@emdaer/plugin-import'
   - path: .emdaer/README/contributing.md
 -->
-
-## License
-
 <!--emdaer-p
-  - '@emdaer/plugin-license-reference'
+  - '@emdaer/plugin-import'
+  - path: .emdaer/README/license.md
+    runEmdaer: true
 -->
-
 <!--emdaer-t
   - '@emdaer/transform-smartypants'
   - options: q
