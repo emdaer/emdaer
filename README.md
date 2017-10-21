@@ -85,6 +85,25 @@ npm run emdaer
 ```
 
 
+## Core Plugins
+
+- **[@emdaer/plugin-details](packages/plugin-details)** an emdaer plugin to generate details
+- **[@emdaer/plugin-documentation](packages/plugin-documentation)** an emdaer plugin to generate documentation with documentationjs
+- **[@emdaer/plugin-image](packages/plugin-image)** an emdaer plugin to generate images
+- **[@emdaer/plugin-import](packages/plugin-import)** an emdaer plugin to import files
+- **[@emdaer/plugin-license-reference](packages/plugin-license-reference)** an emdaer plugin to generate a license reference
+- **[@emdaer/plugin-link](packages/plugin-link)** an emdaer plugin to generate links
+- **[@emdaer/plugin-list](packages/plugin-list)** an emdaer plugin to add lists
+- **[@emdaer/plugin-list-lerna-packages](packages/plugin-list-lerna-packages)** an emdaer plugin to generate a list of lerna packages
+- **[@emdaer/plugin-shields](packages/plugin-shields)** an emdaer plugin to generate shields from shields.io
+- **[@emdaer/plugin-table](packages/plugin-table)** an emdaer plugin to generate tables
+- **[@emdaer/plugin-value-from-package](packages/plugin-value-from-package)** an emdaer plugin to add values from package.json
+
+## Core Transforms
+
+- **[@emdaer/transform-github-emoji](packages/transform-github-emoji)** an emdaer transform to use github flavored emoji codes
+- **[@emdaer/transform-smartypants](packages/transform-smartypants)** an emdaer transform to apply smartypants
+
 ## Contributing
 
 If you&#8217;d like to make emdaer better, please read our [guide to contributing](./CONTRIBUTING.md).
@@ -94,7 +113,4 @@ If you&#8217;d like to make emdaer better, please read our [guide to contributin
 
 emdaer is [MIT licensed](./LICENSE).
 
-<!--emdaer-t
-  - '@emdaer/transform-smartypants'
-  - options: q
--->
+

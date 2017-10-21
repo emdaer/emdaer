@@ -25,12 +25,19 @@
 "@emdaer/plugin-import@file:packages/plugin-import":
   version "1.0.0-beta.0"
   dependencies:
+    "@emdaer/core" "^1.0.0-beta.0"
     fs-extra "3.0.1"
 
 "@emdaer/plugin-license-reference@file:packages/plugin-license-reference":
   version "1.0.0-beta.0"
   dependencies:
     "@emdaer/plugin-value-from-package" "^1.0.0-beta.0"
+
+"@emdaer/plugin-list-lerna-packages@file:packages/plugin-list-lerna-packages":
+  version "1.0.0-beta.0"
+  dependencies:
+    fs-extra "^4.0.2"
+    glob "^7.1.2"
 
 "@emdaer/plugin-shields@file:packages/plugin-shields":
   version "1.0.0-beta.0"

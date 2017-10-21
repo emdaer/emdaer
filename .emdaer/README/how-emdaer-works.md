@@ -16,7 +16,7 @@ Hello, World!
 
 <!--emdaer-t
   - '@emdaer/transform-smartypants'
-  - options: q
+  - options: qe
 -->
 
 ```

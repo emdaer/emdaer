@@ -38,6 +38,20 @@
   - path: .emdaer/README/adding-emdaer-to-your-project.md
 -->
 
+## Core Plugins
+
+<!--emdaer-p
+  - '@emdaer/plugin-list-lerna-packages'
+  - pattern: packages/plugin-*
+-->
+
+## Core Transforms
+
+<!--emdaer-p
+  - '@emdaer/plugin-list-lerna-packages'
+  - pattern: packages/transform-*
+-->
+
 <!--emdaer-p
   - '@emdaer/plugin-import'
   - path: .emdaer/README/contributing.md
