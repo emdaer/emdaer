@@ -10,14 +10,12 @@
 
 Before contributing, please read our [code of conduct](./CODE_OF_CONDUCT.md)
 
-
 ## Getting Setup
 
 ```sh
 yarn # installs dependencies for emdaer
 make bootstrap # installs dependencies for emdaer/packages/*
 ```
-
 
 ## Testing & Linting
 
@@ -26,7 +24,6 @@ make test # run the tests
 make lint # run the linter
 make type # run the type checker
 ```
-
 
 ## Plugins & Transforms
 
@@ -44,10 +41,8 @@ Then, if the libdef doesn&#8217;t exist:
 flow-typed create-stub dependency-name@x.x.x
 ```
 
-
 ## Commits
 
 All commit messages must follow the [Conventional Commits Specification](https://conventionalcommits.org/).
-
 
 
