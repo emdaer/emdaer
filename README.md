@@ -5,9 +5,7 @@
 -->
 
 # emdaer · [![Travis](https://img.shields.io/travis/emdaer/emdaer.svg?style=flat-square)](https://travis-ci.org/emdaer/emdaer/) [![Documented with emdaer](https://img.shields.io/badge/📓-documented%20with%20emdaer-F06632.svg?style=flat-square)](https://github.com/emdaer/emdaer) [![Maintained with lerna](https://img.shields.io/badge/🐉-maintained%20with%20lerna-cc00ff.svg?style=flat-square)](https://lernajs.io/)
-
 📓 emdaer is a tool for creating and maintaining better READMEs
-
 ## What is emdaer?
 
 And because READMEs (and other documentation) are crucial files that are often lackluster and/or incomplete and have a tendency to become stale
@@ -18,7 +16,6 @@ A couple use cases that illustrate the power of emdaer:
 
 - 🤝 **Keep things in sync**: Do you have a series of repositories that should have their READMEs kept in sync? With emdaer you can create a template that pulls all the information from each project&#8217;s package.json and codebase
 - 🍋 **Keep things fresh**: Do you want to thank your contributors in your README? With emdaer you can pull that information from GitHub automatically and have it organized in an attractive list or table
-
 
 ## How emdaer works
 
@@ -47,7 +44,6 @@ Both of these calls take the form of yaml tuples where the first item is the nam
 For plugins, the result of the call replaces the corresponding comment block.
 
 For transforms, the function acts on the entire document and rewrites the entire file.
-
 
 ## Adding emdaer to your project
 
@@ -84,7 +80,6 @@ And give it a whirl:
 npm run emdaer
 ```
 
-
 ## Core Plugins
 
 - **[@emdaer/plugin-details](packages/plugin-details)** an emdaer plugin to generate details
@@ -108,10 +103,8 @@ npm run emdaer
 
 If you&#8217;d like to make emdaer better, please read our [guide to contributing](./CONTRIBUTING.md).
 
-
 ## License
 
 emdaer is [MIT licensed](./LICENSE).
-
 
 
