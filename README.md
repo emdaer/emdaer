@@ -85,8 +85,8 @@ npm run emdaer
 
 ## Core Plugins
 
-- **[@emdaer/plugin-details](packages/plugin-details)** an emdaer plugin to generate details
-- **[@emdaer/plugin-documentation](packages/plugin-documentation)** an emdaer plugin to generate documentation with documentationjs
+- **[@emdaer/plugin-details](packages/plugin-details)** An emdaer plugin that renders HTML5 details elements, which are disclosure widgets from which users can retrieve additional information.
+- **[@emdaer/plugin-documentation](packages/plugin-documentation)** An emdaer plugin to generate documentation from your code comments using documentationjs.
 - **[@emdaer/plugin-image](packages/plugin-image)** an emdaer plugin to generate images
 - **[@emdaer/plugin-import](packages/plugin-import)** an emdaer plugin to import files
 - **[@emdaer/plugin-license-reference](packages/plugin-license-reference)** an emdaer plugin to generate a license reference
