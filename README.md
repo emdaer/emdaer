@@ -87,8 +87,8 @@ npm run emdaer
 - **[@emdaer/plugin-documentation](packages/plugin-documentation)** An emdaer plugin to generate documentation from your code comments using documentationjs.
 - **[@emdaer/plugin-image](packages/plugin-image)** An emdaer plugin that renders HTML img elements.
 - **[@emdaer/plugin-import](packages/plugin-import)** An emdaer plugin that imports content from another file.
-- **[@emdaer/plugin-license-reference](packages/plugin-license-reference)** an emdaer plugin to generate a license reference
-- **[@emdaer/plugin-link](packages/plugin-link)** an emdaer plugin to generate links
+- **[@emdaer/plugin-license-reference](packages/plugin-license-reference)** An emdaer plugin that renders license information from the package.
+- **[@emdaer/plugin-link](packages/plugin-link)** An emdaer plugin that renders anchor elements.
 - **[@emdaer/plugin-list](packages/plugin-list)** an emdaer plugin to add lists
 - **[@emdaer/plugin-list-lerna-packages](packages/plugin-list-lerna-packages)** an emdaer plugin to generate a list of lerna packages
 - **[@emdaer/plugin-shields](packages/plugin-shields)** an emdaer plugin to generate shields from shields.io

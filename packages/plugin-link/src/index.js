@@ -5,14 +5,16 @@ const isRepoFilePath = /^..\/blob/;
 const isHashAnchor = /^#{1}/;
 
 /**
- * A plugin to generate links
+ * Render anchor elements.
+ *
+ * @see {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a}
  *
  * @param                     options
- * @param   {string}          [options.content]           The content of the link
- * @param   {string}          [options.link]              The link
- * @param   {string}          [options.title]             The link title
- * @param   {string}          [options.id]                The id
- * @returns {Promise<string>}                             The link element in markdown
+ * @param   {string}          [options.content] The content of the link
+ * @param   {string}          [options.link] Contains a URL or a URL fragment that the hyperlink points to.
+ * @param   {string}          [options.title] Specifies a title to associate with the element.
+ * @param   {string}          [options.id] Document wide identifier.
+ * @returns {Promise<string>} The link as an anchor HTML element.
  */
 async function linkPlugin({
   content,
