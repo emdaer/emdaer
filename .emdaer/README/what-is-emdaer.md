@@ -1,8 +1,6 @@
 ## What is emdaer?
 
-And because READMEs (and other documentation) are crucial files that are often lackluster and/or incomplete and have a tendency to become stale
-
-At its core, emdaer enables you to use plugins and transforms within markdown files
+emdaer lets you to use plugins and transforms within markdown files because READMEs (and other documentation) are crucial files that are often lackluster and/or incomplete and have a tendency to become stale
 
 A couple use cases that illustrate the power of emdaer:
 
