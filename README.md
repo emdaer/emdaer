@@ -80,6 +80,7 @@ npm run emdaer
 
 ## Core Plugins
 
+- **[@emdaer/plugin-contributors-details](packages/plugin-contributors-details)** an emdaer plugin to generate contributor details
 - **[@emdaer/plugin-details](packages/plugin-details)** an emdaer plugin to generate details
 - **[@emdaer/plugin-documentation](packages/plugin-documentation)** an emdaer plugin to generate documentation with documentationjs
 - **[@emdaer/plugin-image](packages/plugin-image)** an emdaer plugin to generate images
@@ -100,6 +101,19 @@ npm run emdaer
 ## Contributing
 
 If you&#8217;d like to make emdaer better, please read our [guide to contributing](./CONTRIBUTING.md).
+
+<details>
+<summary><strong>Contributors</strong></summary><br />
+<img align="left" src="https://avatars0.githubusercontent.com/u/1306968?s=24">
+  <strong>Flip</strong>
+</img></br></br>
+<img align="left" src="https://avatars0.githubusercontent.com/u/1127238?s=24">
+  <strong>Luke Herrington</strong>
+</img></br></br>
+<img align="left" src="https://avatars0.githubusercontent.com/u/447151?s=24">
+  <strong>Elliott Foster</strong>
+</img></br></br>
+</details>
 
 ## License
 
