@@ -6,12 +6,13 @@ const { promisify } = require('util');
 const glob = promisify(require('glob'));
 
 /**
- * A plugin to generate a list of lerna packages
+ * Render a markdown list of the names and optional descriptions of lerna packages.
  *
- * @param                     options
- * @param   {string}          [options.links]        Whether to link to the packages
- * @param   {string}          [options.descriptions] Whether to include the packages' description
- * @returns {Promise<string>}                        The list in markdown
+ * @param options
+ * @param {string} [options.pattern] Relative glob path to lerna packages.
+ * @param {boolean} [options.links] Whether to link to each package.
+ * @param {boolean} [options.descriptions] Whether to include each package description.
+ * @returns {Promise<string>} The markdown list.
  */
 async function listLernaPackagesPlugin(options: {
   pattern?: string,

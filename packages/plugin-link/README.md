@@ -14,7 +14,7 @@ An emdaer plugin that renders anchor elements.
 
 -   **See: <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a>**
 
-Render anchor elements.
+Render HTML anchor elements.
 
 **Parameters**
 

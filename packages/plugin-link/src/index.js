@@ -5,7 +5,7 @@ const isRepoFilePath = /^..\/blob/;
 const isHashAnchor = /^#{1}/;
 
 /**
- * Render anchor elements.
+ * Render HTML anchor elements.
  *
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a}
  *
