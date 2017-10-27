@@ -17,8 +17,7 @@
     "received_events_url": "https://api.github.com/users/flipactual/received_events",
     "type": "User",
     "site_admin": false,
-    "score": 74.95851,
-    "email": "flipactual@gmail.com",
+    "score": 78.48895,
     "name": "Flip"
   },
   {
@@ -39,8 +38,7 @@
     "received_events_url": "https://api.github.com/users/infiniteluke/received_events",
     "type": "User",
     "site_admin": false,
-    "score": 60.513046,
-    "email": "lherrington100@gmail.com",
+    "score": 69.19515,
     "name": "Luke Herrington"
   },
   {
@@ -61,8 +59,28 @@
     "received_events_url": "https://api.github.com/users/elliotttf/received_events",
     "type": "User",
     "site_admin": false,
-    "score": 76.42845,
-    "email": "elliottf@codebrews.com",
+    "score": 86.30723,
     "name": "Elliott Foster"
+  },
+  {
+    "login": "thebruce",
+    "id": 590058,
+    "avatar_url": "https://avatars0.githubusercontent.com/u/590058?s=24",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/thebruce",
+    "html_url": "https://github.com/thebruce",
+    "followers_url": "https://api.github.com/users/thebruce/followers",
+    "following_url": "https://api.github.com/users/thebruce/following{/other_user}",
+    "gists_url": "https://api.github.com/users/thebruce/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/thebruce/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/thebruce/subscriptions",
+    "organizations_url": "https://api.github.com/users/thebruce/orgs",
+    "repos_url": "https://api.github.com/users/thebruce/repos",
+    "events_url": "https://api.github.com/users/thebruce/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/thebruce/received_events",
+    "type": "User",
+    "site_admin": false,
+    "score": 67.237564,
+    "name": "David Diers"
   }
 ]

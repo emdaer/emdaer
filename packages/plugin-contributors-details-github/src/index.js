@@ -7,33 +7,32 @@ type Contributor = {
   login: string,
   avatar_url: string,
   html_url: string,
-  email: string,
+  login: string,
   name: string,
 };
 
 const CONTRIBUTORS_DATA_FILE = './.emdaer/contributors-data.json';
-const EXAMPLE_FORMAT = '"Name <email@email.com>"';
-const isEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+const EXAMPLE_FORMAT = '"Name username"';
 
 function getSummary(summary: string): string {
   return summary ? `<summary><strong>${summary}</strong></summary><br />` : '';
 }
 
 function getFormatError(name: string): string {
-  return `Contributor email for ${name} is not valid: Expected ${EXAMPLE_FORMAT}`;
+  return `Contributor login for ${name} is not valid: Expected ${EXAMPLE_FORMAT}`;
 }
 
-async function fetchUser(email: string, name: string): Promise<Contributor> {
-  const GH_FETCH_ERROR = `Unable to fetch ${email} from the Github API.`;
+async function fetchUser(login: string, name: string): Promise<Contributor> {
+  const GH_FETCH_ERROR = `Unable to fetch ${login} from the Github API.`;
   const response = await fetch(
-    `https://api.github.com/search/users?q=${email}+in:email`
+    `https://api.github.com/search/users?q=${login}+in:login`
   );
   if (!response.ok) {
     throw new Error(GH_FETCH_ERROR);
   }
   const user = (await response.json()).items[0];
   return Object.assign(user, {
-    email,
+    login,
     name,
     avatar_url: `https://avatars0.githubusercontent.com/u/${user.id}?s=24`,
   });
@@ -52,18 +51,15 @@ async function getContributors(
 ): Promise<Array<Contributor>> {
   return Promise.all(
     contributors.map(contributor => {
-      const [name, emailPart] = contributor.split('<').map(part => part.trim());
-      if (!emailPart) {
+      const [name, loginPart] = contributor.split('<').map(part => part.trim());
+      if (!loginPart) {
         throw new Error(getFormatError(name));
       }
-      const email = emailPart
+      const login = loginPart
         .split('>')
         .shift()
         .trim();
-      if (!isEmail.test(email)) {
-        throw new Error(getFormatError(name));
-      }
-      return fetchUser(email, name);
+      return fetchUser(login, name);
     })
   )
     .then(cacheContributorData)

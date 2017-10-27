@@ -113,6 +113,9 @@ If you&#8217;d like to make emdaer better, please read our [guide to contributin
 <img align="left" src="https://avatars0.githubusercontent.com/u/447151?s=24">
   <strong>Elliott Foster</strong>
 </img></br></br>
+<img align="left" src="https://avatars0.githubusercontent.com/u/590058?s=24">
+  <strong>David Diers</strong>
+</img></br></br>
 </details>
 
 ## License
