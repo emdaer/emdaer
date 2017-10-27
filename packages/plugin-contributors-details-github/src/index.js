@@ -11,6 +11,7 @@ type Contributor = {
   name: string,
 };
 
+const CONTRIBUTORS_DATA_FILE = './.emdaer/contributors-data.json';
 const EXAMPLE_FORMAT = '"Name <email@email.com>"';
 const isEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -23,24 +24,27 @@ function getFormatError(name: string): string {
 }
 
 async function fetchUser(email: string, name: string): Promise<Contributor> {
-  try {
-    const response = await fetch(
-      `https://api.github.com/search/users?q=${email}+in:email`
-    );
-    if (!response.ok) {
-      throw new Error(`Unable to fetch ${email} from the Github API.`);
-    }
-    const user = (await response.json()).items[0];
-    return Object.assign(user, {
-      email,
-      name,
-      avatar_url: `https://avatars0.githubusercontent.com/u/${user.id}?s=24`,
-    });
-  } catch (e) {
-    throw new Error(
-      `Unable to fetch or parse ${email} from the Github API: ${e.message}.`
-    );
+  const GH_FETCH_ERROR = `Unable to fetch ${email} from the Github API.`;
+  const response = await fetch(
+    `https://api.github.com/search/users?q=${email}+in:email`
+  );
+  if (!response.ok) {
+    throw new Error(GH_FETCH_ERROR);
   }
+  const user = (await response.json()).items[0];
+  return Object.assign(user, {
+    email,
+    name,
+    avatar_url: `https://avatars0.githubusercontent.com/u/${user.id}?s=24`,
+  });
+}
+
+async function cacheContributorData(
+  contributors: Array<Contributor>
+): Promise<Array<Contributor>> {
+  return fs
+    .outputJson(CONTRIBUTORS_DATA_FILE, await contributors)
+    .then(() => contributors);
 }
 
 async function getContributors(
@@ -61,7 +65,9 @@ async function getContributors(
       }
       return fetchUser(email, name);
     })
-  );
+  )
+    .then(cacheContributorData)
+    .catch(() => fs.readJson(CONTRIBUTORS_DATA_FILE));
 }
 
 /**

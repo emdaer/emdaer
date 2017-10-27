@@ -4,7 +4,7 @@
   Its template can be found at .emdaer/README.emdaer.md
 -->
 
-# @emdaer/plugin-contributors-details
+# @emdaer/plugin-contributors-details-github
 
 an emdaer plugin to generate contributor details
 
