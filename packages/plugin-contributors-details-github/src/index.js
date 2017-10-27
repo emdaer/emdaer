@@ -43,7 +43,7 @@ async function cacheContributorData(
   contributors: Array<Contributor>
 ): Promise<Array<Contributor>> {
   return fs
-    .outputJson(CONTRIBUTORS_DATA_FILE, await contributors)
+    .outputJson(CONTRIBUTORS_DATA_FILE, await contributors, { spaces: 2 })
     .then(() => contributors);
 }
 
