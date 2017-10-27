@@ -17,7 +17,7 @@
     "received_events_url": "https://api.github.com/users/flipactual/received_events",
     "type": "User",
     "site_admin": false,
-    "score": 78.48895,
+    "score": 78.48937,
     "name": "Flip"
   },
   {
@@ -38,7 +38,7 @@
     "received_events_url": "https://api.github.com/users/infiniteluke/received_events",
     "type": "User",
     "site_admin": false,
-    "score": 69.19515,
+    "score": 69.1957,
     "name": "Luke Herrington"
   },
   {
@@ -59,7 +59,7 @@
     "received_events_url": "https://api.github.com/users/elliotttf/received_events",
     "type": "User",
     "site_admin": false,
-    "score": 86.30723,
+    "score": 86.30775,
     "name": "Elliott Foster"
   },
   {
@@ -80,7 +80,7 @@
     "received_events_url": "https://api.github.com/users/thebruce/received_events",
     "type": "User",
     "site_admin": false,
-    "score": 67.237564,
+    "score": 67.23805,
     "name": "David Diers"
   }
 ]

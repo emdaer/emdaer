@@ -11,7 +11,7 @@ type Contributor = {
   name: string,
 };
 
-const CONTRIBUTORS_DATA_FILE = './.emdaer/contributors-data.json';
+const CONTRIBUTORS_DATA_FILE = './.emdaer/.offline/contributors-data.json';
 const EXAMPLE_FORMAT = '"Name username"';
 
 function getSummary(summary: string): string {
