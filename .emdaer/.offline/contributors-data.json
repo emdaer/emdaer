@@ -17,8 +17,19 @@
     "received_events_url": "https://api.github.com/users/flipactual/received_events",
     "type": "User",
     "site_admin": false,
-    "score": 78.615234,
-    "name": "Flip"
+    "name": "Flip",
+    "company": null,
+    "blog": "https://www.stupid.cool",
+    "location": "Austin, TX",
+    "email": null,
+    "hireable": true,
+    "bio": null,
+    "public_repos": 21,
+    "public_gists": 1,
+    "followers": 32,
+    "following": 15,
+    "created_at": "2012-01-05T15:20:07Z",
+    "updated_at": "2017-10-14T03:34:44Z"
   },
   {
     "login": "infiniteluke",
@@ -38,8 +49,19 @@
     "received_events_url": "https://api.github.com/users/infiniteluke/received_events",
     "type": "User",
     "site_admin": false,
-    "score": 68.59222,
-    "name": "Luke Herrington"
+    "name": "Luke Herrington",
+    "company": "Four Kitchens",
+    "blog": "",
+    "location": "United States",
+    "email": null,
+    "hireable": null,
+    "bio": "I build multi-channel publishing systems and web applications at @fourkitchens.",
+    "public_repos": 39,
+    "public_gists": 1,
+    "followers": 18,
+    "following": 56,
+    "created_at": "2011-10-14T00:22:53Z",
+    "updated_at": "2017-10-15T23:18:57Z"
   },
   {
     "login": "elliotttf",
@@ -59,8 +81,19 @@
     "received_events_url": "https://api.github.com/users/elliotttf/received_events",
     "type": "User",
     "site_admin": false,
-    "score": 86.41329,
-    "name": "Elliott Foster"
+    "name": "Elliott Foster",
+    "company": "Four Kitchens",
+    "blog": "http://codebrews.com",
+    "location": "Austin, TX",
+    "email": null,
+    "hireable": null,
+    "bio": "Software architect with an interest in distributed systems and elegant solutions.",
+    "public_repos": 73,
+    "public_gists": 38,
+    "followers": 48,
+    "following": 12,
+    "created_at": "2010-10-20T16:40:28Z",
+    "updated_at": "2017-10-10T15:36:14Z"
   },
   {
     "login": "thebruce",
@@ -80,7 +113,18 @@
     "received_events_url": "https://api.github.com/users/thebruce/received_events",
     "type": "User",
     "site_admin": false,
-    "score": 67.32654,
-    "name": "David Diers"
+    "name": "David Diers",
+    "company": "Four Kitchens",
+    "blog": "daviddiers.com",
+    "location": "Austin, TX",
+    "email": null,
+    "hireable": null,
+    "bio": null,
+    "public_repos": 25,
+    "public_gists": 2,
+    "followers": 15,
+    "following": 10,
+    "created_at": "2011-01-29T15:53:24Z",
+    "updated_at": "2017-10-20T17:26:33Z"
   }
 ]

@@ -26,38 +26,22 @@ describe('@emdaer/plugin-contributors-details-github', () => {
     );
     return expect(contributorsDetails()).rejects.toHaveProperty(
       'message',
-      'No contributors found: Contributor login for flip is not valid: Expected "Name <username>"'
+      'Missing contributor info: Contributor login for flip is not valid: Expected "Name <username>"'
     );
   });
   test('generates contributor details from AUTHOR file', async () => {
     fs.readFile.mockImplementation(
       async () => `todd <toddross>
-    flip <flipactual>`
+flip <flipactual>`
     );
     fs.outputJson.mockImplementation(async () => {});
     nock('https://api.github.com:443', {
       encodedQueryParams: true,
     })
-      .get('/search/users')
-      .query({ q: 'toddross in:login' })
-      .reply(200, {
-        items: [
-          {
-            id: 202525,
-            html_url: 'https://github.com/toddross',
-          },
-        ],
-      })
-      .get('/search/users')
-      .query({ q: 'flipactual in:login' })
-      .reply(200, {
-        items: [
-          {
-            id: 1306968,
-            html_url: 'https://github.com/flipactual',
-          },
-        ],
-      });
+      .get('/users/toddross')
+      .reply(200, { id: 202525 })
+      .get('/users/flipactual')
+      .reply(200, { id: 1306968 });
     const details = await contributorsDetails({
       title: 'Thank you For Contributing!',
     });
@@ -111,40 +95,19 @@ flip <flipactual>`
 </img></br></br>
 </details>`);
   });
-  test('throws if no data is availble form GitHub or cache file', async () => {
-    fs.readFile.mockImplementation(
-      async () => `todd <toddross>
-  flip <flipactual>`
-    );
-    fs.readJson.mockImplementation(async () => '');
-    nock('https://api.github.com:443', {
-      encodedQueryParams: true,
-    })
-      .get('/search/users')
-      .query({ q: 'toddross in:login' })
-      .reply(500, { ok: false })
-      .get('/search/users')
-      .query({ q: 'flipactual in:login' })
-      .reply(500, { ok: false });
-    return expect(contributorsDetails()).rejects.toHaveProperty(
-      'message',
-      'No contributors found: No contributors found in API or cache file.'
-    );
-  });
   test('throws if user does not exist in GitHub', async () => {
     fs.readFile.mockImplementation(async () => `nope <not___real___lol>`);
     fs.readJson.mockImplementation(async () => '');
     nock('https://api.github.com:443', {
       encodedQueryParams: true,
     })
-      .get('/search/users')
-      .query({ q: 'not___real___lol in:login' })
-      .reply(200, {
-        items: [],
+      .get('/users/not___real___lol')
+      .reply(404, {
+        message: 'Not Found',
       });
     return expect(contributorsDetails()).rejects.toHaveProperty(
       'message',
-      'No contributors found: User not___real___lol is not found in GitHub.'
+      'Missing contributor info: User not___real___lol is not found in GitHub.'
     );
   });
 });

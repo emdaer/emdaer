@@ -21,14 +21,8 @@ function getSummary(summary: string): string {
 }
 
 async function fetchUser(login: string, name: string): Promise<Contributor> {
-  const GH_FETCH_ERROR = `Unable to fetch ${login} from the Github API.`;
-  const response = await fetch(
-    `https://api.github.com/search/users?q=${login}+in:login`
-  );
-  if (!response.ok) {
-    throw new Error(GH_FETCH_ERROR);
-  }
-  const user = (await response.json()).items[0] || {};
+  const response = await fetch(`https://api.github.com/users/${login}`);
+  const user = await response.json();
   return Object.assign(user, {
     login,
     name,
@@ -64,9 +58,6 @@ async function getContributors(
   )
     .catch(() => fs.readJson(CONTRIBUTORS_DATA_FILE))
     .then(data => {
-      if (!data) {
-        throw new Error(`No contributors found in API or cache file.`);
-      }
       const invalidContributor = data.find(contributor => !contributor.id);
       if (invalidContributor) {
         throw new Error(
@@ -113,7 +104,7 @@ async function contributorsDetailsPlugin(
   try {
     contributorsData = await getContributors(Array.from(new Set(contributors)));
   } catch (e) {
-    throw new Error(`No contributors found: ${e.message}`);
+    throw new Error(`Missing contributor info: ${e.message}`);
   }
   return `<details>
 ${getSummary(title)}
