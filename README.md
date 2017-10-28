@@ -80,7 +80,7 @@ npm run emdaer
 
 ## Core Plugins
 
-- **[@emdaer/plugin-contributors-details](packages/plugin-contributors-details)** an emdaer plugin to generate contributor details
+- **[@emdaer/plugin-contributors-details-github](packages/plugin-contributors-details-github)** An emdaer plugin to generate contributor details from GitHub
 - **[@emdaer/plugin-details](packages/plugin-details)** an emdaer plugin to generate details
 - **[@emdaer/plugin-documentation](packages/plugin-documentation)** an emdaer plugin to generate documentation with documentationjs
 - **[@emdaer/plugin-image](packages/plugin-image)** an emdaer plugin to generate images

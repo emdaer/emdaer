@@ -1,6 +1,6 @@
 {
   "name": "@emdaer/plugin-contributors-details-github",
-  "description": "an emdaer plugin to generate contributor details",
+  "description": "An emdaer plugin to generate contributor details from GitHub",
   "version": "1.0.0-beta.0",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.me/",
@@ -20,5 +20,8 @@
     "fs-extra": "^4.0.2",
     "glob": "^7.1.2",
     "node-fetch": "^1.7.3"
+  },
+  "devDependencies": {
+    "nock": "^9.0.25"
   }
 }

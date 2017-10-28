@@ -11,15 +11,13 @@ type Contributor = {
   name: string,
 };
 
+const DEFAULT_PATH = './AUTHORS';
+const DEFAULT_SUMMARY_TITLE = 'Contributors';
 const CONTRIBUTORS_DATA_FILE = './.emdaer/.offline/contributors-data.json';
-const EXAMPLE_FORMAT = '"Name username"';
+const EXAMPLE_FORMAT = '"Name <username>"';
 
 function getSummary(summary: string): string {
-  return summary ? `<summary><strong>${summary}</strong></summary><br />` : '';
-}
-
-function getFormatError(name: string): string {
-  return `Contributor login for ${name} is not valid: Expected ${EXAMPLE_FORMAT}`;
+  return `<summary><strong>${summary}</strong></summary><br />`;
 }
 
 async function fetchUser(login: string, name: string): Promise<Contributor> {
@@ -30,7 +28,7 @@ async function fetchUser(login: string, name: string): Promise<Contributor> {
   if (!response.ok) {
     throw new Error(GH_FETCH_ERROR);
   }
-  const user = (await response.json()).items[0];
+  const user = (await response.json()).items[0] || {};
   return Object.assign(user, {
     login,
     name,
@@ -53,7 +51,9 @@ async function getContributors(
     contributors.map(contributor => {
       const [name, loginPart] = contributor.split('<').map(part => part.trim());
       if (!loginPart) {
-        throw new Error(getFormatError(name));
+        throw new Error(
+          `Contributor login for ${name} is not valid: Expected ${EXAMPLE_FORMAT}`
+        );
       }
       const login = loginPart
         .split('>')
@@ -62,8 +62,19 @@ async function getContributors(
       return fetchUser(login, name);
     })
   )
-    .then(cacheContributorData)
-    .catch(() => fs.readJson(CONTRIBUTORS_DATA_FILE));
+    .catch(() => fs.readJson(CONTRIBUTORS_DATA_FILE))
+    .then(data => {
+      if (!data) {
+        throw new Error(`No contributors found in API or cache file.`);
+      }
+      const invalidContributor = data.find(contributor => !contributor.id);
+      if (invalidContributor) {
+        throw new Error(
+          `User ${invalidContributor.login} is not found in GitHub.`
+        );
+      }
+      return cacheContributorData(data);
+    });
 }
 
 /**
@@ -76,27 +87,34 @@ async function getContributors(
  */
 async function contributorsDetailsPlugin(
   {
-    path = './AUTHORS',
-    title = 'Contributors',
+    path = DEFAULT_PATH,
+    title = DEFAULT_SUMMARY_TITLE,
   }: {
     path?: string,
     title?: string,
   } = {
-    path: './AUTHORS',
-    title: 'Contributors',
+    path: DEFAULT_PATH,
+    title: DEFAULT_SUMMARY_TITLE,
   }
 ): Promise<?string> {
-  const contributors = (await fs.readFile(path))
-    .toString()
-    .split('\n')
-    .filter(person => person);
+  let authorFileContents;
+  try {
+    authorFileContents = (await fs.readFile(path)).toString();
+  } catch (e) {
+    throw new Error(`${path} does not exist`);
+  }
+  const contributors = authorFileContents.split('\n').filter(person => person);
   if (contributors.length < 1) {
     throw new Error(
       `Your contributors file (${path}) must contain contributors in the format: ${EXAMPLE_FORMAT}`
     );
   }
-  const contributorsData = await getContributors(contributors);
-
+  let contributorsData;
+  try {
+    contributorsData = await getContributors(Array.from(new Set(contributors)));
+  } catch (e) {
+    throw new Error(`No contributors found: ${e.message}`);
+  }
   return `<details>
 ${getSummary(title)}
 ${contributorsData
