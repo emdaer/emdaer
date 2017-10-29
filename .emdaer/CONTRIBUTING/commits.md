@@ -1,6 +1,6 @@
 ## Commits
 
-All commit messages must follow the [Conventional Commits Specification](https://conventionalcommits.org/) which can be descibed like so:
+All commit messages must follow the [Conventional Commits Specification](https://conventionalcommits.org/) which can be described like so:
 
 ```
 type(scope?): subject
