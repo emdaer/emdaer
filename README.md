@@ -84,6 +84,7 @@ npm run emdaer
 
 ## Core Plugins
 
+- **[@emdaer/plugin-contributors-details-github](packages/plugin-contributors-details-github)** An emdaer plugin to generate contributor details from GitHub
 - **[@emdaer/plugin-details](packages/plugin-details)** an emdaer plugin to generate details
 - **[@emdaer/plugin-documentation](packages/plugin-documentation)** an emdaer plugin to generate documentation with documentationjs
 - **[@emdaer/plugin-image](packages/plugin-image)** an emdaer plugin to generate images
@@ -104,6 +105,30 @@ npm run emdaer
 ## Contributing
 
 If you&#8217;d like to make emdaer better, please read our [guide to contributing](./CONTRIBUTING.md).
+
+<details>
+<summary><strong>Contributors</strong></summary><br />
+<a href="https://github.com/flipactual">
+  <img align="left" src="https://avatars0.githubusercontent.com/u/1306968?s=24" />
+</a>
+<strong>Flip</strong>
+<br /><br />
+<a title="I build multi-channel publishing systems and web applications at @fourkitchens." href="https://github.com/infiniteluke">
+  <img align="left" src="https://avatars0.githubusercontent.com/u/1127238?s=24" />
+</a>
+<strong>Luke Herrington</strong>
+<br /><br />
+<a title="Software architect with an interest in distributed systems and elegant solutions." href="https://github.com/elliotttf">
+  <img align="left" src="https://avatars0.githubusercontent.com/u/447151?s=24" />
+</a>
+<strong>Elliott Foster</strong>
+<br /><br />
+<a href="https://github.com/thebruce">
+  <img align="left" src="https://avatars0.githubusercontent.com/u/590058?s=24" />
+</a>
+<strong>David Diers</strong>
+<br /><br />
+</details>
 
 ## License
 
