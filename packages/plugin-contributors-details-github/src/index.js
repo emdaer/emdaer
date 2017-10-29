@@ -14,7 +14,8 @@ type Contributor = {
 
 const DEFAULT_PATH = './AUTHORS';
 const DEFAULT_SUMMARY_TITLE = 'Contributors';
-const CONTRIBUTORS_DATA_FILE = './.emdaer/.offline/contributors-data.json';
+const CONTRIBUTORS_DATA_FILE =
+  './.emdaer/.offline/plugin-contributors-details-github/contributors-data.json';
 const EXAMPLE_FORMAT = '"Name <username>"';
 
 function getSummary(summary: string): string {
