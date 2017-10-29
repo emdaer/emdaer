@@ -4,6 +4,7 @@ All commit messages must follow the [Conventional Commits Specification](https:/
 
 ```
 type(scope?): subject
+
 body?
 footer?
 ```
