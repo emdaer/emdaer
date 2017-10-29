@@ -22,7 +22,8 @@ describe('@emdaer/cli', () => {
   });
   test('logs error when emdaer fails', async () => {
     glob.mockImplementation(() => ['./.emdaer/README.emdaer.md']);
-    fs.readFile.mockImplementation(() => {
+    fs.readFile.mockImplementationOnce(() => '{"name":"@emdaer/cli"}');
+    fs.readFile.mockImplementationOnce(() => {
       throw new Error();
     });
     const exitCode = await bin();
@@ -34,10 +35,13 @@ describe('@emdaer/cli', () => {
   });
   test('logs happy message on success', async () => {
     glob.mockImplementation(() => ['./.emdaer/README.emdaer.md']);
-    fs.readFile.mockImplementation(() => '');
+    fs.readFile.mockImplementationOnce(() => '{"name":"@emdaer/cli"}');
+    fs.readFile.mockImplementationOnce(() => '');
     fs.outputFile.mockImplementation(() => {});
     const exitCode = await bin();
-    expect(logger.log).toHaveBeenLastCalledWith('Writing README.md 👌');
+    expect(logger.log).toHaveBeenLastCalledWith(
+      'Writing README.md for @emdaer/cli 👌'
+    );
     expect(exitCode).toBe(0);
   });
 });
