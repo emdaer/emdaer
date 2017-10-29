@@ -1,0 +1,27 @@
+{
+  "name": "@emdaer/plugin-contributors-details-github",
+  "description": "An emdaer plugin to generate contributor details from GitHub",
+  "version": "1.0.0-beta.0",
+  "repository": "emdaer/emdaer",
+  "homepage": "https://emdaer.me/",
+  "keywords": [
+    "emdaer-plugin"
+  ],
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "scripts": {
+    "prepublish": "flow-remove-types -p src -i .test.js -d lib",
+    "preuninstall": "node ./scripts/preuninstall"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "fs-extra": "^4.0.2",
+    "glob": "^7.1.2",
+    "node-fetch": "^1.7.3"
+  },
+  "devDependencies": {
+    "nock": "^9.0.25"
+  }
+}

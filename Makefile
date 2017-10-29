@@ -11,6 +11,7 @@ emdaer:
 	./node_modules/.bin/emdaer
 	./node_modules/.bin/lerna exec -- emdaer
 	git add *.md
+	git add .emdaer/.offline
 	git add packages/*/*.md
 lint:
 	./node_modules/.bin/eslint .

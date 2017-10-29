@@ -46,6 +46,7 @@
 <!--emdaer-p
   - '@emdaer/plugin-import'
   - path: .emdaer/README/contributing.md
+    runEmdaer: true
 -->
 <!--emdaer-p
   - '@emdaer/plugin-import'
