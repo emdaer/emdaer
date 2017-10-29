@@ -4,5 +4,6 @@ emdaer lets you to use plugins and transforms within markdown files because READ
 
 A couple use cases that illustrate the power of emdaer:
 
-- 🤝 **Keep things in sync**: Do you have a series of repositories that should have their READMEs kept in sync? With emdaer you can create a template that pulls all the information from each project's package.json and codebase
-- 🍋 **Keep things fresh**: Do you want to thank your contributors in your README? With emdaer you can pull that information from GitHub automatically and have it organized in an attractive list or table
+- 🤝 **Keep it in sync** Create templates for use across all of your organizations projects to promote synchronicity and reduce doing the same work over and over
+- 🗃 **Keep it organized** Keep your documentation DRY and organized by importing content from your codebase and splitting large documents into chunks
+- 🍋 **Keep it fresh** Ensure your documents stay up to date by pulling in new data from various sources with every build

@@ -19,15 +19,16 @@ module.exports = async function cli(args = process.argv) {
   if (!origins) {
     logger.warn(NO_MATCHING_FILES);
   } else {
+    const { name } = JSON.parse(await readFile('package.json', 'utf8'));
     await Promise.all(
       origins.map(origin =>
         (async () => {
           try {
-            const [, name, extension] = origin.match(
+            const [, fileName, fileExtension] = origin.match(
               /\.emdaer\/(.*)\.emdaer(\.md)/
             );
-            const destination = `${name}${extension}`;
-            logger.log(`Writing ${destination} 👌`);
+            const destination = `${fileName}${fileExtension}`;
+            logger.log(`Writing ${destination} for ${name} 👌`);
             await outputFile(
               destination,
               await emdaer(origin, (await readFile(origin)).toString())
