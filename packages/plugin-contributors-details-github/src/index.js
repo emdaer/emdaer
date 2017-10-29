@@ -9,6 +9,7 @@ type Contributor = {
   html_url: string,
   login: string,
   name: string,
+  bio: string,
 };
 
 const DEFAULT_PATH = './AUTHORS';
@@ -111,9 +112,13 @@ ${getSummary(title)}
 ${contributorsData
     .map(
       contributor =>
-        `<img align="left" src="${contributor.avatar_url}">
-  <strong>${contributor.name}</strong>
-</img></br></br>`
+        `<a${contributor.bio
+          ? ` title="${contributor.bio}"`
+          : ''} href="${contributor.html_url}">
+  <img align="left" src="${contributor.avatar_url}" />
+</a>
+<strong>${contributor.name}</strong>
+<br /><br />`
     )
     .join('\n')}
 </details>`;

@@ -104,18 +104,26 @@ If you&#8217;d like to make emdaer better, please read our [guide to contributin
 
 <details>
 <summary><strong>Contributors</strong></summary><br />
-<img align="left" src="https://avatars0.githubusercontent.com/u/1306968?s=24">
-  <strong>Flip</strong>
-</img></br></br>
-<img align="left" src="https://avatars0.githubusercontent.com/u/1127238?s=24">
-  <strong>Luke Herrington</strong>
-</img></br></br>
-<img align="left" src="https://avatars0.githubusercontent.com/u/447151?s=24">
-  <strong>Elliott Foster</strong>
-</img></br></br>
-<img align="left" src="https://avatars0.githubusercontent.com/u/590058?s=24">
-  <strong>David Diers</strong>
-</img></br></br>
+<a href="https://github.com/flipactual">
+  <img align="left" src="https://avatars0.githubusercontent.com/u/1306968?s=24" />
+</a>
+<strong>Flip</strong>
+<br /><br />
+<a title="I build multi-channel publishing systems and web applications at @fourkitchens." href="https://github.com/infiniteluke">
+  <img align="left" src="https://avatars0.githubusercontent.com/u/1127238?s=24" />
+</a>
+<strong>Luke Herrington</strong>
+<br /><br />
+<a title="Software architect with an interest in distributed systems and elegant solutions." href="https://github.com/elliotttf">
+  <img align="left" src="https://avatars0.githubusercontent.com/u/447151?s=24" />
+</a>
+<strong>Elliott Foster</strong>
+<br /><br />
+<a href="https://github.com/thebruce">
+  <img align="left" src="https://avatars0.githubusercontent.com/u/590058?s=24" />
+</a>
+<strong>David Diers</strong>
+<br /><br />
 </details>
 
 ## License

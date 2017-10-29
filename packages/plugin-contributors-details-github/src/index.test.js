@@ -39,20 +39,32 @@ flip <flipactual>`
       encodedQueryParams: true,
     })
       .get('/users/toddross')
-      .reply(200, { id: 202525 })
+      .reply(200, {
+        id: 202525,
+        bio: 'cool bio',
+        html_url: 'https://github.com/toddross',
+      })
       .get('/users/flipactual')
-      .reply(200, { id: 1306968 });
+      .reply(200, {
+        id: 1306968,
+        bio: null,
+        html_url: 'https://github.com/flipactual',
+      });
     const details = await contributorsDetails({
-      title: 'Thank you For Contributing!',
+      title: 'Thank you for Contributing!',
     });
     expect(details).toEqual(`<details>
-<summary><strong>Thank you For Contributing!</strong></summary><br />
-<img align="left" src="https://avatars0.githubusercontent.com/u/202525?s=24">
-  <strong>todd</strong>
-</img></br></br>
-<img align="left" src="https://avatars0.githubusercontent.com/u/1306968?s=24">
-  <strong>flip</strong>
-</img></br></br>
+<summary><strong>Thank you for Contributing!</strong></summary><br />
+<a title="cool bio" href="https://github.com/toddross">
+  <img align="left" src="https://avatars0.githubusercontent.com/u/202525?s=24" />
+</a>
+<strong>todd</strong>
+<br /><br />
+<a href="https://github.com/flipactual">
+  <img align="left" src="https://avatars0.githubusercontent.com/u/1306968?s=24" />
+</a>
+<strong>flip</strong>
+<br /><br />
 </details>`);
   });
   test('handles GitHub errors', async () => {
@@ -64,6 +76,7 @@ flip <flipactual>`
       {
         id: 202525,
         name: 'todd',
+        bio: 'cool bio',
         avatar_url: 'https://avatars0.githubusercontent.com/u/202525?s=24',
         html_url: 'https://github.com/toddross',
       },
@@ -78,21 +91,23 @@ flip <flipactual>`
     nock('https://api.github.com:443', {
       encodedQueryParams: true,
     })
-      .get('/search/users')
-      .query({ q: 'toddross in:login' })
-      .reply(500, { ok: false })
-      .get('/search/users')
-      .query({ q: 'flipactual in:login' })
-      .reply(500, { ok: false });
+      .get('/users/toddross')
+      .reply(500)
+      .get('/users/flipactual')
+      .reply(500);
     const details = await contributorsDetails();
     expect(details).toEqual(`<details>
 <summary><strong>Contributors</strong></summary><br />
-<img align="left" src="https://avatars0.githubusercontent.com/u/202525?s=24">
-  <strong>todd</strong>
-</img></br></br>
-<img align="left" src="https://avatars0.githubusercontent.com/u/1306968?s=24">
-  <strong>flip</strong>
-</img></br></br>
+<a title="cool bio" href="https://github.com/toddross">
+  <img align="left" src="https://avatars0.githubusercontent.com/u/202525?s=24" />
+</a>
+<strong>todd</strong>
+<br /><br />
+<a href="https://github.com/flipactual">
+  <img align="left" src="https://avatars0.githubusercontent.com/u/1306968?s=24" />
+</a>
+<strong>flip</strong>
+<br /><br />
 </details>`);
   });
   test('throws if user does not exist in GitHub', async () => {
