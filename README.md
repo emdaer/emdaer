@@ -128,6 +128,11 @@ If you&#8217;d like to make emdaer better, please read our [guide to contributin
 </a>
 <strong>David Diers</strong>
 <br /><br />
+<a href="https://github.com/fluxsauce">
+  <img align="left" src="https://avatars0.githubusercontent.com/u/976391?s=24" />
+</a>
+<strong>Jon Peck</strong>
+<br /><br />
 </details>
 
 ## License
