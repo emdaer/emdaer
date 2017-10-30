@@ -3,10 +3,10 @@
 /**
  * A plugin to generate tables
  *
- * @param                          options
- * @param   {Array<string>}        [options.headers] The headers of the table
- * @param   {Array<Array<string>>} [options.rows]    The rows of the table
- * @returns {Promise<string>}                        The table element
+ * @param options
+ * @param {Array<string>} [options.headers] The headers of the table
+ * @param {Array<Array<string>>} [options.rows] The rows and cells of the table
+ * @returns {Promise<string>} The HTML table element
  */
 async function tablePlugin({
   headers,

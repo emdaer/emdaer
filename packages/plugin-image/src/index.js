@@ -1,17 +1,19 @@
 /* @flow */
 
 /**
- * A plugin to generate images
+ * Renders HTML img elements.
  *
- * @param                                 options
- * @param   {string}                      options.src      The src url for the image
- * @param   {string}                      [options.alt]    The alt text for the image
- * @param   {'left' | 'center' | 'right'} [options.align]  The align of the image
- * @param   {string}                      [options.width]  The width of the image
- * @param   {string}                      [options.height] The height of the image
- * @returns {Promise<string>}                              The image element
+ * @see {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img}
+ *
+ * @param options
+ * @param {string} options.src The image URL.
+ * @param {string} [options.alt] The alternative text describing the image.
+ * @param {'left'|'center'|'right'} [options.align] The alignment of the image with respect to its surrounding context.
+ * @param {string} [options.width] The intrinsic width of the image in pixels.
+ * @param {string} [options.height] The intrinsic height of the image in pixels.
+ * @returns {Promise<string>} The image element
  */
-async function linkPlugin({
+async function imagePlugin({
   src,
   alt,
   align,
@@ -31,4 +33,4 @@ async function linkPlugin({
     : ''} />`;
 }
 
-module.exports = linkPlugin;
+module.exports = imagePlugin;

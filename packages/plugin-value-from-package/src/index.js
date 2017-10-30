@@ -3,7 +3,7 @@
 const fs = require('fs-extra');
 
 /**
- * A plugin to add values from package.json
+ * Retrieve and render values from package.json
  *
  * @param                     options
  * @param   {string}          options.value The value to get from the package.json
