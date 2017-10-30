@@ -41,12 +41,20 @@ Then, if the libdef doesn&#8217;t exist:
 flow-typed create-stub dependency-name@x.x.x
 ```
 
+### Offline Support
+In order to ensure emdaer works properly offline, if your plugin makes API requests or relies on a connection of any kind, please cache the response data under `.emdaer/.offline`, and namespace it with the plugin name.
+```
+.emdaer/.offline/plugin-my-new-plugin/response-data.json
+```
+Read this file when your API request fails and write to this file when your request is successful. For an example, check out `plugin-contributors-details-github`.
+
 ## Commits
 
-All commit messages must follow the [Conventional Commits Specification](https://conventionalcommits.org/) which can be descibed like so:
+All commit messages must follow the [Conventional Commits Specification](https://conventionalcommits.org/) which can be described like so:
 
 ```
 type(scope?): subject
+
 body?
 footer?
 ```
@@ -65,4 +73,5 @@ Example:
 fix(plugin-image): Add more cat pics
 Closes #123, Closes #456
 ```
+
 

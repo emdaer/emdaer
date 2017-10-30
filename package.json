@@ -15,6 +15,7 @@
     "@commitlint/config-lerna-scopes": "^4.2.1",
     "@emdaer/cli": "file:packages/cli",
     "@emdaer/core": "file:packages/core",
+    "@emdaer/plugin-contributors-details-github": "file:packages/plugin-contributors-details-github",
     "@emdaer/plugin-documentation": "file:packages/plugin-documentation",
     "@emdaer/plugin-import": "file:packages/plugin-import",
     "@emdaer/plugin-license-reference": "file:packages/plugin-license-reference",
