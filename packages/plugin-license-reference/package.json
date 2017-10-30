@@ -1,6 +1,6 @@
 {
   "name": "@emdaer/plugin-license-reference",
-  "description": "an emdaer plugin to generate a license reference",
+  "description": "An emdaer plugin that renders license information from the package",
   "version": "1.0.0",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.me/",

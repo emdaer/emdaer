@@ -1,6 +1,6 @@
 {
   "name": "@emdaer/plugin-list",
-  "description": "an emdaer plugin to add lists",
+  "description": "An emdaer plugin that renders HTML list element.",
   "version": "1.0.0",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.me/",

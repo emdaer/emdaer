@@ -8,11 +8,11 @@ type Shield = {
 };
 
 /**
- * A plugin to generate shields from shields.io
+ * Render metadata badges for open source projects from shields.io.
  *
- * @param                     options
- * @param   {Array<Shield>}   [options.shields] The shields
- * @returns {Promise<string>}                   The table element
+ * @param options
+ * @param {Array<Shield>} [options.shields] The shields.
+ * @returns {Promise<string>} Markdown images, one per shield, all on one line.
  */
 async function shieldsPlugin({
   shields,

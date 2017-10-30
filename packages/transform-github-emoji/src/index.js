@@ -3,7 +3,7 @@
 const { emojify } = require('node-emoji');
 
 /**
- * Applies gh-emoji
+ * Transform a string using node-emoji.
  *
  * @param   {string}          content The content
  * @returns {Promise<string>}         The content with emojis in place of emoji codes

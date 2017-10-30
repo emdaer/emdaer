@@ -5,7 +5,9 @@ function getSummary(summary) {
 }
 
 /**
- * A plugin to generate details
+ * Renders a HTML5 details element as a disclosure widget.
+ *
+ * @see {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details}
  *
  * @param                     options
  * @param   {string}          [options.summary]           The summary of the details

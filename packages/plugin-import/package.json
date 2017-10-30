@@ -1,6 +1,6 @@
 {
   "name": "@emdaer/plugin-import",
-  "description": "an emdaer plugin to import files",
+  "description": "An emdaer plugin that imports content from another file",
   "version": "1.0.0",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.me/",
