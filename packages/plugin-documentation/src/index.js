@@ -3,11 +3,13 @@
 const documentation = require('documentation');
 
 /**
- * A plugin to generate documentation
+ * Render documentation from specified source code.
+ *
+ * @see {@link http://documentation.js.org/}
  *
  * @param                     options
- * @param   {string}          [options.sources] The sources of the documentation
- * @returns {Promise<string>}                   The documentation
+ * @param   {array}          [options.sources] Globs that specify the paths to the documentation sources.
+ * @returns {Promise<string>}                   The rendered documentation
  */
 async function documentationPlugin({
   sources,

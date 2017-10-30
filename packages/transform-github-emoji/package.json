@@ -1,6 +1,6 @@
 {
   "name": "@emdaer/transform-github-emoji",
-  "description": "an emdaer transform to use github flavored emoji codes",
+  "description": "An emdaer transformation that renders GitHub-flavored emoji codes",
   "version": "1.0.0",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.me/",

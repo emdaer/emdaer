@@ -1,6 +1,6 @@
 {
   "name": "@emdaer/plugin-table",
-  "description": "an emdaer plugin to generate tables",
+  "description": "An emdaer plugin that renders HTML tables",
   "version": "1.0.0",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.me/",

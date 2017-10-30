@@ -1,12 +1,16 @@
 /* @flow */
 
 /**
- * A plugin to generate lists
+ * Render HTML list elements.
  *
- * @param                     options
- * @param   {'ol' | 'ul'}     [options.type]  The type of list
- * @param   {Array<string>}   [options.items] The items to list
- * @returns {Promise<string>}                 The list element
+ * @see {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol}
+ * @see {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul}
+ * @see {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li}
+ *
+ * @param options
+ * @param {'ol' | 'ul'} [options.type] The type of list; ol (ordered) and ul (unordered).
+ * @param {Array<string>} [options.items] The list items; each will be rendered as an li element.
+ * @returns {Promise<string>} The list HTML element.
  */
 async function listPlugin({
   type,

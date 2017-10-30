@@ -3,9 +3,11 @@
 const valueFromPackage = require('@emdaer/plugin-value-from-package');
 
 /**
- * A plugin to generate a license reference
+ * Creates a markdown link with the package name and license.
  *
  * Pulls package name and license from package.json and links to ./LICENSE
+ *
+ * @todo use plugin-link
  *
  * @returns {Promise<string>} The license reference
  */
