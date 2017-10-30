@@ -3,4 +3,5 @@ node_js: 8
 script:
   - make ci
 sudo: false
+before_install: git fetch --unshallow
 after_success: .travis/after_success.sh
