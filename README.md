@@ -84,23 +84,23 @@ npm run emdaer
 
 ## Core Plugins
 
-- **[@emdaer/plugin-contributors-details-github](packages/plugin-contributors-details-github)** An emdaer plugin to generate contributor details from GitHub
-- **[@emdaer/plugin-details](packages/plugin-details)** An emdaer plugin that renders HTML5 details elements, which are disclosure widgets from which users can retrieve additional information.
-- **[@emdaer/plugin-documentation](packages/plugin-documentation)** An emdaer plugin to generate documentation from your code comments using documentationjs.
-- **[@emdaer/plugin-image](packages/plugin-image)** An emdaer plugin that renders HTML img elements.
-- **[@emdaer/plugin-import](packages/plugin-import)** An emdaer plugin that imports content from another file.
-- **[@emdaer/plugin-license-reference](packages/plugin-license-reference)** An emdaer plugin that renders license information from the package.
-- **[@emdaer/plugin-link](packages/plugin-link)** An emdaer plugin that renders anchor elements.
+- **[@emdaer/plugin-contributors-details-github](packages/plugin-contributors-details-github)** An emdaer plugin that gathers and renders contributor details from GitHub
+- **[@emdaer/plugin-details](packages/plugin-details)** An emdaer plugin that renders HTML5 details elements from which users can retrieve additional information
+- **[@emdaer/plugin-documentation](packages/plugin-documentation)** An emdaer plugin to generate documentation from your code comments using documentationjs
+- **[@emdaer/plugin-image](packages/plugin-image)** An emdaer plugin that renders HTML img elements
+- **[@emdaer/plugin-import](packages/plugin-import)** An emdaer plugin that imports content from another file
+- **[@emdaer/plugin-license-reference](packages/plugin-license-reference)** An emdaer plugin that renders license information from the package
+- **[@emdaer/plugin-link](packages/plugin-link)** An emdaer plugin that renders anchor elements
 - **[@emdaer/plugin-list](packages/plugin-list)** An emdaer plugin that renders HTML list element.
 - **[@emdaer/plugin-list-lerna-packages](packages/plugin-list-lerna-packages)** An emdaer plugin that generate a list of lerna packages in a project.
-- **[@emdaer/plugin-shields](packages/plugin-shields)** an emdaer plugin to generate shields from shields.io
-- **[@emdaer/plugin-table](packages/plugin-table)** an emdaer plugin to generate tables
-- **[@emdaer/plugin-value-from-package](packages/plugin-value-from-package)** an emdaer plugin to add values from package.json
+- **[@emdaer/plugin-shields](packages/plugin-shields)** An emdaer plugin that renders metadata badges for open source projects from shields.io
+- **[@emdaer/plugin-table](packages/plugin-table)** An emdaer plugin that renders HTML tables
+- **[@emdaer/plugin-value-from-package](packages/plugin-value-from-package)** An emdaer plugin that retrieves and renders values from package.json
 
 ## Core Transforms
 
-- **[@emdaer/transform-github-emoji](packages/transform-github-emoji)** an emdaer transform to use github flavored emoji codes
-- **[@emdaer/transform-smartypants](packages/transform-smartypants)** an emdaer transform to apply smartypants
+- **[@emdaer/transform-github-emoji](packages/transform-github-emoji)** An emdaer transformation that renders GitHub-flavored emoji codes
+- **[@emdaer/transform-smartypants](packages/transform-smartypants)** An emdaer transformation that translates ASCII punctuation characters into typographic punctuation HTML entities
 
 ## Contributing
 

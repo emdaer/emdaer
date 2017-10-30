@@ -26,10 +26,12 @@ function revertQuotesInCode(content: string): string {
 }
 
 /**
- * Applies smartypants
+ * Translate plain ASCII punctuation characters into "smart" typographic punctuation HTML entities.
  *
- * @param   {string}          content The content
- * @returns {Promise<string>}         The content with smartypants characters
+ * @see {@link https://www.npmjs.com/package/smartypants}
+ *
+ * @param {string} content Raw content.
+ * @returns {Promise<string>} The content with "smart" typographic punctuation.
  */
 async function smartypantsTransform(
   content: string,

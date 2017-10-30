@@ -1,6 +1,6 @@
 {
   "name": "@emdaer/plugin-details",
-  "description": "An emdaer plugin that renders HTML5 details elements, which are disclosure widgets from which users can retrieve additional information.",
+  "description": "An emdaer plugin that renders HTML5 details elements from which users can retrieve additional information",
   "version": "1.0.0",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.me/",

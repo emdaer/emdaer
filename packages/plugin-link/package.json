@@ -1,6 +1,6 @@
 {
   "name": "@emdaer/plugin-link",
-  "description": "An emdaer plugin that renders anchor elements.",
+  "description": "An emdaer plugin that renders anchor elements",
   "version": "1.0.0",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.me/",

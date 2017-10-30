@@ -1,6 +1,6 @@
 {
   "name": "@emdaer/plugin-shields",
-  "description": "an emdaer plugin to generate shields from shields.io",
+  "description": "An emdaer plugin that renders metadata badges for open source projects from shields.io",
   "version": "1.0.0",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.me/",
