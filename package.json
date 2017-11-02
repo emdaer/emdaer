@@ -23,6 +23,7 @@
     "@emdaer/plugin-shields": "file:packages/plugin-shields",
     "@emdaer/plugin-value-from-package": "file:packages/plugin-value-from-package",
     "@emdaer/transform-smartypants": "file:packages/transform-smartypants",
+    "@emdaer/transform-table-of-contents": "file:packages/transform-table-of-contents",
     "babel-eslint": "7.2.3",
     "commitlint": "^4.2.1",
     "eslint": "^4.9.0",

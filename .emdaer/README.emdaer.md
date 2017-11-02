@@ -21,6 +21,7 @@
   - '@emdaer/plugin-value-from-package'
   - value: description
 -->
+<!-- toc -->
 <!--emdaer-p
   - '@emdaer/plugin-import'
   - path: .emdaer/README/what-is-emdaer.md
@@ -56,4 +57,7 @@
 <!--emdaer-t
   - '@emdaer/transform-smartypants'
   - options: q
+-->
+<!--emdaer-t
+  - '@emdaer/transform-table-of-contents'
 -->
