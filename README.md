@@ -6,6 +6,20 @@
 
 # emdaer · [![Travis](https://img.shields.io/travis/emdaer/emdaer.svg?style=flat-square)](https://travis-ci.org/emdaer/emdaer/) [![Documented with emdaer](https://img.shields.io/badge/📓-documented%20with%20emdaer-F06632.svg?style=flat-square)](https://github.com/emdaer/emdaer) [![Maintained with lerna](https://img.shields.io/badge/🐉-maintained%20with%20lerna-cc00ff.svg?style=flat-square)](https://lernajs.io/)
 📓 emdaer is a tool for creating and maintaining better READMEs
+
+<!-- toc -->
+
+- [What is emdaer?](#what-is-emdaer)
+- [How emdaer works](#how-emdaer-works)
+  * [Plugins & Transforms](#plugins--transforms)
+- [Adding emdaer to your project](#adding-emdaer-to-your-project)
+- [Core Plugins](#core-plugins)
+- [Core Transforms](#core-transforms)
+- [Contributing](#contributing)
+- [License](#license)
+
+<!-- tocstop -->
+
 ## What is emdaer?
 
 emdaer lets you to use plugins and transforms within markdown files because READMEs (and other documentation) are crucial files that are often lackluster and/or incomplete and have a tendency to become stale
@@ -101,6 +115,7 @@ npm run emdaer
 
 - **[@emdaer/transform-github-emoji](packages/transform-github-emoji)** An emdaer transformation that renders GitHub-flavored emoji codes
 - **[@emdaer/transform-smartypants](packages/transform-smartypants)** An emdaer transformation that translates ASCII punctuation characters into typographic punctuation HTML entities
+- **[@emdaer/transform-table-of-contents](packages/transform-table-of-contents)** An emdaer transformation that generates a table of contents
 
 ## Contributing
 
@@ -138,5 +153,6 @@ If you&#8217;d like to make emdaer better, please read our [guide to contributin
 ## License
 
 emdaer is [MIT licensed](./LICENSE).
+
 
 
