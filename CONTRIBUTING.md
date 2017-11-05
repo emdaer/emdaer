@@ -48,6 +48,10 @@ In order to ensure emdaer works properly offline, if your plugin makes API reque
 ```
 Read this file when your API request fails and write to this file when your request is successful. For an example, check out `plugin-contributors-details-github`.
 
+## Feature Flags
+
+So that code can be merged quickly and confidently to the working branch, we use feature flags defined in `shared/EmdaerFeatureFlags`.
+
 ## Commits
 
 All commit messages must follow the [Conventional Commits Specification](https://conventionalcommits.org/) which can be described like so:
