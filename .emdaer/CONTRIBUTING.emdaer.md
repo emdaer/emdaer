@@ -18,6 +18,10 @@
 -->
 <!--emdaer-p
   - '@emdaer/plugin-import'
+  - path: .emdaer/CONTRIBUTING/feature-flags.md
+-->
+<!--emdaer-p
+  - '@emdaer/plugin-import'
   - path: .emdaer/CONTRIBUTING/commits.md
 -->
 <!--emdaer-p
