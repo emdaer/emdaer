@@ -112,7 +112,7 @@
     smartypants "0.0.5"
 
 "@emdaer/transform-table-of-contents@file:packages/transform-table-of-contents":
-  version "1.2.1"
+  version "1.3.0"
   dependencies:
     markdown-toc "^1.2.0"
 

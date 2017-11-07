@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const emdaer = require('@emdaer/core');
-const EmdaerFeatureFlags = require('@emdaer/shared/EmdaerFeatureFlags');
+const EmdaerFeatureFlags = require('@emdaer/core/lib/EmdaerFeatureFlags');
 
 const program = require('commander');
 const { promisify } = require('util');
