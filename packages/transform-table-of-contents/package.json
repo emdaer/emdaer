@@ -1,0 +1,21 @@
+{
+  "name": "@emdaer/transform-table-of-contents",
+  "description": "An emdaer transformation that generates a table of contents",
+  "version": "1.3.0",
+  "repository": "emdaer/emdaer",
+  "homepage": "https://emdaer.me/",
+  "keywords": [
+    "emdaer-transform"
+  ],
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "scripts": {
+    "prepublish": "flow-remove-types -p src -i .test.js -d lib"
+  },
+  "dependencies": {
+    "markdown-toc": "^1.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

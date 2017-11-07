@@ -1,5 +1,7 @@
 export FORCE_COLOR = true
 
+.PHONY: precommit commitmsg ci bootstrap emdaer install lint lint-staged publish test type commitlint commitlint-ci
+
 precommit: lint-staged type test emdaer
 commitmsg: commitlint
 
@@ -7,12 +9,15 @@ ci: commitlint-ci bootstrap lint type test
 
 bootstrap:
 	./node_modules/.bin/lerna bootstrap
+	yarn install --force
 emdaer:
 	./node_modules/.bin/emdaer
 	./node_modules/.bin/lerna exec -- emdaer
 	git add *.md
 	git add .emdaer/.offline
 	git add packages/*/*.md
+install:
+	yarn
 lint:
 	./node_modules/.bin/eslint .
 lint-staged:

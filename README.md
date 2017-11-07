@@ -8,6 +8,19 @@
 
 📓 emdaer is a tool for creating and maintaining better READMEs
 
+<!-- toc -->
+
+- [What is emdaer?](#what-is-emdaer)
+- [How emdaer works](#how-emdaer-works)
+  * [Plugins & Transforms](#plugins--transforms)
+- [Adding emdaer to your project](#adding-emdaer-to-your-project)
+- [Core Plugins](#core-plugins)
+- [Core Transforms](#core-transforms)
+- [Contributing](#contributing)
+- [License](#license)
+
+<!-- tocstop -->
+
 ## What is emdaer?
 
 emdaer lets you to use plugins and transforms within markdown files because
@@ -132,6 +145,8 @@ npm run emdaer
 * **[@emdaer/transform-smartypants](packages/transform-smartypants)** An emdaer
   transformation that translates ASCII punctuation characters into typographic
   punctuation HTML entities
+* **[@emdaer/transform-table-of-contents](packages/transform-table-of-contents)**
+  An emdaer transformation that generates a table of contents
 
 ## Contributing
 
@@ -170,5 +185,6 @@ contributing](./CONTRIBUTING.md).
 ## License
 
 emdaer is [MIT licensed](./LICENSE).
+
 
 
