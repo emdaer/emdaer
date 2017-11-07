@@ -22,6 +22,7 @@
     "@emdaer/plugin-list-lerna-packages": "file:packages/plugin-list-lerna-packages",
     "@emdaer/plugin-shields": "file:packages/plugin-shields",
     "@emdaer/plugin-value-from-package": "file:packages/plugin-value-from-package",
+    "@emdaer/transform-prettier": "file:packages/transform-prettier",
     "@emdaer/transform-smartypants": "file:packages/transform-smartypants",
     "babel-eslint": "7.2.3",
     "commitlint": "^4.2.1",

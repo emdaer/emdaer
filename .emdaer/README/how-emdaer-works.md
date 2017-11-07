@@ -6,6 +6,7 @@ We match `.emdaer/(**/*).emdaer(.md)` and use the captured part of each matched 
 
 ### Plugins & Transforms
 
+<!-- prettier-ignore -->
 ```md
 # <!--emdaer-p
   - '@emdaer/plugin-value-from-package'
@@ -18,7 +19,6 @@ Hello, World!
   - '@emdaer/transform-smartypants'
   - options: qe
 -->
-
 ```
 
 This example includes one plugin call (`emdaer-p`) and one transform call (`emdaer-t`).

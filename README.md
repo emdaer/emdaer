@@ -34,11 +34,12 @@ file to determine the path for the output.
 
 ### Plugins & Transforms
 
+<!-- prettier-ignore -->
 ```md
 # <!--emdaer-p
-
-* '@emdaer/plugin-value-from-package'
-* value: name -->
+  - '@emdaer/plugin-value-from-package'
+  - value: name
+-->
 
 Hello, World!
 
