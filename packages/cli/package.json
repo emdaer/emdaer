@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "@emdaer/core": "^1.2.2",
-    "@emdaer/shared": "file:../../shared",
     "chalk": "2.0.1",
     "commander": "2.11.0",
     "fs-extra": "3.0.1",
