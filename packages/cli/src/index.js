@@ -1,14 +1,17 @@
 #!/usr/bin/env node
 
-const { outputFile, readFile } = require('fs-extra');
-const program = require('commander');
 const emdaer = require('@emdaer/core');
+const EmdaerFeatureFlags = require('@emdaer/core/lib/EmdaerFeatureFlags');
+
+const program = require('commander');
 const { promisify } = require('util');
 const glob = promisify(require('glob'));
+const { outputFile, readFile } = require('fs-extra');
 
-const { NO_MATCHING_FILES, EMDAER_FAILED } = require('./_errors');
 const logger = require('./_logger');
 const { version } = require('../package.json');
+const { NO_MATCHING_FILES, EMDAER_FAILED } = require('./_errors');
+const getEnabledFeatureFlags = require('./util/getEnabledFeatureFlags');
 
 module.exports = async function cli(args = process.argv) {
   let exitCode = 0;
@@ -19,6 +22,11 @@ module.exports = async function cli(args = process.argv) {
   if (!origins) {
     logger.warn(NO_MATCHING_FILES);
   } else {
+    const enabledFeatureFlags = getEnabledFeatureFlags(EmdaerFeatureFlags);
+    if (enabledFeatureFlags) {
+      logger.log(`The following flags are enabled: ${enabledFeatureFlags} 🚩`);
+    }
+
     const { name } = JSON.parse(await readFile('package.json', 'utf8'));
     await Promise.all(
       origins.map(origin =>

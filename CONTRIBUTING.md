@@ -19,6 +19,8 @@ make bootstrap # installs dependencies for emdaer/packages/*
 
 ## Testing & Linting
 
+We enforce strict linting and 100% code coverage for all of emdaer.
+
 ```sh
 make test # run the tests
 make lint # run the linter
@@ -47,6 +49,10 @@ In order to ensure emdaer works properly offline, if your plugin makes API reque
 .emdaer/.offline/plugin-my-new-plugin/response-data.json
 ```
 Read this file when your API request fails and write to this file when your request is successful. For an example, check out `plugin-contributors-details-github`.
+
+## Feature Flags
+
+So that code can be merged quickly and confidently to the working branch, we use feature flags defined in `shared/EmdaerFeatureFlags`.
 
 ## Commits
 
