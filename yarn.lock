@@ -114,6 +114,11 @@
   dependencies:
     fs-extra "3.0.1"
 
+"@emdaer/transform-prettier@file:packages/transform-prettier":
+  version "1.5.0"
+  dependencies:
+    prettier "^1.8.0"
+
 "@emdaer/transform-smartypants@file:packages/transform-smartypants":
   version "1.2.1"
   dependencies:
@@ -4564,6 +4569,10 @@ preserve@^0.2.0:
 prettier@1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.7.0.tgz#47481588f41f7c90f63938feb202ac82554e7150"
+
+prettier@^1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.8.0.tgz#d9dc68277cf1ded816c8e8863ab47889c29ce9a6"
 
 pretty-format@^21.2.1:
   version "21.2.1"

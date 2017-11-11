@@ -55,6 +55,11 @@
     runEmdaer: true
 -->
 <!--emdaer-t
+  - '@emdaer/transform-prettier'
+  - options:
+      config: ./prettier.config.js
+-->
+<!--emdaer-t
   - '@emdaer/transform-smartypants'
   - options: q
 -->
