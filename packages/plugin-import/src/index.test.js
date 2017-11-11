@@ -1,5 +1,9 @@
 jest.mock('fs-extra');
 
+jest.mock('@emdaer/core', () => async () => 'Hello, World!', {
+  virtual: true,
+});
+
 const fs = require('fs-extra');
 
 const importPlugin = require('./');
@@ -26,8 +30,6 @@ describe('@emdaer/plugin-import', () => {
     );
     expect(
       await importPlugin({ path: './tmp/.DS_Store', runEmdaer: true })
-    ).toBe(
-      'This is the water and this is the well. Drink full and descend. The horse is the white of the eyes and dark within.\nemdaer'
-    );
+    ).toBe('Hello, World!');
   });
 });
