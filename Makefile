@@ -23,7 +23,7 @@ lint:
 lint-staged:
 	./node_modules/.bin/lint-staged
 publish:
-	./node_modules/.bin/lerna publish --conventional-commits
+	./node_modules/.bin/lerna publish --conventional-commits --force-publish=*
 test:
 	./node_modules/.bin/jest
 type:
