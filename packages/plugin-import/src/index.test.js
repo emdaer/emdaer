@@ -1,10 +1,9 @@
 jest.mock('fs-extra');
 
-jest.mock('@emdaer/core', () => async () => 'Hello, World!', {
-  virtual: true,
-});
+jest.mock('@emdaer/core');
 
 const fs = require('fs-extra');
+const emdaer = require('@emdaer/core');
 
 const importPlugin = require('./');
 
@@ -28,8 +27,7 @@ describe('@emdaer/plugin-import', () => {
   - value: name
 -->`
     );
-    expect(
-      await importPlugin({ path: './tmp/.DS_Store', runEmdaer: true })
-    ).toBe('Hello, World!');
+    await importPlugin({ path: './tmp/.DS_Store', runEmdaer: true });
+    expect(emdaer).toHaveBeenCalled();
   });
 });
