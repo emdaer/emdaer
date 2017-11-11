@@ -96,9 +96,7 @@ describe('@emdaer/core', () => {
   Its template can be found at ./.emdaer/README.emdaer.md
 -->
 
-# Hello, World!
-
-
+<h1>Hello, World!</h1>
 `);
     });
     it('processes an .emdaer.md file without a stamp', async () => {
@@ -120,9 +118,7 @@ describe('@emdaer/core', () => {
 `,
           false
         )
-      ).toBe(`# Hello, World!
-
-
+      ).toBe(`<h1>Hello, World!</h1>
 `);
     });
   });
