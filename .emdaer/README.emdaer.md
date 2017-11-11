@@ -51,6 +51,10 @@
 -->
 <!--emdaer-p
   - '@emdaer/plugin-node-package'
+  - path: '@emdaer/meta/lib/README/this-readme.js'
+-->
+<!--emdaer-p
+  - '@emdaer/plugin-node-package'
   - path: '@emdaer/meta/lib/README/license.js'
     runEmdaer: true
 -->
