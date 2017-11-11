@@ -1,6 +1,6 @@
 /* @flow */
 
-const { join } = require('path');
+const { sep, resolve } = require('path');
 const emdaer = require('@emdaer/core');
 
 /**
@@ -26,10 +26,10 @@ async function nodePackagePlugin({
   let content;
   try {
     let modulePath;
-    if (path.startsWith('/')) {
+    if (path.startsWith(sep)) {
       modulePath = path;
-    } else if (path.startsWith('./') || path.startsWith('../')) {
-      modulePath = join(process.cwd(), path.split('/')[1]);
+    } else if (path.startsWith(`.${sep}`) || path.startsWith(`..${sep}`)) {
+      modulePath = resolve(process.cwd(), path);
     } else {
       modulePath = path;
     }
