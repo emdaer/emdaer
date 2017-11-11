@@ -1,7 +1,7 @@
 {
   "name": "@emdaer/plugin-details",
   "description": "An emdaer plugin that renders HTML5 details elements from which users can retrieve additional information",
-  "version": "1.5.6",
+  "version": "1.5.7",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.me/",
   "keywords": [
