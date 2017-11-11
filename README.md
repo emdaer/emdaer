@@ -29,7 +29,6 @@ A couple use cases that illustrate the power of emdaer:
 - 🤝 **Keep it in sync** Create templates for use across all of your organizations projects to promote synchronicity and reduce doing the same work over and over
 - 🗃 **Keep it organized** Keep your documentation DRY and organized by importing content from your codebase and splitting large documents into chunks
 - 🍋 **Keep it fresh** Ensure your documents stay up to date by pulling in new data from various sources with every build
-
 ## How emdaer works
 
 emdaer processes template files and writes the resulting files to your project.
@@ -60,7 +59,6 @@ Both of these calls take the form of yaml tuples where the first item is the nam
 For plugins, the result of the call replaces the corresponding comment block.
 
 For transforms, the function acts on the entire document and rewrites the entire file.
-
 ## Adding emdaer to your project
 
 We recommend using emdaer with [husky](https://github.com/typicode/husky).
@@ -95,7 +93,6 @@ And give it a whirl:
 ```sh
 npm run emdaer
 ```
-
 ## Core Plugins
 
 - **[@emdaer/plugin-contributors-details-github](packages/plugin-contributors-details-github)** An emdaer plugin that gathers and renders contributor details from GitHub
@@ -107,16 +104,15 @@ npm run emdaer
 - **[@emdaer/plugin-link](packages/plugin-link)** An emdaer plugin that renders anchor elements
 - **[@emdaer/plugin-list](packages/plugin-list)** An emdaer plugin that renders HTML list element.
 - **[@emdaer/plugin-list-lerna-packages](packages/plugin-list-lerna-packages)** An emdaer plugin that generate a list of lerna packages in a project.
+- **[@emdaer/plugin-node-package](packages/plugin-node-package)** An emdaer plugin that requires a file and optionally executes it with provided arguments.
 - **[@emdaer/plugin-shields](packages/plugin-shields)** An emdaer plugin that renders metadata badges for open source projects from shields.io
 - **[@emdaer/plugin-table](packages/plugin-table)** An emdaer plugin that renders HTML tables
 - **[@emdaer/plugin-value-from-package](packages/plugin-value-from-package)** An emdaer plugin that retrieves and renders values from package.json
-
 ## Core Transforms
 
 - **[@emdaer/transform-github-emoji](packages/transform-github-emoji)** An emdaer transformation that renders GitHub-flavored emoji codes
 - **[@emdaer/transform-smartypants](packages/transform-smartypants)** An emdaer transformation that translates ASCII punctuation characters into typographic punctuation HTML entities
 - **[@emdaer/transform-table-of-contents](packages/transform-table-of-contents)** An emdaer transformation that generates a table of contents
-
 ## Contributing
 
 If you&#8217;d like to make emdaer better, please read our [guide to contributing](./CONTRIBUTING.md).
@@ -149,10 +145,8 @@ If you&#8217;d like to make emdaer better, please read our [guide to contributin
 <strong>Jon Peck</strong>
 <br /><br />
 </details>
-
 ## License
 
 emdaer is [MIT licensed](./LICENSE).
-
 
 

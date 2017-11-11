@@ -44,24 +44,27 @@
     semver "^5.3.0"
 
 "@emdaer/cli@file:packages/cli":
-  version "1.2.2"
+  version "1.4.0"
   dependencies:
-    "@emdaer/core" "^1.2.2"
+    "@emdaer/core" "^1.4.0"
     chalk "2.0.1"
     commander "2.11.0"
     fs-extra "3.0.1"
     glob "^7.1.2"
 
-"@emdaer/core@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@emdaer/core/-/core-1.2.2.tgz#40ea5a457a001b8793d13226fc40526fb91592f3"
+"@emdaer/core@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@emdaer/core/-/core-1.4.0.tgz#d7d56e9c97248c541dff3ad4563aae0d941e4c3d"
   dependencies:
     js-yaml "3.8.4"
 
 "@emdaer/core@file:packages/core":
-  version "1.2.2"
+  version "1.4.0"
   dependencies:
     js-yaml "3.8.4"
+
+"@emdaer/meta@file:packages/meta":
+  version "1.2.1"
 
 "@emdaer/plugin-contributors-details-github@file:packages/plugin-contributors-details-github":
   version "1.2.1"
@@ -76,9 +79,9 @@
     documentation "4.0.0-rc.1"
 
 "@emdaer/plugin-import@file:packages/plugin-import":
-  version "1.2.2"
+  version "1.4.0"
   dependencies:
-    "@emdaer/core" "^1.2.2"
+    "@emdaer/core" "^1.4.0"
     fs-extra "3.0.1"
 
 "@emdaer/plugin-license-reference@file:packages/plugin-license-reference":
@@ -91,6 +94,11 @@
   dependencies:
     fs-extra "^4.0.2"
     glob "^7.1.2"
+
+"@emdaer/plugin-node-package@file:packages/plugin-node-package":
+  version "1.4.0"
+  dependencies:
+    "@emdaer/core" "^1.4.0"
 
 "@emdaer/plugin-shields@file:packages/plugin-shields":
   version "1.2.1"

@@ -1,34 +1,34 @@
-## Adding emdaer to your project
+module.exports = `## Adding emdaer to your project
 
 We recommend using emdaer with [husky](https://github.com/typicode/husky).
 
 Install dependencies:
 
-```sh
+\`\`\`sh
 npm install --save-dev @emdaer/cli @emdaer/plugin-value-from-package husky
-```
+\`\`\`
 
-Add a `precommit` script:
+Add a \`precommit\` script:
 
-```json
+\`\`\`json
   "scripts": {
     "emdaer": "emdaer && git add *.md",
     "precommit": "npm run emdaer"
   }
-```
+\`\`\`
 
-Add a `.emdaer/README.emdaer.md` file:
+Add a \`.emdaer/README.emdaer.md\` file:
 
-```md
+\`\`\`md
 # <!--emdaer-p
   - '@emdaer/plugin-value-from-package'
   - value: name
 -->
 
-```
+\`\`\`
 
 And give it a whirl:
 
-```sh
+\`\`\`sh
 npm run emdaer
-```
+\`\`\``;

@@ -1,0 +1,21 @@
+{
+  "name": "@emdaer/plugin-node-package",
+  "description": "An emdaer plugin that requires a file and optionally executes it with provided arguments.",
+  "version": "1.4.0",
+  "repository": "emdaer/emdaer",
+  "homepage": "https://emdaer.me/",
+  "keywords": [
+    "emdaer-plugin"
+  ],
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "scripts": {
+    "prepublish": "flow-remove-types -p src -i .test.js -d lib"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@emdaer/core": "^1.4.0"
+  }
+}
