@@ -150,8 +150,8 @@ npm run emdaer
 
 ## Contributing
 
-If you&#8217;d like to make emdaer better, please read our
-[guide to contributing](./CONTRIBUTING.md).
+If you&#8217;d like to make emdaer better, please read our [guide to
+contributing](./CONTRIBUTING.md).
 
 <details>
 <summary><strong>Contributors</strong></summary><br />

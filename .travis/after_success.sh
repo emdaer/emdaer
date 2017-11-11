@@ -39,5 +39,5 @@ if [[ $TRAVIS_BRANCH == 'master' ]]; then
   git config --list #debug
 
   yarn
-  lerna publish --conventional-commits --yes
+  lerna publish --conventional-commits --yes --force-publish=*
 fi
