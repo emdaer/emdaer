@@ -1,6 +1,6 @@
 /* @flow */
 
-type FeatureFlags = {|
+export type FeatureFlags = {|
   enableASTParsing: boolean,
   enableCommonComment: boolean,
 |};
