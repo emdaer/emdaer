@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.5.39"></a>
+## [1.5.39](https://github.com/emdaer/emdaer/compare/v1.5.38...v1.5.39) (2017-11-12)
+
+
+
+
+**Note:** Version bump only for package @emdaer/cli
+
 <a name="1.5.38"></a>
 ## [1.5.38](https://github.com/emdaer/emdaer/compare/v1.5.37...v1.5.38) (2017-11-12)
 
