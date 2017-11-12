@@ -1,7 +1,7 @@
 {
   "name": "@emdaer/plugin-value-from-package",
   "description": "An emdaer plugin that retrieves and renders values from package.json",
-  "version": "1.5.14",
+  "version": "1.5.15",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.me/",
   "keywords": [
