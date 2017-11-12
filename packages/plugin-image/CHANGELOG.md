@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.5.34"></a>
+## [1.5.34](https://github.com/emdaer/emdaer/compare/v1.5.33...v1.5.34) (2017-11-12)
+
+
+
+
+**Note:** Version bump only for package @emdaer/plugin-image
+
 <a name="1.5.33"></a>
 ## [1.5.33](https://github.com/emdaer/emdaer/compare/v1.5.32...v1.5.33) (2017-11-12)
 

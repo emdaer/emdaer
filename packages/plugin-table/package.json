@@ -1,7 +1,7 @@
 {
   "name": "@emdaer/plugin-table",
   "description": "An emdaer plugin that renders HTML tables",
-  "version": "1.5.33",
+  "version": "1.5.34",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.me/",
   "keywords": [
