@@ -29,10 +29,6 @@ module.exports = async function cli(args = process.argv) {
       EmdaerFeatureFlags.override('enableASTParsing', true);
     }
 
-    if (program.singleComment) {
-      EmdaerFeatureFlags.override('enableCommonComment', true);
-    }
-
     const enabledFeatureFlags = getEnabledFeatureFlags(EmdaerFeatureFlags);
     if (enabledFeatureFlags) {
       logger.log(`The following flags are enabled: ${enabledFeatureFlags} 🚩`);
