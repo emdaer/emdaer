@@ -15,13 +15,24 @@ const getEnabledFeatureFlags = require('./util/getEnabledFeatureFlags');
 
 module.exports = async function cli(args = process.argv) {
   let exitCode = 0;
-  program.version(version).parse(args);
+  program
+    .version(version)
+    .option('--AST', 'Enable experimental AST parsing')
+    .parse(args);
 
   const origins = await glob('.emdaer/**/*.emdaer.md');
 
   if (!origins) {
     logger.warn(NO_MATCHING_FILES);
   } else {
+    if (program.AST) {
+      EmdaerFeatureFlags.override('enableASTParsing', true);
+    }
+
+    if (program.singleComment) {
+      EmdaerFeatureFlags.override('enableCommonComment', true);
+    }
+
     const enabledFeatureFlags = getEnabledFeatureFlags(EmdaerFeatureFlags);
     if (enabledFeatureFlags) {
       logger.log(`The following flags are enabled: ${enabledFeatureFlags} 🚩`);
