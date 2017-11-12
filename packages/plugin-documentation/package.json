@@ -1,7 +1,7 @@
 {
   "name": "@emdaer/plugin-documentation",
   "description": "An emdaer plugin to generate documentation from your code comments using documentationjs",
-  "version": "1.5.40",
+  "version": "1.5.41",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.me/",
   "keywords": [
