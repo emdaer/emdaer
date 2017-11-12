@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.5.20"></a>
+## [1.5.20](https://github.com/emdaer/emdaer/compare/v1.5.19...v1.5.20) (2017-11-12)
+
+
+
+
+**Note:** Version bump only for package @emdaer/plugin-list-lerna-packages
+
 <a name="1.5.19"></a>
 ## [1.5.19](https://github.com/emdaer/emdaer/compare/v1.5.18...v1.5.19) (2017-11-12)
 
