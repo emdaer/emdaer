@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.5.48"></a>
+## [1.5.48](https://github.com/emdaer/emdaer/compare/v1.5.47...v1.5.48) (2017-11-12)
+
+
+
+
+**Note:** Version bump only for package @emdaer/plugin-shields
+
 <a name="1.5.47"></a>
 ## [1.5.47](https://github.com/emdaer/emdaer/compare/v1.5.46...v1.5.47) (2017-11-12)
 
