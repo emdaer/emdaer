@@ -1,7 +1,7 @@
 {
   "name": "@emdaer/transform-prettier",
   "description": "An emdaer transformation that formats markdown, including code blocks, using prettier",
-  "version": "1.5.37",
+  "version": "1.5.38",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.me/",
   "keywords": [
