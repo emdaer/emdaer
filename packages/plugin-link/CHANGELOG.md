@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.5.18"></a>
+## [1.5.18](https://github.com/emdaer/emdaer/compare/v1.5.17...v1.5.18) (2017-11-12)
+
+
+
+
+**Note:** Version bump only for package @emdaer/plugin-link
+
 <a name="1.5.17"></a>
 ## [1.5.17](https://github.com/emdaer/emdaer/compare/v1.5.16...v1.5.17) (2017-11-12)
 
