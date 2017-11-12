@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.5.27"></a>
+## [1.5.27](https://github.com/emdaer/emdaer/compare/v1.5.26...v1.5.27) (2017-11-12)
+
+
+
+
+**Note:** Version bump only for package @emdaer/transform-smartypants
+
 <a name="1.5.26"></a>
 ## [1.5.26](https://github.com/emdaer/emdaer/compare/v1.5.25...v1.5.26) (2017-11-12)
 

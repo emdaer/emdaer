@@ -1,7 +1,7 @@
 {
   "name": "@emdaer/plugin-contributors-details-github",
   "description": "An emdaer plugin that gathers and renders contributor details from GitHub",
-  "version": "1.5.26",
+  "version": "1.5.27",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.me/",
   "keywords": [
