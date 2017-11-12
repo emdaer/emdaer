@@ -1,10 +1,13 @@
+jest.mock('@emdaer/core', () => () => {});
+jest.mock('@emdaer/core/lib/EmdaerFeatureFlags');
+
 jest.mock('util', () => ({
   promisify: fn => fn,
 }));
 jest.mock('glob');
 jest.mock('fs-extra');
+
 jest.mock('./_logger');
-jest.mock('@emdaer/core');
 jest.mock('./util/getEnabledFeatureFlags');
 
 const glob = require('glob');
