@@ -17,7 +17,7 @@
 - [Core Plugins](#core-plugins)
 - [Core Transforms](#core-transforms)
 - [Contributing](#contributing)
-- [License](#license)
+- [This README](#this-readme)
 
 <!-- tocstop -->
 
@@ -37,8 +37,7 @@ A couple use cases that illustrate the power of emdaer:
   formatting it with [Prettier](https://github.com/prettier/prettier).
 * 🍋 **Keep it fresh** Ensure your documents stay up to date by pulling in new
   data from various sources with every build
-
-## How emdaer works
+  ## How emdaer works
 
 emdaer processes template files and writes the resulting files to your project.
 
@@ -129,6 +128,9 @@ npm run emdaer
   HTML list element.
 * **[@emdaer/plugin-list-lerna-packages](packages/plugin-list-lerna-packages)**
   An emdaer plugin that generate a list of lerna packages in a project.
+* **[@emdaer/plugin-node-package](packages/plugin-node-package)** An emdaer
+  plugin that requires a file and optionally executes it with provided
+  arguments.
 * **[@emdaer/plugin-shields](packages/plugin-shields)** An emdaer plugin that
   renders metadata badges for open source projects from shields.io
 * **[@emdaer/plugin-table](packages/plugin-table)** An emdaer plugin that
@@ -136,7 +138,7 @@ npm run emdaer
 * **[@emdaer/plugin-value-from-package](packages/plugin-value-from-package)** An
   emdaer plugin that retrieves and renders values from package.json
 
-## Core Transforms
+  ## Core Transforms
 
 * **[@emdaer/transform-github-emoji](packages/transform-github-emoji)** An
   emdaer transformation that renders GitHub-flavored emoji codes
@@ -147,8 +149,7 @@ npm run emdaer
   punctuation HTML entities
 * **[@emdaer/transform-table-of-contents](packages/transform-table-of-contents)**
   An emdaer transformation that generates a table of contents
-
-## Contributing
+  ## Contributing
 
 If you&#8217;d like to make emdaer better, please read our [guide to
 contributing](./CONTRIBUTING.md).
@@ -181,7 +182,16 @@ contributing](./CONTRIBUTING.md).
 <strong>Jon Peck</strong>
 <br /><br />
 </details>
+## This README
+This README was generated with emdaer. However, it is special in that it shares its content with the [emdaer website](emdaer.me) via the [@emdaer/meta](https://www.npmjs.com/package/@emdaer/meta) and [@emdaer/plugin-node-package](https://www.npmjs.com/package/@emdaer/plugin-node-package) packages. [@emdaer/meta](https://www.npmjs.com/package/@emdaer/meta) exports each section of this README as a node module which  [@emdaer/plugin-node-package](https://www.npmjs.com/package/@emdaer/plugin-node-package) imports like so:
 
+<!-- prettier-ignore -->
+```md
+<!--emdaer-p
+  - '@emdaer/plugin-node-package'
+  - path: '@emdaer/meta/lib/README/this-readme.js'
+-->
+```;
 ## License
 
 emdaer is [MIT licensed](./LICENSE).

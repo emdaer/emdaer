@@ -1,0 +1,15 @@
+{
+  "name": "@emdaer/meta",
+  "description": "An emdaer package that exports shared meta info about emdaer",
+  "version": "1.2.1",
+  "repository": "emdaer/emdaer",
+  "homepage": "https://emdaer.me/",
+  "license": "MIT",
+  "main": "./lib",
+  "scripts": {
+    "prepublish": "flow-remove-types -p src -i .test.js -d lib"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

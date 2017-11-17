@@ -63,6 +63,9 @@
   dependencies:
     js-yaml "3.8.4"
 
+"@emdaer/meta@file:packages/meta":
+  version "1.2.1"
+
 "@emdaer/plugin-contributors-details-github@file:packages/plugin-contributors-details-github":
   version "1.2.1"
   dependencies:
@@ -91,6 +94,11 @@
   dependencies:
     fs-extra "^4.0.2"
     glob "^7.1.2"
+
+"@emdaer/plugin-node-package@file:packages/plugin-node-package":
+  version "1.4.0"
+  dependencies:
+    "@emdaer/core" "^1.4.0"
 
 "@emdaer/plugin-shields@file:packages/plugin-shields":
   version "1.2.1"
