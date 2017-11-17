@@ -5677,9 +5677,9 @@ travis-deploy-once@^3.0.0:
     semver "^5.4.1"
     travis-ci "^2.1.1"
 
-travis-spawn-once@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/travis-spawn-once/-/travis-spawn-once-1.0.2.tgz#ed0b9488222ece44295bb832ba37aae2092cf22c"
+travis-spawn-once@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/travis-spawn-once/-/travis-spawn-once-1.0.3.tgz#1ec7dad3d06851173fdfc4d7ca7d9517f6916239"
   dependencies:
     meow "^3.7.0"
     travis-deploy-once "^3.0.0"
