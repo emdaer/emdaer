@@ -79,7 +79,7 @@
     documentation "4.0.0-rc.1"
 
 "@emdaer/plugin-import@file:packages/plugin-import":
-  version "1.4.0"
+  version "1.5.1"
   dependencies:
     "@emdaer/core" "^1.4.0"
     fs-extra "3.0.1"
