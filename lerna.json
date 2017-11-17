@@ -8,5 +8,5 @@
     "--production",
     "--no-optional"
   ],
-  "version": "1.5.50"
+  "version": "1.6.0"
 }

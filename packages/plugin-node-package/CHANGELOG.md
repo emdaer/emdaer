@@ -1,0 +1,12 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+<a name="1.6.0"></a>
+# [1.6.0](https://github.com/emdaer/emdaer/compare/v1.5.50...v1.6.0) (2017-11-17)
+
+
+### Features
+
+* **plugin-node-package:** Add plugin-node-package and meta ([#56](https://github.com/emdaer/emdaer/issues/56)) ([1fa657d](https://github.com/emdaer/emdaer/commit/1fa657d))
