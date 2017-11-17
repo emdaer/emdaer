@@ -1,7 +1,7 @@
 {
   "name": "@emdaer/plugin-import",
   "description": "An emdaer plugin that imports content from another file",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.me/",
   "keywords": [
@@ -13,13 +13,13 @@
     "prepublish": "flow-remove-types -p src -i .test.js -d lib"
   },
   "dependencies": {
-    "@emdaer/core": "^1.6.2",
+    "@emdaer/core": "^1.6.3",
     "fs-extra": "3.0.1"
   },
   "publishConfig": {
     "access": "public"
   },
   "devDependencies": {
-    "@emdaer/plugin-value-from-package": "^1.6.2"
+    "@emdaer/plugin-value-from-package": "^1.6.3"
   }
 }
