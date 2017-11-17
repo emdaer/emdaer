@@ -45,7 +45,7 @@
     "lint-staged": "3.4.1",
     "prettier": "1.7.0",
     "travis-deploy-once": "^3.0.0",
-    "travis-spawn-once": "^1.0.1"
+    "travis-spawn-once": "^1.0.2"
   },
   "dependencies": {
     "fs-extra": "^4.0.2",
