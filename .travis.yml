@@ -8,4 +8,4 @@ sudo: false
 if: tag IS blank
 before_install: git fetch --unshallow
 after_success:
-  - node ./.travis/run_once.js .travis/after_success.sh
+  - travis-spawn-once .travis/after_success.sh --skipPR --ghTokenName=RELEASE_GH_TOKEN
