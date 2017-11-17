@@ -1,7 +1,7 @@
 {
   "name": "@emdaer/plugin-list",
   "description": "An emdaer plugin that renders HTML list element.",
-  "version": "1.6.10",
+  "version": "1.6.11",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.me/",
   "keywords": [
