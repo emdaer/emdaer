@@ -5,6 +5,7 @@
 -->
 
 # emdaer · [![Travis](https://img.shields.io/travis/emdaer/emdaer.svg?style=flat-square)](https://travis-ci.org/emdaer/emdaer/) [![Documented with emdaer](https://img.shields.io/badge/📓-documented%20with%20emdaer-F06632.svg?style=flat-square)](https://github.com/emdaer/emdaer) [![Maintained with lerna](https://img.shields.io/badge/🐉-maintained%20with%20lerna-cc00ff.svg?style=flat-square)](https://lernajs.io/)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Femdaer%2Femdaer.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Femdaer%2Femdaer?ref=badge_shield)
 
 📓 emdaer is a tool for creating and maintaining better READMEs
 
@@ -171,3 +172,6 @@ emdaer is [MIT licensed](./LICENSE).
 
 
 
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Femdaer%2Femdaer.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Femdaer%2Femdaer?ref=badge_large)
