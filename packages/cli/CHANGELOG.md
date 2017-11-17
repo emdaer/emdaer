@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.6.7"></a>
+## [1.6.7](https://github.com/emdaer/emdaer/compare/v1.6.6...v1.6.7) (2017-11-17)
+
+
+
+
+**Note:** Version bump only for package @emdaer/cli
+
 <a name="1.6.6"></a>
 ## [1.6.6](https://github.com/emdaer/emdaer/compare/v1.6.5...v1.6.6) (2017-11-17)
 
