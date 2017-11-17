@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.6.14"></a>
+## [1.6.14](https://github.com/emdaer/emdaer/compare/v1.6.13...v1.6.14) (2017-11-17)
+
+
+
+
+**Note:** Version bump only for package @emdaer/plugin-value-from-package
+
 <a name="1.6.13"></a>
 ## [1.6.13](https://github.com/emdaer/emdaer/compare/v1.6.12...v1.6.13) (2017-11-17)
 
