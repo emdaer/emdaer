@@ -61,7 +61,9 @@
 <!--emdaer-t
   - '@emdaer/transform-prettier'
   - options:
-      config: ./prettier.config.js
+      printWidth: 500
+      singleQuote: true
+      trailingComma: es5
 -->
 <!--emdaer-t
   - '@emdaer/transform-smartypants'
