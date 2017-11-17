@@ -18,6 +18,7 @@
 - [Core Transforms](#core-transforms)
 - [Contributing](#contributing)
 - [This README](#this-readme)
+- [License](#license)
 
 <!-- tocstop -->
 
@@ -151,8 +152,8 @@ npm run emdaer
   An emdaer transformation that generates a table of contents
   ## Contributing
 
-If you&#8217;d like to make emdaer better, please read our [guide to
-contributing](./CONTRIBUTING.md).
+If you&#8217;d like to make emdaer better, please read our
+[guide to contributing](./CONTRIBUTING.md).
 
 <details>
 <summary><strong>Contributors</strong></summary><br />
@@ -183,7 +184,15 @@ contributing](./CONTRIBUTING.md).
 <br /><br />
 </details>
 ## This README
-This README was generated with emdaer. However, it is special in that it shares its content with the [emdaer website](emdaer.me) via the [@emdaer/meta](https://www.npmjs.com/package/@emdaer/meta) and [@emdaer/plugin-node-package](https://www.npmjs.com/package/@emdaer/plugin-node-package) packages. [@emdaer/meta](https://www.npmjs.com/package/@emdaer/meta) exports each section of this README as a node module which  [@emdaer/plugin-node-package](https://www.npmjs.com/package/@emdaer/plugin-node-package) imports like so:
+
+This README was generated with emdaer. However, it is special in that it shares
+its content with the [emdaer website](emdaer.me) via the
+[@emdaer/meta](https://www.npmjs.com/package/@emdaer/meta) and
+[@emdaer/plugin-node-package](https://www.npmjs.com/package/@emdaer/plugin-node-package)
+packages. [@emdaer/meta](https://www.npmjs.com/package/@emdaer/meta) exports
+each section of this README as a node module which
+[@emdaer/plugin-node-package](https://www.npmjs.com/package/@emdaer/plugin-node-package)
+imports like so:
 
 <!-- prettier-ignore -->
 ```md
@@ -191,10 +200,12 @@ This README was generated with emdaer. However, it is special in that it shares 
   - '@emdaer/plugin-node-package'
   - path: '@emdaer/meta/lib/README/this-readme.js'
 -->
-```;
+```
+
 ## License
 
 emdaer is [MIT licensed](./LICENSE).
+
 
 
 

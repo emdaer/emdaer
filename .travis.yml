@@ -5,9 +5,7 @@ node_js:
 script:
   - make ci
 sudo: false
-branches:
-  except:
-    - /^v\d/
+if: tag IS blank
 before_install: git fetch --unshallow
 after_success:
   - node ./.travis/run_once.js .travis/after_success.sh

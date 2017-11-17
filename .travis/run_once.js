@@ -2,37 +2,42 @@
 
 const deployOnce = require('travis-deploy-once');
 const util = require('util');
-const exec = util.promisify(require('child_process').exec);
+const spawn = require('child_process').spawn;
 
 async function runOnce() {
-  const command = process.argv[2];
-  if (!process.env.TRAVIS_PULL_REQUEST) {
-    return Promise.reject(`Skipping "${command}". Not a PR build.`);
-  }
-  const result = await deployOnce({
-    GH_TOKEN: process.env.RELEASE_GH_TOKEN,
-  });
-  if (result === true) {
-    let stdout, stderr;
-    try {
-      await exec(command);
-    } catch (e) {
-      return Promise.reject(e);
+  return new Promise(async (resolve, reject) => {
+    const command = process.argv[2];
+    if (!process.env.TRAVIS_PULL_REQUEST) {
+      return reject(`Skipping "${command}". Not a PR build.`);
     }
-    return Promise.resolve(`Successfully ran "${command}"`);
-  } else if (result === false) {
-    return Promise.reject('Some job(s) failed');
-  } else if (result === null) {
-    return Promise.reject('Did not run as the build leader');
-  }
+    const result = await deployOnce({
+      GH_TOKEN: process.env.RELEASE_GH_TOKEN,
+    });
+    if (result === true) {
+      let proc;
+      try {
+        const [executable, ...args] = command.split(' ');
+        proc = spawn(executable, args, { stdio: 'inherit' });
+      } catch (e) {
+        return reject(e);
+      }
+      proc.on('close', code => {
+        return resolve(`Ran "${command}" with exit code ${code}`);
+      });
+    } else if (result === false) {
+      return reject('Some job(s) failed');
+    } else if (result === null) {
+      return reject('Did not run as the build leader');
+    }
+  });
 }
 
 module.exports = runOnce;
 
 (async () => {
   try {
-    await module.exports();
+    console.log('✅ ', await module.exports());
   } catch (e) {
-    console.error(e);
+    console.error('❌ ', e);
   }
 })();

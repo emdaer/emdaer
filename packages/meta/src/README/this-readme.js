@@ -8,4 +8,4 @@ This README was generated with emdaer. However, it is special in that it shares 
   - '@emdaer/plugin-node-package'
   - path: '@emdaer/meta/lib/README/this-readme.js'
 -->
-\`\`\`;`;
+\`\`\``;
