@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.6.19"></a>
+## [1.6.19](https://github.com/emdaer/emdaer/compare/v1.6.18...v1.6.19) (2017-11-27)
+
+
+
+
+**Note:** Version bump only for package @emdaer/transform-prettier
+
 <a name="1.6.18"></a>
 ## [1.6.18](https://github.com/emdaer/emdaer/compare/v1.6.17...v1.6.18) (2017-11-27)
 
