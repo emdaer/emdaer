@@ -1,3 +1,9 @@
+<!--emdaer-p
+  - '@emdaer/plugin-image'
+  - src: hero.png
+    alt: emdaer
+    align: center
+-->
 # <!--emdaer-p
   - '@emdaer/plugin-value-from-package'
   - value: name

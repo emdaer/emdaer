@@ -18,6 +18,7 @@
     "@emdaer/meta": "file:packages/meta",
     "@emdaer/plugin-contributors-details-github": "file:packages/plugin-contributors-details-github",
     "@emdaer/plugin-documentation": "file:packages/plugin-documentation",
+    "@emdaer/plugin-image": "file:packages/plugin-image",
     "@emdaer/plugin-import": "file:packages/plugin-import",
     "@emdaer/plugin-license-reference": "file:packages/plugin-license-reference",
     "@emdaer/plugin-list-lerna-packages": "file:packages/plugin-list-lerna-packages",
