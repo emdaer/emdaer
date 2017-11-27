@@ -4,6 +4,7 @@
     alt: emdaer
     align: center
 -->
+
 # <!--emdaer-p
   - '@emdaer/plugin-value-from-package'
   - value: name
