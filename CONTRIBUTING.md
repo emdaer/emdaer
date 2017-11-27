@@ -10,12 +10,14 @@
 
 Before contributing, please read our [code of conduct](./CODE_OF_CONDUCT.md)
 
+
 ## Getting Setup
 
 ```sh
 make install # installs dependencies for emdaer
 make bootstrap # installs dependencies for emdaer/packages/*
 ```
+
 
 ## Testing & Linting
 
@@ -26,6 +28,7 @@ make test # run the tests
 make lint # run the linter
 make type # run the type checker
 ```
+
 
 ## Plugins & Transforms
 
@@ -50,9 +53,11 @@ In order to ensure emdaer works properly offline, if your plugin makes API reque
 ```
 Read this file when your API request fails and write to this file when your request is successful. For an example, check out `plugin-contributors-details-github`.
 
+
 ## Feature Flags
 
 So that code can be merged quickly and confidently to the working branch, we use feature flags defined in `shared/EmdaerFeatureFlags`.
+
 
 ## Commits
 
@@ -79,6 +84,7 @@ Example:
 fix(plugin-image): Add more cat pics
 Closes #123, Closes #456
 ```
+
 
 ## AUTHORS file
 

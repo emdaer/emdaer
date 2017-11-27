@@ -24,47 +24,58 @@
         link: 'https://lernajs.io/'
         style: 'flat-square'
 -->
+
 <!--emdaer-p
   - '@emdaer/plugin-value-from-package'
   - value: description
 -->
+
 <!-- toc -->
+
 <!--emdaer-p
   - '@emdaer/plugin-node-package'
   - path: '@emdaer/meta/lib/README/what-is-emdaer.js'
 -->
+
 <!--emdaer-p
   - '@emdaer/plugin-node-package'
   - path: '@emdaer/meta/lib/README/how-emdaer-works.js'
 -->
+
 <!--emdaer-p
   - '@emdaer/plugin-node-package'
   - path: '@emdaer/meta/lib/README/adding-emdaer-to-your-project.js'
 -->
+
 <!--emdaer-p
   - '@emdaer/plugin-node-package'
   - path: '@emdaer/meta/lib/README/core-plugins.js'
     runEmdaer: true
 -->
+
 <!--emdaer-p
   - '@emdaer/plugin-node-package'
   - path: '@emdaer/meta/lib/README/core-transforms.js'
     runEmdaer: true
 -->
+
 <!--emdaer-p
   - '@emdaer/plugin-node-package'
   - path: '@emdaer/meta/lib/README/contributing.js'
     runEmdaer: true
 -->
+
 <!--emdaer-p
   - '@emdaer/plugin-node-package'
   - path: '@emdaer/meta/lib/README/this-readme.js'
 -->
+
 <!--emdaer-p
   - '@emdaer/plugin-node-package'
   - path: '@emdaer/meta/lib/README/license.js'
     runEmdaer: true
 -->
+
 <!--emdaer-t
   - '@emdaer/transform-prettier'
   - options:
@@ -72,10 +83,12 @@
       singleQuote: true
       trailingComma: es5
 -->
+
 <!--emdaer-t
   - '@emdaer/transform-smartypants'
   - options: q
 -->
+
 <!--emdaer-t
   - '@emdaer/transform-table-of-contents'
 -->

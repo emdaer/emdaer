@@ -33,7 +33,8 @@ A couple use cases that illustrate the power of emdaer:
 * 🤝 **Keep it in sync** Create templates for use across all of your organizations projects to promote synchronicity and reduce doing the same work over and over
 * 🗃 **Keep it organized** Keep your documentation DRY and organized by importing content from your codebase, splitting large documents into chunks, and formatting it with [Prettier](https://github.com/prettier/prettier).
 * 🍋 **Keep it fresh** Ensure your documents stay up to date by pulling in new data from various sources with every build
-  ## How emdaer works
+
+## How emdaer works
 
 emdaer processes template files and writes the resulting files to your project.
 
@@ -114,13 +115,14 @@ npm run emdaer
 * **[@emdaer/plugin-table](packages/plugin-table)** An emdaer plugin that renders HTML tables
 * **[@emdaer/plugin-value-from-package](packages/plugin-value-from-package)** An emdaer plugin that retrieves and renders values from package.json
 
-  ## Core Transforms
+## Core Transforms
 
 * **[@emdaer/transform-github-emoji](packages/transform-github-emoji)** An emdaer transformation that renders GitHub-flavored emoji codes
 * **[@emdaer/transform-prettier](packages/transform-prettier)** An emdaer transformation that formats markdown, including code blocks, using prettier
 * **[@emdaer/transform-smartypants](packages/transform-smartypants)** An emdaer transformation that translates ASCII punctuation characters into typographic punctuation HTML entities
 * **[@emdaer/transform-table-of-contents](packages/transform-table-of-contents)** An emdaer transformation that generates a table of contents
-  ## Contributing
+
+## Contributing
 
 If you&#8217;d like to make emdaer better, please read our [guide to contributing](./CONTRIBUTING.md).
 
