@@ -1,7 +1,7 @@
 {
   "name": "@emdaer/plugin-image",
   "description": "An emdaer plugin that renders HTML img elements",
-  "version": "1.6.17",
+  "version": "1.6.18",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.me/",
   "keywords": [
