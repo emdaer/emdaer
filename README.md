@@ -4,7 +4,7 @@
   Its template can be found at .emdaer/README.emdaer.md
 -->
 
-<img src="hero.png" alt="emdaer" align="center" />
+<p align="center"><img src="hero.png" alt="emdaer" /></p>
 
 # emdaer · [![Travis](https://img.shields.io/travis/emdaer/emdaer.svg?style=flat-square)](https://travis-ci.org/emdaer/emdaer/) [![Documented with emdaer](https://img.shields.io/badge/📓-documented%20with%20emdaer-F06632.svg?style=flat-square)](https://github.com/emdaer/emdaer) [![Maintained with lerna](https://img.shields.io/badge/🐉-maintained%20with%20lerna-cc00ff.svg?style=flat-square)](https://lernajs.io/)
 
