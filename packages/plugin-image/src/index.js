@@ -26,11 +26,11 @@ async function imagePlugin({
   width?: number,
   height?: number,
 }): Promise<?string> {
-  return `<img src="${src}"${alt ? ` alt="${alt}"` : ''}${align
-    ? ` align="${align}"`
+  return `<p${align ? ` align="${align}"` : ''}><img src="${src}"${alt
+    ? ` alt="${alt}"`
     : ''}${width ? ` width="${width}"` : ''}${height
     ? ` height="${height}"`
-    : ''} />`;
+    : ''} /></p>`;
 }
 
 module.exports = imagePlugin;
