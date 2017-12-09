@@ -19,6 +19,7 @@
 - [Core Plugins](#core-plugins)
 - [Core Transforms](#core-transforms)
 - [Contributing](#contributing)
+- [AST Parsing](#ast-parsing)
 - [This README](#this-readme)
 - [License](#license)
 
@@ -126,34 +127,15 @@ npm run emdaer
 
 If you&#8217;d like to make emdaer better, please read our [guide to contributing](./CONTRIBUTING.md).
 
-<details>
-<summary><strong>Contributors</strong></summary><br />
-<a href="https://github.com/flipactual">
-  <img align="left" src="https://avatars0.githubusercontent.com/u/1306968?s=24" />
-</a>
-<strong>Flip</strong>
-<br /><br />
-<a title="I build multi-channel publishing systems and web applications at @fourkitchens." href="https://github.com/infiniteluke">
-  <img align="left" src="https://avatars0.githubusercontent.com/u/1127238?s=24" />
-</a>
-<strong>Luke Herrington</strong>
-<br /><br />
-<a title="Software architect with an interest in distributed systems and elegant solutions." href="https://github.com/elliotttf">
-  <img align="left" src="https://avatars0.githubusercontent.com/u/447151?s=24" />
-</a>
-<strong>Elliott Foster</strong>
-<br /><br />
-<a href="https://github.com/thebruce">
-  <img align="left" src="https://avatars0.githubusercontent.com/u/590058?s=24" />
-</a>
-<strong>David Diers</strong>
-<br /><br />
-<a href="https://github.com/fluxsauce">
-  <img align="left" src="https://avatars0.githubusercontent.com/u/976391?s=24" />
-</a>
-<strong>Jon Peck</strong>
-<br /><br />
-</details>
+<!--emdaer-p
+  - '@emdaer/plugin-contributors-details-github'
+-->
+
+## AST Parsing
+
+> 🚧 This feature is experimental and not currently recommended for use in production
+
+Running emdaer with the `--AST` flag enables [some neat experimental functionality](https://github.com/emdaer/emdaer/issues/52)
 
 ## This README
 

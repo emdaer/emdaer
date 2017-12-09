@@ -26,7 +26,7 @@ module.exports = async function cli(args = process.argv) {
     logger.warn(NO_MATCHING_FILES);
   } else {
     if (program.AST) {
-      EmdaerFeatureFlags.override('enableASTParsing', true);
+      EmdaerFeatureFlags.override('enableASTAndCommonComment', true);
     }
 
     const enabledFeatureFlags = getEnabledFeatureFlags(EmdaerFeatureFlags);

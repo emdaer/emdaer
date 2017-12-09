@@ -21,7 +21,7 @@ async function emdaer(origin: string, content: string, stamp: boolean = true) {
 
   output = await executePlugins(content);
 
-  if (EmdaerFeatureFlags.enableASTParsing) {
+  if (EmdaerFeatureFlags.enableASTAndCommonComment) {
     output = await unified()
       .use(parseHtml)
       .use(parseMarkdown)

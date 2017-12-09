@@ -19,8 +19,7 @@ const EmdaerFeatureFlags = require('./EmdaerFeatureFlags');
 
 describe('@emdaer/core', () => {
   it('processes an .emdaer.md file', async () => {
-    EmdaerFeatureFlags.enableASTParsing = false;
-    EmdaerFeatureFlags.enableCommonComment = false;
+    EmdaerFeatureFlags.enableASTAndCommonComment = false;
     expect(
       await emdaer(
         './.emdaer/README.emdaer.md',
@@ -48,8 +47,7 @@ describe('@emdaer/core', () => {
 `);
   });
   it('processes an .emdaer.md file without a stamp', async () => {
-    EmdaerFeatureFlags.enableASTParsing = false;
-    EmdaerFeatureFlags.enableCommonComment = false;
+    EmdaerFeatureFlags.enableASTAndCommonComment = false;
     expect(
       await emdaer(
         './.emdaer/README.emdaer.md',
@@ -71,10 +69,9 @@ describe('@emdaer/core', () => {
 
 `);
   });
-  describe('AST', () => {
+  describe('AST + CC', () => {
     it('processes an .emdaer.md file', async () => {
-      EmdaerFeatureFlags.enableASTParsing = true;
-      EmdaerFeatureFlags.enableCommonComment = false;
+      EmdaerFeatureFlags.enableASTAndCommonComment = true;
       expect(
         await emdaer(
           './.emdaer/README.emdaer.md',
@@ -100,8 +97,7 @@ describe('@emdaer/core', () => {
 `);
     });
     it('processes an .emdaer.md file without a stamp', async () => {
-      EmdaerFeatureFlags.enableASTParsing = true;
-      EmdaerFeatureFlags.enableCommonComment = false;
+      EmdaerFeatureFlags.enableASTAndCommonComment = true;
       expect(
         await emdaer(
           './.emdaer/README.emdaer.md',

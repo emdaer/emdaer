@@ -60,18 +60,13 @@
 -->
 
 <!--emdaer-p
-<<<<<<< HEAD
   - '@emdaer/plugin-node-package'
   - path: '@emdaer/meta/lib/README/contributing.js'
-=======
-  - '@emdaer/plugin-import'
-  - path: .emdaer/README/ast-parsing.md
-    runEmdaer: true
 -->
+
 <!--emdaer-p
   - '@emdaer/plugin-import'
-  - path: .emdaer/README/contributing.md
->>>>>>> feat(cli): introduce enabling AST feature flag via cli flag
+  - path: .emdaer/README/ast-parsing.md
     runEmdaer: true
 -->
 

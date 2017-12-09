@@ -42,7 +42,7 @@ describe('@emdaer/cli', () => {
     fs.readFile.mockImplementationOnce(() => '');
     fs.outputFile.mockImplementation(() => {});
     await bin(['', '', '--AST']);
-    expect(EmdaerFeatureFlags.enableASTParsing).toBe(true);
+    expect(EmdaerFeatureFlags.enableASTAndCommonComment).toBe(true);
   });
   test('logs error when emdaer fails', async () => {
     glob.mockImplementationOnce(() => ['./.emdaer/README.emdaer.md']);
