@@ -62,6 +62,11 @@
 <!--emdaer-p
   - '@emdaer/plugin-node-package'
   - path: '@emdaer/meta/lib/README/contributing.js'
+-->
+
+<!--emdaer-p
+  - '@emdaer/plugin-import'
+  - path: .emdaer/README/ast-parsing.md
     runEmdaer: true
 -->
 
