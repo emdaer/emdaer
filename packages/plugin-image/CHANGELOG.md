@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.7.0"></a>
+# [1.7.0](https://github.com/emdaer/emdaer/compare/v1.6.20...v1.7.0) (2017-12-09)
+
+
+### Features
+
+* **plugin-image:** add wrapping p element for center ([#62](https://github.com/emdaer/emdaer/issues/62)) ([282757c](https://github.com/emdaer/emdaer/commit/282757c))
+
+
+
+
 <a name="1.6.20"></a>
 ## [1.6.20](https://github.com/emdaer/emdaer/compare/v1.6.19...v1.6.20) (2017-12-09)
 
