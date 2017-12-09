@@ -6,13 +6,13 @@ const PARSER = 'markdown';
 
 /**
  * Transform a string using prettier.
- * @see {@link https://github.com/prettier/prettier#options|Prettier docs} 
- * 
+ * @see {@link https://github.com/prettier/prettier#options|Prettier docs}
+ *
  * @param   {string}          content                The content
  * @param   {Object}          options                Transform options
  * @param   {Object}          options.options        Prettier options
  * @param   {string}          options.options.config The path to the Prettier config file. Overrides other Prettier options provided.
- * 
+ *
  * @returns {Promise<string>} The content formatted by Prettier
  */
 async function prettierTransform(

@@ -24,9 +24,9 @@ async function listPlugin({
     ...(await Promise.all(
       items.map(
         async item =>
-          `<li>${typeof item === 'string'
-            ? item
-            : await listPlugin(item.options)}</li>`
+          `<li>${
+            typeof item === 'string' ? item : await listPlugin(item.options)
+          }</li>`
       )
     )),
     `</${type}>`,

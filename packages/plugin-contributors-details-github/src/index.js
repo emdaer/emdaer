@@ -113,9 +113,9 @@ ${getSummary(title)}
 ${contributorsData
     .map(
       contributor =>
-        `<a${contributor.bio
-          ? ` title="${contributor.bio}"`
-          : ''} href="${contributor.html_url}">
+        `<a${contributor.bio ? ` title="${contributor.bio}"` : ''} href="${
+          contributor.html_url
+        }">
   <img align="left" src="${contributor.avatar_url}" />
 </a>
 <strong>${contributor.name}</strong>

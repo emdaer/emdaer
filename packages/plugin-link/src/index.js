@@ -39,9 +39,9 @@ async function linkPlugin({
       return null;
     }
   }
-  return `<a${href ? ` href="${href}"` : ''}${id ? ` id="${id}"` : ''}${title
-    ? ` title="${title}"`
-    : ''}>${content}</a>`;
+  return `<a${href ? ` href="${href}"` : ''}${id ? ` id="${id}"` : ''}${
+    title ? ` title="${title}"` : ''
+  }>${content}</a>`;
 }
 
 module.exports = linkPlugin;
