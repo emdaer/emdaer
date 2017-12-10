@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.8.0"></a>
+# [1.8.0](https://github.com/emdaer/emdaer/compare/v1.7.0...v1.8.0) (2017-12-10)
+
+
+### Features
+
+* **cli:** process multiple files in parallel ([#65](https://github.com/emdaer/emdaer/issues/65)) ([44fc0a9](https://github.com/emdaer/emdaer/commit/44fc0a9)), closes [#61](https://github.com/emdaer/emdaer/issues/61)
+
+
+
+
 <a name="1.7.0"></a>
 # [1.7.0](https://github.com/emdaer/emdaer/compare/v1.6.20...v1.7.0) (2017-12-09)
 
