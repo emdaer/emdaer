@@ -15,21 +15,25 @@ async function tablePlugin({
   headers?: Array<string>,
   rows?: Array<Array<string>>,
 }): Promise<?string> {
-  return `<table>${headers
-    ? `<tr>${headers.reduce(
-        (row, header) => `${row}<th>${header}</th>`,
-        ''
-      )}</tr>`
-    : ''}${rows
-    ? rows.reduce(
-        (rowAcc, row) =>
-          `${rowAcc}<tr>${row.reduce(
-            (cellAcc, cell) => `${cellAcc}<td>${cell}</td>`,
-            ''
-          )}</tr>`,
-        ''
-      )
-    : ''}</table>`;
+  return `<table>${
+    headers
+      ? `<tr>${headers.reduce(
+          (row, header) => `${row}<th>${header}</th>`,
+          ''
+        )}</tr>`
+      : ''
+  }${
+    rows
+      ? rows.reduce(
+          (rowAcc, row) =>
+            `${rowAcc}<tr>${row.reduce(
+              (cellAcc, cell) => `${cellAcc}<td>${cell}</td>`,
+              ''
+            )}</tr>`,
+          ''
+        )
+      : ''
+  }</table>`;
 }
 
 module.exports = tablePlugin;

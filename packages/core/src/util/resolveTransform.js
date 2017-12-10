@@ -6,8 +6,8 @@ const EmdaerError = require('./EmdaerError');
 const { NO_TRANSFORM } = require('../_errors');
 
 /**
-  * Loads a provided transform
-  */
+ * Loads a provided transform
+ */
 module.exports = function resolveTransform(transformName: string): Transform {
   try {
     return require(transformName);

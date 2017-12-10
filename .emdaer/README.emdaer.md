@@ -84,7 +84,7 @@
 <!--emdaer-t
   - '@emdaer/transform-prettier'
   - options:
-      printWidth: 500
+      proseWrap: preserve
       singleQuote: true
       trailingComma: es5
 -->

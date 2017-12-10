@@ -35,12 +35,10 @@ ${TRANSFORM_CALL}
 
 `;
     await applyTransforms(CONTENT, [TRANSFORM_CALL]);
-    expect(
-      applyTransform
-    ).toHaveBeenCalledWith(CONTENT_WITHOUT_TRANSFORM_CALL, [
-      '@emdaer/transform-a',
-      { foo: 1, bar: 2 },
-    ]);
+    expect(applyTransform).toHaveBeenCalledWith(
+      CONTENT_WITHOUT_TRANSFORM_CALL,
+      ['@emdaer/transform-a', { foo: 1, bar: 2 }]
+    );
   });
 
   test('throws for invalid comments', async () => {
