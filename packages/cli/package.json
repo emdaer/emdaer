@@ -19,7 +19,8 @@
     "chalk": "2.0.1",
     "commander": "2.11.0",
     "fs-extra": "3.0.1",
-    "glob": "^7.1.2"
+    "glob": "^7.1.2",
+    "rxjs": "^5.5.5"
   },
   "publishConfig": {
     "access": "public"

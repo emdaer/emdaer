@@ -7,6 +7,11 @@ const program = require('commander');
 const { promisify } = require('util');
 const glob = promisify(require('glob'));
 const { outputFile, readFile } = require('fs-extra');
+const { Observable } = require('rxjs/Observable');
+
+require('rxjs/add/observable/from');
+require('rxjs/add/operator/map');
+require('rxjs/add/operator/mergeAll');
 
 const logger = require('./_logger');
 const { version } = require('../package.json');
@@ -35,28 +40,24 @@ module.exports = async function cli(args = process.argv) {
     }
 
     const { name } = JSON.parse(await readFile('package.json', 'utf8'));
-    await Promise.all(
-      origins.map(origin =>
-        (async () => {
-          try {
-            const [, fileName, fileExtension] = origin.match(
-              /\.emdaer\/(.*)\.emdaer(\.md)/
-            );
-            const destination = `${fileName}${fileExtension}`;
-            logger.log(`Writing ${destination} for ${name} 👌`);
-            await outputFile(
-              destination,
-              await emdaer(origin, (await readFile(origin)).toString())
-            );
-          } catch (error) {
-            logger.error(EMDAER_FAILED, error);
-            exitCode = 1;
-          }
-        })()
-      )
-    );
+    exitCode = await Observable.from(origins)
+      .map(async origin => emdaer(origin, (await readFile(origin)).toString()))
+      .mergeAll()
+      .map(async (readme, index) => {
+        const [, fileName, fileExtension] = origins[index].match(
+          /\.emdaer\/(.*)\.emdaer(\.md)/
+        );
+        const destination = `${fileName}${fileExtension}`;
+        logger.log(`Writing ${destination} for ${name} 👌`);
+        return outputFile(destination, readme);
+      })
+      .toPromise()
+      .then(() => 0)
+      .catch(error => {
+        logger.error(EMDAER_FAILED, error);
+        return 1;
+      });
   }
-
   return exitCode;
 };
 
