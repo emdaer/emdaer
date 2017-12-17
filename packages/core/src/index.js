@@ -1,5 +1,7 @@
 /* @flow */
 
+const marked = require('marked');
+
 const addStamp = require('./util/addStamp');
 const executePlugins = require('./util/executePlugins');
 const applyTransforms = require('./util/applyTransforms');
@@ -18,7 +20,7 @@ async function emdaer(origin: string, content: string, stamp: boolean = true) {
     output = await addStamp(output, origin);
   }
 
-  return output;
+  return marked(output);
 }
 
 module.exports = emdaer;

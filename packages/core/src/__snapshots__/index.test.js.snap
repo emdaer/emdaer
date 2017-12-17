@@ -6,16 +6,11 @@ exports[`@emdaer/core processes an .emdaer.md file 1`] = `
 
   Its template can be found at ./.emdaer/README.emdaer.md
 -->
-
-# Hello, World!
-
-
+<h1 id=\\"hello-world-\\">Hello, World!</h1>
 "
 `;
 
 exports[`@emdaer/core processes an .emdaer.md file without a stamp 1`] = `
-"# Hello, World!
-
-
+"<h1 id=\\"hello-world-\\">Hello, World!</h1>
 "
 `;
