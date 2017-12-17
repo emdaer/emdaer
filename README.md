@@ -19,7 +19,6 @@
 - [Core Plugins](#core-plugins)
 - [Core Transforms](#core-transforms)
 - [Contributing](#contributing)
-- [AST Parsing](#ast-parsing)
 - [This README](#this-readme)
 - [License](#license)
 
@@ -131,12 +130,6 @@ If you&#8217;d like to make emdaer better, please read our [guide to contributin
 <!--emdaer-p
   - '@emdaer/plugin-contributors-details-github'
 -->
-
-## AST Parsing
-
-> 🚧 This feature is experimental and not currently recommended for use in production
-
-Running emdaer with the `--AST` flag enables [some neat experimental functionality](https://github.com/emdaer/emdaer/issues/52)
 
 ## This README
 

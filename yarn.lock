@@ -44,18 +44,18 @@
     semver "^5.3.0"
 
 "@emdaer/cli@file:packages/cli":
-  version "1.8.1"
+  version "1.8.2"
   dependencies:
-    "@emdaer/core" "^1.8.1"
+    "@emdaer/core" "^1.8.2"
     chalk "2.0.1"
     commander "2.11.0"
     fs-extra "3.0.1"
     glob "^7.1.2"
     rxjs "^5.5.5"
 
-"@emdaer/core@^1.8.1":
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/@emdaer/core/-/core-1.8.1.tgz#6adc52f8ef58d8b4599f6102b996b1641f97dcb5"
+"@emdaer/core@^1.8.2":
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/@emdaer/core/-/core-1.8.2.tgz#085e18e56fa15cb5ac8ada1ad07135fcce30ff83"
   dependencies:
     js-yaml "3.8.4"
     rehype-parse "4.0.0"
@@ -66,7 +66,7 @@
     unified "6.1.5"
 
 "@emdaer/core@file:packages/core":
-  version "1.8.1"
+  version "1.8.2"
   dependencies:
     js-yaml "3.8.4"
     rehype-parse "4.0.0"
@@ -77,71 +77,71 @@
     unified "6.1.5"
 
 "@emdaer/meta@file:packages/meta":
-  version "1.8.1"
+  version "1.8.2"
 
 "@emdaer/plugin-contributors-details-github@file:packages/plugin-contributors-details-github":
-  version "1.8.1"
+  version "1.8.2"
   dependencies:
     fs-extra "^4.0.2"
     glob "^7.1.2"
     node-fetch "^1.7.3"
 
 "@emdaer/plugin-documentation@file:packages/plugin-documentation":
-  version "1.8.1"
+  version "1.8.2"
   dependencies:
     documentation "4.0.0-rc.1"
 
 "@emdaer/plugin-image@file:packages/plugin-image":
-  version "1.8.1"
+  version "1.8.2"
 
 "@emdaer/plugin-import@file:packages/plugin-import":
-  version "1.8.1"
+  version "1.8.2"
   dependencies:
-    "@emdaer/core" "^1.8.1"
+    "@emdaer/core" "^1.8.2"
     fs-extra "3.0.1"
 
 "@emdaer/plugin-license-reference@file:packages/plugin-license-reference":
-  version "1.8.1"
+  version "1.8.2"
   dependencies:
-    "@emdaer/plugin-value-from-package" "^1.8.1"
+    "@emdaer/plugin-value-from-package" "^1.8.2"
 
 "@emdaer/plugin-list-lerna-packages@file:packages/plugin-list-lerna-packages":
-  version "1.8.1"
+  version "1.8.2"
   dependencies:
     fs-extra "^4.0.2"
     glob "^7.1.2"
 
 "@emdaer/plugin-node-package@file:packages/plugin-node-package":
-  version "1.8.1"
+  version "1.8.2"
   dependencies:
-    "@emdaer/core" "^1.8.1"
+    "@emdaer/core" "^1.8.2"
 
 "@emdaer/plugin-shields@file:packages/plugin-shields":
-  version "1.8.1"
+  version "1.8.2"
 
-"@emdaer/plugin-value-from-package@^1.8.1":
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/@emdaer/plugin-value-from-package/-/plugin-value-from-package-1.8.1.tgz#d60c3e0efc129476751fd856f391af716e9ac959"
+"@emdaer/plugin-value-from-package@^1.8.2":
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/@emdaer/plugin-value-from-package/-/plugin-value-from-package-1.8.2.tgz#cd136913ea4b9a974e43f165837b392a655779e2"
   dependencies:
     fs-extra "3.0.1"
 
 "@emdaer/plugin-value-from-package@file:packages/plugin-value-from-package":
-  version "1.8.1"
+  version "1.8.2"
   dependencies:
     fs-extra "3.0.1"
 
 "@emdaer/transform-prettier@file:packages/transform-prettier":
-  version "1.8.1"
+  version "1.8.2"
   dependencies:
     prettier "^1.9.1"
 
 "@emdaer/transform-smartypants@file:packages/transform-smartypants":
-  version "1.8.1"
+  version "1.8.2"
   dependencies:
     smartypants "0.0.5"
 
 "@emdaer/transform-table-of-contents@file:packages/transform-table-of-contents":
-  version "1.8.1"
+  version "1.8.2"
   dependencies:
     markdown-toc "^1.2.0"
 
@@ -5629,8 +5629,8 @@ rxjs@^5.0.0-beta.11:
     symbol-observable "^1.0.1"
 
 rxjs@^5.5.5:
-  version "5.5.6"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.6.tgz#e31fb96d6fd2ff1fd84bcea8ae9c02d007179c02"
+  version "5.5.5"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.5.tgz#e164f11d38eaf29f56f08c3447f74ff02dd84e97"
   dependencies:
     symbol-observable "1.0.1"
 

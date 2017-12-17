@@ -7,13 +7,10 @@ jest.mock('glob');
 jest.mock('fs-extra');
 
 jest.mock('./_logger');
-jest.mock('./util/getEnabledFeatureFlags');
 
 const glob = require('glob');
 const fs = require('fs-extra');
 const logger = require('./_logger');
-const getEnabledFeatureFlags = require('./util/getEnabledFeatureFlags');
-const EmdaerFeatureFlags = require('@emdaer/core/lib/EmdaerFeatureFlags');
 
 const { NO_MATCHING_FILES, EMDAER_FAILED } = require('./_errors');
 
@@ -24,25 +21,6 @@ describe('@emdaer/cli', () => {
     const exitCode = await bin();
     expect(logger.warn).toHaveBeenLastCalledWith(NO_MATCHING_FILES);
     expect(exitCode).toBe(0);
-  });
-  test('logs feature flags when they are enabled', async () => {
-    glob.mockImplementationOnce(() => ['./.emdaer/README.emdaer.md']);
-    getEnabledFeatureFlags.mockImplementationOnce(() => 'theBestFeature');
-    fs.readFile.mockImplementationOnce(() => '{"name":"@emdaer/cli"}');
-    fs.readFile.mockImplementationOnce(() => '');
-    fs.outputFile.mockImplementation(() => {});
-    await bin();
-    expect(logger.log).toHaveBeenCalledWith(
-      'The following flags are enabled: theBestFeature 🚩'
-    );
-  });
-  test('enables AST parsing when flag is passed', async () => {
-    glob.mockImplementationOnce(() => ['./.emdaer/README.emdaer.md']);
-    fs.readFile.mockImplementationOnce(() => '{"name":"@emdaer/cli"}');
-    fs.readFile.mockImplementationOnce(() => '');
-    fs.outputFile.mockImplementation(() => {});
-    await bin(['', '', '--AST']);
-    expect(EmdaerFeatureFlags.enableASTAndCommonComment).toBe(true);
   });
   test('logs error when emdaer fails', async () => {
     glob.mockImplementationOnce(() => ['./.emdaer/README.emdaer.md']);
