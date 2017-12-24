@@ -41,15 +41,16 @@ module.exports = async function cli(args = process.argv) {
 
     const { name } = JSON.parse(await readFile('package.json', 'utf8'));
     exitCode = await Observable.from(origins)
-      .map(async origin => emdaer(origin, (await readFile(origin)).toString()))
-      .mergeAll()
-      .map(async (readme, index) => {
-        const [, fileName, fileExtension] = origins[index].match(
+      .map(async origin => {
+        const [, fileName, fileExtension] = origin.match(
           /\.emdaer\/(.*)\.emdaer(\.md)/
         );
         const destination = `${fileName}${fileExtension}`;
         logger.log(`Writing ${destination} for ${name} 👌`);
-        return outputFile(destination, readme);
+        return outputFile(
+          destination,
+          await emdaer(origin, (await readFile(origin)).toString())
+        );
       })
       .toPromise()
       .then(() => 0)
