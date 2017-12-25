@@ -42,7 +42,7 @@
     "husky": "0.13.3",
     "jest": "^21.2.1",
     "jest-flow-transform": "^1.0.1",
-    "lerna": "2.0.0-rc.5",
+    "lerna": "^2.5.1",
     "lint-staged": "3.4.1",
     "prettier": "^1.9.1",
     "travis-deploy-once": "^3.0.0",
