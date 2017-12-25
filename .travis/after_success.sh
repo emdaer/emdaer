@@ -39,5 +39,5 @@ if [[ $TRAVIS_BRANCH == 'master' ]]; then
   git config --list #debug
 
   yarn
-  lerna publish --message="[skip ci] Bump lerna version" --conventional-commits --yes --force-publish=*
+  lerna publish --conventional-commits --yes --force-publish=* --message="[skip ci] Bump lerna version"
 fi
