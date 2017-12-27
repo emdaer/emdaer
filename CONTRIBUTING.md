@@ -3,6 +3,7 @@
 
   Its template can be found at .emdaer/CONTRIBUTING.emdaer.md
 -->
+
 <h1 id="contributing">Contributing</h1>
 <h2 id="code-of-conduct">Code of Conduct</h2>
 <p>Before contributing, please read our <a href="./CODE_OF_CONDUCT.md">code of conduct</a></p>

@@ -3,6 +3,7 @@
 
   Its template can be found at .emdaer/CODE_OF_CONDUCT.emdaer.md
 -->
+
 <h1 id="contributor-covenant-code-of-conduct">Contributor Covenant Code of Conduct</h1>
 <h2 id="our-pledge">Our Pledge</h2>
 <p>In the interest of fostering an open and welcoming environment, we as

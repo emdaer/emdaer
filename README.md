@@ -3,6 +3,7 @@
 
   Its template can be found at .emdaer/README.emdaer.md
 -->
+
 <p align="center"><img src="hero.png" alt="emdaer" /></p>
 
 <h1 id="emdaer-travis-https-img-shields-io-travis-emdaer-emdaer-svg-style-flat-square-https-travis-ci-org-emdaer-emdaer-documented-with-emdaer-https-img-shields-io-badge-documented-20with-20emdaer-f06632-svg-style-flat-square-https-github-com-emdaer-emdaer-maintained-with-lerna-https-img-shields-io-badge-maintained-20with-20lerna-cc00ff-svg-style-flat-square-https-lernajs-io-">emdaer · <a href="https://travis-ci.org/emdaer/emdaer/"><img src="https://img.shields.io/travis/emdaer/emdaer.svg?style=flat-square" alt="Travis"></a> <a href="https://github.com/emdaer/emdaer"><img src="https://img.shields.io/badge/📓-documented%20with%20emdaer-F06632.svg?style=flat-square" alt="Documented with emdaer"></a> <a href="https://lernajs.io/"><img src="https://img.shields.io/badge/🐉-maintained%20with%20lerna-cc00ff.svg?style=flat-square" alt="Maintained with lerna"></a></h1>

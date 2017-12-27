@@ -12,9 +12,10 @@ require('rxjs/add/observable/from');
 require('rxjs/add/operator/map');
 require('rxjs/add/operator/mergeAll');
 
-const logger = require('./_logger');
+const addStamp = require('./util/addStamp');
+const logger = require('./util/logger');
 const { version } = require('../package.json');
-const { NO_MATCHING_FILES, EMDAER_FAILED } = require('./_errors');
+const { NO_MATCHING_FILES, EMDAER_FAILED } = require('./errors');
 
 module.exports = async function cli(args = process.argv) {
   let exitCode = 0;
@@ -35,7 +36,10 @@ module.exports = async function cli(args = process.argv) {
         logger.log(`Writing ${destination} for ${name} 👌`);
         return outputFile(
           destination,
-          await emdaer(origin, (await readFile(origin)).toString())
+          await addStamp(
+            await emdaer(origin, (await readFile(origin)).toString()),
+            origin
+          )
         );
       })
       .toPromise()

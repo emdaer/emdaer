@@ -6,10 +6,10 @@ global.console = {
 
 const chalk = require('chalk');
 
-const logger = require('./_logger');
+const logger = require('./logger');
 
 /* eslint-disable no-console */
-describe('_logger', () => {
+describe('logger', () => {
   test('logs messages', async () => {
     logger.log('Hello');
     expect(console.log).toHaveBeenLastCalledWith(

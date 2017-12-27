@@ -19,7 +19,7 @@ async function importPlugin({
   runEmdaer: boolean,
 }): Promise<string> {
   const content = (await fs.readFile(path)).toString();
-  return runEmdaer ? emdaer(path, content, false) : content;
+  return runEmdaer ? emdaer(path, content) : content;
 }
 
 module.exports = importPlugin;

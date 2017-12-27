@@ -33,23 +33,4 @@ describe('@emdaer/core', () => {
       )
     ).toMatchSnapshot();
   });
-  it('processes an .emdaer.md file without a stamp', async () => {
-    expect(
-      await emdaer(
-        './.emdaer/README.emdaer.md',
-        `# <!--emdaer-p
-  - '@emdaer/plugin-foo'
-  - a: 0
-    b: 1
-    c: 2
--->
-
-<!--emdaer-t
-  - '@emdaer/transform-bar'
--->
-`,
-        false
-      )
-    ).toMatchSnapshot();
-  });
 });
