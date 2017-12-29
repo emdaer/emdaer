@@ -4,7 +4,7 @@ const { safeLoad } = require('js-yaml');
 
 const executePlugin = require('./executePlugin');
 const EmdaerError = require('./EmdaerError');
-const { NO_PLUGIN } = require('../_errors');
+const { NO_PLUGIN } = require('../errors');
 
 /**
  * Finds and executes plugins

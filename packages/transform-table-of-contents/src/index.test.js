@@ -1,13 +1,6 @@
 const tableOfContentsTransform = require('./');
 
 describe('@emdaer/transform-table-of-contents', () => {
-  test('errors if there is no <!-- toc --> comment', () =>
-    expect(
-      tableOfContentsTransform('## Heading without TOC comment')
-    ).rejects.toHaveProperty(
-      'message',
-      'Content does not contain "<!-- toc -->" and therefore cannot insert a table of contents.'
-    ));
   test('generates a table of contents in place of <!-- toc -->', async () =>
     expect(
       await tableOfContentsTransform(`
@@ -17,7 +10,7 @@ describe('@emdaer/transform-table-of-contents', () => {
 ## Usage
 ### Windows
 ### Mac
-## FAQs       
+## FAQs
 `)
     ).toEqual(`# cool
 

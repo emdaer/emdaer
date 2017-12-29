@@ -22,11 +22,11 @@ declare module '@emdaer/core' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module '@emdaer/core/lib/_errors' {
+declare module '@emdaer/core/lib/errors' {
   declare module.exports: any;
 }
 
-declare module '@emdaer/core/lib/_types' {
+declare module '@emdaer/core/lib/types' {
   declare module.exports: any;
 }
 
@@ -70,11 +70,11 @@ declare module '@emdaer/core/lib/util/resolveTransform' {
   declare module.exports: any;
 }
 
-declare module '@emdaer/core/src/_errors' {
+declare module '@emdaer/core/src/errors' {
   declare module.exports: any;
 }
 
-declare module '@emdaer/core/src/_types' {
+declare module '@emdaer/core/src/types' {
   declare module.exports: any;
 }
 
@@ -159,11 +159,11 @@ declare module '@emdaer/core/src/util/resolveTransform.test' {
 }
 
 // Filename aliases
-declare module '@emdaer/core/lib/_errors.js' {
-  declare module.exports: $Exports<'@emdaer/core/lib/_errors'>;
+declare module '@emdaer/core/lib/errors.js' {
+  declare module.exports: $Exports<'@emdaer/core/lib/errors'>;
 }
-declare module '@emdaer/core/lib/_types.js' {
-  declare module.exports: $Exports<'@emdaer/core/lib/_types'>;
+declare module '@emdaer/core/lib/types.js' {
+  declare module.exports: $Exports<'@emdaer/core/lib/types'>;
 }
 declare module '@emdaer/core/lib/index.js' {
   declare module.exports: $Exports<'@emdaer/core/lib/index'>;
@@ -195,11 +195,11 @@ declare module '@emdaer/core/lib/util/resolvePlugin.js' {
 declare module '@emdaer/core/lib/util/resolveTransform.js' {
   declare module.exports: $Exports<'@emdaer/core/lib/util/resolveTransform'>;
 }
-declare module '@emdaer/core/src/_errors.js' {
-  declare module.exports: $Exports<'@emdaer/core/src/_errors'>;
+declare module '@emdaer/core/src/errors.js' {
+  declare module.exports: $Exports<'@emdaer/core/src/errors'>;
 }
-declare module '@emdaer/core/src/_types.js' {
-  declare module.exports: $Exports<'@emdaer/core/src/_types'>;
+declare module '@emdaer/core/src/types.js' {
+  declare module.exports: $Exports<'@emdaer/core/src/types'>;
 }
 declare module '@emdaer/core/src/index.js' {
   declare module.exports: $Exports<'@emdaer/core/src/index'>;

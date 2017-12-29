@@ -2,7 +2,7 @@ jest.mock('./executePlugin');
 const executePlugins = require('./executePlugins');
 const executePlugin = require('./executePlugin');
 const EmdaerError = require('./EmdaerError');
-const { NO_PLUGIN } = require('../_errors');
+const { NO_PLUGIN } = require('../errors');
 
 describe('executePlugins', () => {
   test('returns unaltered content when no transforms are found', async () => {

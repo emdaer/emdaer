@@ -57,6 +57,7 @@
 <li><code>$1.1</code>  </li>
 </ul>
 </li>
+<li><code>comment</code> <strong><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></strong> </li>
 </ul>
 <p>Returns <strong><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>&gt;</strong> </p>
 <h2 id="resolvetransform">resolveTransform</h2>

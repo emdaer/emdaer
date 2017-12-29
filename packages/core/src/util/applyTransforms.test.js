@@ -1,9 +1,9 @@
-jest.mock('./applyTransform', jest.fn);
+jest.mock('./applyTransform', () => jest.fn().mockImplementation(() => ''));
 
 const applyTransforms = require('./applyTransforms');
 const applyTransform = require('./applyTransform');
 const EmdaerError = require('./EmdaerError');
-const { NO_TRANSFORM } = require('../_errors');
+const { NO_TRANSFORM } = require('../errors');
 
 describe('applyTransforms', () => {
   test('returns unaltered content when no transforms are found', async () => {
@@ -25,19 +25,16 @@ describe('applyTransforms', () => {
 
 ${TRANSFORM_CALL}
 `;
-    const CONTENT_WITHOUT_TRANSFORM_CALL = `# <!--emdaer-p
-  - '@emdaer/plugin-a'
-  - foo: 1
--->
 
----
-
-
-`;
     await applyTransforms(CONTENT, [TRANSFORM_CALL]);
     expect(applyTransform).toHaveBeenCalledWith(
-      CONTENT_WITHOUT_TRANSFORM_CALL,
-      ['@emdaer/transform-a', { foo: 1, bar: 2 }]
+      CONTENT,
+      ['@emdaer/transform-a', { foo: 1, bar: 2 }],
+      `<!--emdaer-t
+  - '@emdaer/transform-a'
+  - foo: 1
+    bar: 2
+-->`
     );
   });
 

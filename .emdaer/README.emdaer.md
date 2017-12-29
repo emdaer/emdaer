@@ -30,7 +30,9 @@
   - value: description
 -->
 
-<!-- toc -->
+<!--emdaer-t
+  - '@emdaer/transform-table-of-contents'
+-->
 
 <!--emdaer-p
   - '@emdaer/plugin-node-package'
@@ -86,8 +88,4 @@
 <!--emdaer-t
   - '@emdaer/transform-smartypants'
   - options: q
--->
-
-<!--emdaer-t
-  - '@emdaer/transform-table-of-contents'
 -->

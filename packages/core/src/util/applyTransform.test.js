@@ -13,7 +13,7 @@ describe('applyTransform', () => {
     const TRANSFORM = '@emdaer/transform-foo';
     const OPTIONS = { doIt: true };
 
-    await applyTransform(CONTENT, [TRANSFORM, OPTIONS]);
-    expect(transformMock).toHaveBeenCalledWith(CONTENT, OPTIONS);
+    await applyTransform(CONTENT, [TRANSFORM, OPTIONS], 'foobar');
+    expect(transformMock).toHaveBeenCalledWith(CONTENT, OPTIONS, 'foobar');
   });
 });

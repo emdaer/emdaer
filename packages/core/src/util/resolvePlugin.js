@@ -1,9 +1,9 @@
 /* @flow */
 
-import type { Plugin } from '../_types';
+import type { Plugin } from '../types';
 
 const EmdaerError = require('./EmdaerError');
-const { NO_PLUGIN } = require('../_errors');
+const { NO_PLUGIN } = require('../errors');
 
 /**
  * Loads a provided plugin

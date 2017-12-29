@@ -12,10 +12,16 @@ export type Plugin = (options: *) => Promise<string>;
 /**
  * A transform for emdaer
  *
+ * @param    {string}          content The contents of the file
  * @param    {*}               options Whatever input a transform should need
+ * @param    {string}          comment The comment describing the call
  * @returns  {Promise<string>}         Transformed content
  */
-export type Transform = (content: string, options: *) => Promise<string>;
+export type Transform = (
+  content: string,
+  options: *,
+  comment: string
+) => Promise<string>;
 
 /**
  * A description of a plugin to call and which options to call it with
