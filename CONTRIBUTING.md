@@ -4,8 +4,8 @@
   Its template can be found at .emdaer/CONTRIBUTING.emdaer.md
 -->
 
-<h1 id="contributing">Contributing</h1>
-<h2 id="code-of-conduct">Code of Conduct</h2>
+<p><h1 id="contributing">Contributing</h1></p>
+<p><h2 id="code-of-conduct">Code of Conduct</h2></p>
 <p>Before contributing, please read our <a href="./CODE_OF_CONDUCT.md">code of conduct</a></p>
 <h2 id="getting-setup">Getting Setup</h2>
 <pre><code class="lang-sh">make install # installs dependencies for emdaer
@@ -22,7 +22,7 @@ make type # run the type checker
 <p>First try:</p>
 <pre><code class="lang-sh">flow-typed install dependency-name@x.x.x
 </code></pre>
-<p>Then, if the libdef doesn&#8217;t exist:</p>
+<p>Then, if the libdef doesn’t exist:</p>
 <pre><code class="lang-sh">flow-typed create-stub dependency-name@x.x.x
 </code></pre>
 <h3 id="offline-support">Offline Support</h3>
@@ -38,8 +38,8 @@ footer?
 </code></pre><p><a href="https://github.com/marionebl/commitlint">Commitlint</a> is setup to enforce this convention.</p>
 <h3 id="commitlint-rules-">Commitlint Rules:</h3>
 <ul>
-<li><a href="https://github.com/marionebl/commitlint/tree/master/@commitlint/config-angular#rules">@commitlint/config-angular</a>: Enforces common &#8220;types&#8221; , casing, length rules etc..</li>
-<li><a href="https://github.com/marionebl/commitlint/blob/master/@commitlint/config-lerna-scopes">@commitlint/config-lerna-scopes</a>: Ensures the &#8220;scope&#8221; portion matches one of the emdaer packages. Example: <code>fix(plugin-image): Add more cat pics</code>. Generic commits that do not affect a plugin or transform should have no scope like <code>chore: Do something generic</code>.</li>
+<li><a href="https://github.com/marionebl/commitlint/tree/master/@commitlint/config-angular#rules">@commitlint/config-angular</a>: Enforces common “types” , casing, length rules etc..</li>
+<li><a href="https://github.com/marionebl/commitlint/blob/master/@commitlint/config-lerna-scopes">@commitlint/config-lerna-scopes</a>: Ensures the “scope” portion matches one of the emdaer packages. Example: <code>fix(plugin-image): Add more cat pics</code>. Generic commits that do not affect a plugin or transform should have no scope like <code>chore: Do something generic</code>.</li>
 </ul>
 <h3 id="suggestions-">Suggestions:</h3>
 <p>If your commit fixes an issue, mention the issue number in your commit body or footer <a href="https://help.github.com/articles/closing-issues-using-keywords/">as recommended by GitHub</a>.</p>
@@ -48,3 +48,4 @@ footer?
 Closes #123, Closes #456
 </code></pre><h2 id="authors-file">AUTHORS file</h2>
 <p>If you would like, when making your PR, add yourself to the AUTHORS file by appending <code>Name &lt;githubusername&gt;</code>. Doing so will add your name to contributor details list in the <a href="https://github.com/emdaer/emdaer#contributing">Contributing</a> section.</p>
+

@@ -6,7 +6,7 @@
 
 <p align="center"><img src="hero.png" alt="emdaer" /></p>
 
-<h1 id="emdaer-travis-https-img-shields-io-travis-emdaer-emdaer-svg-style-flat-square-https-travis-ci-org-emdaer-emdaer-documented-with-emdaer-https-img-shields-io-badge-documented-20with-20emdaer-f06632-svg-style-flat-square-https-github-com-emdaer-emdaer-maintained-with-lerna-https-img-shields-io-badge-maintained-20with-20lerna-cc00ff-svg-style-flat-square-https-lernajs-io-">emdaer · <a href="https://travis-ci.org/emdaer/emdaer/"><img src="https://img.shields.io/travis/emdaer/emdaer.svg?style=flat-square" alt="Travis"></a> <a href="https://github.com/emdaer/emdaer"><img src="https://img.shields.io/badge/📓-documented%20with%20emdaer-F06632.svg?style=flat-square" alt="Documented with emdaer"></a> <a href="https://lernajs.io/"><img src="https://img.shields.io/badge/🐉-maintained%20with%20lerna-cc00ff.svg?style=flat-square" alt="Maintained with lerna"></a></h1>
+<p><h1 id="emdaer-travis-https-img-shields-io-travis-emdaer-emdaer-svg-style-flat-square-https-travis-ci-org-emdaer-emdaer-documented-with-emdaer-https-img-shields-io-badge-documented-20with-20emdaer-f06632-svg-style-flat-square-https-github-com-emdaer-emdaer-maintained-with-lerna-https-img-shields-io-badge-maintained-20with-20lerna-cc00ff-svg-style-flat-square-https-lernajs-io-">emdaer · <a href="https://travis-ci.org/emdaer/emdaer/"><img src="https://img.shields.io/travis/emdaer/emdaer.svg?style=flat-square" alt="Travis"></a> <a href="https://github.com/emdaer/emdaer"><img src="https://img.shields.io/badge/📓-documented%20with%20emdaer-F06632.svg?style=flat-square" alt="Documented with emdaer"></a> <a href="https://lernajs.io/"><img src="https://img.shields.io/badge/🐉-maintained%20with%20lerna-cc00ff.svg?style=flat-square" alt="Maintained with lerna"></a></h1></p>
 <p>📓 emdaer is a tool for creating and maintaining better READMEs</p>
 <!-- toc -->
 <ul>
@@ -30,7 +30,7 @@
 </ul>
 <h2 id="how-emdaer-works">How emdaer works</h2>
 <p>emdaer processes template files and writes the resulting files to your project.</p>
-<p>We match <code>.emdaer/(**/*).emdaer(.md)</code> and use the captured part of each matched file to determine the path for the output.</p>
+<p>We match <code>.emdaer/(<em>*/</em>).emdaer(.md)</code> and use the captured part of each matched file to determine the path for the output.</p>
 <h3 id="plugins-transforms">Plugins &amp; Transforms</h3>
 <!-- prettier-ignore -->
 <pre><code class="lang-md"># &lt;!--emdaer-p
@@ -96,7 +96,7 @@ Hello, World!
 </ul>
 
 <h2 id="contributing">Contributing</h2>
-<p>If you&#8217;d like to make emdaer better, please read our <a href="./CONTRIBUTING.md">guide to contributing</a>.</p>
+<p>If you’d like to make emdaer better, please read our <a href="./CONTRIBUTING.md">guide to contributing</a>.</p>
 <!--emdaer-p
   - '@emdaer/plugin-contributors-details-github'
 -->

@@ -4,8 +4,8 @@
   Its template can be found at .emdaer/CODE_OF_CONDUCT.emdaer.md
 -->
 
-<h1 id="contributor-covenant-code-of-conduct">Contributor Covenant Code of Conduct</h1>
-<h2 id="our-pledge">Our Pledge</h2>
+<p><h1 id="contributor-covenant-code-of-conduct">Contributor Covenant Code of Conduct</h1></p>
+<p><h2 id="our-pledge">Our Pledge</h2></p>
 <p>In the interest of fostering an open and welcoming environment, we as
 contributors and maintainers pledge to making participation in our project and
 our community a harassment-free experience for everyone, regardless of age, body
@@ -28,7 +28,7 @@ include:</p>
 advances</li>
 <li>Trolling, insulting/derogatory comments, and personal or political attacks</li>
 <li>Public or private harassment</li>
-<li>Publishing others&#8217; private information, such as a physical or electronic
+<li>Publishing others’ private information, such as a physical or electronic
 address, without explicit permission</li>
 <li>Other conduct which could reasonably be considered inappropriate in a
 professional setting</li>
@@ -58,7 +58,8 @@ obligated to maintain confidentiality with regard to the reporter of an incident
 Further details of specific enforcement policies may be posted separately.</p>
 <p>Project maintainers who do not follow or enforce the Code of Conduct in good
 faith may face temporary or permanent repercussions as determined by other
-members of the project&#8217;s leadership.</p>
+members of the project’s leadership.</p>
 <h2 id="attribution">Attribution</h2>
 <p>This Code of Conduct is adapted from the <a href="https://www.contributor-covenant.org">Contributor Covenant</a>, version 1.4,
 available at <a href="https://www.contributor-covenant.org/version/1/4/code-of-conduct.html">https://www.contributor-covenant.org/version/1/4/code-of-conduct.html</a></p>
+

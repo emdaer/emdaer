@@ -70,12 +70,6 @@
   dependencies:
     js-yaml "3.8.4"
     marked "0.3.7"
-    rehype-parse "4.0.0"
-    rehype-preset-minify "2.0.0"
-    rehype-stringify "3.0.0"
-    remark-parse "4.0.0"
-    remark-rehype "2.0.1"
-    unified "6.1.5"
 
 "@emdaer/meta@file:packages/meta":
   version "1.8.2"
@@ -139,6 +133,7 @@
 "@emdaer/transform-smartypants@file:packages/transform-smartypants":
   version "1.8.2"
   dependencies:
+    marked "^0.3.9"
     smartypants "0.0.5"
 
 "@emdaer/transform-table-of-contents@file:packages/transform-table-of-contents":
@@ -4208,6 +4203,10 @@ markdown-toc@^1.2.0:
 marked@0.3.7:
   version "0.3.7"
   resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.7.tgz#80ef3bbf1bd00d1c9cfebe42ba1b8c85da258d0d"
+
+marked@^0.3.9:
+  version "0.3.9"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.9.tgz#54ce6a57e720c3ac6098374ec625fcbcc97ff290"
 
 mdast-util-compact@^1.0.0:
   version "1.0.1"
