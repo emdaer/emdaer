@@ -4,91 +4,48 @@
   Its template can be found at .emdaer/CONTRIBUTING.emdaer.md
 -->
 
-# Contributing
-
-## Code of Conduct
-
-Before contributing, please read our [code of conduct](./CODE_OF_CONDUCT.md)
-
-
-## Getting Setup
-
-```sh
-make install # installs dependencies for emdaer
+<p></p><h1 id="contributing">Contributing</h1><p></p>
+<p></p><h2 id="code-of-conduct">Code of Conduct</h2><p></p>
+<p>Before contributing, please read our <a href="./CODE_OF_CONDUCT.md">code of conduct</a></p>
+<h2 id="getting-setup">Getting Setup</h2>
+<pre><code class="lang-sh">make install # installs dependencies for emdaer
 make bootstrap # installs dependencies for emdaer/packages/*
-```
-
-
-## Testing & Linting
-
-We enforce strict linting and 100% code coverage for all of emdaer.
-
-```sh
-make test # run the tests
+</code></pre>
+<h2 id="testing-linting">Testing &amp; Linting</h2>
+<p>We enforce strict linting and 100% code coverage for all of emdaer.</p>
+<pre><code class="lang-sh">make test # run the tests
 make lint # run the linter
 make type # run the type checker
-```
-
-
-## Plugins & Transforms
-
-When creating a plugin or transform, any dependencies must be stubbed for flow.
-
-First try:
-
-```sh
-flow-typed install dependency-name@x.x.x
-```
-
-Then, if the libdef doesn&#8217;t exist:
-
-```sh
-flow-typed create-stub dependency-name@x.x.x
-```
-
-### Offline Support
-In order to ensure emdaer works properly offline, if your plugin makes API requests or relies on a connection of any kind, please cache the response data under `.emdaer/.offline`, and namespace it with the plugin name.
-```
-.emdaer/.offline/plugin-my-new-plugin/response-data.json
-```
-Read this file when your API request fails and write to this file when your request is successful. For an example, check out `plugin-contributors-details-github`.
-
-
-## Feature Flags
-
-So that code can be merged quickly and confidently to the working branch, we use feature flags defined in `shared/EmdaerFeatureFlags`.
-
-
-## Commits
-
-All commit messages must follow the [Conventional Commits Specification](https://conventionalcommits.org/) which can be described like so:
-
-```
-type(scope?): subject
+</code></pre>
+<h2 id="plugins-transforms">Plugins &amp; Transforms</h2>
+<p>When creating a plugin or transform, any dependencies must be stubbed for flow.</p>
+<p>First try:</p>
+<pre><code class="lang-sh">flow-typed install dependency-name@x.x.x
+</code></pre>
+<p>Then, if the libdef doesn’t exist:</p>
+<pre><code class="lang-sh">flow-typed create-stub dependency-name@x.x.x
+</code></pre>
+<h3 id="offline-support">Offline Support</h3>
+<p>In order to ensure emdaer works properly offline, if your plugin makes API requests or relies on a connection of any kind, please cache the response data under <code>.emdaer/.offline</code>, and namespace it with the plugin name.</p>
+<pre><code>.emdaer/.offline/plugin-my-new-plugin/response-data.json
+</code></pre><p>Read this file when your API request fails and write to this file when your request is successful. For an example, check out <code>plugin-contributors-details-github</code>.</p>
+<h2 id="commits">Commits</h2>
+<p>All commit messages must follow the <a href="https://conventionalcommits.org/">Conventional Commits Specification</a> which can be described like so:</p>
+<pre><code>type(scope?): subject
 
 body?
 footer?
-```
-
-[Commitlint](https://github.com/marionebl/commitlint) is setup to enforce this convention.
-
-### Commitlint Rules:
-- [@commitlint/config-angular](https://github.com/marionebl/commitlint/tree/master/@commitlint/config-angular#rules): Enforces common &#8220;types&#8221; , casing, length rules etc..
-- [@commitlint/config-lerna-scopes](https://github.com/marionebl/commitlint/blob/master/@commitlint/config-lerna-scopes): Ensures the &#8220;scope&#8221; portion matches one of the emdaer packages. Example: `fix(plugin-image): Add more cat pics`. Generic commits that do not affect a plugin or transform should have no scope like `chore: Do something generic`.
-
-### Suggestions:
-If your commit fixes an issue, mention the issue number in your commit body or footer [as recommended by GitHub](https://help.github.com/articles/closing-issues-using-keywords/).
-
-Example:
-```
-fix(plugin-image): Add more cat pics
+</code></pre><p><a href="https://github.com/marionebl/commitlint">Commitlint</a> is setup to enforce this convention.</p>
+<h3 id="commitlint-rules-">Commitlint Rules:</h3>
+<ul>
+<li><a href="https://github.com/marionebl/commitlint/tree/master/@commitlint/config-angular#rules">@commitlint/config-angular</a>: Enforces common “types” , casing, length rules etc..</li>
+<li><a href="https://github.com/marionebl/commitlint/blob/master/@commitlint/config-lerna-scopes">@commitlint/config-lerna-scopes</a>: Ensures the “scope” portion matches one of the emdaer packages. Example: <code>fix(plugin-image): Add more cat pics</code>. Generic commits that do not affect a plugin or transform should have no scope like <code>chore: Do something generic</code>.</li>
+</ul>
+<h3 id="suggestions-">Suggestions:</h3>
+<p>If your commit fixes an issue, mention the issue number in your commit body or footer <a href="https://help.github.com/articles/closing-issues-using-keywords/">as recommended by GitHub</a>.</p>
+<p>Example:</p>
+<pre><code>fix(plugin-image): Add more cat pics
 Closes #123, Closes #456
-```
-
-
-## AUTHORS file
-
-If you would like, when making your PR, add yourself to the AUTHORS file by appending `Name <githubusername>`. Doing so will add your name to contributor details list in the [Contributing](https://github.com/emdaer/emdaer#contributing) section.
-
-
+</code></pre><h2 id="authors-file">AUTHORS file</h2>
+<p>If you would like, when making your PR, add yourself to the AUTHORS file by appending <code>Name &lt;githubusername&gt;</code>. Doing so will add your name to contributor details list in the <a href="https://github.com/emdaer/emdaer#contributing">Contributing</a> section.</p>
 

@@ -1,0 +1,6 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@emdaer/core processes an .emdaer.md file 1`] = `
+"<h1 id=\\"hello-world-\\">Hello, World!</h1>
+"
+`;

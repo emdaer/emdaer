@@ -13,13 +13,9 @@
     "prepublish": "flow-remove-types -p src -i .test.js -d lib"
   },
   "dependencies": {
+    "html-minifier": "^3.5.8",
     "js-yaml": "3.8.4",
-    "rehype-parse": "4.0.0",
-    "rehype-preset-minify": "2.0.0",
-    "rehype-stringify": "3.0.0",
-    "remark-parse": "4.0.0",
-    "remark-rehype": "2.0.1",
-    "unified": "6.1.5"
+    "marked": "0.3.7"
   },
   "publishConfig": {
     "access": "public"

@@ -1,6 +1,6 @@
 /* @flow */
 
-import type { TransformCall } from '../_types';
+import type { TransformCall } from '../types';
 
 const resolveTransform = require('./resolveTransform');
 
@@ -9,7 +9,8 @@ const resolveTransform = require('./resolveTransform');
  */
 module.exports = async function applyTransform(
   content: string,
-  [transform, options]: TransformCall
+  [transform, options]: TransformCall,
+  comment: string
 ): Promise<string> {
-  return (await resolveTransform(transform))(content, options);
+  return (await resolveTransform(transform))(content, options, comment);
 };

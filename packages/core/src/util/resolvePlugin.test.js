@@ -1,5 +1,5 @@
 const EmdaerError = require('./EmdaerError');
-const { NO_PLUGIN } = require('../_errors');
+const { NO_PLUGIN } = require('../errors');
 
 const resolvePlugin = require('./resolvePlugin');
 

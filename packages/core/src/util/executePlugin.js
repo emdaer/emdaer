@@ -1,7 +1,7 @@
 /* @flow */
 /* eslint-disable no-use-before-define */
 
-import type { PluginCall } from '../_types';
+import type { PluginCall } from '../types';
 
 const resolvePlugin = require('./resolvePlugin');
 

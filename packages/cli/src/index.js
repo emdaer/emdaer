@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 const emdaer = require('@emdaer/core');
-const EmdaerFeatureFlags = require('@emdaer/core/lib/EmdaerFeatureFlags');
 
 const program = require('commander');
 const { promisify } = require('util');
@@ -13,32 +12,20 @@ require('rxjs/add/observable/from');
 require('rxjs/add/operator/map');
 require('rxjs/add/operator/mergeAll');
 
-const logger = require('./_logger');
+const addStamp = require('./util/addStamp');
+const logger = require('./util/logger');
 const { version } = require('../package.json');
-const { NO_MATCHING_FILES, EMDAER_FAILED } = require('./_errors');
-const getEnabledFeatureFlags = require('./util/getEnabledFeatureFlags');
+const { NO_MATCHING_FILES, EMDAER_FAILED } = require('./errors');
 
 module.exports = async function cli(args = process.argv) {
   let exitCode = 0;
-  program
-    .version(version)
-    .option('--AST', 'Enable experimental AST parsing')
-    .parse(args);
+  program.version(version).parse(args);
 
   const origins = await glob('.emdaer/**/*.emdaer.md');
 
   if (!origins) {
     logger.warn(NO_MATCHING_FILES);
   } else {
-    if (program.AST) {
-      EmdaerFeatureFlags.override('enableASTAndCommonComment', true);
-    }
-
-    const enabledFeatureFlags = getEnabledFeatureFlags(EmdaerFeatureFlags);
-    if (enabledFeatureFlags) {
-      logger.log(`The following flags are enabled: ${enabledFeatureFlags} 🚩`);
-    }
-
     const { name } = JSON.parse(await readFile('package.json', 'utf8'));
     exitCode = await Observable.from(origins)
       .map(async origin => {
@@ -49,7 +36,10 @@ module.exports = async function cli(args = process.argv) {
         logger.log(`Writing ${destination} for ${name} 👌`);
         return outputFile(
           destination,
-          await emdaer(origin, (await readFile(origin)).toString())
+          await addStamp(
+            await emdaer(origin, (await readFile(origin)).toString()),
+            origin
+          )
         );
       })
       .toPromise()

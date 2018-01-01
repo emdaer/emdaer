@@ -1,9 +1,9 @@
 /* @flow */
 
-import type { Transform } from '../_types';
+import type { Transform } from '../types';
 
 const EmdaerError = require('./EmdaerError');
-const { NO_TRANSFORM } = require('../_errors');
+const { NO_TRANSFORM } = require('../errors');
 
 /**
  * Loads a provided transform

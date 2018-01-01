@@ -1,5 +1,5 @@
 const EmdaerError = require('./EmdaerError');
-const { NO_TRANSFORM } = require('../_errors');
+const { NO_TRANSFORM } = require('../errors');
 
 const resolveTransform = require('./resolveTransform');
 

@@ -4,6 +4,5 @@
   Its template can be found at .emdaer/README.emdaer.md
 -->
 
-# @emdaer/meta
-
-An emdaer package that exports shared meta info about emdaer
+<h1 id="-emdaer-meta">@emdaer/meta</h1>
+<p>An emdaer package that exports shared meta info about emdaer</p>

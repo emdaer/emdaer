@@ -22,7 +22,7 @@ declare module '@emdaer/cli' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module '@emdaer/cli/lib/_errors' {
+declare module '@emdaer/cli/lib/errors' {
   declare module.exports: any;
 }
 
@@ -34,7 +34,7 @@ declare module '@emdaer/cli/lib/index' {
   declare module.exports: any;
 }
 
-declare module '@emdaer/cli/src/_errors' {
+declare module '@emdaer/cli/src/errors' {
   declare module.exports: any;
 }
 
@@ -55,8 +55,8 @@ declare module '@emdaer/cli/src/index.test' {
 }
 
 // Filename aliases
-declare module '@emdaer/cli/lib/_errors.js' {
-  declare module.exports: $Exports<'@emdaer/cli/lib/_errors'>;
+declare module '@emdaer/cli/lib/errors.js' {
+  declare module.exports: $Exports<'@emdaer/cli/lib/errors'>;
 }
 declare module '@emdaer/cli/lib/_logger.js' {
   declare module.exports: $Exports<'@emdaer/cli/lib/_logger'>;
@@ -64,8 +64,8 @@ declare module '@emdaer/cli/lib/_logger.js' {
 declare module '@emdaer/cli/lib/index.js' {
   declare module.exports: $Exports<'@emdaer/cli/lib/index'>;
 }
-declare module '@emdaer/cli/src/_errors.js' {
-  declare module.exports: $Exports<'@emdaer/cli/src/_errors'>;
+declare module '@emdaer/cli/src/errors.js' {
+  declare module.exports: $Exports<'@emdaer/cli/src/errors'>;
 }
 declare module '@emdaer/cli/src/_logger.js' {
   declare module.exports: $Exports<'@emdaer/cli/src/_logger'>;

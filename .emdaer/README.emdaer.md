@@ -30,7 +30,9 @@
   - value: description
 -->
 
-<!-- toc -->
+<!--emdaer-t
+  - '@emdaer/transform-table-of-contents'
+-->
 
 <!--emdaer-p
   - '@emdaer/plugin-node-package'
@@ -65,12 +67,6 @@
 -->
 
 <!--emdaer-p
-  - '@emdaer/plugin-import'
-  - path: .emdaer/README/ast-parsing.md
-    runEmdaer: true
--->
-
-<!--emdaer-p
   - '@emdaer/plugin-node-package'
   - path: '@emdaer/meta/lib/README/this-readme.js'
 -->
@@ -92,8 +88,4 @@
 <!--emdaer-t
   - '@emdaer/transform-smartypants'
   - options: q
--->
-
-<!--emdaer-t
-  - '@emdaer/transform-table-of-contents'
 -->
