@@ -1,7 +1,7 @@
 {
   "name": "@emdaer/transform-smartypants",
   "description": "An emdaer transformation that translates ASCII punctuation characters into typographic punctuation HTML entities",
-  "version": "1.8.3",
+  "version": "1.8.4",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.me/",
   "keywords": [
