@@ -15,7 +15,7 @@
   "dependencies": {
     "html-minifier": "^3.5.8",
     "js-yaml": "3.8.4",
-    "marked": "0.3.7"
+    "marked": "0.3.9"
   },
   "publishConfig": {
     "access": "public"
