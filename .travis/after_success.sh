@@ -28,4 +28,4 @@ echo "git config --list"
 git config --list #debug
 
 yarn
-lerna publish --conventional-commits --yes --force-publish=* -m "chore: publish %s"
+lerna publish --conventional-commits --yes --force-publish=* -m "chore: publish %s [ci skip]"
