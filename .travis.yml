@@ -1,11 +1,13 @@
+sudo: false
 language: node_js
+if: tag IS blank
 node_js:
   - 8.9
   - 9
-script:
-  - make ci
-sudo: false
-if: tag IS blank
+script: make ci
 before_install: git fetch --unshallow
-after_success:
-  - travis-spawn-once .travis/after_success.sh --skipPR --ghTokenName=RELEASE_GH_TOKEN
+jobs:
+  include:
+    - if: type != pull_request AND branch = master
+      stage: Publish to NPM
+      script: .travis/after_success.sh
