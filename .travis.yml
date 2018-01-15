@@ -4,7 +4,7 @@ if: tag IS blank
 node_js:
   - 8.9
   - 9
-script: ./.travis-script.sh
+script: make ci
 before_install: git fetch --unshallow
 jobs:
   include:
