@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.8.9"></a>
+## [1.8.9](https://github.com/emdaer/emdaer/compare/v1.8.8...v1.8.9) (2018-02-19)
+
+
+### ci
+
+* update commitlint and commitlint related things ([#77](https://github.com/emdaer/emdaer/issues/77)) ([ca06bb1](https://github.com/emdaer/emdaer/commit/ca06bb1))
+
+
+### BREAKING CHANGES
+
+* please just release v2.0.0 now...
+
+
+
+
 <a name="1.8.8"></a>
 ## [1.8.8](https://github.com/emdaer/emdaer/compare/v1.8.7...v1.8.8) (2018-02-02)
 
