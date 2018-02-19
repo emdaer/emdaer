@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.8.10"></a>
+## [1.8.10](https://github.com/emdaer/emdaer/compare/v1.8.9...v1.8.10) (2018-02-19)
+
+
+
+
+**Note:** Version bump only for package @emdaer/plugin-list
+
 <a name="1.8.9"></a>
 ## [1.8.9](https://github.com/emdaer/emdaer/compare/v1.8.8...v1.8.9) (2018-02-19)
 

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.8.10"></a>
+## [1.8.10](https://github.com/emdaer/emdaer/compare/v1.8.9...v1.8.10) (2018-02-19)
+
+
+### ci
+
+* bump lerna ([#78](https://github.com/emdaer/emdaer/issues/78)) ([93b8c26](https://github.com/emdaer/emdaer/commit/93b8c26))
+
+
+### BREAKING CHANGES
+
+* please just release v2.0.0, I'm begging you
+
+
+
+
 <a name="1.8.9"></a>
 ## [1.8.9](https://github.com/emdaer/emdaer/compare/v1.8.8...v1.8.9) (2018-02-19)
 
