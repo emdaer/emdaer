@@ -1,8 +1,13 @@
 {
   "lerna": "2.0.0-rc.5",
-  "packages": ["packages/*"],
+  "packages": [
+    "packages/*"
+  ],
   "npmClient": "yarn",
-  "npmClientArgs": ["--production", "--no-optional"],
+  "npmClientArgs": [
+    "--production",
+    "--no-optional"
+  ],
   "conventionalCommits": true,
-  "version": "1.8.11"
+  "version": "1.8.12"
 }

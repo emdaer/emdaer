@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.8.12"></a>
+## [1.8.12](https://github.com/emdaer/emdaer/compare/v1.8.11...v1.8.12) (2018-02-20)
+
+
+### Performance Improvements
+
+* simplify lerna publishing ([#80](https://github.com/emdaer/emdaer/issues/80)) ([a329896](https://github.com/emdaer/emdaer/commit/a329896))
+
+
+### BREAKING CHANGES
+
+* please version 2
+
+
+
+
 <a name="1.8.11"></a>
 ## [1.8.11](https://github.com/emdaer/emdaer/compare/v1.8.10...v1.8.11) (2018-02-19)
 
