@@ -3,6 +3,53 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.8.13"></a>
+## [1.8.13](https://github.com/emdaer/emdaer/compare/v1.8.1...v1.8.13) (2018-02-21)
+
+
+### Bug Fixes
+
+* **cli:** ensure files write to proper destinations ([#73](https://github.com/emdaer/emdaer/issues/73)) ([f3f2dd3](https://github.com/emdaer/emdaer/commit/f3f2dd3)), closes [#72](https://github.com/emdaer/emdaer/issues/72)
+* bump lerna ([#79](https://github.com/emdaer/emdaer/issues/79)) ([857cccc](https://github.com/emdaer/emdaer/commit/857cccc))
+* see if moving argument order fixes lerna publishing ([12c7ea1](https://github.com/emdaer/emdaer/commit/12c7ea1))
+* update marked per vulnerability warning ([#74](https://github.com/emdaer/emdaer/issues/74)) ([0dd0990](https://github.com/emdaer/emdaer/commit/0dd0990))
+
+
+### build
+
+* be more flexible on dependency versions ([#76](https://github.com/emdaer/emdaer/issues/76)) ([256aa47](https://github.com/emdaer/emdaer/commit/256aa47))
+
+
+### ci
+
+* bump lerna ([#78](https://github.com/emdaer/emdaer/issues/78)) ([93b8c26](https://github.com/emdaer/emdaer/commit/93b8c26))
+* update commitlint and commitlint related things ([#77](https://github.com/emdaer/emdaer/issues/77)) ([ca06bb1](https://github.com/emdaer/emdaer/commit/ca06bb1))
+
+
+### Features
+
+* v2 ([8c4fdee](https://github.com/emdaer/emdaer/commit/8c4fdee))
+* **build:** update some lerna things ([60bf4fe](https://github.com/emdaer/emdaer/commit/60bf4fe))
+
+
+### Performance Improvements
+
+* simplify lerna publishing ([#80](https://github.com/emdaer/emdaer/issues/80)) ([a329896](https://github.com/emdaer/emdaer/commit/a329896))
+
+
+### BREAKING CHANGES
+
+* **build:** woo finally shipping v2!
+* please version 2
+* please, just... please
+* please just release v2.0.0, I'm begging you
+* please just release v2.0.0 now...
+* v2.0.0 didn't ship with the intended commit womp womp
+
+
+
+
+
 <a name="1.8.12"></a>
 ## [1.8.12](https://github.com/emdaer/emdaer/compare/v1.8.11...v1.8.12) (2018-02-20)
 
