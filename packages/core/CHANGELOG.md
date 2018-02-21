@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.8.13"></a>
+## [1.8.13](https://github.com/emdaer/emdaer/compare/v1.8.1...v1.8.13) (2018-02-21)
+
+
+### Bug Fixes
+
+* update marked per vulnerability warning ([#74](https://github.com/emdaer/emdaer/issues/74)) ([0dd0990](https://github.com/emdaer/emdaer/commit/0dd0990))
+
+
+
+
+
 <a name="1.8.12"></a>
 ## [1.8.12](https://github.com/emdaer/emdaer/compare/v1.8.11...v1.8.12) (2018-02-20)
 
