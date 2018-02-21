@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.8.15"></a>
+## [1.8.15](https://github.com/emdaer/emdaer/compare/v1.8.13...v1.8.15) (2018-02-21)
+
+
+### Features
+
+* **build:** update some lerna things ([a0bdfb1](https://github.com/emdaer/emdaer/commit/a0bdfb1))
+* **v2:** ship v2 ([66e7cfa](https://github.com/emdaer/emdaer/commit/66e7cfa))
+
+
+### BREAKING CHANGES
+
+* **build:** woo finally shipping v2!
+* **v2:** v2
+
+
+
+
+
+<a name="1.8.14"></a>
+## [1.8.14](https://github.com/emdaer/emdaer/compare/v1.8.13...v1.8.14) (2018-02-21)
+
+
+### Features
+
+* **build:** update some lerna things ([a0bdfb1](https://github.com/emdaer/emdaer/commit/a0bdfb1))
+* **v2:** ship v2 ([66e7cfa](https://github.com/emdaer/emdaer/commit/66e7cfa))
+
+
+### BREAKING CHANGES
+
+* **build:** woo finally shipping v2!
+* **v2:** v2
+
+
+
+
+
 <a name="1.8.13"></a>
 ## [1.8.13](https://github.com/emdaer/emdaer/compare/v1.8.1...v1.8.13) (2018-02-21)
 
