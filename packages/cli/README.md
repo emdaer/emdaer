@@ -41,3 +41,11 @@ npm install --save-dev @emdaer/cli @emdaer/plugin-value-from-package husky
 ```sh
 npm run emdaer
 ```
+<h2 id="checkdirtydestination">checkDirtyDestination</h2>
+<p>Checks if given destination has changes.</p>
+<p><strong>Parameters</strong></p>
+<ul>
+<li><code>destination</code> <strong><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></strong> The destination file name to check</li>
+</ul>
+<p>Returns <strong><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>&gt;</strong> dirty
+ Whether or not the file has changes</p>

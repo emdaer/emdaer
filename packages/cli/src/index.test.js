@@ -2,17 +2,24 @@ jest.mock('@emdaer/core', () => () => {});
 
 jest.mock('util', () => ({
   promisify: fn => fn,
+  deprecate: fn => fn,
 }));
 jest.mock('glob');
 jest.mock('fs-extra');
+jest.mock('execa');
 
 jest.mock('./util/logger');
 
 const glob = require('glob');
 const fs = require('fs-extra');
+const execa = require('execa');
 const logger = require('./util/logger');
 
-const { NO_MATCHING_FILES, EMDAER_FAILED } = require('./errors');
+const {
+  NO_MATCHING_FILES,
+  EMDAER_FAILED,
+  makeDirtyDestinationWarning,
+} = require('./errors');
 
 const bin = require('./');
 
@@ -25,6 +32,7 @@ describe('@emdaer/cli', () => {
   test('logs error when emdaer fails', async () => {
     glob.mockImplementationOnce(() => ['./.emdaer/README.emdaer.md']);
     fs.readFile.mockImplementationOnce(() => '{"name":"@emdaer/cli"}');
+    execa.mockImplementationOnce(() => Promise.reject());
     fs.readFile.mockImplementationOnce(() => {
       throw new Error();
     });
@@ -35,10 +43,29 @@ describe('@emdaer/cli', () => {
     );
     expect(exitCode).toBe(1);
   });
+  test('warns when a readme was editted manually', async () => {
+    glob.mockImplementationOnce(() => ['./.emdaer/README.emdaer.md']);
+    fs.readFile.mockImplementationOnce(() => '{"name":"@emdaer/cli"}');
+    execa.mockImplementationOnce(() => Promise.resolve({ stdout: 'true' }));
+    execa.mockImplementationOnce(() =>
+      Promise.resolve({
+        stdout: 'README.md',
+      })
+    );
+    const exitCode = await bin();
+    expect(logger.warn).toHaveBeenLastCalledWith(
+      makeDirtyDestinationWarning('README', '.md')
+    );
+    expect(exitCode).toBe(0);
+  });
   test('logs happy message on success', async () => {
     glob.mockImplementationOnce(() => ['./.emdaer/README.emdaer.md']);
     fs.readFile.mockImplementationOnce(() => '{"name":"@emdaer/cli"}');
     fs.readFile.mockImplementationOnce(() => '');
+    execa.mockImplementationOnce(() => Promise.resolve({ stdout: 'true' }));
+    execa.mockImplementationOnce(() =>
+      Promise.resolve({ stdout: 'M NOPE.md' })
+    );
     fs.outputFile.mockImplementation(() => {});
     const exitCode = await bin();
     expect(logger.log).toHaveBeenLastCalledWith(
@@ -50,6 +77,8 @@ describe('@emdaer/cli', () => {
     glob.mockImplementationOnce(() => ['./.emdaer/README.emdaer.md']);
     fs.readFile.mockImplementationOnce(() => '{"name":"@emdaer/cli"}');
     fs.readFile.mockImplementationOnce(() => '');
+    execa.mockImplementationOnce(() => Promise.resolve({ stdout: 'true' }));
+    execa.mockImplementationOnce(() => Promise.resolve({ stdout: '' }));
     fs.outputFile.mockImplementation(() => {});
     const exitCode = await bin();
     expect(fs.outputFile).toHaveBeenLastCalledWith(
