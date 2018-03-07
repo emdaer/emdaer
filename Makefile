@@ -11,8 +11,8 @@ bootstrap:
 	./node_modules/.bin/lerna bootstrap
 	yarn install --force
 emdaer:
-	./node_modules/.bin/emdaer
-	./node_modules/.bin/lerna exec -- emdaer
+	./node_modules/.bin/emdaer --yes
+	./node_modules/.bin/lerna exec -- emdaer --yes
 	git add *.md
 	git add .emdaer/.offline
 	git add packages/*/*.md

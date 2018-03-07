@@ -128,10 +128,11 @@ npm install --save-dev @emdaer/cli @emdaer/plugin-value-from-package husky
 {
   "scripts": {
     "emdaer": "emdaer && git add *.md",
-    "precommit": "npm run emdaer"
+    "precommit": "npm run emdaer -- --yes"
   }
 }
 ```
+<p>NOTE: In the case of a <code>precommit</code> hook (or CI/other automation), we don’t want to be prompted about anything. The <code>--yes</code> flag will automatically answer “yes” to any prompts. For example, it will make emdaer write your READMEs without prompting about overwritting existing changes.</p>
 <p>Add a <code>.emdaer/README.emdaer.md</code> file:</p>
 <!-- prettier-ignore-start -->
 
@@ -147,6 +148,7 @@ npm install --save-dev @emdaer/cli @emdaer/plugin-value-from-package husky
 ```sh
 npm run emdaer
 ```
+<p>NOTE: By default, emdaer checks for existing changes to your READMEs before writing. If it detects changes, it will provide a prompt asking if you would like to overwrite the README with the newly generated content. If you accidentally edited README directly, you will want to answer <code>n</code> to the prompt, move any changes to the respective <code>.emdaer/*.emdaer.md</code> file, and rerun emdaer. In the case where you may be writting your README incrementally and running emdaer multiple times, you can either answer <code>Y</code> to the prompt or use the <code>--yes</code> flag to skip the prompt all together. In both cases, emdaer will overwrite the README with the newly generated content.</p>
 <h2 id="contributing">Contributing</h2>
 <p>If you’d like to make emdaer better, please read our <a href="./CONTRIBUTING.md">guide to contributing</a>.</p>
 <details>

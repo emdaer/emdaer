@@ -30,7 +30,8 @@ describe('@emdaer/cli', () => {
   test('logs error when emdaer fails', async () => {
     glob.mockImplementationOnce(() => ['./.emdaer/README.emdaer.md']);
     fs.readJson.mockImplementationOnce(() => ({ name: '@emdaer/cli' }));
-    execa.mockImplementationOnce(() => Promise.reject());
+    fs.readFile.mockImplementationOnce(() => console.log('heh') || 'looool');
+    // execa.mockImplementationOnce(() => Promise.reject());
     fs.readFile.mockImplementationOnce(() => {
       throw new Error();
     });
@@ -41,12 +42,13 @@ describe('@emdaer/cli', () => {
     );
     expect(exitCode).toBe(1);
   });
-  test('skips prompt if destination is not dirty', async () => {
+  test.only('skips prompt if destination is not dirty', async () => {
     glob.mockImplementationOnce(() => ['./.emdaer/README.emdaer.md']);
     fs.readJson.mockImplementationOnce(() => ({ name: '@emdaer/cli' }));
-    fs.readFile.mockImplementation(() => '');
-    execa.mockImplementationOnce(() => Promise.resolve({ stdout: 'true' }));
-    execa.mockImplementationOnce(() => Promise.resolve({ stdout: '' }));
+    fs.readFile.mockImplementationOnce(() => '');
+    fs.readFile.mockImplementationOnce(() => '');
+    // execa.mockImplementationOnce(() => Promise.resolve({ stdout: 'true' }));
+    // execa.mockImplementationOnce(() => Promise.resolve({ stdout: '' }));
     fs.outputFile.mockImplementation(() => {});
     const exitCode = await bin();
     expect(inquirer.prompt).not.toBeCalled();
@@ -74,12 +76,12 @@ describe('@emdaer/cli', () => {
   test('warns when overwriting was skipped', async () => {
     glob.mockImplementationOnce(() => ['./.emdaer/README.emdaer.md']);
     fs.readJson.mockImplementationOnce(() => ({ name: '@emdaer/cli' }));
-    execa.mockImplementationOnce(() => Promise.resolve({ stdout: 'true' }));
-    execa.mockImplementationOnce(() =>
-      Promise.resolve({
-        stdout: 'M README.md',
-      })
-    );
+    // execa.mockImplementationOnce(() => Promise.resolve({ stdout: 'true' }));
+    // execa.mockImplementationOnce(() =>
+    //   Promise.resolve({
+    //     stdout: 'M README.md',
+    //   })
+    // );
     jest
       .spyOn(inquirer, 'prompt')
       .mockImplementationOnce(() => Promise.resolve({ overwrite: true }));
@@ -107,10 +109,10 @@ describe('@emdaer/cli', () => {
     glob.mockImplementationOnce(() => ['./.emdaer/README.emdaer.md']);
     fs.readJson.mockImplementationOnce(() => ({ name: '@emdaer/cli' }));
     fs.readFile.mockImplementationOnce(() => '');
-    execa.mockImplementationOnce(() => Promise.resolve({ stdout: 'true' }));
-    execa.mockImplementationOnce(() =>
-      Promise.resolve({ stdout: 'M NOPE.md' })
-    );
+    // execa.mockImplementationOnce(() => Promise.resolve({ stdout: 'true' }));
+    // execa.mockImplementationOnce(() =>
+    //   Promise.resolve({ stdout: 'M NOPE.md' })
+    // );
     fs.outputFile.mockImplementation(() => {});
     const exitCode = await bin();
     expect(logger.log).toHaveBeenLastCalledWith(
@@ -122,8 +124,8 @@ describe('@emdaer/cli', () => {
     glob.mockImplementationOnce(() => ['./.emdaer/README.emdaer.md']);
     fs.readJson.mockImplementationOnce(() => ({ name: '@emdaer/cli' }));
     fs.readFile.mockImplementationOnce(() => '');
-    execa.mockImplementationOnce(() => Promise.resolve({ stdout: 'true' }));
-    execa.mockImplementationOnce(() => Promise.resolve({ stdout: '' }));
+    // execa.mockImplementationOnce(() => Promise.resolve({ stdout: 'true' }));
+    // execa.mockImplementationOnce(() => Promise.resolve({ stdout: '' }));
     fs.outputFile.mockImplementation(() => {});
     const exitCode = await bin();
     expect(fs.outputFile).toHaveBeenLastCalledWith(
