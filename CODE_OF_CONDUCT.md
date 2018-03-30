@@ -4,8 +4,8 @@
   Its template can be found at .emdaer/CODE_OF_CONDUCT.emdaer.md
 -->
 
-<p></p><h1 id="contributor-covenant-code-of-conduct">Contributor Covenant Code of Conduct</h1><p></p>
-<p></p><h2 id="our-pledge">Our Pledge</h2><p></p>
+<p><h1 id="contributor-covenant-code-of-conduct">Contributor Covenant Code of Conduct</h1></p>
+<p><h2 id="our-pledge">Our Pledge</h2></p>
 <p>In the interest of fostering an open and welcoming environment, we as
 contributors and maintainers pledge to making participation in our project and
 our community a harassment-free experience for everyone, regardless of age, body
@@ -51,7 +51,7 @@ representative at an online or offline event. Representation of a project may be
 further defined and clarified by project maintainers.</p>
 <h2 id="enforcement">Enforcement</h2>
 <p>Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at flipactual+emdaer@gmail.com. All
+reported by contacting the project team at <a href="mailto:flipactual+emdaer@gmail.com">flipactual+emdaer@gmail.com</a>. All
 complaints will be reviewed and investigated and will result in a response that
 is deemed necessary and appropriate to the circumstances. The project team is
 obligated to maintain confidentiality with regard to the reporter of an incident.

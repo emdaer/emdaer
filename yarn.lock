@@ -109,97 +109,98 @@
     find-up "^2.1.0"
 
 "@emdaer/cli@file:packages/cli":
-  version "1.8.12"
+  version "2.0.0"
   dependencies:
-    "@emdaer/core" "^1.8.12"
+    "@emdaer/core" "^2.0.0"
     chalk "2.0.1"
     commander "2.11.0"
     fs-extra "3.0.1"
     glob "^7.1.2"
     rxjs "^5.5.5"
 
-"@emdaer/core@^1.8.12":
-  version "1.8.12"
-  resolved "https://registry.yarnpkg.com/@emdaer/core/-/core-1.8.12.tgz#2e48f7d0a99268484e9cf41bced9f2d05c5768e8"
+"@emdaer/core@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@emdaer/core/-/core-2.0.0.tgz#7d7944be497993cd5d275b438c5e52d27fbcfcfe"
   dependencies:
     html-minifier "^3.5.8"
     js-yaml "3.8.4"
     marked "0.3.9"
 
 "@emdaer/core@file:packages/core":
-  version "1.8.12"
+  version "2.0.0"
   dependencies:
+    highlight.js "^9.12.0"
     html-minifier "^3.5.8"
     js-yaml "3.8.4"
     marked "0.3.9"
 
 "@emdaer/meta@file:packages/meta":
-  version "1.8.12"
+  version "2.0.0"
 
 "@emdaer/plugin-contributors-details-github@file:packages/plugin-contributors-details-github":
-  version "1.8.12"
+  version "2.0.0"
   dependencies:
     fs-extra "^4.0.2"
     glob "^7.1.2"
     node-fetch "^1.7.3"
 
 "@emdaer/plugin-documentation@file:packages/plugin-documentation":
-  version "1.8.12"
+  version "2.0.0"
   dependencies:
     documentation "4.0.0-rc.1"
 
 "@emdaer/plugin-image@file:packages/plugin-image":
-  version "1.8.12"
+  version "2.0.0"
 
 "@emdaer/plugin-import@file:packages/plugin-import":
-  version "1.8.12"
+  version "2.0.0"
   dependencies:
-    "@emdaer/core" "^1.8.12"
+    "@emdaer/core" "^2.0.0"
     fs-extra "3.0.1"
 
 "@emdaer/plugin-license-reference@file:packages/plugin-license-reference":
-  version "1.8.12"
+  version "2.0.0"
   dependencies:
-    "@emdaer/plugin-value-from-package" "^1.8.12"
+    "@emdaer/plugin-value-from-package" "^2.0.0"
 
 "@emdaer/plugin-list-lerna-packages@file:packages/plugin-list-lerna-packages":
-  version "1.8.12"
+  version "2.0.0"
   dependencies:
     fs-extra "^4.0.2"
     glob "^7.1.2"
 
 "@emdaer/plugin-node-package@file:packages/plugin-node-package":
-  version "1.8.12"
+  version "2.0.0"
   dependencies:
-    "@emdaer/core" "^1.8.12"
+    "@emdaer/core" "^2.0.0"
 
 "@emdaer/plugin-shields@file:packages/plugin-shields":
-  version "1.8.12"
+  version "2.0.0"
 
-"@emdaer/plugin-value-from-package@^1.8.12":
-  version "1.8.12"
-  resolved "https://registry.yarnpkg.com/@emdaer/plugin-value-from-package/-/plugin-value-from-package-1.8.12.tgz#4d518a251759fc4ec31797db908befb93403aaf5"
+"@emdaer/plugin-value-from-package@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@emdaer/plugin-value-from-package/-/plugin-value-from-package-2.0.0.tgz#c01b4165a8fd8dcdde4ef201a1e9fcd5efc6f3db"
   dependencies:
     fs-extra "3.0.1"
 
 "@emdaer/plugin-value-from-package@file:packages/plugin-value-from-package":
-  version "1.8.12"
+  version "2.0.0"
   dependencies:
     fs-extra "3.0.1"
 
 "@emdaer/transform-prettier@file:packages/transform-prettier":
-  version "1.8.12"
+  version "2.0.0"
   dependencies:
     prettier "^1.9.1"
 
 "@emdaer/transform-smartypants@file:packages/transform-smartypants":
-  version "1.8.12"
+  version "2.0.0"
   dependencies:
     marked "^0.3.9"
     smartypants "0.0.5"
 
 "@emdaer/transform-table-of-contents@file:packages/transform-table-of-contents":
-  version "1.8.12"
+  version "2.0.0"
   dependencies:
     markdown-toc "^1.2.0"
 
@@ -2953,7 +2954,7 @@ he@1.1.x:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/he/-/he-1.1.1.tgz#93410fd21b009735151f8868c2f271f3427e23fd"
 
-highlight.js@^9.1.0:
+highlight.js@^9.1.0, highlight.js@^9.12.0:
   version "9.12.0"
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.12.0.tgz#e6d9dbe57cbefe60751f02af336195870c90c01e"
 
