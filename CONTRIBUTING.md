@@ -4,8 +4,8 @@
   Its template can be found at .emdaer/CONTRIBUTING.emdaer.md
 -->
 
-<p><h1 id="contributing">Contributing</h1></p>
-<p><h2 id="code-of-conduct">Code of Conduct</h2></p>
+<p></p><h1 id="contributing">Contributing</h1><p></p>
+<p></p><h2 id="code-of-conduct">Code of Conduct</h2><p></p>
 <p>Before contributing, please read our <a href="./CODE_OF_CONDUCT.md">code of conduct</a></p>
 <h2 id="getting-setup">Getting Setup</h2>
 <pre><code class="lang-sh">make install # installs dependencies for emdaer
@@ -20,10 +20,10 @@ make type # run the type checker
 <h2 id="plugins-transforms">Plugins &amp; Transforms</h2>
 <p>When creating a plugin or transform, any dependencies must be stubbed for flow.</p>
 <p>First try:</p>
-<pre><code class="lang-sh">flow-typed install <a href="mailto:dependency-name@x.x.x">dependency-name@x.x.x</a>
+<pre><code class="lang-sh">flow-typed install dependency-name@x.x.x
 </code></pre>
 <p>Then, if the libdef doesn’t exist:</p>
-<pre><code class="lang-sh">flow-typed create-stub <a href="mailto:dependency-name@x.x.x">dependency-name@x.x.x</a>
+<pre><code class="lang-sh">flow-typed create-stub dependency-name@x.x.x
 </code></pre>
 <h3 id="offline-support">Offline Support</h3>
 <p>In order to ensure emdaer works properly offline, if your plugin makes API requests or relies on a connection of any kind, please cache the response data under <code>.emdaer/.offline</code>, and namespace it with the plugin name.</p>
