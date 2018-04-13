@@ -33,4 +33,23 @@ describe('@emdaer/core', () => {
       )
     ).toMatchSnapshot();
   });
+  it('can skip marked', async () => {
+    expect(
+      await emdaer(
+        './.emdaer/README.emdaer.md',
+        `# <!--emdaer-p
+  - '@emdaer/plugin-foo'
+  - a: 0
+    b: 1
+    c: 2
+-->
+
+<!--emdaer-t
+  - '@emdaer/transform-bar'
+-->
+`,
+        { marked: false }
+      )
+    ).toMatchSnapshot();
+  });
 });

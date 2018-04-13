@@ -31,6 +31,7 @@
 -->
 
 <!--emdaer-t
-  - '@emdaer/transform-smartypants'
-  - options: q
+  - '@emdaer/transform-prettier'
+  - options:
+      config: ./prettier.config.js
 -->

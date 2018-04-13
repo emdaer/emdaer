@@ -6,7 +6,7 @@ We match \`.emdaer/(**/*).emdaer(.md)\` and use the captured part of each matche
 
 ### Plugins & Transforms
 
-<!-- prettier-ignore -->
+<!-- prettier-ignore-start -->
 \`\`\`md
 # <!--emdaer-p
   - '@emdaer/plugin-value-from-package'
@@ -16,10 +16,14 @@ We match \`.emdaer/(**/*).emdaer(.md)\` and use the captured part of each matche
 Hello, World!
 
 <!--emdaer-t
-  - '@emdaer/transform-smartypants'
-  - options: qe
+  - '@emdaer/transform-prettier'
+  - options:
+      proseWrap: preserve
+      singleQuote: true
+      trailingComma: es5
 -->
 \`\`\`
+<!-- prettier-ignore-end -->
 
 This example includes one plugin call (\`emdaer-p\`) and one transform call (\`emdaer-t\`).
 

@@ -6,21 +6,24 @@ const { minify } = require('html-minifier');
 const executePlugins = require('./util/executePlugins');
 const applyTransforms = require('./util/applyTransforms');
 const identifyTransforms = require('./util/identifyTransforms');
-const renderer = require('./util/markedRenderer');
+const markedRenderer = require('./util/markedRenderer');
 const fixCodeFences = require('./util/fixCodeFences');
 
-async function emdaer(origin: string, content: string) {
-  return fixCodeFences(
-    minify(
-      marked(
-        await applyTransforms(
-          await executePlugins(content),
-          await identifyTransforms(content)
-        ),
-        { renderer }
-      )
-    )
+async function emdaer(
+  origin: string,
+  content: string,
+  options: { marked: boolean, markedOptions: Object } = {
+    marked: true,
+    markedOptions: { renderer: markedRenderer, smartypants: true },
+  }
+) {
+  const readme = await applyTransforms(
+    await executePlugins(content),
+    await identifyTransforms(content)
   );
+  return options.marked
+    ? fixCodeFences(minify(marked(readme, options.markedOptions)))
+    : readme;
 }
 
 module.exports = emdaer;

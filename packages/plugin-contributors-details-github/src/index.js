@@ -24,11 +24,14 @@ function getSummary(summary: string): string {
 
 async function fetchUser(login: string, name: string): Promise<Contributor> {
   const response = await fetch(`https://api.github.com/users/${login}`);
-  const user = await response.json();
-  return Object.assign(user, {
+  const res = await response.json();
+  if (response.status !== 404 && response.status >= 400) {
+    throw new Error(`Unable to fetch ${login} from GitHub:`, res.message);
+  }
+  return Object.assign(res, {
     login,
     name,
-    avatar_url: `https://avatars0.githubusercontent.com/u/${user.id}?s=24`,
+    avatar_url: `https://avatars0.githubusercontent.com/u/${res.id}?s=24`,
   });
 }
 
@@ -108,7 +111,7 @@ async function contributorsDetailsPlugin(
   } catch (e) {
     throw new Error(`Missing contributor info: ${e.message}`);
   }
-  return `<details>
+  return `<p><details>
 ${getSummary(title)}
 ${contributorsData
     .map(
@@ -122,7 +125,7 @@ ${contributorsData
 <br /><br />`
     )
     .join('\n')}
-</details>`;
+</details></p>`;
 }
 
 module.exports = contributorsDetailsPlugin;

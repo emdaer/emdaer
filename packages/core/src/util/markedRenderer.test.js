@@ -4,14 +4,14 @@ const renderer = require('./markedRenderer');
 describe('markedRenderer', () => {
   test('formats code for a given language', () => {
     expect(
-      marked(`\`\`\`js\nconst foo = 'test'.reverse();\`\`\``, { renderer })
+      marked(`\`\`\`js\nconst foo = 'test'.split('');\`\`\``, { renderer })
     ).toBe(
-      `<!--emdaer-code-fence\n\`\`\`js\nconst foo = 'test'.reverse();\n\`\`\`\n-->\n`
+      `<!--emdaer-code-fence-start-->\n\`\`\`js\nconst foo = 'test'.split('');\n\`\`\`\n<!--emdaer-code-fence-end-->`
     );
   });
   test('formats code for without a given language', () => {
     expect(
-      marked(`\`\`\`\nconst foo = 'test'.reverse();\`\`\``, { renderer })
-    ).toBe(`<pre><code>\nconst foo = 'test'.reverse();\n</code></pre>\n`);
+      marked(`\`\`\`\nconst foo = 'test'.split('');\`\`\``, { renderer })
+    ).toBe(`<pre><code>\nconst foo = 'test'.split('');\n</code></pre>\n`);
   });
 });

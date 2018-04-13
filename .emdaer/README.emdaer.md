@@ -64,6 +64,7 @@
 <!--emdaer-p
   - '@emdaer/plugin-node-package'
   - path: '@emdaer/meta/lib/README/contributing.js'
+    runEmdaer: true
 -->
 
 <!--emdaer-p
@@ -80,12 +81,5 @@
 <!--emdaer-t
   - '@emdaer/transform-prettier'
   - options:
-      proseWrap: preserve
-      singleQuote: true
-      trailingComma: es5
--->
-
-<!--emdaer-t
-  - '@emdaer/transform-smartypants'
-  - options: q
+      config: ./prettier.config.js
 -->

@@ -131,7 +131,7 @@
   dependencies:
     html-minifier "^3.5.14"
     js-yaml "3.8.4"
-    marked "0.3.9"
+    marked "^0.3.19"
 
 "@emdaer/meta@file:packages/meta":
   version "2.0.0"
@@ -190,13 +190,7 @@
 "@emdaer/transform-prettier@file:packages/transform-prettier":
   version "2.0.0"
   dependencies:
-    prettier "^1.9.1"
-
-"@emdaer/transform-smartypants@file:packages/transform-smartypants":
-  version "2.0.0"
-  dependencies:
-    marked "^0.3.9"
-    smartypants "0.0.5"
+    prettier "^1.12.0"
 
 "@emdaer/transform-table-of-contents@file:packages/transform-table-of-contents":
   version "2.0.0"
@@ -4182,9 +4176,13 @@ markdown-toc@^1.2.0:
     repeat-string "^1.6.1"
     strip-color "^0.1.0"
 
-marked@0.3.9, marked@^0.3.9:
+marked@0.3.9:
   version "0.3.9"
   resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.9.tgz#54ce6a57e720c3ac6098374ec625fcbcc97ff290"
+
+marked@^0.3.19:
+  version "0.3.19"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.19.tgz#5d47f709c4c9fc3c216b6d46127280f40b39d790"
 
 mdast-util-compact@^1.0.0:
   version "1.0.1"
@@ -4840,6 +4838,10 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
+prettier@^1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.12.0.tgz#d26fc5894b9230de97629b39cae225b503724ce8"
+
 prettier@^1.9.1:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.9.1.tgz#41638a0d47c1efbd1b7d5a742aaa5548eab86d70"
@@ -5468,10 +5470,6 @@ slice-ansi@1.0.0:
   resolved "https://registry.yarnpkg.com/slice-ansi/-/slice-ansi-1.0.0.tgz#044f1a49d8842ff307aad6b505ed178bd950134d"
   dependencies:
     is-fullwidth-code-point "^2.0.0"
-
-smartypants@0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/smartypants/-/smartypants-0.0.5.tgz#43da37cd1652c7c329df7022a8511e8f68466908"
 
 sntp@1.x.x:
   version "1.0.9"

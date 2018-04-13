@@ -37,7 +37,7 @@
 <p><strong>Parameters</strong></p>
 <ul>
 <li><code>code</code> <strong><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></strong> </li>
-<li><code>args</code> <strong>...any</strong> </li>
+<li><code>args</code> <strong>…any</strong> </li>
 </ul>
 <h2 id="applytransforms">applyTransforms</h2>
 <p>Applies transforms to generated content</p>
