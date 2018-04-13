@@ -13,6 +13,7 @@
 <li><a href="#what-is-emdaer">What is emdaer?</a></li>
 <li><a href="#how-emdaer-works">How emdaer works</a><ul>
 <li><a href="#plugins--transforms">Plugins &amp; Transforms</a></li>
+<li><a href="#code-fences">Code Fences</a></li>
 </ul>
 </li>
 <li><a href="#adding-emdaer-to-your-project">Adding emdaer to your project</a></li>
@@ -58,6 +59,10 @@ Hello, World!
 <p>Both of these calls take the form of yaml tuples where the first item is the name of the function to call and the second item is an options object that is passed to that function.</p>
 <p>For plugins, the result of the call replaces the corresponding comment block.</p>
 <p>For transforms, the function acts on the entire document and rewrites the entire file.</p>
+<h3 id="code-fences">Code Fences</h3>
+<p>Platforms vary in how they provide syntax highlighted code to users READMEs, rendering code fences with language specificers as HTML/CSS, each in their own way. Emdaer also transforms your readme in HTML via <a href="https://github.com/markedjs/marked">marked</a> to make it more portable.</p>
+<p>Instead of trying to guess how platforms expect the HTML/CSS of a code fence to be output, when emdaer encounters a code fence with a language specified, it will ignore it. This means that while the rest of your readme will be transformed to HTML, code fences will remain in Markdown. This sacrifices a bit of portability for the sake of readability and UX.</p>
+<p><em>NOTE:</em> If it’s important that your README be pure HTML, do not use language specifiers in your code fences.</p>
 <h2 id="adding-emdaer-to-your-project">Adding emdaer to your project</h2>
 <p>We recommend using emdaer with <a href="https://github.com/typicode/husky">husky</a>.</p>
 <p>Install dependencies:</p>
