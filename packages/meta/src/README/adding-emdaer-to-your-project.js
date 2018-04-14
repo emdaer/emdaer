@@ -19,13 +19,14 @@ Add a \`precommit\` script:
 
 Add a \`.emdaer/README.emdaer.md\` file:
 
-<!-- prettier-ignore -->
+<!-- prettier-ignore-start -->
 \`\`\`md
 # <!--emdaer-p
   - '@emdaer/plugin-value-from-package'
   - value: name
 -->
 \`\`\`
+<!-- prettier-ignore-end -->
 
 And give it a whirl:
 

@@ -6,20 +6,24 @@
 
 <p align="center"><img src="hero.png" alt="emdaer"></p>
 
-<p></p><h1 id="emdaer-travis-https-img-shields-io-travis-emdaer-emdaer-svg-style-flat-square-https-travis-ci-org-emdaer-emdaer-documented-with-emdaer-https-img-shields-io-badge-documented-20with-20emdaer-f06632-svg-style-flat-square-https-github-com-emdaer-emdaer-maintained-with-lerna-https-img-shields-io-badge-maintained-20with-20lerna-cc00ff-svg-style-flat-square-https-lernajs-io-">emdaer · <a href="https://travis-ci.org/emdaer/emdaer/"><img src="https://img.shields.io/travis/emdaer/emdaer.svg?style=flat-square" alt="Travis"></a> <a href="https://github.com/emdaer/emdaer"><img src="https://img.shields.io/badge/📓-documented%20with%20emdaer-F06632.svg?style=flat-square" alt="Documented with emdaer"></a> <a href="https://lernajs.io/"><img src="https://img.shields.io/badge/🐉-maintained%20with%20lerna-cc00ff.svg?style=flat-square" alt="Maintained with lerna"></a></h1><p></p>
+<h1 id="emdaer-travis-documented-with-emdaer-maintained-with-lerna">emdaer · <a href="https://travis-ci.org/emdaer/emdaer/"><img src="https://img.shields.io/travis/emdaer/emdaer.svg?style=flat-square" alt="Travis"></a> <a href="https://github.com/emdaer/emdaer"><img src="https://img.shields.io/badge/📓-documented%20with%20emdaer-F06632.svg?style=flat-square" alt="Documented with emdaer"></a> <a href="https://lernajs.io/"><img src="https://img.shields.io/badge/🐉-maintained%20with%20lerna-cc00ff.svg?style=flat-square" alt="Maintained with lerna"></a></h1>
 <p>📓 emdaer is a tool for creating and maintaining better READMEs</p>
-
+<!-- toc -->
 <ul>
 <li><a href="#what-is-emdaer">What is emdaer?</a></li>
 <li><a href="#how-emdaer-works">How emdaer works</a><ul>
 <li><a href="#plugins--transforms">Plugins &amp; Transforms</a></li>
+<li><a href="#code-fences">Code Fences</a></li>
 </ul>
 </li>
 <li><a href="#adding-emdaer-to-your-project">Adding emdaer to your project</a></li>
+<li><a href="#core-plugins">Core Plugins</a></li>
+<li><a href="#core-transforms">Core Transforms</a></li>
 <li><a href="#contributing">Contributing</a></li>
 <li><a href="#this-readme">This README</a></li>
+<li><a href="#license">License</a></li>
 </ul>
-
+<!-- tocstop -->
 <h2 id="what-is-emdaer-">What is emdaer?</h2>
 <p>emdaer lets you to use plugins and transforms within markdown files because READMEs (and other documentation) are crucial files that are often lackluster and/or incomplete and have a tendency to become stale</p>
 <p>A couple use cases that illustrate the power of emdaer:</p>
@@ -30,47 +34,66 @@
 </ul>
 <h2 id="how-emdaer-works">How emdaer works</h2>
 <p>emdaer processes template files and writes the resulting files to your project.</p>
-<p>We match <code>.emdaer/(<em>*/</em>).emdaer(.md)</code> and use the captured part of each matched file to determine the path for the output.</p>
+<p>We match <code>.emdaer/(**/*).emdaer(.md)</code> and use the captured part of each matched file to determine the path for the output.</p>
 <h3 id="plugins-transforms">Plugins &amp; Transforms</h3>
+<!-- prettier-ignore-start -->
 
-<pre><code class="lang-md"># &lt;!--emdaer-p
-  - &#39;@emdaer/plugin-value-from-package&#39;
+```md
+# <!--emdaer-p
+  - '@emdaer/plugin-value-from-package'
   - value: name
---&gt;
+-->
 
 Hello, World!
 
-&lt;!--emdaer-t
-  - &#39;@emdaer/transform-smartypants&#39;
-  - options: qe
---&gt;
-</code></pre>
+<!--emdaer-t
+  - '@emdaer/transform-prettier'
+  - options:
+      proseWrap: preserve
+      singleQuote: true
+      trailingComma: es5
+-->
+```
+<!-- prettier-ignore-end -->
 <p>This example includes one plugin call (<code>emdaer-p</code>) and one transform call (<code>emdaer-t</code>).</p>
 <p>Both of these calls take the form of yaml tuples where the first item is the name of the function to call and the second item is an options object that is passed to that function.</p>
 <p>For plugins, the result of the call replaces the corresponding comment block.</p>
 <p>For transforms, the function acts on the entire document and rewrites the entire file.</p>
+<h3 id="code-fences">Code Fences</h3>
+<p>Platforms vary in how they provide syntax highlighted code to users READMEs, rendering code fences with language specificers as HTML/CSS, each in their own way. Emdaer also transforms your readme in HTML via <a href="https://github.com/markedjs/marked">marked</a> to make it more portable.</p>
+<p>Instead of trying to guess how platforms expect the HTML/CSS of a code fence to be output, when emdaer encounters a code fence with a language specified, it will ignore it. This means that while the rest of your readme will be transformed to HTML, code fences will remain in Markdown. This sacrifices a bit of portability for the sake of readability and UX.</p>
+<p><em>NOTE:</em> If it’s important that your README be pure HTML, do not use language specifiers in your code fences.</p>
 <h2 id="adding-emdaer-to-your-project">Adding emdaer to your project</h2>
 <p>We recommend using emdaer with <a href="https://github.com/typicode/husky">husky</a>.</p>
 <p>Install dependencies:</p>
-<pre><code class="lang-sh">npm install --save-dev @emdaer/cli @emdaer/plugin-value-from-package husky
-</code></pre>
-<p>Add a <code>precommit</code> script:</p>
-<pre><code class="lang-json">  &quot;scripts&quot;: {
-    &quot;emdaer&quot;: &quot;emdaer &amp;&amp; git add *.md&quot;,
-    &quot;precommit&quot;: &quot;npm run emdaer&quot;
-  }
-</code></pre>
-<p>Add a <code>.emdaer/README.emdaer.md</code> file:</p>
 
-<pre><code class="lang-md"># &lt;!--emdaer-p
-  - &#39;@emdaer/plugin-value-from-package&#39;
+```sh
+npm install --save-dev @emdaer/cli @emdaer/plugin-value-from-package husky
+```
+<p>Add a <code>precommit</code> script:</p>
+
+```json
+  "scripts": {
+    "emdaer": "emdaer && git add *.md",
+    "precommit": "npm run emdaer"
+  }
+```
+<p>Add a <code>.emdaer/README.emdaer.md</code> file:</p>
+<!-- prettier-ignore-start -->
+
+```md
+# <!--emdaer-p
+  - '@emdaer/plugin-value-from-package'
   - value: name
---&gt;
-</code></pre>
+-->
+```
+<!-- prettier-ignore-end -->
 <p>And give it a whirl:</p>
-<pre><code class="lang-sh">npm run emdaer
-</code></pre>
-<p></p><h2 id="core-plugins">Core Plugins</h2><p></p>
+
+```sh
+npm run emdaer
+```
+<h2 id="core-plugins">Core Plugins</h2>
 <ul>
 <li><strong><a href="packages/plugin-contributors-details-github">@emdaer/plugin-contributors-details-github</a></strong> An emdaer plugin that gathers and renders contributor details from GitHub</li>
 <li><strong><a href="packages/plugin-details">@emdaer/plugin-details</a></strong> An emdaer plugin that renders HTML5 details elements from which users can retrieve additional information</li>
@@ -86,29 +109,53 @@ Hello, World!
 <li><strong><a href="packages/plugin-table">@emdaer/plugin-table</a></strong> An emdaer plugin that renders HTML tables</li>
 <li><strong><a href="packages/plugin-value-from-package">@emdaer/plugin-value-from-package</a></strong> An emdaer plugin that retrieves and renders values from package.json</li>
 </ul>
-
-<p></p><h2 id="core-transforms">Core Transforms</h2><p></p>
+<h2 id="core-transforms">Core Transforms</h2>
 <ul>
 <li><strong><a href="packages/transform-github-emoji">@emdaer/transform-github-emoji</a></strong> An emdaer transformation that renders GitHub-flavored emoji codes</li>
 <li><strong><a href="packages/transform-prettier">@emdaer/transform-prettier</a></strong> An emdaer transformation that formats markdown, including code blocks, using prettier</li>
-<li><strong><a href="packages/transform-smartypants">@emdaer/transform-smartypants</a></strong> An emdaer transformation that translates ASCII punctuation characters into typographic punctuation HTML entities</li>
 <li><strong><a href="packages/transform-table-of-contents">@emdaer/transform-table-of-contents</a></strong> An emdaer transformation that generates a table of contents</li>
 </ul>
-
 <h2 id="contributing">Contributing</h2>
 <p>If you’d like to make emdaer better, please read our <a href="./CONTRIBUTING.md">guide to contributing</a>.</p>
+<details>
+<summary><strong>Contributors</strong></summary><br>
+<a title="" href="https://github.com/flipactual">
+  <img align="left" src="https://avatars0.githubusercontent.com/u/1306968?s=24">
+</a>
+<strong>Flip</strong>
+<br><br>
+<a title="I build multi-channel publishing systems and web applications at @fourkitchens." href="https://github.com/infiniteluke">
+  <img align="left" src="https://avatars0.githubusercontent.com/u/1127238?s=24">
+</a>
+<strong>Luke Herrington</strong>
+<br><br>
+<a title="Software architect with an interest in distributed systems and elegant solutions." href="https://github.com/elliotttf">
+  <img align="left" src="https://avatars0.githubusercontent.com/u/447151?s=24">
+</a>
+<strong>Elliott Foster</strong>
+<br><br>
+<a href="https://github.com/thebruce">
+  <img align="left" src="https://avatars0.githubusercontent.com/u/590058?s=24">
+</a>
+<strong>David Diers</strong>
+<br><br>
+<a href="https://github.com/fluxsauce">
+  <img align="left" src="https://avatars0.githubusercontent.com/u/976391?s=24">
+</a>
+<strong>Jon Peck</strong>
+<br><br>
+</details>
 
 <h2 id="this-readme">This README</h2>
 <p>This README was generated with emdaer. However, it is special in that it shares its content with the <a href="emdaer.me">emdaer website</a> via the <a href="https://www.npmjs.com/package/@emdaer/meta">@emdaer/meta</a> and <a href="https://www.npmjs.com/package/@emdaer/plugin-node-package">@emdaer/plugin-node-package</a> packages. <a href="https://www.npmjs.com/package/@emdaer/meta">@emdaer/meta</a> exports each section of this README as a node module which <a href="https://www.npmjs.com/package/@emdaer/plugin-node-package">@emdaer/plugin-node-package</a> imports like so:</p>
+<!-- prettier-ignore-start -->
 
-<pre><code class="lang-md">&lt;!--emdaer-p
-  - &#39;@emdaer/plugin-node-package&#39;
-  - path: &#39;@emdaer/meta/lib/README/this-readme.js&#39;
---&gt;
-</code></pre>
-<p></p><h2 id="license">License</h2><p></p>
+```md
+<!--emdaer-p
+  - '@emdaer/plugin-node-package'
+  - path: '@emdaer/meta/lib/README/this-readme.js'
+-->
+```
+<!-- prettier-ignore-end -->
+<h2 id="license">License</h2>
 <p>emdaer is <a href="./LICENSE">MIT licensed</a>.</p>
-
-
-
-

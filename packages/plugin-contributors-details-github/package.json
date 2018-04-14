@@ -21,7 +21,5 @@
     "glob": "^7.1.2",
     "node-fetch": "^1.7.3"
   },
-  "devDependencies": {
-    "nock": "^9.0.25"
-  }
+  "devDependencies": {}
 }

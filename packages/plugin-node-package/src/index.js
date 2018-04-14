@@ -49,7 +49,7 @@ async function nodePackagePlugin({
     throw new Error(`Exported value must either be a string or a function`);
   }
 
-  return runEmdaer ? emdaer(path, content) : content;
+  return runEmdaer ? emdaer(path, content, { marked: false }) : content;
 }
 
 module.exports = nodePackagePlugin;

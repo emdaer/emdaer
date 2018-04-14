@@ -4,38 +4,50 @@
   Its template can be found at .emdaer/CONTRIBUTING.emdaer.md
 -->
 
-<p></p><h1 id="contributing">Contributing</h1><p></p>
-<p></p><h2 id="code-of-conduct">Code of Conduct</h2><p></p>
+<h1 id="contributing">Contributing</h1>
+<h2 id="code-of-conduct">Code of Conduct</h2>
 <p>Before contributing, please read our <a href="./CODE_OF_CONDUCT.md">code of conduct</a></p>
 <h2 id="getting-setup">Getting Setup</h2>
-<pre><code class="lang-sh">make install # installs dependencies for emdaer
+
+```sh
+make install # installs dependencies for emdaer
 make bootstrap # installs dependencies for emdaer/packages/*
-</code></pre>
+```
 <h2 id="testing-linting">Testing &amp; Linting</h2>
 <p>We enforce strict linting and 100% code coverage for all of emdaer.</p>
-<pre><code class="lang-sh">make test # run the tests
+
+```sh
+make test # run the tests
 make lint # run the linter
 make type # run the type checker
-</code></pre>
+```
 <h2 id="plugins-transforms">Plugins &amp; Transforms</h2>
 <p>When creating a plugin or transform, any dependencies must be stubbed for flow.</p>
 <p>First try:</p>
-<pre><code class="lang-sh">flow-typed install dependency-name@x.x.x
-</code></pre>
+
+```sh
+flow-typed install dependency-name@x.x.x
+```
 <p>Then, if the libdef doesn’t exist:</p>
-<pre><code class="lang-sh">flow-typed create-stub dependency-name@x.x.x
-</code></pre>
+
+```sh
+flow-typed create-stub dependency-name@x.x.x
+```
 <h3 id="offline-support">Offline Support</h3>
 <p>In order to ensure emdaer works properly offline, if your plugin makes API requests or relies on a connection of any kind, please cache the response data under <code>.emdaer/.offline</code>, and namespace it with the plugin name.</p>
-<pre><code>.emdaer/.offline/plugin-my-new-plugin/response-data.json
-</code></pre><p>Read this file when your API request fails and write to this file when your request is successful. For an example, check out <code>plugin-contributors-details-github</code>.</p>
+<pre><code>
+.emdaer/.offline/plugin-my-new-plugin/response-data.json
+</code></pre>
+<p>Read this file when your API request fails and write to this file when your request is successful. For an example, check out <code>plugin-contributors-details-github</code>.</p>
 <h2 id="commits">Commits</h2>
 <p>All commit messages must follow the <a href="https://conventionalcommits.org/">Conventional Commits Specification</a> which can be described like so:</p>
-<pre><code>type(scope?): subject
+<pre><code>
+type(scope?): subject
 
 body?
 footer?
-</code></pre><p><a href="https://github.com/marionebl/commitlint">Commitlint</a> is setup to enforce this convention.</p>
+</code></pre>
+<p><a href="https://github.com/marionebl/commitlint">Commitlint</a> is setup to enforce this convention.</p>
 <h3 id="commitlint-rules-">Commitlint Rules:</h3>
 <ul>
 <li><a href="https://github.com/marionebl/commitlint/tree/master/@commitlint/config-angular#rules">@commitlint/config-angular</a>: Enforces common “types” , casing, length rules etc..</li>
@@ -44,8 +56,9 @@ footer?
 <h3 id="suggestions-">Suggestions:</h3>
 <p>If your commit fixes an issue, mention the issue number in your commit body or footer <a href="https://help.github.com/articles/closing-issues-using-keywords/">as recommended by GitHub</a>.</p>
 <p>Example:</p>
-<pre><code>fix(plugin-image): Add more cat pics
+<pre><code>
+fix(plugin-image): Add more cat pics
 Closes #123, Closes #456
-</code></pre><h2 id="authors-file">AUTHORS file</h2>
+</code></pre>
+<h2 id="authors-file">AUTHORS file</h2>
 <p>If you would like, when making your PR, add yourself to the AUTHORS file by appending <code>Name &lt;githubusername&gt;</code>. Doing so will add your name to contributor details list in the <a href="https://github.com/emdaer/emdaer#contributing">Contributing</a> section.</p>
-
