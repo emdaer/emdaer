@@ -1,7 +1,7 @@
 {
   "name": "@emdaer/plugin-node-package",
   "description": "An emdaer plugin that requires a file and optionally executes it with provided arguments.",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.me/",
   "keywords": [
@@ -16,6 +16,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@emdaer/core": "^2.0.0"
+    "@emdaer/core": "^2.0.1"
   }
 }

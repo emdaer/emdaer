@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/emdaer/emdaer/compare/v2.0.0...v2.0.1) (2018-04-14)
+
+
+### Bug Fixes
+
+* **core:** override marked to output md. remove minifier ([9fb0c27](https://github.com/emdaer/emdaer/commit/9fb0c27))
+* **core:** work around marked code fence renderer ([a937f9e](https://github.com/emdaer/emdaer/commit/a937f9e)), closes [#87](https://github.com/emdaer/emdaer/issues/87)
+* syntax highlighting and a couple other things ([6b2be61](https://github.com/emdaer/emdaer/commit/6b2be61))
+
+
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/emdaer/emdaer/compare/v1.8.13...v2.0.0) (2018-02-21)
 
