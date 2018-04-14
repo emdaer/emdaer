@@ -6,7 +6,7 @@ describe('markedRenderer', () => {
     expect(
       marked(`\`\`\`js\nconst foo = 'test'.split('');\`\`\``, { renderer })
     ).toBe(
-      `<!--emdaer-code-fence-start-->\n\`\`\`js\nconst foo = 'test'.split('');\n\`\`\`\n<!--emdaer-code-fence-end-->`
+      `<!--emdaer-code-fence-start\n\`\`\`js\nconst foo = 'test'.split('');\n\`\`\`\nemdaer-code-fence-end-->`
     );
   });
   test('formats code for without a given language', () => {
