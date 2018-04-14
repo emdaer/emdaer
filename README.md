@@ -117,7 +117,7 @@ npm run emdaer
 </ul>
 <h2 id="contributing">Contributing</h2>
 <p>If you’d like to make emdaer better, please read our <a href="./CONTRIBUTING.md">guide to contributing</a>.</p>
-<p></p><details>
+<details>
 <summary><strong>Contributors</strong></summary><br>
 <a title="" href="https://github.com/flipactual">
   <img align="left" src="https://avatars0.githubusercontent.com/u/1306968?s=24">
@@ -144,7 +144,7 @@ npm run emdaer
 </a>
 <strong>Jon Peck</strong>
 <br><br>
-</details><p></p>
+</details>
 
 <h2 id="this-readme">This README</h2>
 <p>This README was generated with emdaer. However, it is special in that it shares its content with the <a href="emdaer.me">emdaer website</a> via the <a href="https://www.npmjs.com/package/@emdaer/meta">@emdaer/meta</a> and <a href="https://www.npmjs.com/package/@emdaer/plugin-node-package">@emdaer/plugin-node-package</a> packages. <a href="https://www.npmjs.com/package/@emdaer/meta">@emdaer/meta</a> exports each section of this README as a node module which <a href="https://www.npmjs.com/package/@emdaer/plugin-node-package">@emdaer/plugin-node-package</a> imports like so:</p>

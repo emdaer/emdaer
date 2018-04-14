@@ -60,7 +60,7 @@ flip <flipactual>`
     const details = await contributorsDetails({
       title: 'Thank you for Contributing!',
     });
-    expect(details).toEqual(`<p><details>
+    expect(details).toEqual(`<details>
 <summary><strong>Thank you for Contributing!</strong></summary><br />
 <a title="cool bio" href="https://github.com/toddross">
   <img align="left" src="https://avatars0.githubusercontent.com/u/202525?s=24" />
@@ -72,7 +72,7 @@ flip <flipactual>`
 </a>
 <strong>flip</strong>
 <br /><br />
-</details></p>`);
+</details>`);
   });
   test('handles GitHub errors', async () => {
     fs.readFile.mockImplementation(
@@ -110,7 +110,7 @@ flip <flipactual>`
         })
       );
     const details = await contributorsDetails();
-    expect(details).toEqual(`<p><details>
+    expect(details).toEqual(`<details>
 <summary><strong>Contributors</strong></summary><br />
 <a title="cool bio" href="https://github.com/toddross">
   <img align="left" src="https://avatars0.githubusercontent.com/u/202525?s=24" />
@@ -122,7 +122,7 @@ flip <flipactual>`
 </a>
 <strong>flip</strong>
 <br /><br />
-</details></p>`);
+</details>`);
   });
   test('throws if user does not exist in GitHub', async () => {
     fs.readFile.mockImplementation(async () => `nope <not___real___lol>`);

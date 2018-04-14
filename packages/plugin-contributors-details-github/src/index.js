@@ -111,7 +111,7 @@ async function contributorsDetailsPlugin(
   } catch (e) {
     throw new Error(`Missing contributor info: ${e.message}`);
   }
-  return `<p><details>
+  return `<details>
 ${getSummary(title)}
 ${contributorsData
     .map(
@@ -125,7 +125,7 @@ ${contributorsData
 <br /><br />`
     )
     .join('\n')}
-</details></p>`;
+</details>`;
 }
 
 module.exports = contributorsDetailsPlugin;
