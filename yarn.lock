@@ -109,91 +109,91 @@
     find-up "^2.1.0"
 
 "@emdaer/cli@file:packages/cli":
-  version "2.0.0"
+  version "2.0.2"
   dependencies:
-    "@emdaer/core" "^2.0.0"
+    "@emdaer/core" "^2.0.2"
     chalk "2.0.1"
     commander "2.11.0"
     fs-extra "3.0.1"
     glob "^7.1.2"
     rxjs "^5.5.5"
 
-"@emdaer/core@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@emdaer/core/-/core-2.0.0.tgz#7d7944be497993cd5d275b438c5e52d27fbcfcfe"
+"@emdaer/core@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@emdaer/core/-/core-2.0.2.tgz#917077e9ecb86e59d1b0c82fc6580714807e30b4"
   dependencies:
-    html-minifier "^3.5.8"
+    html-minifier "^3.5.14"
     js-yaml "3.8.4"
-    marked "0.3.9"
+    marked "^0.3.19"
 
 "@emdaer/core@file:packages/core":
-  version "2.0.0"
+  version "2.0.2"
   dependencies:
     html-minifier "^3.5.14"
     js-yaml "3.8.4"
     marked "^0.3.19"
 
 "@emdaer/meta@file:packages/meta":
-  version "2.0.0"
+  version "2.0.2"
 
 "@emdaer/plugin-contributors-details-github@file:packages/plugin-contributors-details-github":
-  version "2.0.0"
+  version "2.0.2"
   dependencies:
     fs-extra "^4.0.2"
     glob "^7.1.2"
     node-fetch "^1.7.3"
 
 "@emdaer/plugin-documentation@file:packages/plugin-documentation":
-  version "2.0.0"
+  version "2.0.2"
   dependencies:
     documentation "4.0.0-rc.1"
 
 "@emdaer/plugin-image@file:packages/plugin-image":
-  version "2.0.0"
+  version "2.0.2"
 
 "@emdaer/plugin-import@file:packages/plugin-import":
-  version "2.0.0"
+  version "2.0.2"
   dependencies:
-    "@emdaer/core" "^2.0.0"
+    "@emdaer/core" "^2.0.2"
     fs-extra "3.0.1"
 
 "@emdaer/plugin-license-reference@file:packages/plugin-license-reference":
-  version "2.0.0"
+  version "2.0.2"
   dependencies:
-    "@emdaer/plugin-value-from-package" "^2.0.0"
+    "@emdaer/plugin-value-from-package" "^2.0.2"
 
 "@emdaer/plugin-list-lerna-packages@file:packages/plugin-list-lerna-packages":
-  version "2.0.0"
+  version "2.0.2"
   dependencies:
     fs-extra "^4.0.2"
     glob "^7.1.2"
 
 "@emdaer/plugin-node-package@file:packages/plugin-node-package":
-  version "2.0.0"
+  version "2.0.2"
   dependencies:
-    "@emdaer/core" "^2.0.0"
+    "@emdaer/core" "^2.0.2"
 
 "@emdaer/plugin-shields@file:packages/plugin-shields":
-  version "2.0.0"
+  version "2.0.2"
 
-"@emdaer/plugin-value-from-package@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@emdaer/plugin-value-from-package/-/plugin-value-from-package-2.0.0.tgz#c01b4165a8fd8dcdde4ef201a1e9fcd5efc6f3db"
+"@emdaer/plugin-value-from-package@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@emdaer/plugin-value-from-package/-/plugin-value-from-package-2.0.2.tgz#631e431f6e1dc8a2ce553db2e7851770f9e3430c"
   dependencies:
     fs-extra "3.0.1"
 
 "@emdaer/plugin-value-from-package@file:packages/plugin-value-from-package":
-  version "2.0.0"
+  version "2.0.2"
   dependencies:
     fs-extra "3.0.1"
 
 "@emdaer/transform-prettier@file:packages/transform-prettier":
-  version "2.0.0"
+  version "2.0.2"
   dependencies:
     prettier "^1.12.0"
 
 "@emdaer/transform-table-of-contents@file:packages/transform-table-of-contents":
-  version "2.0.0"
+  version "2.0.2"
   dependencies:
     markdown-toc "^1.2.0"
 
@@ -1588,13 +1588,13 @@ commander@2.11.0, commander@^2.9.0:
   version "2.11.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.11.0.tgz#157152fd1e7a6c8d98a5b715cf376df928004563"
 
-commander@2.12.x, commander@~2.12.1:
-  version "2.12.2"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.12.2.tgz#0f5946c427ed9ec0d91a46bb9def53e54650e555"
-
 commander@2.15.x:
   version "2.15.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.15.1.tgz#df46e867d0fc2aec66a34662b406a9ccafff5b0f"
+
+commander@~2.12.1:
+  version "2.12.2"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.12.2.tgz#0f5946c427ed9ec0d91a46bb9def53e54650e555"
 
 commitlint@^6.1.0:
   version "6.1.0"
@@ -2992,19 +2992,6 @@ html-minifier@^3.5.14:
     relateurl "0.2.x"
     uglify-js "3.3.x"
 
-html-minifier@^3.5.8:
-  version "3.5.8"
-  resolved "https://registry.yarnpkg.com/html-minifier/-/html-minifier-3.5.8.tgz#5ccdb1f73a0d654e6090147511f6e6b2ee312700"
-  dependencies:
-    camel-case "3.0.x"
-    clean-css "4.1.x"
-    commander "2.12.x"
-    he "1.1.x"
-    ncname "1.0.x"
-    param-case "2.1.x"
-    relateurl "0.2.x"
-    uglify-js "3.3.x"
-
 html-void-elements@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/html-void-elements/-/html-void-elements-1.0.2.tgz#9d22e0ca32acc95b3f45b8d5b4f6fbdc05affd55"
@@ -4176,10 +4163,6 @@ markdown-toc@^1.2.0:
     repeat-string "^1.6.1"
     strip-color "^0.1.0"
 
-marked@0.3.9:
-  version "0.3.9"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.9.tgz#54ce6a57e720c3ac6098374ec625fcbcc97ff290"
-
 marked@^0.3.19:
   version "0.3.19"
   resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.19.tgz#5d47f709c4c9fc3c216b6d46127280f40b39d790"
@@ -4379,12 +4362,6 @@ nan@^2.3.0:
 natural-compare@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
-
-ncname@1.0.x:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/ncname/-/ncname-1.0.0.tgz#5b57ad18b1ca092864ef62b0b1ed8194f383b71c"
-  dependencies:
-    xml-char-classes "^1.0.0"
 
 no-case@^2.2.0:
   version "2.3.2"
@@ -6305,10 +6282,6 @@ x-is-function@^1.0.4:
 x-is-string@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/x-is-string/-/x-is-string-0.1.0.tgz#474b50865af3a49a9c4657f05acd145458f77d82"
-
-xml-char-classes@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/xml-char-classes/-/xml-char-classes-1.0.0.tgz#64657848a20ffc5df583a42ad8a277b4512bbc4d"
 
 xml-name-validator@^2.0.1:
   version "2.0.1"

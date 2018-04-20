@@ -4,7 +4,7 @@
   Its template can be found at .emdaer/README.emdaer.md
 -->
 
-<p align="center"><img src="hero.png" alt="emdaer"></p>
+<p align="center"><img src="hero.svg" alt="emdaer"></p>
 
 <h1 id="emdaer-travis-documented-with-emdaer-maintained-with-lerna">emdaer · <a href="https://travis-ci.org/emdaer/emdaer/"><img src="https://img.shields.io/travis/emdaer/emdaer.svg?style=flat-square" alt="Travis"></a> <a href="https://github.com/emdaer/emdaer"><img src="https://img.shields.io/badge/📓-documented%20with%20emdaer-F06632.svg?style=flat-square" alt="Documented with emdaer"></a> <a href="https://lernajs.io/"><img src="https://img.shields.io/badge/🐉-maintained%20with%20lerna-cc00ff.svg?style=flat-square" alt="Maintained with lerna"></a></h1>
 <p>📓 emdaer is a tool for creating and maintaining better READMEs</p>
