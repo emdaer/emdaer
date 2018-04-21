@@ -1,6 +1,6 @@
 <!--emdaer-p
   - '@emdaer/plugin-image'
-  - src: hero.png
+  - src: hero.svg
     alt: emdaer
     align: center
 -->
