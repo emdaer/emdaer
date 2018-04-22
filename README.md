@@ -100,6 +100,7 @@ These calls take the form of yaml tuples where the first item is the name of the
 <li><strong><a href="packages/plugin-documentation">@emdaer/plugin-documentation</a></strong> An emdaer plugin to generate documentation from your code comments using documentationjs</li>
 <li><strong><a href="packages/plugin-image">@emdaer/plugin-image</a></strong> An emdaer plugin that renders HTML img elements</li>
 <li><strong><a href="packages/plugin-import">@emdaer/plugin-import</a></strong> An emdaer plugin that imports content from another file</li>
+<li><strong><a href="packages/plugin-jsdoc-tag-value">@emdaer/plugin-jsdoc-tag-value</a></strong> An emdaer plugin that pulls values from a given function’s jsdoc comment</li>
 <li><strong><a href="packages/plugin-license-reference">@emdaer/plugin-license-reference</a></strong> An emdaer plugin that renders license information from the package</li>
 <li><strong><a href="packages/plugin-link">@emdaer/plugin-link</a></strong> An emdaer plugin that renders anchor elements</li>
 <li><strong><a href="packages/plugin-list">@emdaer/plugin-list</a></strong> An emdaer plugin that renders HTML list element.</li>
@@ -178,13 +179,13 @@ npm run emdaer
 </details>
 
 <h2 id="this-readme">This README</h2>
-<p>This README was generated with emdaer. However, it is special in that it shares its content with the <a href="emdaer.me">emdaer website</a> via the <a href="https://www.npmjs.com/package/@emdaer/meta">@emdaer/meta</a> and <a href="https://www.npmjs.com/package/@emdaer/plugin-node-package">@emdaer/plugin-node-package</a> packages. <a href="https://www.npmjs.com/package/@emdaer/meta">@emdaer/meta</a> exports each section of this README as a node module which <a href="https://www.npmjs.com/package/@emdaer/plugin-node-package">@emdaer/plugin-node-package</a> imports like so:</p>
+<p>This README was generated with emdaer. However, it is special in that it shares its content with the <a href="emdaer.me">emdaer website</a> via the <a href="https://www.npmjs.com/package/@emdaer/meta">@emdaer/meta</a> and <a href="https://www.npmjs.com/package/@emdaer/plugin-import">@emdaer/plugin-import</a> packages. <a href="https://www.npmjs.com/package/@emdaer/meta">@emdaer/meta</a> exports each section of this README as a node module which <a href="https://www.npmjs.com/package/@emdaer/plugin-import">@emdaer/plugin-import</a> imports like so:</p>
 <!-- prettier-ignore-start -->
 
 ```md
 <!--emdaer-p
-  - '@emdaer/plugin-node-package'
-  - path: '@emdaer/meta/lib/README/this-readme.js'
+  - '@emdaer/plugin-import'
+  - path: '@emdaer/meta/lib/README/this-readme.md'
 -->
 ```
 <!-- prettier-ignore-end -->

@@ -4,7 +4,13 @@
  * Renders HTML img elements.
  *
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img}
- *
+ * @example
+ * <!--emdaer-p
+ *   - '@emdaer/plugin-image'
+ *   - src: hero.svg
+ *     alt: emdaer
+ *     align: center
+ * -->
  * @param options
  * @param {string} options.src The image URL.
  * @param {string} [options.alt] The alternative text describing the image.

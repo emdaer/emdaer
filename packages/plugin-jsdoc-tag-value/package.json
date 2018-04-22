@@ -1,0 +1,21 @@
+{
+  "name": "@emdaer/plugin-jsdoc-tag-value",
+  "description": "An emdaer plugin that pulls values from a given function's jsdoc comment",
+  "version": "2.0.3",
+  "repository": "emdaer/emdaer",
+  "homepage": "https://emdaer.me/",
+  "keywords": [
+    "emdaer-plugin"
+  ],
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "scripts": {
+    "prepublish": "flow-remove-types -p src -i .test.js -d lib"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "documentation": "^6.3.0"
+  }
+}

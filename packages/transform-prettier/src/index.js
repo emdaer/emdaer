@@ -7,7 +7,12 @@ const PARSER = 'markdown';
 /**
  * Transform a string using prettier.
  * @see {@link https://github.com/prettier/prettier#options|Prettier docs}
- *
+ * @example
+ *  <!--emdaer-t
+ *   - '@emdaer/transform-prettier'
+ *   - options:
+ *       config: ./prettier.config.js
+ * -->
  * @param   {string}          content                The content
  * @param   {Object}          options                Transform options
  * @param   {Object}          options.options        Prettier options

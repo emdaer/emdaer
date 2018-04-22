@@ -8,6 +8,12 @@ const glob = promisify(require('glob'));
 /**
  * Render a markdown list of the names and optional descriptions of lerna packages.
  *
+ * @example
+ * <!--emdaer-p
+ *   - '@emdaer/plugin-list-lerna-packages'
+ *   - pattern: packages/transform-*
+ *     links: false
+ * -->
  * @param options
  * @param {string} [options.pattern] Relative glob path to lerna packages.
  * @param {boolean} [options.links] Whether to link to each package.

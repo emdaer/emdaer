@@ -75,11 +75,14 @@ async function getContributors(
 
 /**
  * A plugin to generate details
- *
+ * @example
+ * <!--emdaer-p
+ *   - '@emdaer/plugin-contributors-details-github'
+ * -->
  * @param                     options
  * @param   {string}          [options.path]    The path to the contributors list
- * @param   {string}          [options.content]           The content of the details
- * @returns {Promise<string>}                             The details element
+ * @param   {string}          [options.title]   The title of the details summary
+ * @returns {Promise<string>}                   The details element
  */
 async function contributorsDetailsPlugin(
   {

@@ -28,6 +28,19 @@ const COMMON_MARKDOWN_FILE_EXTS = [
  * - a path to a node module exporting a string. ex: moduleName/lib/todo.js
  * - a path to a node module exporting a function that takes arguments and returns/resolves to a string ex: module
  *
+ * @example
+ * <!--emdaer-p
+ *   - '@emdaer/plugin-import'
+ *   - path: .emdaer/importExample.md
+ *     runEmdaer: true
+ * -->
+ * @example
+ * <!--emdaer-p
+ *   - '@emdaer/plugin-import'
+ *   - path: .emdaer/printThrice
+ *     args:
+ *       - Hello world! x3
+ * -->
  * @param options
  * @param {string} [options.path] The filename to require.
  * @param {array} [options.args] An array of args to pass to the exported function at the required path.
