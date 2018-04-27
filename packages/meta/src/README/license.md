@@ -1,5 +1,5 @@
-module.exports = `## License
+## License
 
 <!--emdaer-p
   - '@emdaer/plugin-license-reference'
--->`;
+-->

@@ -35,46 +35,46 @@
 -->
 
 <!--emdaer-p
-  - '@emdaer/plugin-node-package'
-  - path: '@emdaer/meta/lib/README/what-is-emdaer.js'
+  - '@emdaer/plugin-import'
+  - path: '@emdaer/meta/src/README/what-is-emdaer.md'
 -->
 
 <!--emdaer-p
-  - '@emdaer/plugin-node-package'
-  - path: '@emdaer/meta/lib/README/how-emdaer-works.js'
+  - '@emdaer/plugin-import'
+  - path: '@emdaer/meta/src/README/how-emdaer-works.md'
 -->
 
 <!--emdaer-p
-  - '@emdaer/plugin-node-package'
-  - path: '@emdaer/meta/lib/README/adding-emdaer-to-your-project.js'
--->
-
-<!--emdaer-p
-  - '@emdaer/plugin-node-package'
-  - path: '@emdaer/meta/lib/README/core-plugins.js'
+  - '@emdaer/plugin-import'
+  - path: '@emdaer/meta/src/README/core-plugins.md'
     runEmdaer: true
 -->
 
 <!--emdaer-p
-  - '@emdaer/plugin-node-package'
-  - path: '@emdaer/meta/lib/README/core-transforms.js'
+  - '@emdaer/plugin-import'
+  - path: '@emdaer/meta/src/README/core-transforms.md'
     runEmdaer: true
 -->
 
 <!--emdaer-p
-  - '@emdaer/plugin-node-package'
-  - path: '@emdaer/meta/lib/README/contributing.js'
+  - '@emdaer/plugin-import'
+  - path: '@emdaer/meta/src/README/adding-emdaer-to-your-project.md'
+-->
+
+<!--emdaer-p
+  - '@emdaer/plugin-import'
+  - path: '@emdaer/meta/src/README/contributing.md'
     runEmdaer: true
 -->
 
 <!--emdaer-p
-  - '@emdaer/plugin-node-package'
-  - path: '@emdaer/meta/lib/README/this-readme.js'
+  - '@emdaer/plugin-import'
+  - path: '@emdaer/meta/src/README/this-readme.md'
 -->
 
 <!--emdaer-p
-  - '@emdaer/plugin-node-package'
-  - path: '@emdaer/meta/lib/README/license.js'
+  - '@emdaer/plugin-import'
+  - path: '@emdaer/meta/src/README/license.md'
     runEmdaer: true
 -->
 
