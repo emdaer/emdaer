@@ -1,7 +1,7 @@
 {
   "name": "@emdaer/plugin-license-reference",
   "description": "An emdaer plugin that renders license information from the package",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.me/",
   "keywords": [
@@ -13,7 +13,7 @@
     "prepublish": "flow-remove-types -p src -i .test.js -d lib"
   },
   "dependencies": {
-    "@emdaer/plugin-value-from-package": "^2.1.0"
+    "@emdaer/plugin-value-from-package": "^2.1.1"
   },
   "publishConfig": {
     "access": "public"
