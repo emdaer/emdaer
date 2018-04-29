@@ -8,7 +8,13 @@ const isHashAnchor = /^#{1}/;
  * Render HTML anchor elements.
  *
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a}
- *
+ * @example
+ * <!--emdaer-p
+ *   - '@emdaer/plugin-link'
+ *   - content: emdaer repo
+ *     link: https://github.com/emdaer/emdaer
+ *     title: EMDAER Repo
+ * -->
  * @param                     options
  * @param   {string}          [options.content] The content of the link
  * @param   {string}          [options.link] Contains a URL or a URL fragment that the hyperlink points to.

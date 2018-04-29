@@ -8,7 +8,12 @@ function getSummary(summary) {
  * Renders a HTML5 details element as a disclosure widget.
  *
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details}
- *
+ * @example
+ * <!--emdaer-p
+ *   - '@emdaer/plugin-details'
+ *   - summary: Details summary
+ *     content: Here's the content!
+ * -->
  * @param                     options
  * @param   {string}          [options.summary]           The summary of the details
  * @param   {string}          [options.content]           The content of the details

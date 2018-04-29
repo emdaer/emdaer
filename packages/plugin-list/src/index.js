@@ -6,7 +6,15 @@
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol}
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul}
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li}
- *
+ * @example
+ * <!--emdaer-p
+ *   - '@emdaer/plugin-list'
+ *   - type: ol
+ *     items:
+ *       - Item one
+ *       - Item two
+ *       - Item three
+ * -->
  * @param options
  * @param {'ol' | 'ul'} [options.type] The type of list; ol (ordered) and ul (unordered).
  * @param {Array<string>} [options.items] The list items; each will be rendered as an li element.

@@ -3,6 +3,20 @@
 /**
  * A plugin to generate tables
  *
+ * @example
+ * <!--emdaer-p
+ *   - '@emdaer/plugin-table'
+ *   - headers:
+ *     - Col 1
+ *     - Col 2
+ *     rows:
+ *     -
+ *       - Hello
+ *       - World!
+ *     -
+ *       - Hello
+ *       - World!
+ * -->
  * @param options
  * @param {Array<string>} [options.headers] The headers of the table
  * @param {Array<Array<string>>} [options.rows] The rows and cells of the table
