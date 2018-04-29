@@ -45,12 +45,16 @@ This example, once processed, will look something like this:
 This example includes two plugin calls (`emdaer-p`) and one transform call (`emdaer-t`).
 
 <details>
-<summary>Help</summary>
-The first plugin call is to [@emdaer/plugin-value-from-package](/emdaer/emdaer/blob/master/packages/plugin-value-from-package). It is used to get the value of `name` from `package.json`. That way if your project name change, so does your README.
-
-The second plugin call is to [@emdaer/plugin-import](/emdaer/emdaer/blob/master/packages/plugin-import). It is used to import a function called `printThrice` and executing it with the argument `Hey`, printing it three times. The `path` parameter can be any node modules that exports a string, exports a function that returns a string, or exports a funciton that returns a promise that resolves to a string. 
-
-The third emdaer call is to [@emdaer/transform-prettier](/emdaer/emdaer/blob/master/packages/transform-prettier). It will format your README with the given options so you don't have to.
+  <summary>❓ Help</summary>
+  <blockquote>
+    The first plugin call is to [@emdaer/plugin-value-from-package](/emdaer/emdaer/blob/master/packages/plugin-value-from-package). It is used to get the value of `name` from `package.json`. That way if your project name change, so does your README.
+  </blockquote>
+  <blockquote>
+    The second plugin call is to [@emdaer/plugin-import](/emdaer/emdaer/blob/master/packages/plugin-import). It is used to import a function called `printThrice` and executing it with the argument `Hey`, printing it three times. The `path` parameter can be any node modules that exports a string, exports a function that returns a string, or exports a funciton that returns a promise that resolves to a string. 
+  </blockquote>
+  <blockquote>
+    The third emdaer call is to [@emdaer/transform-prettier](/emdaer/emdaer/blob/master/packages/transform-prettier). It will format your README with the given options so you don't have to.
+  </blockquote>
 </details>
 
 Emdaer plugin/transform calls are just html comments.

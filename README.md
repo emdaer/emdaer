@@ -73,13 +73,16 @@ Hello, World!
 ```
 <p>This example includes two plugin calls (<code>emdaer-p</code>) and one transform call (<code>emdaer-t</code>).</p>
 <details>
-<summary>Help</summary>
-The first plugin call is to <a href="/emdaer/emdaer/blob/master/packages/plugin-value-from-package">@emdaer/plugin-value-from-package</a>. It is used to get the value of <code>name</code> from <code>package.json</code>. That way if your project name change, so does your README.
-
-The second plugin call is to <a href="/emdaer/emdaer/blob/master/packages/plugin-import">@emdaer/plugin-import</a>. It is used to import a function called <code>printThrice</code> and executing it with the argument <code>Hey</code>, printing it three times. The <code>path</code> parameter can be any node modules that exports a string, exports a function that returns a string, or exports a funciton that returns a promise that resolves to a string.
-
-The third emdaer call is to <a href="/emdaer/emdaer/blob/master/packages/transform-prettier">@emdaer/transform-prettier</a>. It will format your README with the given options so you don’t have to.
-
+  <summary>❓ Help</summary>
+  <blockquote>
+    The first plugin call is to <a href="/emdaer/emdaer/blob/master/packages/plugin-value-from-package">@emdaer/plugin-value-from-package</a>. It is used to get the value of <code>name</code> from <code>package.json</code>. That way if your project name change, so does your README.
+  </blockquote>
+  <blockquote>
+    The second plugin call is to <a href="/emdaer/emdaer/blob/master/packages/plugin-import">@emdaer/plugin-import</a>. It is used to import a function called <code>printThrice</code> and executing it with the argument <code>Hey</code>, printing it three times. The <code>path</code> parameter can be any node modules that exports a string, exports a function that returns a string, or exports a funciton that returns a promise that resolves to a string.
+  </blockquote>
+  <blockquote>
+    The third emdaer call is to <a href="/emdaer/emdaer/blob/master/packages/transform-prettier">@emdaer/transform-prettier</a>. It will format your README with the given options so you don’t have to.
+  </blockquote>
 </details>
 
 <p>Emdaer plugin/transform calls are just html comments.
