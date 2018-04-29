@@ -1,6 +1,6 @@
-module.exports = `## Core Transforms
+## Core Transforms
 
 <!--emdaer-p
   - '@emdaer/plugin-list-lerna-packages'
   - pattern: packages/transform-*
--->`;
+-->
