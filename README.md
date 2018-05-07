@@ -4,6 +4,10 @@
   Its template can be found at .emdaer/README.emdaer.md
 -->
 
+<!--
+  emdaerHash:0576ec8016c7c4bd708e3ef31ca039e9
+-->
+
 <p align="center"><img src="hero.svg" alt="emdaer"></p>
 
 <h1 id="emdaer-travis-documented-with-emdaer-maintained-with-lerna">emdaer · <a href="https://travis-ci.org/emdaer/emdaer/"><img src="https://img.shields.io/travis/emdaer/emdaer.svg?style=flat-square" alt="Travis"></a> <a href="https://github.com/emdaer/emdaer"><img src="https://img.shields.io/badge/📓-documented%20with%20emdaer-F06632.svg?style=flat-square" alt="Documented with emdaer"></a> <a href="https://lernajs.io/"><img src="https://img.shields.io/badge/🐉-maintained%20with%20lerna-cc00ff.svg?style=flat-square" alt="Maintained with lerna"></a></h1>
@@ -148,7 +152,7 @@ npm install --save-dev @emdaer/cli @emdaer/plugin-value-from-package husky
 ```sh
 npm run emdaer
 ```
-<p>NOTE: By default, emdaer checks for existing changes to your READMEs before writing. If it detects changes, it will provide a prompt asking if you would like to overwrite the README with the newly generated content. If you accidentally edited README directly, you will want to answer <code>n</code> to the prompt, move any changes to the respective <code>.emdaer/*.emdaer.md</code> file, and rerun emdaer. In the case where you may be writting your README incrementally and running emdaer multiple times, you can either answer <code>Y</code> to the prompt or use the <code>--yes</code> flag to skip the prompt all together. In both cases, emdaer will overwrite the README with the newly generated content.</p>
+<p><em>NOTE:</em> By default, emdaer checks for existing changes to your READMEs before writing. If it detects changes, it will provide a prompt asking if you would like to overwrite the README with the newly generated content. If you accidentally edited the README directly, you will want to answer <code>n</code> to the prompt, move any changes to the respective <code>.emdaer/*.emdaer.md</code> file, and rerun emdaer. If you would like to discard those changes, answer <code>Y</code> to the prompt or use the <code>--yes</code> flag to skip the prompt all together. In both cases, emdaer will overwrite the README with the newly generated content.</p>
 <h2 id="contributing">Contributing</h2>
 <p>If you’d like to make emdaer better, please read our <a href="./CONTRIBUTING.md">guide to contributing</a>.</p>
 <details>

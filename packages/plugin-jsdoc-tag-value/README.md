@@ -4,6 +4,10 @@
   Its template can be found at .emdaer/README.emdaer.md
 -->
 
+<!--
+  emdaerHash:f32d923472a5702e67d670c8b4e3fa05
+-->
+
 <h1 id="-emdaer-plugin-jsdoc-tag-value-travis-documented-with-emdaer-maintained-with-lerna">@emdaer/plugin-jsdoc-tag-value · <a href="https://travis-ci.org/emdaer/emdaer/"><img src="https://img.shields.io/travis/emdaer/emdaer.svg?style=flat-square" alt="Travis"></a> <a href="https://github.com/emdaer/emdaer"><img src="https://img.shields.io/badge/📓-documented%20with%20emdaer-F06632.svg?style=flat-square" alt="Documented with emdaer"></a> <a href="https://lernajs.io/"><img src="https://img.shields.io/badge/🐉-maintained%20with%20lerna-cc00ff.svg?style=flat-square" alt="Maintained with lerna"></a></h1>
 <h2 id="usage">Usage</h2>
 <p>@emdaer/plugin-jsdoc-tag-value is an <a href="https://github.com/emdaer/emdaer/">emdaer</a> plugin – see the <a href="https://github.com/emdaer/emdaer/">emdaer monorepo</a> for more information</p>

@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
 const cli = require('./cli');
+const emdaer = require('@emdaer/core');
 
-cli();
+cli(emdaer);

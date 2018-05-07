@@ -126,13 +126,12 @@
   version "2.4.0"
   dependencies:
     "@emdaer/core" "^2.4.0"
+    bluebird "^3.5.1"
     chalk "2.0.1"
     commander "2.11.0"
-    execa "^0.9.0"
     fs-extra "3.0.1"
     glob "^7.1.2"
     inquirer "^5.1.0"
-    rxjs "^5.5.5"
 
 "@emdaer/core@^2.4.0":
   version "2.4.0"
@@ -180,7 +179,7 @@
 "@emdaer/plugin-jsdoc-tag-value@file:packages/plugin-jsdoc-tag-value":
   version "2.4.0"
   dependencies:
-    documentation "^6.3.0"
+    documentation "^6.3.2"
 
 "@emdaer/plugin-license-reference@file:packages/plugin-license-reference":
   version "2.4.0"
@@ -1383,6 +1382,10 @@ block-stream@*:
   dependencies:
     inherits "~2.0.0"
 
+bluebird@^3.5.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.1.tgz#d9551f9de98f1fcda1e683d17ee91a0602ee2eb9"
+
 body@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/body/-/body-5.1.0.tgz#e4ba0ce410a46936323367609ecb4e6553125069"
@@ -2363,9 +2366,9 @@ documentation@4.0.0-rc.1:
     vinyl-fs "^2.3.1"
     yargs "^6.0.0"
 
-documentation@^6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/documentation/-/documentation-6.3.0.tgz#ac7c56bbe9fee68c7258f31fe4315eb2000f4bd6"
+documentation@^6.3.2:
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/documentation/-/documentation-6.3.2.tgz#30279dba1241b402af1e8270ae4c7c89282e7167"
   dependencies:
     ansi-html "^0.0.7"
     babel-core "^6.26.0"
@@ -6538,12 +6541,6 @@ rxjs@^5.0.0-beta.11:
 rxjs@^5.5.2:
   version "5.5.6"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.6.tgz#e31fb96d6fd2ff1fd84bcea8ae9c02d007179c02"
-  dependencies:
-    symbol-observable "1.0.1"
-
-rxjs@^5.5.5:
-  version "5.5.5"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.5.tgz#e164f11d38eaf29f56f08c3447f74ff02dd84e97"
   dependencies:
     symbol-observable "1.0.1"
 

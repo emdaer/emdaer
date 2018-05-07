@@ -25,14 +25,18 @@ module.exports = async function getHashDiff(
   } catch (e) {
     return emptyTuple;
   }
-  const hashStartIndex = file.indexOf(HASH_DELIMITER) + HASH_DELIMITER.length;
-  if (hashStartIndex === -1) {
+  const hashIndex = file.indexOf(HASH_DELIMITER);
+  if (hashIndex === -1) {
     return emptyTuple;
   }
+  const hashStartIndex = hashIndex + HASH_DELIMITER.length;
   const existingHash = file.slice(
     hashStartIndex,
     hashStartIndex + EMDAER_HASH_COMMENT_LENGTH
   );
-  const existingContents = file.slice(hashStartIndex + 38, file.length);
+  const existingContents = file.slice(
+    hashStartIndex + EMDAER_HASH_COMMENT_LENGTH + 6,
+    file.length
+  );
   return [existingHash, generateHash(existingContents)];
 };

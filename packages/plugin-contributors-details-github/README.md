@@ -4,6 +4,10 @@
   Its template can be found at .emdaer/README.emdaer.md
 -->
 
+<!--
+  emdaerHash:dfdd86e82d75b2910f214c3750e30c47
+-->
+
 <h1 id="-emdaer-plugin-contributors-details-github-travis-documented-with-emdaer-maintained-with-lerna">@emdaer/plugin-contributors-details-github · <a href="https://travis-ci.org/emdaer/emdaer/"><img src="https://img.shields.io/travis/emdaer/emdaer.svg?style=flat-square" alt="Travis"></a> <a href="https://github.com/emdaer/emdaer"><img src="https://img.shields.io/badge/📓-documented%20with%20emdaer-F06632.svg?style=flat-square" alt="Documented with emdaer"></a> <a href="https://lernajs.io/"><img src="https://img.shields.io/badge/🐉-maintained%20with%20lerna-cc00ff.svg?style=flat-square" alt="Maintained with lerna"></a></h1>
 <p>An emdaer plugin that gathers and renders contributor details from GitHub</p>
 <h2 id="usage">Usage</h2>

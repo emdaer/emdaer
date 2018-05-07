@@ -1,15 +1,12 @@
 /* @flow */
 
-const emdaer = require('@emdaer/core');
-
 const program = require('commander');
+// 💩
 const { promisify } = require('util');
 const glob = promisify(require('glob'));
 const { outputFile, readFile, readJson } = require('fs-extra');
-const { merge } = require('rxjs/observable/merge');
-const { from } = require('rxjs/observable/from');
-const { scan, map, partition } = require('rxjs/operators');
 const inquirer = require('inquirer');
+const Promise = require('bluebird');
 
 const addStamp = require('./util/addStamp');
 const addHash = require('./util/addHash');
@@ -19,20 +16,37 @@ const logger = require('./util/logger');
 const { version } = require('../package.json');
 const { NO_MATCHING_FILES, EMDAER_FAILED } = require('./errors');
 
-module.exports = async function cli(args: Array<string> = process.argv) {
+module.exports = async function cli(
+  emdaer: (
+    origin: string,
+    content: string,
+    options?: {
+      [string]: any,
+    }
+  ) => Promise<string>,
+  args: Array<string> = process.argv
+) {
   let exitCode = 0;
   program
     .version(version)
+    .option(
+      '-p, --path <glob>',
+      'globbed path in which to search for emdaer files.'
+    )
     .option('-y, --yes', 'answer yes too all prompts')
     .parse(args);
 
-  const origins = await glob('.emdaer/**/*.emdaer.md');
-  if (!origins) {
-    logger.warn(NO_MATCHING_FILES);
+  const globPath = program.path || '.emdaer/**/*.emdaer.md';
+  const [origins, { name }] = await Promise.all([
+    glob(globPath),
+    readJson('package.json'),
+  ]);
+  if (!origins.length) {
+    logger.warn(NO_MATCHING_FILES(globPath));
   } else {
-    const { name } = await readJson('package.json');
-    const [needsPrompt, passThrough] = from(origins).pipe(
-      map(async origin => {
+    try {
+      const filesMeta = await Promise.mapSeries(origins, async origin => {
+        let skip = false;
         const [, fileName, fileExtension] = origin.match(
           /\.emdaer\/(.*)\.emdaer(\.md)/
         );
@@ -40,62 +54,38 @@ module.exports = async function cli(args: Array<string> = process.argv) {
         const [storedHash, existingContentHash] = await getHashDiff(
           destination
         );
-        const diffDetected = storedHash !== existingContentHash;
+        const diff = storedHash !== existingContentHash;
+        if (diff && !program.yes) {
+          const { overwrite } = await inquirer.prompt({
+            name: 'overwrite',
+            type: 'confirm',
+            default: 'n',
+            message: `it appears ${fileName}${fileExtension} has been changed. You may want to move changes you made manually to ${fileName}.emdaer${fileExtension} instead.\nWould you like to overwrite the contents of ${fileName}${fileExtension}?` // prettier-ignore
+          });
+          skip = !overwrite;
+        }
         return {
           origin,
           destination,
-          diffDetected,
+          diff,
           storedHash,
           existingContentHash,
-          skip: false,
+          skip,
         };
-      }),
-      partition(async res => {
-        const { diffDetected, origin } = await res;
-        console.log(origin);
-        return !diffDetected || Boolean(program.yes);
-      })
-    );
-    needsPrompt.pipe(
-      scan(async (acc, resPromise) => {
-        console.log('lol');
-        const res = await resPromise;
-        const { overwrite } = await inquirer.prompt({
-          name: 'overwrite',
-          type: 'confirm',
-          default: 'n',
-          message: `it appears ${res.fileName}${res.fileExtension} has been changed. You may want to move changes you made manually to ${fileName}.emdaer${fileExtension} instead. Would you like to overwrite the contents of ${fileName}${fileExtension}?` // prettier-ignore
-        });
-        if (!overwrite) {
-          res.skip = true;
-        }
-        return res;
-      })
-    );
-
-    merge(passThrough, needsPrompt)
-      .pipe(
-        map(async res => {
-          const {
-            origin,
-            destination,
-            diffDetected,
-            storedHash,
-            skip,
-          } = await res;
-          console.log({ skip });
+      });
+      await Promise.map(
+        filesMeta,
+        async ({ origin, destination, diff, storedHash, skip }) => {
           if (skip) {
-            logger.warn(`skipping ${destination} of ${name}. ↩️`);
+            logger.warn(`skipping ${destination} for ${name} ↩️`);
             return Promise.resolve();
           }
-          const contents = await emdaer(
-            origin,
-            (await readFile(origin)).toString()
-          );
+          const re = await readFile(origin);
+          const contents = await emdaer(origin, re.toString());
           const newHash = generateHash(contents);
-          if (newHash === storedHash && !diffDetected) {
+          if (newHash === storedHash && !diff) {
             logger.warn(
-              `no changes for ${destination} of ${name}. skipping. ↩️`
+              `no changes for ${destination} for ${name}. skipping ↩️`
             );
             return Promise.resolve();
           }
@@ -104,15 +94,12 @@ module.exports = async function cli(args: Array<string> = process.argv) {
             destination,
             await addStamp(await addHash(contents), origin)
           );
-        })
-      )
-      .toPromise()
-      .then(() => 0)
-      .catch(error => {
-        console.log(error);
-        logger.error(EMDAER_FAILED, error);
-        return 1;
-      });
+        }
+      );
+    } catch (e) {
+      logger.error(`${EMDAER_FAILED}${e}`);
+      exitCode = 1;
+    }
   }
   return exitCode;
 };
