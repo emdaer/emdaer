@@ -1,7 +1,7 @@
 {
   "name": "@emdaer/plugin-shields",
   "description": "An emdaer plugin that renders metadata badges for open source projects from shields.io",
-  "version": "2.4.0",
+  "version": "3.0.0",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.me/",
   "keywords": [
