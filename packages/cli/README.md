@@ -4,28 +4,43 @@
   Its template can be found at .emdaer/README.emdaer.md
 -->
 
+<!--
+  emdaerHash:7875ec5ed3452465db8ba0b53ccaf1a2
+-->
+
 <h1 id="-emdaer-cli-travis-documented-with-emdaer-maintained-with-lerna">@emdaer/cli · <a href="https://travis-ci.org/emdaer/emdaer/"><img src="https://img.shields.io/travis/emdaer/emdaer.svg?style=flat-square" alt="Travis"></a> <a href="https://github.com/emdaer/emdaer"><img src="https://img.shields.io/badge/📓-documented%20with%20emdaer-F06632.svg?style=flat-square" alt="Documented with emdaer"></a> <a href="https://lernajs.io/"><img src="https://img.shields.io/badge/🐉-maintained%20with%20lerna-cc00ff.svg?style=flat-square" alt="Maintained with lerna"></a></h1>
 <p>emdaer CLI</p>
 <h2 id="usage">Usage</h2>
 <p>@emdaer/cli is the <a href="https://github.com/emdaer/emdaer/">emdaer</a> cli – see the <a href="https://github.com/emdaer/emdaer/">emdaer monorepo</a> for more information</p>
 <h2 id="documentation">Documentation</h2>
 <h2 id="adding-emdaer-to-your-project">Adding emdaer to your project</h2>
-<p>We recommend using emdaer with <a href="https://github.com/typicode/husky">husky</a>.</p>
+<p>We recommend using emdaer with <a href="https://github.com/okonet/lint-staged">lint-staged</a> and <a href="https://github.com/typicode/husky">husky</a>.</p>
 <p>Install dependencies:</p>
 
 ```sh
-npm install --save-dev @emdaer/cli @emdaer/plugin-value-from-package husky
+npm install --save-dev @emdaer/cli @emdaer/plugin-value-from-package lint-staged husky
 ```
-<p>Add a <code>precommit</code> script:</p>
-
-```json
+<p>Follow the <a href="https://github.com/okonet/lint-staged#installation-and-setup">lint-staged setup instructions</a>.</p>
+<p><code>`</code>diff json
 {
-  "scripts": {
-    "emdaer": "emdaer && git add *.md",
-    "precommit": "npm run emdaer"
-  }
+  “scripts”: {</p>
+<ul>
+<li>“emdaer”: “emdaer &amp;&amp; git add *.md”,</li>
+<li>“precommit”: “lint-staged”
 }
-```
+}
+<code>`</code></li>
+</ul>
+<p>In your lint-staged config file add an entry for emdaer:</p>
+<p><code>`</code>diff js
+module.exports = {
+  ‘*.js’: [‘eslint –fix’, ‘prettier –write’, ‘git add’],</p>
+<ul>
+<li>‘*.emdaer.md’: [‘emdaer –yes’, ‘git add’],
+};
+<code>`</code></li>
+</ul>
+<p>NOTE: In the case of a <code>precommit</code> hook (or CI/other automation), we don’t want to be prompted about anything. The <code>--yes</code> flag will automatically answer “yes” to any prompts. For example, it will make emdaer write your READMEs without prompting about overwritting direct changes to a destination README file.</p>
 <p>Add a <code>.emdaer/README.emdaer.md</code> file:</p>
 <!-- prettier-ignore-start -->
 
@@ -41,3 +56,5 @@ npm install --save-dev @emdaer/cli @emdaer/plugin-value-from-package husky
 ```sh
 npm run emdaer
 ```
+<p>When you commit your changes, lint-staged will run emdaer on any <code>*.emdaer.md</code> files you may have changed.</p>
+<p><em>NOTE:</em> By default, emdaer checks for existing changes to your READMEs before writing. If it detects changes, it will provide a prompt asking if you would like to overwrite the README with the newly generated content. If you accidentally edited the README directly, you will want to answer <code>n</code> to the prompt, move any changes to the respective <code>.emdaer/*.emdaer.md</code> file, and rerun emdaer. If you would like to discard those changes, answer <code>Y</code> to the prompt or use the <code>--yes</code> flag to skip the prompt all together. In both cases, emdaer will overwrite the README with the newly generated content.</p>

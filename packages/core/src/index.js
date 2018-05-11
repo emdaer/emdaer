@@ -12,11 +12,17 @@ const fixCodeFences = require('./util/fixCodeFences');
 async function emdaer(
   origin: string,
   content: string,
-  options: { marked: boolean, markedOptions: Object } = {
+  options: {
+    marked: boolean,
+    markedOptions: Object,
+  } = {
     marked: true,
-    markedOptions: { renderer: markedRenderer, smartypants: true },
+    markedOptions: {
+      renderer: markedRenderer,
+      smartypants: true,
+    },
   }
-) {
+): Promise<string> {
   const readme = await applyTransforms(
     await executePlugins(content),
     await identifyTransforms(content)

@@ -57,6 +57,7 @@ This example includes two plugin calls (`emdaer-p`) and one transform call (`emd
   </blockquote>
 </details>
 
+
 Emdaer plugin/transform calls are just html comments.
 These calls take the form of yaml tuples where the first item is the name of the function to call and the second item is an options object that is passed to that function.
 

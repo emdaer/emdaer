@@ -4,5 +4,9 @@
   Its template can be found at .emdaer/README.emdaer.md
 -->
 
+<!--
+  emdaerHash:c52607c2a9554d282cec0466586a39fc
+-->
+
 <h1 id="-emdaer-meta-travis-documented-with-emdaer-maintained-with-lerna">@emdaer/meta · <a href="https://travis-ci.org/emdaer/emdaer/"><img src="https://img.shields.io/travis/emdaer/emdaer.svg?style=flat-square" alt="Travis"></a> <a href="https://github.com/emdaer/emdaer"><img src="https://img.shields.io/badge/📓-documented%20with%20emdaer-F06632.svg?style=flat-square" alt="Documented with emdaer"></a> <a href="https://lernajs.io/"><img src="https://img.shields.io/badge/🐉-maintained%20with%20lerna-cc00ff.svg?style=flat-square" alt="Maintained with lerna"></a></h1>
 <p>An emdaer package that exports shared meta info about emdaer</p>

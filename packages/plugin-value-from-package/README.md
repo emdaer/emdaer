@@ -4,6 +4,10 @@
   Its template can be found at .emdaer/README.emdaer.md
 -->
 
+<!--
+  emdaerHash:7a031b5f43aaac200a779fbd13c63380
+-->
+
 <h1 id="-emdaer-plugin-value-from-package-travis-documented-with-emdaer-maintained-with-lerna">@emdaer/plugin-value-from-package · <a href="https://travis-ci.org/emdaer/emdaer/"><img src="https://img.shields.io/travis/emdaer/emdaer.svg?style=flat-square" alt="Travis"></a> <a href="https://github.com/emdaer/emdaer"><img src="https://img.shields.io/badge/📓-documented%20with%20emdaer-F06632.svg?style=flat-square" alt="Documented with emdaer"></a> <a href="https://lernajs.io/"><img src="https://img.shields.io/badge/🐉-maintained%20with%20lerna-cc00ff.svg?style=flat-square" alt="Maintained with lerna"></a></h1>
 <p>An emdaer plugin that retrieves and renders values from package.json</p>
 <h2 id="usage">Usage</h2>

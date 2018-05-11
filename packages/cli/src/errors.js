@@ -1,5 +1,5 @@
 /* @flow */
 
-module.exports.NO_MATCHING_FILES =
-  'could not find any files matching .emdaer/**/*.emdaer.md 😳\n';
-module.exports.EMDAER_FAILED = 'emdaer failed 😨\n';
+module.exports.NO_MATCHING_FILES = (path: string) =>
+  `could not find any files matching ${path} 😳`;
+module.exports.EMDAER_FAILED = 'emdaer failed 😨';

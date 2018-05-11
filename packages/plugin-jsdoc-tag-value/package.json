@@ -16,6 +16,6 @@
     "access": "public"
   },
   "dependencies": {
-    "documentation": "^6.3.0"
+    "documentation": "^6.3.2"
   }
 }

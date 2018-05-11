@@ -24,12 +24,12 @@
     "email": null,
     "hireable": null,
     "bio": "",
-    "public_repos": 22,
+    "public_repos": 24,
     "public_gists": 1,
     "followers": 37,
     "following": 15,
     "created_at": "2012-01-05T15:20:07Z",
-    "updated_at": "2018-04-22T05:24:22Z"
+    "updated_at": "2018-05-03T15:19:28Z"
   },
   {
     "login": "infiniteluke",
@@ -90,7 +90,7 @@
     "bio": "Software architect with an interest in distributed systems and elegant solutions.",
     "public_repos": 76,
     "public_gists": 38,
-    "followers": 49,
+    "followers": 50,
     "following": 12,
     "created_at": "2010-10-20T16:40:28Z",
     "updated_at": "2018-04-24T12:27:21Z"
@@ -154,8 +154,8 @@
     "bio": null,
     "public_repos": 39,
     "public_gists": 10,
-    "followers": 62,
-    "following": 28,
+    "followers": 63,
+    "following": 29,
     "created_at": "2011-08-12T16:06:30Z",
     "updated_at": "2018-03-29T05:33:26Z"
   }
