@@ -1,8 +1,8 @@
 export FORCE_COLOR = true
 
-.PHONY: precommit commitmsg ci bootstrap emdaer install lint lint-staged publish test type commitlint commitlint-ci
+.PHONY: precommit commitmsg ci bootstrap install lint lint-staged publish test type commitlint commitlint-ci
 
-precommit: lint-staged type test emdaer
+precommit: lint-staged type test
 commitmsg: commitlint
 
 ci: commitlint-ci bootstrap lint type test

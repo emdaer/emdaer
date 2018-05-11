@@ -4,7 +4,7 @@ const program = require('commander');
 // 💩
 const { promisify } = require('util');
 const glob = promisify(require('glob'));
-const { outputFile, readFile, readJson } = require('fs-extra');
+const { outputFile, readFile, readJson, pathExists } = require('fs-extra');
 const inquirer = require('inquirer');
 const Promise = require('bluebird');
 
@@ -33,24 +33,39 @@ module.exports = async function cli(
       '-p, --path <glob>',
       'globbed path in which to search for emdaer files.'
     )
-    .option('-y, --yes', 'answer yes too all prompts')
+    .option('-y, --yes', 'answer "yes" too all prompts')
     .parse(args);
 
-  const globPath = program.path || '.emdaer/**/*.emdaer.md';
-  const [origins, { name }] = await Promise.all([
-    glob(globPath),
-    readJson('package.json'),
-  ]);
+  const globPath = '.emdaer/**/*.emdaer.md';
+  let origins = [];
+  if (program.args.length > 0) {
+    (await Promise.all(program.args.map(pathExists))).forEach(
+      (exists, index) => {
+        if (!exists) {
+          logger.warn(NO_MATCHING_FILES(program.args[index]));
+        } else {
+          origins.push(program.args[index]);
+        }
+      }
+    );
+  } else {
+    origins = await glob(globPath);
+  }
+  const { name } = await readJson('package.json');
   if (!origins.length) {
-    logger.warn(NO_MATCHING_FILES(globPath));
+    logger.warn(
+      NO_MATCHING_FILES(
+        program.args.length ? program.args.join(', ') : globPath
+      )
+    );
   } else {
     try {
       const filesMeta = await Promise.mapSeries(origins, async origin => {
         let skip = false;
-        const [, fileName, fileExtension] = origin.match(
-          /\.emdaer\/(.*)\.emdaer(\.md)/
+        const [, basePath, fileName, fileExtension] = origin.match(
+          /(.*)\.emdaer\/(.*)\.emdaer(\.md)/
         );
-        const destination = `${fileName}${fileExtension}`;
+        const destination = `${basePath}${fileName}${fileExtension}`;
         const [storedHash, existingContentHash] = await getHashDiff(
           destination
         );
@@ -97,7 +112,7 @@ module.exports = async function cli(
         }
       );
     } catch (e) {
-      logger.error(`${EMDAER_FAILED}${e}`);
+      logger.error(`${EMDAER_FAILED}\n${e}`);
       exitCode = 1;
     }
   }
