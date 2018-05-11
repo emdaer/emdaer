@@ -5,7 +5,7 @@
 -->
 
 <!--
-  emdaerHash:8d23cff6007de3f2e2c231522c068e04
+  emdaerHash:0d0f52aabcd80185473da74642680437
 -->
 
 <p align="center"><img src="hero.svg" alt="emdaer"></p>
@@ -22,7 +22,10 @@
 </li>
 <li><a href="#core-plugins">Core Plugins</a></li>
 <li><a href="#core-transforms">Core Transforms</a></li>
-<li><a href="#adding-emdaer-to-your-project">Adding emdaer to your project</a></li>
+<li><a href="#adding-emdaer-to-your-project">Adding emdaer to your project</a><ul>
+<li><a href="#manual-usage">Manual Usage</a></li>
+</ul>
+</li>
 <li><a href="#contributing">Contributing</a></li>
 <li><a href="#this-readme">This README</a></li>
 <li><a href="#license">License</a></li>
@@ -161,6 +164,17 @@ module.exports = {
 npm run emdaer
 ```
 <p>When you commit your changes, lint-staged will run emdaer on any <code>*.emdaer.md</code> files you may have changed.</p>
+<h3 id="manual-usage">Manual Usage</h3>
+<p>emdaer can be run manually against files by providing space separated file paths:</p>
+
+```sh
+npm run emdaer -- .emdaer/README.emdaer.md .emdaer/CONTRIBUTING.emdaer.md
+```
+<p>If emdaer is not provided a path, the default glob <code>.emdaer/**/*.emdaer.md</code> is searched:</p>
+
+```sh
+npm run emdaer
+```
 <p><em>NOTE:</em> By default, emdaer checks for existing changes to your READMEs before writing. If it detects changes, it will provide a prompt asking if you would like to overwrite the README with the newly generated content. If you accidentally edited the README directly, you will want to answer <code>n</code> to the prompt, move any changes to the respective <code>.emdaer/*.emdaer.md</code> file, and rerun emdaer. If you would like to discard those changes, answer <code>Y</code> to the prompt or use the <code>--yes</code> flag to skip the prompt all together. In both cases, emdaer will overwrite the README with the newly generated content.</p>
 <h2 id="contributing">Contributing</h2>
 <p>If you’d like to make emdaer better, please read our <a href="./CONTRIBUTING.md">guide to contributing</a>.</p>
