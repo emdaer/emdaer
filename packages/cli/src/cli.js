@@ -63,9 +63,11 @@ module.exports = async function cli(
       const filesMeta = await Promise.mapSeries(origins, async origin => {
         let skip = false;
         const [, basePath, fileName, fileExtension] = origin.match(
-          /(.*)\.emdaer\/(.*)\.emdaer(\.md)/
+          /(.*\/)*(.*)\.emdaer(.md)/
         );
-        const destination = `${basePath}${fileName}${fileExtension}`;
+        const dotEmdaer = basePath ? basePath.includes('.emdaer/') : false;
+        const destinationBase = dotEmdaer ? '' : basePath || '';
+        const destination = `${destinationBase}${fileName}${fileExtension}`;
         const [storedHash, existingContentHash] = await getHashDiff(
           destination
         );
@@ -75,7 +77,7 @@ module.exports = async function cli(
             name: 'overwrite',
             type: 'confirm',
             default: 'n',
-            message: `it appears ${fileName}${fileExtension} has been changed. You may want to move changes you made manually to ${fileName}.emdaer${fileExtension} instead.\nWould you like to overwrite the contents of ${fileName}${fileExtension}?` // prettier-ignore
+            message: `it appears ${destination} has been changed. You may want to move changes you made manually to ${basePath}.emdaer${fileExtension} instead.\nWould you like to overwrite the contents of ${destination}?` // prettier-ignore
           });
           skip = !overwrite;
         }
