@@ -22,9 +22,14 @@ async function valueFromPackage({
   value: string,
   path: ?string,
 }): Promise<string> {
-  return JSON.parse(await fs.readFile(`${path || ''}package.json`, 'utf8'))[
+  const packagePath = `${path || ''}package.json`;
+  const packageValue = JSON.parse(await fs.readFile(packagePath, 'utf8'))[
     value
   ];
+  if (typeof packageValue === 'undefined') {
+    throw new Error(`No value "${value}" found in ${packagePath}`);
+  }
+  return packageValue;
 }
 
 module.exports = valueFromPackage;
