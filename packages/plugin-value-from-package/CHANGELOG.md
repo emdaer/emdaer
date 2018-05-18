@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.0"></a>
+# [3.2.0](https://github.com/emdaer/emdaer/compare/v2.4.0...v3.2.0) (2018-05-18)
+
+
+### Features
+
+* simplify cli ([1ff54b9](https://github.com/emdaer/emdaer/commit/1ff54b9)), closes [#89](https://github.com/emdaer/emdaer/issues/89) [#96](https://github.com/emdaer/emdaer/issues/96)
+* **plugin-value-from-package:** error if value is not specified in package.json ([e47f914](https://github.com/emdaer/emdaer/commit/e47f914)), closes [#99](https://github.com/emdaer/emdaer/issues/99)
+
+
+### BREAKING CHANGES
+
+* @emdaer/cli now prompts the user if a manual change to the compiled README is detected. Use --yes to skip the prompt and automatically overwrite the README
+
+
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/emdaer/emdaer/compare/v2.4.0...v3.0.0) (2018-05-11)
 
