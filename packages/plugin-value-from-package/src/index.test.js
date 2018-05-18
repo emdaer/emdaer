@@ -21,4 +21,16 @@ describe('@emdaer/plugin-value-from-package', () => {
       })
     ).toBe('an emdaer plugin to add values from package.json');
   });
+  test('errors if value is not found specified package.json', () => {
+    fs.readFile.mockImplementation(
+      async () =>
+        '{"description": "an emdaer plugin to add values from package.json"}'
+    );
+    return expect(
+      valueFromPackage({
+        value: 'name',
+        path: '../',
+      })
+    ).rejects.toThrow('No value "name" found in ../package.json');
+  });
 });
