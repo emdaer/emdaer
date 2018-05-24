@@ -5,7 +5,7 @@
 -->
 
 <!--
-  emdaerHash:cc73e5c47381eaed634e062a2ff3c3e2
+  emdaerHash:03c1722101bf35a00703ff3b8ce11fcb
 -->
 
 <p align="center"><img src="hero.svg" alt="emdaer"></p>
@@ -101,6 +101,11 @@ npm run emdaer
 <h2 id="how-emdaer-works">How emdaer works</h2>
 <p>emdaer processes template files and writes the resulting files to your project.</p>
 <p>We match <code>.emdaer/(**/*).emdaer(.md)</code> and use the captured part of each matched file to determine the path for the output.</p>
+<details>
+  <summary>💡 Hint</summary>
+  <p>In the case that you have an emdaer file in a nested directory inside the <code>.emdaer</code> directory, emdaer will output the respective README in that directory in your code base. For example, <code>.emdaer/src/components/README.emdaer.md</code> will output the generated README at <code>src/components/README.emdaer.md</code>.</p>
+</details>
+
 <h3 id="plugins-transforms">Plugins &amp; Transforms</h3>
 <!-- prettier-ignore-start -->
 
