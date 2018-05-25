@@ -5,7 +5,7 @@
 -->
 
 <!--
-  emdaerHash:03c1722101bf35a00703ff3b8ce11fcb
+  emdaerHash:13708fbb1948563ceabf4c5dc65d8bab
 -->
 
 <p align="center"><img src="hero.svg" alt="emdaer"></p>
@@ -66,7 +66,7 @@ yarn add @emdaer/cli @emdaer/plugin-value-from-package lint-staged husky -D
 ```diff
 module.exports = {
   '*.js': ['eslint --fix', 'prettier --write', 'git add'],
-+ '*.emdaer.md': ['emdaer --yes', 'git add'],
++ '*.emdaer.md': ['emdaer --yes', 'git add *.md'],
 };
 ```
 <p>NOTE: In the case of a <code>precommit</code> hook (or CI/other automation), we don’t want to be prompted about anything. The <code>--yes</code> flag will automatically answer “yes” to any prompts. For example, it will make emdaer write your READMEs without prompting about overwritting direct changes to a destination README file.</p>
