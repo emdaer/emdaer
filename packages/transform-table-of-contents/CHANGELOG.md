@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.3"></a>
+## [3.2.3](https://github.com/emdaer/emdaer/compare/v3.2.2...v3.2.3) (2018-05-25)
+
+
+
+
+
+**Note:** Version bump only for package @emdaer/transform-table-of-contents
+
 <a name="3.2.2"></a>
 ## [3.2.2](https://github.com/emdaer/emdaer/compare/v3.2.1...v3.2.2) (2018-05-25)
 

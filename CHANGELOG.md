@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.3"></a>
+## [3.2.3](https://github.com/emdaer/emdaer/compare/v3.2.2...v3.2.3) (2018-05-25)
+
+
+### Bug Fixes
+
+* **cli:** only stamp with relative paths ([35ac286](https://github.com/emdaer/emdaer/commit/35ac286))
+
+
+
+
+
 <a name="3.2.2"></a>
 ## [3.2.2](https://github.com/emdaer/emdaer/compare/v3.2.1...v3.2.2) (2018-05-25)
 
