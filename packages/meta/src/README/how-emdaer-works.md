@@ -4,6 +4,11 @@ emdaer processes template files and writes the resulting files to your project.
 
 We match `.emdaer/(**/*).emdaer(.md)` and use the captured part of each matched file to determine the path for the output.
 
+<details>
+  <summary>💡 Hint</summary>
+  <p>In the case that you have an emdaer file in a nested directory inside the <code>.emdaer</code> directory, emdaer will output the respective README in that directory in your code base. For example, <code>.emdaer/src/components/README.emdaer.md</code> will output the generated README at <code>src/components/README.emdaer.md</code>.</p>
+</details>
+
 ### Plugins & Transforms
 
 <!-- prettier-ignore-start -->

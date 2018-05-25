@@ -123,9 +123,9 @@
     find-up "^2.1.0"
 
 "@emdaer/cli@file:packages/cli":
-  version "3.0.0"
+  version "3.2.1"
   dependencies:
-    "@emdaer/core" "^3.0.0"
+    "@emdaer/core" "^3.2.1"
     bluebird "^3.5.1"
     chalk "2.0.1"
     commander "2.11.0"
@@ -133,100 +133,100 @@
     glob "^7.1.2"
     inquirer "^5.1.0"
 
-"@emdaer/core@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@emdaer/core/-/core-3.0.0.tgz#cba6ac245f35e0e2dc83178b4fbc40ef1afc83e4"
+"@emdaer/core@^3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@emdaer/core/-/core-3.2.1.tgz#f47d90b2f82aaf33f921bd1c1fb4f74f6be90f89"
   dependencies:
     html-minifier "^3.5.14"
     js-yaml "3.8.4"
     marked "^0.3.19"
 
 "@emdaer/core@file:packages/core":
-  version "3.0.0"
+  version "3.2.1"
   dependencies:
     html-minifier "^3.5.14"
     js-yaml "3.8.4"
     marked "^0.3.19"
 
 "@emdaer/meta@file:packages/meta":
-  version "3.0.0"
+  version "3.2.1"
 
 "@emdaer/plugin-contributors-details-github@file:packages/plugin-contributors-details-github":
-  version "3.0.0"
+  version "3.2.1"
   dependencies:
     fs-extra "^4.0.2"
     glob "^7.1.2"
     node-fetch "^1.7.3"
 
 "@emdaer/plugin-details@file:packages/plugin-details":
-  version "3.0.0"
+  version "3.2.1"
 
 "@emdaer/plugin-documentation@file:packages/plugin-documentation":
-  version "3.0.0"
+  version "3.2.1"
   dependencies:
     documentation "4.0.0-rc.1"
 
 "@emdaer/plugin-image@file:packages/plugin-image":
-  version "3.0.0"
+  version "3.2.1"
 
 "@emdaer/plugin-import@file:packages/plugin-import":
-  version "3.0.0"
+  version "3.2.1"
   dependencies:
-    "@emdaer/core" "^3.0.0"
+    "@emdaer/core" "^3.2.1"
     fs-extra "3.0.1"
     lodash.get "^4.4.2"
 
 "@emdaer/plugin-jsdoc-tag-value@file:packages/plugin-jsdoc-tag-value":
-  version "3.0.0"
+  version "3.2.1"
   dependencies:
     documentation "^6.3.2"
 
 "@emdaer/plugin-license-reference@file:packages/plugin-license-reference":
-  version "3.0.0"
+  version "3.2.1"
   dependencies:
-    "@emdaer/plugin-value-from-package" "^3.0.0"
+    "@emdaer/plugin-value-from-package" "^3.2.1"
 
 "@emdaer/plugin-link@file:packages/plugin-link":
-  version "3.0.0"
+  version "3.2.1"
 
 "@emdaer/plugin-list-lerna-packages@file:packages/plugin-list-lerna-packages":
-  version "3.0.0"
+  version "3.2.1"
   dependencies:
     fs-extra "^4.0.2"
     glob "^7.1.2"
 
 "@emdaer/plugin-list@file:packages/plugin-list":
-  version "3.0.0"
+  version "3.2.1"
 
 "@emdaer/plugin-shields@file:packages/plugin-shields":
-  version "3.0.0"
+  version "3.2.1"
 
 "@emdaer/plugin-table@file:packages/plugin-table":
-  version "3.0.0"
+  version "3.2.1"
 
-"@emdaer/plugin-value-from-package@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@emdaer/plugin-value-from-package/-/plugin-value-from-package-3.0.0.tgz#e2adebb8ef14d5c6e163bb9ddc61fd106d32e468"
+"@emdaer/plugin-value-from-package@^3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@emdaer/plugin-value-from-package/-/plugin-value-from-package-3.2.1.tgz#86161561fa31252bc1c67b16ae8d68b4c8a701af"
   dependencies:
     fs-extra "3.0.1"
 
 "@emdaer/plugin-value-from-package@file:packages/plugin-value-from-package":
-  version "3.0.0"
+  version "3.2.1"
   dependencies:
     fs-extra "3.0.1"
 
 "@emdaer/transform-github-emoji@file:packages/transform-github-emoji":
-  version "3.0.0"
+  version "3.2.1"
   dependencies:
     node-emoji "1.5.1"
 
 "@emdaer/transform-prettier@file:packages/transform-prettier":
-  version "3.0.0"
+  version "3.2.1"
   dependencies:
     prettier "^1.12.0"
 
 "@emdaer/transform-table-of-contents@file:packages/transform-table-of-contents":
-  version "3.0.0"
+  version "3.2.1"
   dependencies:
     markdown-toc "^1.2.0"
 

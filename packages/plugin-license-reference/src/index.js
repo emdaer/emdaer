@@ -7,7 +7,7 @@ const valueFromPackage = require('@emdaer/plugin-value-from-package');
  * Pulls package name and license from package.json and links to ./LICENSE
  * @example
  * <!--emdaer-p
- *   - '@emdaer/plugin-license-refernce'
+ *   - '@emdaer/plugin-license-reference'
  * -->
  * @returns {Promise<string>} The license reference
  */

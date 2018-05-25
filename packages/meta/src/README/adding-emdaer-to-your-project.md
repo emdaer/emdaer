@@ -7,6 +7,10 @@ Install dependencies:
 ```sh
 npm install --save-dev @emdaer/cli @emdaer/plugin-value-from-package lint-staged husky
 ```
+or with [yarn](https://yarnpkg.com/):
+```sh
+yarn add @emdaer/cli @emdaer/plugin-value-from-package lint-staged husky -D
+```
 
 Follow the [lint-staged setup instructions](https://github.com/okonet/lint-staged#installation-and-setup).
 

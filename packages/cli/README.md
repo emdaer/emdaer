@@ -5,7 +5,7 @@
 -->
 
 <!--
-  emdaerHash:7875ec5ed3452465db8ba0b53ccaf1a2
+  emdaerHash:4d589a1138676717717d7ea8861f2221
 -->
 
 <h1 id="-emdaer-cli-travis-documented-with-emdaer-maintained-with-lerna">@emdaer/cli · <a href="https://travis-ci.org/emdaer/emdaer/"><img src="https://img.shields.io/travis/emdaer/emdaer.svg?style=flat-square" alt="Travis"></a> <a href="https://github.com/emdaer/emdaer"><img src="https://img.shields.io/badge/📓-documented%20with%20emdaer-F06632.svg?style=flat-square" alt="Documented with emdaer"></a> <a href="https://lernajs.io/"><img src="https://img.shields.io/badge/🐉-maintained%20with%20lerna-cc00ff.svg?style=flat-square" alt="Maintained with lerna"></a></h1>
@@ -20,26 +20,29 @@
 ```sh
 npm install --save-dev @emdaer/cli @emdaer/plugin-value-from-package lint-staged husky
 ```
+<p>or with <a href="https://yarnpkg.com/">yarn</a>:</p>
+
+```sh
+yarn add @emdaer/cli @emdaer/plugin-value-from-package lint-staged husky -D
+```
 <p>Follow the <a href="https://github.com/okonet/lint-staged#installation-and-setup">lint-staged setup instructions</a>.</p>
-<p><code>`</code>diff json
+
+```diff
 {
-  “scripts”: {</p>
-<ul>
-<li>“emdaer”: “emdaer &amp;&amp; git add *.md”,</li>
-<li>“precommit”: “lint-staged”
+  "scripts": {
++   "emdaer": "emdaer && git add *.md",
++   "precommit": "lint-staged"
+  }
 }
-}
-<code>`</code></li>
-</ul>
+```
 <p>In your lint-staged config file add an entry for emdaer:</p>
-<p><code>`</code>diff js
+
+```diff
 module.exports = {
-  ‘*.js’: [‘eslint –fix’, ‘prettier –write’, ‘git add’],</p>
-<ul>
-<li>‘*.emdaer.md’: [‘emdaer –yes’, ‘git add’],
+  '*.js': ['eslint --fix', 'prettier --write', 'git add'],
++ '*.emdaer.md': ['emdaer --yes', 'git add'],
 };
-<code>`</code></li>
-</ul>
+```
 <p>NOTE: In the case of a <code>precommit</code> hook (or CI/other automation), we don’t want to be prompted about anything. The <code>--yes</code> flag will automatically answer “yes” to any prompts. For example, it will make emdaer write your READMEs without prompting about overwritting direct changes to a destination README file.</p>
 <p>Add a <code>.emdaer/README.emdaer.md</code> file:</p>
 <!-- prettier-ignore-start -->
@@ -57,4 +60,15 @@ module.exports = {
 npm run emdaer
 ```
 <p>When you commit your changes, lint-staged will run emdaer on any <code>*.emdaer.md</code> files you may have changed.</p>
+<h3 id="manual-usage">Manual Usage</h3>
+<p>emdaer can be run manually against files by providing space separated file paths:</p>
+
+```sh
+npm run emdaer -- .emdaer/README.emdaer.md .emdaer/CONTRIBUTING.emdaer.md
+```
+<p>If emdaer is not provided a path, the default glob <code>.emdaer/**/*.emdaer.md</code> is searched:</p>
+
+```sh
+npm run emdaer
+```
 <p><em>NOTE:</em> By default, emdaer checks for existing changes to your READMEs before writing. If it detects changes, it will provide a prompt asking if you would like to overwrite the README with the newly generated content. If you accidentally edited the README directly, you will want to answer <code>n</code> to the prompt, move any changes to the respective <code>.emdaer/*.emdaer.md</code> file, and rerun emdaer. If you would like to discard those changes, answer <code>Y</code> to the prompt or use the <code>--yes</code> flag to skip the prompt all together. In both cases, emdaer will overwrite the README with the newly generated content.</p>

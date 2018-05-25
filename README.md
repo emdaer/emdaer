@@ -5,7 +5,7 @@
 -->
 
 <!--
-  emdaerHash:0d0f52aabcd80185473da74642680437
+  emdaerHash:03c1722101bf35a00703ff3b8ce11fcb
 -->
 
 <p align="center"><img src="hero.svg" alt="emdaer"></p>
@@ -15,6 +15,10 @@
 <!-- toc -->
 <ul>
 <li><a href="#what-is-emdaer">What is emdaer?</a></li>
+<li><a href="#adding-emdaer-to-your-project">Adding emdaer to your project</a><ul>
+<li><a href="#manual-usage">Manual Usage</a></li>
+</ul>
+</li>
 <li><a href="#how-emdaer-works">How emdaer works</a><ul>
 <li><a href="#plugins--transforms">Plugins &amp; Transforms</a></li>
 <li><a href="#code-fences">Code Fences</a></li>
@@ -22,10 +26,6 @@
 </li>
 <li><a href="#core-plugins">Core Plugins</a></li>
 <li><a href="#core-transforms">Core Transforms</a></li>
-<li><a href="#adding-emdaer-to-your-project">Adding emdaer to your project</a><ul>
-<li><a href="#manual-usage">Manual Usage</a></li>
-</ul>
-</li>
 <li><a href="#contributing">Contributing</a></li>
 <li><a href="#this-readme">This README</a></li>
 <li><a href="#license">License</a></li>
@@ -39,9 +39,73 @@
 <li>🗃 <strong>Keep it organized</strong> Keep your documentation DRY and organized by importing content from your codebase, splitting large documents into chunks, and formatting it with <a href="https://github.com/prettier/prettier">Prettier</a>.</li>
 <li>🍋 <strong>Keep it fresh</strong> Ensure your documents stay up to date by pulling in new data from various sources with every build</li>
 </ul>
+<h2 id="adding-emdaer-to-your-project">Adding emdaer to your project</h2>
+<p>We recommend using emdaer with <a href="https://github.com/okonet/lint-staged">lint-staged</a> and <a href="https://github.com/typicode/husky">husky</a>.</p>
+<p>Install dependencies:</p>
+
+```sh
+npm install --save-dev @emdaer/cli @emdaer/plugin-value-from-package lint-staged husky
+```
+<p>or with <a href="https://yarnpkg.com/">yarn</a>:</p>
+
+```sh
+yarn add @emdaer/cli @emdaer/plugin-value-from-package lint-staged husky -D
+```
+<p>Follow the <a href="https://github.com/okonet/lint-staged#installation-and-setup">lint-staged setup instructions</a>.</p>
+
+```diff
+{
+  "scripts": {
++   "emdaer": "emdaer && git add *.md",
++   "precommit": "lint-staged"
+  }
+}
+```
+<p>In your lint-staged config file add an entry for emdaer:</p>
+
+```diff
+module.exports = {
+  '*.js': ['eslint --fix', 'prettier --write', 'git add'],
++ '*.emdaer.md': ['emdaer --yes', 'git add'],
+};
+```
+<p>NOTE: In the case of a <code>precommit</code> hook (or CI/other automation), we don’t want to be prompted about anything. The <code>--yes</code> flag will automatically answer “yes” to any prompts. For example, it will make emdaer write your READMEs without prompting about overwritting direct changes to a destination README file.</p>
+<p>Add a <code>.emdaer/README.emdaer.md</code> file:</p>
+<!-- prettier-ignore-start -->
+
+```md
+# <!--emdaer-p
+  - '@emdaer/plugin-value-from-package'
+  - value: name
+-->
+```
+<!-- prettier-ignore-end -->
+<p>And give it a whirl:</p>
+
+```sh
+npm run emdaer
+```
+<p>When you commit your changes, lint-staged will run emdaer on any <code>*.emdaer.md</code> files you may have changed.</p>
+<h3 id="manual-usage">Manual Usage</h3>
+<p>emdaer can be run manually against files by providing space separated file paths:</p>
+
+```sh
+npm run emdaer -- .emdaer/README.emdaer.md .emdaer/CONTRIBUTING.emdaer.md
+```
+<p>If emdaer is not provided a path, the default glob <code>.emdaer/**/*.emdaer.md</code> is searched:</p>
+
+```sh
+npm run emdaer
+```
+<p><em>NOTE:</em> By default, emdaer checks for existing changes to your READMEs before writing. If it detects changes, it will provide a prompt asking if you would like to overwrite the README with the newly generated content. If you accidentally edited the README directly, you will want to answer <code>n</code> to the prompt, move any changes to the respective <code>.emdaer/*.emdaer.md</code> file, and rerun emdaer. If you would like to discard those changes, answer <code>Y</code> to the prompt or use the <code>--yes</code> flag to skip the prompt all together. In both cases, emdaer will overwrite the README with the newly generated content.</p>
 <h2 id="how-emdaer-works">How emdaer works</h2>
 <p>emdaer processes template files and writes the resulting files to your project.</p>
 <p>We match <code>.emdaer/(**/*).emdaer(.md)</code> and use the captured part of each matched file to determine the path for the output.</p>
+<details>
+  <summary>💡 Hint</summary>
+  <p>In the case that you have an emdaer file in a nested directory inside the <code>.emdaer</code> directory, emdaer will output the respective README in that directory in your code base. For example, <code>.emdaer/src/components/README.emdaer.md</code> will output the generated README at <code>src/components/README.emdaer.md</code>.</p>
+</details>
+
 <h3 id="plugins-transforms">Plugins &amp; Transforms</h3>
 <!-- prettier-ignore-start -->
 
@@ -122,60 +186,6 @@ These calls take the form of yaml tuples where the first item is the name of the
 <li><strong><a href="packages/transform-prettier">@emdaer/transform-prettier</a></strong> An emdaer transformation that formats markdown, including code blocks, using prettier</li>
 <li><strong><a href="packages/transform-table-of-contents">@emdaer/transform-table-of-contents</a></strong> An emdaer transformation that generates a table of contents</li>
 </ul>
-<h2 id="adding-emdaer-to-your-project">Adding emdaer to your project</h2>
-<p>We recommend using emdaer with <a href="https://github.com/okonet/lint-staged">lint-staged</a> and <a href="https://github.com/typicode/husky">husky</a>.</p>
-<p>Install dependencies:</p>
-
-```sh
-npm install --save-dev @emdaer/cli @emdaer/plugin-value-from-package lint-staged husky
-```
-<p>Follow the <a href="https://github.com/okonet/lint-staged#installation-and-setup">lint-staged setup instructions</a>.</p>
-
-```diff
-{
-  "scripts": {
-+   "emdaer": "emdaer && git add *.md",
-+   "precommit": "lint-staged"
-  }
-}
-```
-<p>In your lint-staged config file add an entry for emdaer:</p>
-
-```diff
-module.exports = {
-  '*.js': ['eslint --fix', 'prettier --write', 'git add'],
-+ '*.emdaer.md': ['emdaer --yes', 'git add'],
-};
-```
-<p>NOTE: In the case of a <code>precommit</code> hook (or CI/other automation), we don’t want to be prompted about anything. The <code>--yes</code> flag will automatically answer “yes” to any prompts. For example, it will make emdaer write your READMEs without prompting about overwritting direct changes to a destination README file.</p>
-<p>Add a <code>.emdaer/README.emdaer.md</code> file:</p>
-<!-- prettier-ignore-start -->
-
-```md
-# <!--emdaer-p
-  - '@emdaer/plugin-value-from-package'
-  - value: name
--->
-```
-<!-- prettier-ignore-end -->
-<p>And give it a whirl:</p>
-
-```sh
-npm run emdaer
-```
-<p>When you commit your changes, lint-staged will run emdaer on any <code>*.emdaer.md</code> files you may have changed.</p>
-<h3 id="manual-usage">Manual Usage</h3>
-<p>emdaer can be run manually against files by providing space separated file paths:</p>
-
-```sh
-npm run emdaer -- .emdaer/README.emdaer.md .emdaer/CONTRIBUTING.emdaer.md
-```
-<p>If emdaer is not provided a path, the default glob <code>.emdaer/**/*.emdaer.md</code> is searched:</p>
-
-```sh
-npm run emdaer
-```
-<p><em>NOTE:</em> By default, emdaer checks for existing changes to your READMEs before writing. If it detects changes, it will provide a prompt asking if you would like to overwrite the README with the newly generated content. If you accidentally edited the README directly, you will want to answer <code>n</code> to the prompt, move any changes to the respective <code>.emdaer/*.emdaer.md</code> file, and rerun emdaer. If you would like to discard those changes, answer <code>Y</code> to the prompt or use the <code>--yes</code> flag to skip the prompt all together. In both cases, emdaer will overwrite the README with the newly generated content.</p>
 <h2 id="contributing">Contributing</h2>
 <p>If you’d like to make emdaer better, please read our <a href="./CONTRIBUTING.md">guide to contributing</a>.</p>
 <details>

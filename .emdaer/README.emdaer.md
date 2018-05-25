@@ -41,6 +41,11 @@
 
 <!--emdaer-p
   - '@emdaer/plugin-import'
+  - path: '@emdaer/meta/src/README/adding-emdaer-to-your-project.md'
+-->
+
+<!--emdaer-p
+  - '@emdaer/plugin-import'
   - path: '@emdaer/meta/src/README/how-emdaer-works.md'
 -->
 
@@ -54,11 +59,6 @@
   - '@emdaer/plugin-import'
   - path: '@emdaer/meta/src/README/core-transforms.md'
     runEmdaer: true
--->
-
-<!--emdaer-p
-  - '@emdaer/plugin-import'
-  - path: '@emdaer/meta/src/README/adding-emdaer-to-your-project.md'
 -->
 
 <!--emdaer-p
