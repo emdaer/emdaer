@@ -3,7 +3,7 @@
   "description": "An emdaer plugin that renders HTML5 details elements from which users can retrieve additional information",
   "version": "3.2.3",
   "repository": "emdaer/emdaer",
-  "homepage": "https://emdaer.me/",
+  "homepage": "https://emdaer.netlify.com/",
   "keywords": [
     "emdaer-plugin"
   ],
