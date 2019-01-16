@@ -3,7 +3,7 @@
   "description": "An emdaer plugin that renders HTML list element.",
   "version": "3.2.3",
   "repository": "emdaer/emdaer",
-  "homepage": "https://emdaer.me/",
+  "homepage": "https://emdaer.netlify.com/",
   "keywords": [
     "emdaer-plugin"
   ],

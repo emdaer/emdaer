@@ -5,7 +5,7 @@
 -->
 
 <!--
-  emdaerHash:13708fbb1948563ceabf4c5dc65d8bab
+  emdaerHash:f48c824800e9ec59839c2c6b857d5e2a
 -->
 
 <p align="center"><img src="hero.svg" alt="emdaer"></p>
@@ -190,7 +190,7 @@ These calls take the form of yaml tuples where the first item is the name of the
 <p>If you’d like to make emdaer better, please read our <a href="./CONTRIBUTING.md">guide to contributing</a>.</p>
 <details>
 <summary><strong>Contributors</strong></summary><br>
-<a title="" href="https://github.com/flipactual">
+<a title="Can you jam with the console cowboys in cyberspace?" href="https://github.com/flipactual">
   <img align="left" src="https://avatars0.githubusercontent.com/u/1306968?s=24">
 </a>
 <strong>Flip</strong>
@@ -218,7 +218,7 @@ These calls take the form of yaml tuples where the first item is the name of the
 </details>
 
 <h2 id="this-readme">This README</h2>
-<p>This README was generated with emdaer. However, it is special in that it shares its content with the <a href="emdaer.me">emdaer website</a> via the <a href="https://www.npmjs.com/package/@emdaer/meta">@emdaer/meta</a> and <a href="https://www.npmjs.com/package/@emdaer/plugin-import">@emdaer/plugin-import</a> packages. <a href="https://www.npmjs.com/package/@emdaer/meta">@emdaer/meta</a> exports each section of this README as a node module which <a href="https://www.npmjs.com/package/@emdaer/plugin-import">@emdaer/plugin-import</a> imports like so:</p>
+<p>This README was generated with emdaer. However, it is special in that it shares its content with the <a href="emdaer.netlify.com">emdaer website</a> via the <a href="https://www.npmjs.com/package/@emdaer/meta">@emdaer/meta</a> and <a href="https://www.npmjs.com/package/@emdaer/plugin-import">@emdaer/plugin-import</a> packages. <a href="https://www.npmjs.com/package/@emdaer/meta">@emdaer/meta</a> exports each section of this README as a node module which <a href="https://www.npmjs.com/package/@emdaer/plugin-import">@emdaer/plugin-import</a> imports like so:</p>
 <!-- prettier-ignore-start -->
 
 ```md
