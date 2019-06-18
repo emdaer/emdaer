@@ -123,9 +123,9 @@
     find-up "^2.1.0"
 
 "@emdaer/cli@file:packages/cli":
-  version "3.2.3"
+  version "3.2.4"
   dependencies:
-    "@emdaer/core" "^3.2.3"
+    "@emdaer/core" "^3.2.4"
     bluebird "^3.5.1"
     chalk "^2.4.1"
     commander "2.11.0"
@@ -133,102 +133,102 @@
     glob "^7.1.2"
     inquirer "^5.1.0"
 
-"@emdaer/core@^3.2.3":
-  version "3.2.3"
-  resolved "https://registry.yarnpkg.com/@emdaer/core/-/core-3.2.3.tgz#03d45de6cd3d3ac207aff556f4acf249922eff52"
-  integrity sha1-A9Rd5s09OsIHr/VW9KzySZIu/1I=
+"@emdaer/core@^3.2.4":
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/@emdaer/core/-/core-3.2.4.tgz#419b81ad423af4a27ffe3baccd58ac7c6b269f15"
+  integrity sha512-OLBeRSykEcBMfQLfhMjIDqZHjQ5doGeyGD68aRfTjQkOHAU0a3irpanNt0utAbu55AXPPsaAKPxNAeaSzkPNkg==
   dependencies:
     html-minifier "^3.5.14"
     js-yaml "3.8.4"
     marked "^0.3.19"
 
 "@emdaer/core@file:packages/core":
-  version "3.2.3"
+  version "3.2.4"
   dependencies:
     html-minifier "^3.5.14"
     js-yaml "3.8.4"
     marked "^0.3.19"
 
 "@emdaer/meta@file:packages/meta":
-  version "3.2.3"
+  version "3.2.4"
 
 "@emdaer/plugin-contributors-details-github@file:packages/plugin-contributors-details-github":
-  version "3.2.3"
+  version "3.2.4"
   dependencies:
     fs-extra "^4.0.2"
     glob "^7.1.2"
     node-fetch "^1.7.3"
 
 "@emdaer/plugin-details@file:packages/plugin-details":
-  version "3.2.3"
+  version "3.2.4"
 
 "@emdaer/plugin-documentation@file:packages/plugin-documentation":
-  version "3.2.3"
+  version "3.2.4"
   dependencies:
     documentation "4.0.0-rc.1"
 
 "@emdaer/plugin-image@file:packages/plugin-image":
-  version "3.2.3"
+  version "3.2.4"
 
 "@emdaer/plugin-import@file:packages/plugin-import":
-  version "3.2.3"
+  version "3.2.4"
   dependencies:
-    "@emdaer/core" "^3.2.3"
+    "@emdaer/core" "^3.2.4"
     fs-extra "3.0.1"
     lodash.get "^4.4.2"
 
 "@emdaer/plugin-jsdoc-tag-value@file:packages/plugin-jsdoc-tag-value":
-  version "3.2.3"
+  version "3.2.4"
   dependencies:
     documentation "^6.3.2"
 
 "@emdaer/plugin-license-reference@file:packages/plugin-license-reference":
-  version "3.2.3"
+  version "3.2.4"
   dependencies:
-    "@emdaer/plugin-value-from-package" "^3.2.3"
+    "@emdaer/plugin-value-from-package" "^3.2.4"
 
 "@emdaer/plugin-link@file:packages/plugin-link":
-  version "3.2.3"
+  version "3.2.4"
 
 "@emdaer/plugin-list-lerna-packages@file:packages/plugin-list-lerna-packages":
-  version "3.2.3"
+  version "3.2.4"
   dependencies:
     fs-extra "^4.0.2"
     glob "^7.1.2"
 
 "@emdaer/plugin-list@file:packages/plugin-list":
-  version "3.2.3"
+  version "3.2.4"
 
 "@emdaer/plugin-shields@file:packages/plugin-shields":
-  version "3.2.3"
+  version "3.2.4"
 
 "@emdaer/plugin-table@file:packages/plugin-table":
-  version "3.2.3"
+  version "3.2.4"
 
-"@emdaer/plugin-value-from-package@^3.2.3":
-  version "3.2.3"
-  resolved "https://registry.yarnpkg.com/@emdaer/plugin-value-from-package/-/plugin-value-from-package-3.2.3.tgz#485e9c62d6715b49381271d462dd1804e2f2974e"
-  integrity sha1-SF6cYtZxW0k4EnHUYt0YBOLyl04=
+"@emdaer/plugin-value-from-package@^3.2.4":
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/@emdaer/plugin-value-from-package/-/plugin-value-from-package-3.2.4.tgz#19a82dba30a4baf3cbbf3c3e449cc3b11a3dce5b"
+  integrity sha512-kBOnB/bKWSr0nA4J+TTvaCBlyCgkiAyc90hUppG8XTnKdtb3dSP84EenHwt+gBoxCy40YgQTN35dR58wi32qgg==
   dependencies:
     fs-extra "3.0.1"
 
 "@emdaer/plugin-value-from-package@file:packages/plugin-value-from-package":
-  version "3.2.3"
+  version "3.2.4"
   dependencies:
     fs-extra "3.0.1"
 
 "@emdaer/transform-github-emoji@file:packages/transform-github-emoji":
-  version "3.2.3"
+  version "3.2.4"
   dependencies:
     node-emoji "1.5.1"
 
 "@emdaer/transform-prettier@file:packages/transform-prettier":
-  version "3.2.3"
+  version "3.2.4"
   dependencies:
     prettier "^1.12.0"
 
 "@emdaer/transform-table-of-contents@file:packages/transform-table-of-contents":
-  version "3.2.3"
+  version "3.2.4"
   dependencies:
     markdown-toc "^1.2.0"
 
@@ -2944,9 +2944,10 @@ flat-cache@^1.2.1:
     graceful-fs "^4.1.2"
     write "^0.2.1"
 
-flow-bin@^0.45.0:
-  version "0.45.0"
-  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.45.0.tgz#009dd0f577a3f665c74ca8be827ae8c2dd8fd6b5"
+flow-bin@^0.101.0:
+  version "0.101.0"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.101.0.tgz#c56fa0afb9c151eeba7954136e9066d408691063"
+  integrity sha512-2xriPEOSrGQklAArNw1ixoIUiLTWhIquYV26WqnxEu7IcXWgoZUcfJXufG9kIvrNbdwCNd5RBjTwbB0p6L6XaA==
 
 flow-remove-types@^1.2.1:
   version "1.2.3"
