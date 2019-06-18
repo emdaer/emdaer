@@ -11,7 +11,7 @@
     "node": ">=8.0.0"
   },
   "devDependencies": {
-    "@commitlint/config-angular": "^6.1.0",
+    "@commitlint/config-angular": "^8.0.0",
     "@emdaer/cli": "file:packages/cli",
     "@emdaer/core": "file:packages/core",
     "@emdaer/meta": "file:packages/meta",
@@ -32,7 +32,7 @@
     "@emdaer/transform-prettier": "file:packages/transform-prettier",
     "@emdaer/transform-table-of-contents": "file:packages/transform-table-of-contents",
     "babel-eslint": "7.2.3",
-    "commitlint": "^6.1.0",
+    "commitlint": "^8.0.0",
     "eslint": "^4.9.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.6.0",
