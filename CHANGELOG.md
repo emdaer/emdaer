@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.5"></a>
+## [3.2.5](https://github.com/emdaer/emdaer/compare/v3.2.4...v3.2.5) (2019-06-18)
+
+
+### Bug Fixes
+
+* bump commitlint deps ([d922a5b](https://github.com/emdaer/emdaer/commit/d922a5b))
+
+
+
+
+
 <a name="3.2.4"></a>
 ## [3.2.4](https://github.com/emdaer/emdaer/compare/v3.2.3...v3.2.4) (2019-01-16)
 
