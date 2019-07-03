@@ -154,9 +154,9 @@
     find-up "^2.1.0"
 
 "@emdaer/cli@file:packages/cli":
-  version "3.2.4"
+  version "3.2.6"
   dependencies:
-    "@emdaer/core" "^3.2.4"
+    "@emdaer/core" "^3.2.6"
     bluebird "^3.5.1"
     chalk "^2.4.1"
     commander "2.11.0"
@@ -164,102 +164,102 @@
     glob "^7.1.2"
     inquirer "^5.1.0"
 
-"@emdaer/core@^3.2.4":
-  version "3.2.4"
-  resolved "https://registry.yarnpkg.com/@emdaer/core/-/core-3.2.4.tgz#419b81ad423af4a27ffe3baccd58ac7c6b269f15"
-  integrity sha512-OLBeRSykEcBMfQLfhMjIDqZHjQ5doGeyGD68aRfTjQkOHAU0a3irpanNt0utAbu55AXPPsaAKPxNAeaSzkPNkg==
+"@emdaer/core@^3.2.6":
+  version "3.2.6"
+  resolved "https://registry.yarnpkg.com/@emdaer/core/-/core-3.2.6.tgz#6e7edaa46143a859851773e66cc5ad43efb1dca9"
+  integrity sha512-86SSUBhCH9pcxFB8o2WokPI19BIRl/kjWDz904yp5lKt+QFm/b7wpBX7lU50bZJsJ9nWTJu9dQKjL0UiJshCrQ==
   dependencies:
     html-minifier "^3.5.14"
     js-yaml "3.8.4"
     marked "^0.3.19"
 
 "@emdaer/core@file:packages/core":
-  version "3.2.4"
+  version "3.2.6"
   dependencies:
     html-minifier "^3.5.14"
     js-yaml "3.8.4"
     marked "^0.3.19"
 
 "@emdaer/meta@file:packages/meta":
-  version "3.2.4"
+  version "3.2.6"
 
 "@emdaer/plugin-contributors-details-github@file:packages/plugin-contributors-details-github":
-  version "3.2.4"
+  version "3.2.6"
   dependencies:
     fs-extra "^4.0.2"
     glob "^7.1.2"
     node-fetch "^1.7.3"
 
 "@emdaer/plugin-details@file:packages/plugin-details":
-  version "3.2.4"
+  version "3.2.6"
 
 "@emdaer/plugin-documentation@file:packages/plugin-documentation":
-  version "3.2.4"
+  version "3.2.6"
   dependencies:
     documentation "4.0.0-rc.1"
 
 "@emdaer/plugin-image@file:packages/plugin-image":
-  version "3.2.4"
+  version "3.2.6"
 
 "@emdaer/plugin-import@file:packages/plugin-import":
-  version "3.2.4"
+  version "3.2.6"
   dependencies:
-    "@emdaer/core" "^3.2.4"
+    "@emdaer/core" "^3.2.6"
     fs-extra "3.0.1"
     lodash.get "^4.4.2"
 
 "@emdaer/plugin-jsdoc-tag-value@file:packages/plugin-jsdoc-tag-value":
-  version "3.2.4"
+  version "3.2.6"
   dependencies:
     documentation "^6.3.2"
 
 "@emdaer/plugin-license-reference@file:packages/plugin-license-reference":
-  version "3.2.4"
+  version "3.2.6"
   dependencies:
-    "@emdaer/plugin-value-from-package" "^3.2.4"
+    "@emdaer/plugin-value-from-package" "^3.2.6"
 
 "@emdaer/plugin-link@file:packages/plugin-link":
-  version "3.2.4"
+  version "3.2.6"
 
 "@emdaer/plugin-list-lerna-packages@file:packages/plugin-list-lerna-packages":
-  version "3.2.4"
+  version "3.2.6"
   dependencies:
     fs-extra "^4.0.2"
     glob "^7.1.2"
 
 "@emdaer/plugin-list@file:packages/plugin-list":
-  version "3.2.4"
+  version "3.2.6"
 
 "@emdaer/plugin-shields@file:packages/plugin-shields":
-  version "3.2.4"
+  version "3.2.6"
 
 "@emdaer/plugin-table@file:packages/plugin-table":
-  version "3.2.4"
+  version "3.2.6"
 
-"@emdaer/plugin-value-from-package@^3.2.4":
-  version "3.2.4"
-  resolved "https://registry.yarnpkg.com/@emdaer/plugin-value-from-package/-/plugin-value-from-package-3.2.4.tgz#19a82dba30a4baf3cbbf3c3e449cc3b11a3dce5b"
-  integrity sha512-kBOnB/bKWSr0nA4J+TTvaCBlyCgkiAyc90hUppG8XTnKdtb3dSP84EenHwt+gBoxCy40YgQTN35dR58wi32qgg==
+"@emdaer/plugin-value-from-package@^3.2.6":
+  version "3.2.6"
+  resolved "https://registry.yarnpkg.com/@emdaer/plugin-value-from-package/-/plugin-value-from-package-3.2.6.tgz#33b45c4f48ca36cbdb834319a06327dbe2fcb81b"
+  integrity sha512-0eOweIjH2coVMZSelbUbVZ+3NeeulCXS4Ho5xhMfyS/i9OlARNAKFHN7QtgTz55d/JaWu5mmG6kG3L0AM/GlUQ==
   dependencies:
     fs-extra "3.0.1"
 
 "@emdaer/plugin-value-from-package@file:packages/plugin-value-from-package":
-  version "3.2.4"
+  version "3.2.6"
   dependencies:
     fs-extra "3.0.1"
 
 "@emdaer/transform-github-emoji@file:packages/transform-github-emoji":
-  version "3.2.4"
+  version "3.2.6"
   dependencies:
-    node-emoji "1.5.1"
+    node-emoji "1.10.0"
 
 "@emdaer/transform-prettier@file:packages/transform-prettier":
-  version "3.2.4"
+  version "3.2.6"
   dependencies:
     prettier "^1.12.0"
 
 "@emdaer/transform-table-of-contents@file:packages/transform-table-of-contents":
-  version "3.2.4"
+  version "3.2.6"
   dependencies:
     markdown-toc "^1.2.0"
 
@@ -3935,6 +3935,7 @@ is-extendable@^0.1.0, is-extendable@^0.1.1:
 is-extendable@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/is-extendable/-/is-extendable-1.0.1.tgz#a7470f9e426733d81bd81e1155264e3a3507cab4"
+  integrity sha512-arnXMxT1hhoKo9k1LZdmlNyJdDDfy2v0fXjFlmok4+i8ul/6WlbVge9bhM74OpNPQPMGUToDtz+KXa1PneJxOA==
   dependencies:
     is-plain-object "^2.0.4"
 
@@ -4041,6 +4042,7 @@ is-plain-obj@^1.0.0, is-plain-obj@^1.1.0:
 is-plain-object@^2.0.1, is-plain-object@^2.0.3, is-plain-object@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/is-plain-object/-/is-plain-object-2.0.4.tgz#2c163b3fafb1b606d9d17928f05c2a1c38e07677"
+  integrity sha512-h5PpgXkWitc38BBMYawTYMWJHFZJVnBquFE57xFpjB8pJFiF6gZ+bU+WyI/yqXiFR5mdLsgYNaPe8uao6Uv9Og==
   dependencies:
     isobject "^3.0.1"
 
@@ -4177,6 +4179,7 @@ isobject@^2.0.0:
 isobject@^3.0.0, isobject@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
+  integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
 isstream@~0.1.2:
   version "0.1.2"
@@ -4922,6 +4925,11 @@ lodash.templatesettings@^4.0.0:
   dependencies:
     lodash._reinterpolate "~3.0.0"
 
+lodash.toarray@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/lodash.toarray/-/lodash.toarray-4.4.0.tgz#24c4bfcd6b2fba38bfd0594db1179d8e9b656561"
+  integrity sha1-JMS/zWsvuji/0FlNsRedjptlZWE=
+
 lodash@4.17.11, lodash@^4.17.11:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
@@ -5266,16 +5274,10 @@ minizlib@^1.1.0:
   dependencies:
     minipass "^2.2.1"
 
-mixin-deep@^1.1.3:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/mixin-deep/-/mixin-deep-1.2.0.tgz#d02b8c6f8b6d4b8f5982d3fd009c4919851c3fe2"
-  dependencies:
-    for-in "^1.0.2"
-    is-extendable "^0.1.1"
-
-mixin-deep@^1.2.0:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/mixin-deep/-/mixin-deep-1.3.1.tgz#a49e7268dce1a0d9698e45326c5626df3543d0fe"
+mixin-deep@^1.1.3, mixin-deep@^1.2.0:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/mixin-deep/-/mixin-deep-1.3.2.tgz#1120b43dc359a785dce65b55b82e257ccf479566"
+  integrity sha512-WRoDn//mXBiJ1H40rqa3vH0toePwSsGb45iInWlTySa+Uu4k3tYUSxa2v1KqAiLtvlrSzaExqS1gtk96A9zvEA==
   dependencies:
     for-in "^1.0.2"
     is-extendable "^1.0.1"
@@ -5360,11 +5362,12 @@ no-case@^2.2.0:
   dependencies:
     lower-case "^1.1.1"
 
-node-emoji@1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/node-emoji/-/node-emoji-1.5.1.tgz#fd918e412769bf8c448051238233840b2aff16a1"
+node-emoji@1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/node-emoji/-/node-emoji-1.10.0.tgz#8886abd25d9c7bb61802a658523d1f8d2a89b2da"
+  integrity sha512-Yt3384If5H6BYGVHiHwTL+99OzJKHhgp82S8/dktEK73T26BazdgZ4JZh92xSVtGNJvz9UbXdNAc5hcrXV42vw==
   dependencies:
-    string.prototype.codepointat "^0.2.0"
+    lodash.toarray "^4.4.0"
 
 node-fetch@^1.7.3:
   version "1.7.3"
@@ -6989,10 +6992,6 @@ string-width@^2.0.0, string-width@^2.1.0, string-width@^2.1.1:
   dependencies:
     is-fullwidth-code-point "^2.0.0"
     strip-ansi "^4.0.0"
-
-string.prototype.codepointat@^0.2.0:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/string.prototype.codepointat/-/string.prototype.codepointat-0.2.1.tgz#004ad44c8afc727527b108cd462b4d971cd469bc"
 
 string_decoder@0.10, string_decoder@~0.10.x:
   version "0.10.31"
