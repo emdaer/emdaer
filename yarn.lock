@@ -154,9 +154,9 @@
     find-up "^2.1.0"
 
 "@emdaer/cli@file:packages/cli":
-  version "3.2.6"
+  version "3.2.7"
   dependencies:
-    "@emdaer/core" "^3.2.6"
+    "@emdaer/core" "^3.2.7"
     bluebird "^3.5.1"
     chalk "^2.4.1"
     commander "2.11.0"
@@ -164,102 +164,102 @@
     glob "^7.1.2"
     inquirer "^5.1.0"
 
-"@emdaer/core@^3.2.6":
-  version "3.2.6"
-  resolved "https://registry.yarnpkg.com/@emdaer/core/-/core-3.2.6.tgz#6e7edaa46143a859851773e66cc5ad43efb1dca9"
-  integrity sha512-86SSUBhCH9pcxFB8o2WokPI19BIRl/kjWDz904yp5lKt+QFm/b7wpBX7lU50bZJsJ9nWTJu9dQKjL0UiJshCrQ==
+"@emdaer/core@^3.2.7":
+  version "3.2.7"
+  resolved "https://registry.yarnpkg.com/@emdaer/core/-/core-3.2.7.tgz#3228c32d3bf1c48888c7eb1501c381594d3fde12"
+  integrity sha512-xLODxfsZmzSkn4bp7eXAGQMrT/C/o07PfrCuvLsU9ZNYrEpj/vTGihlitKKnHUJHeDFQVQVcQrUyvXkiy/A06A==
   dependencies:
     html-minifier "^3.5.14"
     js-yaml "3.8.4"
     marked "^0.3.19"
 
 "@emdaer/core@file:packages/core":
-  version "3.2.6"
+  version "3.2.7"
   dependencies:
     html-minifier "^3.5.14"
     js-yaml "3.8.4"
     marked "^0.3.19"
 
 "@emdaer/meta@file:packages/meta":
-  version "3.2.6"
+  version "3.2.7"
 
 "@emdaer/plugin-contributors-details-github@file:packages/plugin-contributors-details-github":
-  version "3.2.6"
+  version "3.2.7"
   dependencies:
     fs-extra "^4.0.2"
     glob "^7.1.2"
     node-fetch "^1.7.3"
 
 "@emdaer/plugin-details@file:packages/plugin-details":
-  version "3.2.6"
+  version "3.2.7"
 
 "@emdaer/plugin-documentation@file:packages/plugin-documentation":
-  version "3.2.6"
+  version "3.2.7"
   dependencies:
     documentation "4.0.0-rc.1"
 
 "@emdaer/plugin-image@file:packages/plugin-image":
-  version "3.2.6"
+  version "3.2.7"
 
 "@emdaer/plugin-import@file:packages/plugin-import":
-  version "3.2.6"
+  version "3.2.7"
   dependencies:
-    "@emdaer/core" "^3.2.6"
+    "@emdaer/core" "^3.2.7"
     fs-extra "3.0.1"
     lodash.get "^4.4.2"
 
 "@emdaer/plugin-jsdoc-tag-value@file:packages/plugin-jsdoc-tag-value":
-  version "3.2.6"
+  version "3.2.7"
   dependencies:
     documentation "^6.3.2"
 
 "@emdaer/plugin-license-reference@file:packages/plugin-license-reference":
-  version "3.2.6"
+  version "3.2.7"
   dependencies:
-    "@emdaer/plugin-value-from-package" "^3.2.6"
+    "@emdaer/plugin-value-from-package" "^3.2.7"
 
 "@emdaer/plugin-link@file:packages/plugin-link":
-  version "3.2.6"
+  version "3.2.7"
 
 "@emdaer/plugin-list-lerna-packages@file:packages/plugin-list-lerna-packages":
-  version "3.2.6"
+  version "3.2.7"
   dependencies:
     fs-extra "^4.0.2"
     glob "^7.1.2"
 
 "@emdaer/plugin-list@file:packages/plugin-list":
-  version "3.2.6"
+  version "3.2.7"
 
 "@emdaer/plugin-shields@file:packages/plugin-shields":
-  version "3.2.6"
+  version "3.2.7"
 
 "@emdaer/plugin-table@file:packages/plugin-table":
-  version "3.2.6"
+  version "3.2.7"
 
-"@emdaer/plugin-value-from-package@^3.2.6":
-  version "3.2.6"
-  resolved "https://registry.yarnpkg.com/@emdaer/plugin-value-from-package/-/plugin-value-from-package-3.2.6.tgz#33b45c4f48ca36cbdb834319a06327dbe2fcb81b"
-  integrity sha512-0eOweIjH2coVMZSelbUbVZ+3NeeulCXS4Ho5xhMfyS/i9OlARNAKFHN7QtgTz55d/JaWu5mmG6kG3L0AM/GlUQ==
+"@emdaer/plugin-value-from-package@^3.2.7":
+  version "3.2.7"
+  resolved "https://registry.yarnpkg.com/@emdaer/plugin-value-from-package/-/plugin-value-from-package-3.2.7.tgz#24cbcb28dc0a7c301a67c1b6848481e8dcc37961"
+  integrity sha512-ZXcqpDS/O6BGLDCnFKzTt0dDDYk8rKfTRbLMPsRGhKlNJmdowcjsCR6XtWsJrPVPKfs7plkMsoVdKB2A+w2NWQ==
   dependencies:
     fs-extra "3.0.1"
 
 "@emdaer/plugin-value-from-package@file:packages/plugin-value-from-package":
-  version "3.2.6"
+  version "3.2.7"
   dependencies:
     fs-extra "3.0.1"
 
 "@emdaer/transform-github-emoji@file:packages/transform-github-emoji":
-  version "3.2.6"
+  version "3.2.7"
   dependencies:
     node-emoji "1.10.0"
 
 "@emdaer/transform-prettier@file:packages/transform-prettier":
-  version "3.2.6"
+  version "3.2.7"
   dependencies:
     prettier "^1.12.0"
 
 "@emdaer/transform-table-of-contents@file:packages/transform-table-of-contents":
-  version "3.2.6"
+  version "3.2.7"
   dependencies:
     markdown-toc "^1.2.0"
 
@@ -4930,22 +4930,10 @@ lodash.toarray@^4.4.0:
   resolved "https://registry.yarnpkg.com/lodash.toarray/-/lodash.toarray-4.4.0.tgz#24c4bfcd6b2fba38bfd0594db1179d8e9b656561"
   integrity sha1-JMS/zWsvuji/0FlNsRedjptlZWE=
 
-lodash@4.17.11, lodash@^4.17.11:
+lodash@4.17.11, lodash@^4.0.0, lodash@^4.11.1, lodash@^4.13.1, lodash@^4.14.0, lodash@^4.15.0, lodash@^4.17.11, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
-
-lodash@^4.0.0, lodash@^4.11.1, lodash@^4.15.0, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0:
-  version "4.17.4"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
-
-lodash@^4.13.1, lodash@^4.14.0, lodash@^4.17.4:
-  version "4.17.10"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
-
-lodash@^4.17.5:
-  version "4.17.5"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
 
 log-symbols@^1.0.2:
   version "1.0.2"
