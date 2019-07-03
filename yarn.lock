@@ -154,9 +154,9 @@
     find-up "^2.1.0"
 
 "@emdaer/cli@file:packages/cli":
-  version "3.2.8"
+  version "3.2.10"
   dependencies:
-    "@emdaer/core" "^3.2.8"
+    "@emdaer/core" "^3.2.10"
     bluebird "^3.5.1"
     chalk "^2.4.1"
     commander "2.11.0"
@@ -164,102 +164,102 @@
     glob "^7.1.2"
     inquirer "^5.1.0"
 
-"@emdaer/core@^3.2.8":
-  version "3.2.8"
-  resolved "https://registry.yarnpkg.com/@emdaer/core/-/core-3.2.8.tgz#efd77e80a1240fad4d6a2672c104bf6bcee2e1f3"
-  integrity sha512-F0np0hUCsqFpXFQIi7Ve0kRq1U3MXnNItuoI/2c8u556RRT0exJrCdH9ThFy4UM2o2FWM0brGmVvGrmAyRF4Xg==
+"@emdaer/core@^3.2.10":
+  version "3.2.10"
+  resolved "https://registry.yarnpkg.com/@emdaer/core/-/core-3.2.10.tgz#099fd15b489095f8dba24a3e78714b86ace45b5e"
+  integrity sha512-BwT2doFzDtzz16XgoF2xw3rg+wwHmTP/amGYMChbCbn84QXhqfFooX0MhUQARtxwLQXb0HTnIwxysiqjWjXC5Q==
   dependencies:
     html-minifier "^3.5.14"
     js-yaml "3.8.4"
     marked "^0.3.19"
 
 "@emdaer/core@file:packages/core":
-  version "3.2.8"
+  version "3.2.10"
   dependencies:
     html-minifier "^3.5.14"
     js-yaml "3.8.4"
     marked "^0.3.19"
 
 "@emdaer/meta@file:packages/meta":
-  version "3.2.8"
+  version "3.2.10"
 
 "@emdaer/plugin-contributors-details-github@file:packages/plugin-contributors-details-github":
-  version "3.2.8"
+  version "3.2.10"
   dependencies:
     fs-extra "^4.0.2"
     glob "^7.1.2"
     node-fetch "^1.7.3"
 
 "@emdaer/plugin-details@file:packages/plugin-details":
-  version "3.2.8"
+  version "3.2.10"
 
 "@emdaer/plugin-documentation@file:packages/plugin-documentation":
-  version "3.2.8"
+  version "3.2.10"
   dependencies:
     documentation "4.0.0-rc.1"
 
 "@emdaer/plugin-image@file:packages/plugin-image":
-  version "3.2.8"
+  version "3.2.10"
 
 "@emdaer/plugin-import@file:packages/plugin-import":
-  version "3.2.8"
+  version "3.2.10"
   dependencies:
-    "@emdaer/core" "^3.2.8"
+    "@emdaer/core" "^3.2.10"
     fs-extra "3.0.1"
     lodash.get "^4.4.2"
 
 "@emdaer/plugin-jsdoc-tag-value@file:packages/plugin-jsdoc-tag-value":
-  version "3.2.8"
+  version "3.2.10"
   dependencies:
     documentation "^6.3.2"
 
 "@emdaer/plugin-license-reference@file:packages/plugin-license-reference":
-  version "3.2.8"
+  version "3.2.10"
   dependencies:
-    "@emdaer/plugin-value-from-package" "^3.2.8"
+    "@emdaer/plugin-value-from-package" "^3.2.10"
 
 "@emdaer/plugin-link@file:packages/plugin-link":
-  version "3.2.8"
+  version "3.2.10"
 
 "@emdaer/plugin-list-lerna-packages@file:packages/plugin-list-lerna-packages":
-  version "3.2.8"
+  version "3.2.10"
   dependencies:
     fs-extra "^4.0.2"
     glob "^7.1.2"
 
 "@emdaer/plugin-list@file:packages/plugin-list":
-  version "3.2.8"
+  version "3.2.10"
 
 "@emdaer/plugin-shields@file:packages/plugin-shields":
-  version "3.2.8"
+  version "3.2.10"
 
 "@emdaer/plugin-table@file:packages/plugin-table":
-  version "3.2.8"
+  version "3.2.10"
 
-"@emdaer/plugin-value-from-package@^3.2.8":
-  version "3.2.8"
-  resolved "https://registry.yarnpkg.com/@emdaer/plugin-value-from-package/-/plugin-value-from-package-3.2.8.tgz#da5101b646c0723851d6c2914f3f0910d134b036"
-  integrity sha512-MxFY0pXb/Y7E/8ao7eBbhW2oM2RuDD22m7TstwkVwOut5Y1pXL0NS4610b9C40CxFEV+zJXdJpgq2H1byfkVpw==
+"@emdaer/plugin-value-from-package@^3.2.10":
+  version "3.2.10"
+  resolved "https://registry.yarnpkg.com/@emdaer/plugin-value-from-package/-/plugin-value-from-package-3.2.10.tgz#79e883635c9422b73330e533de75343a8e2f6ce0"
+  integrity sha512-7SOTActO485A+gyvYwBorRBb4v3m4xRyQND+O/uSsMl9oJe90gHCsEtKRrHA23RkuN5jP1F/cLx/qSknZ94FKg==
   dependencies:
     fs-extra "3.0.1"
 
 "@emdaer/plugin-value-from-package@file:packages/plugin-value-from-package":
-  version "3.2.8"
+  version "3.2.10"
   dependencies:
     fs-extra "3.0.1"
 
 "@emdaer/transform-github-emoji@file:packages/transform-github-emoji":
-  version "3.2.8"
+  version "3.2.10"
   dependencies:
     node-emoji "1.10.0"
 
 "@emdaer/transform-prettier@file:packages/transform-prettier":
-  version "3.2.8"
+  version "3.2.10"
   dependencies:
     prettier "^1.12.0"
 
 "@emdaer/transform-table-of-contents@file:packages/transform-table-of-contents":
-  version "3.2.8"
+  version "3.2.10"
   dependencies:
     markdown-toc "^1.2.0"
 
@@ -7044,8 +7044,9 @@ stringify-entities@^1.0.1:
     is-hexadecimal "^1.0.0"
 
 stringstream@~0.0.4, stringstream@~0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/stringstream/-/stringstream-0.0.5.tgz#4e484cd4de5a0bbbee18e46307710a8a81621878"
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/stringstream/-/stringstream-0.0.6.tgz#7880225b0d4ad10e30927d167a1d6f2fd3b33a72"
+  integrity sha512-87GEBAkegbBcweToUrdzf3eLhWNg06FJTebl4BVJz/JgWy8CvEr9dRtX5qWphiynMSQlxxi+QqN0z5T32SLlhA==
 
 strip-ansi@^3.0.0, strip-ansi@^3.0.1:
   version "3.0.1"
