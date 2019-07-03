@@ -2,8 +2,7 @@ sudo: false
 language: node_js
 if: tag IS blank
 node_js:
-  - 8.9
-  - 9
+  - 10
 script: make ci
 before_install: git fetch --unshallow
 jobs:
