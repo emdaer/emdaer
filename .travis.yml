@@ -1,9 +1,9 @@
+sudo: false
 language: node_js
-node_js:
-  - "10"
 if: tag IS blank
-script: 
-  - make ci
+node_js:
+  - 10
+script: make ci
 before_install: git fetch --unshallow
 jobs:
   include:
