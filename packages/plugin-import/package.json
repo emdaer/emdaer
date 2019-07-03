@@ -1,7 +1,7 @@
 {
   "name": "@emdaer/plugin-import",
   "description": "An emdaer plugin that imports content from another file",
-  "version": "3.2.8",
+  "version": "3.2.9",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.netlify.com/",
   "keywords": [
@@ -13,7 +13,7 @@
     "prepublish": "flow-remove-types -p src -i .test.js -d lib"
   },
   "dependencies": {
-    "@emdaer/core": "^3.2.8",
+    "@emdaer/core": "^3.2.9",
     "fs-extra": "3.0.1",
     "lodash.get": "^4.4.2"
   },
@@ -21,6 +21,6 @@
     "access": "public"
   },
   "devDependencies": {
-    "@emdaer/plugin-value-from-package": "^3.2.8"
+    "@emdaer/plugin-value-from-package": "^3.2.9"
   }
 }
