@@ -19,6 +19,6 @@
   "dependencies": {
     "fs-extra": "^8.1.0",
     "glob": "^7.1.2",
-    "node-fetch": "^1.7.3"
+    "node-fetch": "^2.6.0"
   }
 }
