@@ -13,7 +13,7 @@
     "prepublish": "flow-remove-types -p src -i .test.js -d lib"
   },
   "dependencies": {
-    "fs-extra": "3.0.1"
+    "fs-extra": "8.1.0"
   },
   "publishConfig": {
     "access": "public"
