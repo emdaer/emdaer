@@ -3,10 +3,12 @@ language: node_js
 if: tag IS blank
 node_js:
   - 10
-script: make ci
 before_install: git fetch --unshallow
 jobs:
   include:
+    - if: type = pull_request
+      stage: Test
+      script: make ci
     - if: type != pull_request AND branch = master
       stage: Publish to NPM
       script: .travis/after_success.sh
