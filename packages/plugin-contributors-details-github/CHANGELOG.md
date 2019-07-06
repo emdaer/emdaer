@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.17"></a>
+## [3.2.17](https://github.com/emdaer/emdaer/compare/v3.2.16...v3.2.17) (2019-07-06)
+
+
+
+
+
+**Note:** Version bump only for package @emdaer/plugin-contributors-details-github
+
 <a name="3.2.16"></a>
 ## [3.2.16](https://github.com/emdaer/emdaer/compare/v3.2.15...v3.2.16) (2019-07-05)
 
