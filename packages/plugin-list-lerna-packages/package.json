@@ -1,7 +1,7 @@
 {
   "name": "@emdaer/plugin-list-lerna-packages",
   "description": "An emdaer plugin that generate a list of lerna packages in a project.",
-  "version": "3.2.20",
+  "version": "3.2.21",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.netlify.com/",
   "keywords": [
