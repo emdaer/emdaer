@@ -1,7 +1,7 @@
 {
   "name": "@emdaer/plugin-jsdoc-tag-value",
   "description": "An emdaer plugin that pulls values from a given function's jsdoc comment",
-  "version": "3.2.18",
+  "version": "3.2.19",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.netlify.com/",
   "keywords": [
