@@ -5,12 +5,7 @@ describe('@emdaer/plugin-import', () => {
     jest.resetModules();
   });
   it('returns array of paths', () => {
-    jest.mock('process', () => ({ cwd: () => [] }));
-    require.main.paths = ['/Users/test/code/emdaer/node_modules'];
     jest.spyOn(process, 'cwd').mockReturnValue('/Users/test/code/emdaer');
-    expect(getMarkdownPaths('path')).toEqual([
-      '/Users/test/code/emdaer/path',
-      '/Users/test/code/emdaer/node_modules/path',
-    ]);
+    expect(getMarkdownPaths('path')).toContain('/Users/test/code/emdaer/path');
   });
 });
