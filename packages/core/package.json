@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "html-minifier": "^3.5.14",
-    "js-yaml": "3.8.4",
+    "js-yaml": "3.13.1",
     "marked": "^0.3.19"
   },
   "publishConfig": {
