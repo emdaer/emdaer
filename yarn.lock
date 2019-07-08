@@ -1074,9 +1074,9 @@
     find-up "^2.1.0"
 
 "@emdaer/cli@file:packages/cli":
-  version "3.2.18"
+  version "3.2.20"
   dependencies:
-    "@emdaer/core" "^3.2.18"
+    "@emdaer/core" "^3.2.20"
     bluebird "^3.5.1"
     chalk "^2.4.1"
     commander "2.11.0"
@@ -1084,102 +1084,102 @@
     glob "^7.1.2"
     inquirer "^5.1.0"
 
-"@emdaer/core@^3.2.18":
-  version "3.2.18"
-  resolved "https://registry.yarnpkg.com/@emdaer/core/-/core-3.2.18.tgz#64bb478647a31cdc32ba8374150f6bc771836540"
-  integrity sha512-WrgkXK8Y3BxC7hSpSkBGR/3UAX3LghVv1aMPwct7PzK+TKETOAIFodRQJCtCz6pit2+CQX7ON+CjWEYv8zq19w==
+"@emdaer/core@^3.2.20":
+  version "3.2.20"
+  resolved "https://registry.yarnpkg.com/@emdaer/core/-/core-3.2.20.tgz#c1d074d61ad3edc4c536c9927f10fc3f060e32fe"
+  integrity sha512-xLL9jVI59yX/GEcL4JRXU0MRXrHE1nxYMPGLluEEdfz0yXU1JyQGCNpMrNe0VZgKUqI3STtuztOPMs/cYj0yeQ==
   dependencies:
     html-minifier "^3.5.14"
     js-yaml "3.8.4"
     marked "^0.3.19"
 
 "@emdaer/core@file:packages/core":
-  version "3.2.18"
+  version "3.2.20"
   dependencies:
     html-minifier "^3.5.14"
     js-yaml "3.8.4"
     marked "^0.3.19"
 
 "@emdaer/meta@file:packages/meta":
-  version "3.2.18"
+  version "3.2.20"
 
 "@emdaer/plugin-contributors-details-github@file:packages/plugin-contributors-details-github":
-  version "3.2.18"
+  version "3.2.20"
   dependencies:
     fs-extra "^8.1.0"
     glob "^7.1.2"
     node-fetch "^2.6.0"
 
 "@emdaer/plugin-details@file:packages/plugin-details":
-  version "3.2.18"
+  version "3.2.20"
 
 "@emdaer/plugin-documentation@file:packages/plugin-documentation":
-  version "3.2.18"
+  version "3.2.20"
   dependencies:
     documentation "11.0.1"
 
 "@emdaer/plugin-image@file:packages/plugin-image":
-  version "3.2.18"
+  version "3.2.20"
 
 "@emdaer/plugin-import@file:packages/plugin-import":
-  version "3.2.18"
+  version "3.2.20"
   dependencies:
-    "@emdaer/core" "^3.2.18"
+    "@emdaer/core" "^3.2.20"
     fs-extra "8.1.0"
     lodash.get "^4.4.2"
 
 "@emdaer/plugin-jsdoc-tag-value@file:packages/plugin-jsdoc-tag-value":
-  version "3.2.18"
+  version "3.2.20"
   dependencies:
     documentation "^11.0.1"
 
 "@emdaer/plugin-license-reference@file:packages/plugin-license-reference":
-  version "3.2.18"
+  version "3.2.20"
   dependencies:
-    "@emdaer/plugin-value-from-package" "^3.2.18"
+    "@emdaer/plugin-value-from-package" "^3.2.20"
 
 "@emdaer/plugin-link@file:packages/plugin-link":
-  version "3.2.18"
+  version "3.2.20"
 
 "@emdaer/plugin-list-lerna-packages@file:packages/plugin-list-lerna-packages":
-  version "3.2.18"
+  version "3.2.20"
   dependencies:
     fs-extra "^8.1.0"
     glob "^7.1.2"
 
 "@emdaer/plugin-list@file:packages/plugin-list":
-  version "3.2.18"
+  version "3.2.20"
 
 "@emdaer/plugin-shields@file:packages/plugin-shields":
-  version "3.2.18"
+  version "3.2.20"
 
 "@emdaer/plugin-table@file:packages/plugin-table":
-  version "3.2.18"
+  version "3.2.20"
 
-"@emdaer/plugin-value-from-package@^3.2.18":
-  version "3.2.18"
-  resolved "https://registry.yarnpkg.com/@emdaer/plugin-value-from-package/-/plugin-value-from-package-3.2.18.tgz#124d70a23ba489c98f4090701d279ca152669588"
-  integrity sha512-WibI4g5aMtmUdlIj0nk3L2wOQieaWfyz7y2c6TI+o7glDaEGa886CfTOyMX0s/7ULfObYtA/EBbbHnEKmPFo3w==
+"@emdaer/plugin-value-from-package@^3.2.20":
+  version "3.2.20"
+  resolved "https://registry.yarnpkg.com/@emdaer/plugin-value-from-package/-/plugin-value-from-package-3.2.20.tgz#1fea6239752b81af4acee175a9431d1cc078a766"
+  integrity sha512-lrNIUAXKX7zlezHDaLzBIJQdE7RdjEUH+mgxhWOIVN16/efN8UG2yvH4hnpVaoKtTl0U6bY00FXXe317WDCePg==
   dependencies:
     fs-extra "8.1.0"
 
 "@emdaer/plugin-value-from-package@file:packages/plugin-value-from-package":
-  version "3.2.18"
+  version "3.2.20"
   dependencies:
     fs-extra "8.1.0"
 
 "@emdaer/transform-github-emoji@file:packages/transform-github-emoji":
-  version "3.2.18"
+  version "3.2.20"
   dependencies:
     node-emoji "1.10.0"
 
 "@emdaer/transform-prettier@file:packages/transform-prettier":
-  version "3.2.18"
+  version "3.2.20"
   dependencies:
     prettier "^1.12.0"
 
 "@emdaer/transform-table-of-contents@file:packages/transform-table-of-contents":
-  version "3.2.18"
+  version "3.2.20"
   dependencies:
     markdown-toc "^1.2.0"
 
@@ -2887,8 +2887,9 @@ eslint-plugin-import@^2.8.0:
     resolve "^1.11.0"
 
 eslint-plugin-jest@^21.2.0:
-  version "21.2.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-21.2.0.tgz#292044df9cf0866ad9c530e78e6528fae287b926"
+  version "21.27.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-21.27.2.tgz#2a795b7c3b5e707df48a953d651042bd01d7b0a8"
+  integrity sha512-0E4OIgBJVlAmf1KfYFtZ3gYxgUzC5Eb3Jzmrc9ikI1OY+/cM8Kh72Ti7KfpeHNeD3HJNf9SmEfmvQLIz44Hrhw==
 
 eslint-plugin-prettier@^2.3.1:
   version "2.7.0"
