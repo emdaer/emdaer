@@ -6,7 +6,7 @@ node_js:
 before_install: git fetch --unshallow
 jobs:
   include:
-    - if: type = pull_request
+    - if: type = pull_request OR type = push
       stage: Test
       script: make ci
     - if: type != pull_request AND branch = master
