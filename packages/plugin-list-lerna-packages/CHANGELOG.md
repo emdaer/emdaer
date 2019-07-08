@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.22"></a>
+## [3.2.22](https://github.com/emdaer/emdaer/compare/v3.2.21...v3.2.22) (2019-07-08)
+
+
+
+
+
+**Note:** Version bump only for package @emdaer/plugin-list-lerna-packages
+
 <a name="3.2.21"></a>
 ## [3.2.21](https://github.com/emdaer/emdaer/compare/v3.2.20...v3.2.21) (2019-07-08)
 

@@ -1,7 +1,7 @@
 {
   "name": "@emdaer/meta",
   "description": "An emdaer package that exports shared meta info about emdaer",
-  "version": "3.2.21",
+  "version": "3.2.22",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.netlify.com/",
   "license": "MIT",
