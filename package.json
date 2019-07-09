@@ -46,7 +46,7 @@
     "jest": "^24.8.0",
     "jest-flow-transform": "^1.0.1",
     "lerna": "^3.0.0-alpha.0",
-    "lint-staged": "9.0.2",
+    "lint-staged": "9.1.0",
     "prettier": "^1.9.1"
   },
   "dependencies": {
