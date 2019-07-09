@@ -41,7 +41,7 @@
     "eslint-plugin-jest": "^21.2.0",
     "eslint-plugin-prettier": "^2.3.1",
     "flow-bin": "^0.45.0",
-    "flow-remove-types": "^1.2.1",
+    "flow-remove-types": "^2.101.0",
     "husky": "^0.13.3",
     "jest": "^24.8.0",
     "jest-flow-transform": "^1.0.1",
