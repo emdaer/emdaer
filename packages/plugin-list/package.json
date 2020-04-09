@@ -1,7 +1,7 @@
 {
   "name": "@emdaer/plugin-list",
   "description": "An emdaer plugin that renders HTML list element.",
-  "version": "3.2.26",
+  "version": "3.2.27",
   "repository": "emdaer/emdaer",
   "homepage": "https://emdaer.netlify.com/",
   "keywords": [

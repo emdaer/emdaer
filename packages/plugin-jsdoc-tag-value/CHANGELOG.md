@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+
+
+**Note:** Version bump only for package @emdaer/plugin-jsdoc-tag-value
+
+
+
+
+
 <a name="3.2.26"></a>
 ## [3.2.26](https://github.com/emdaer/emdaer/compare/v3.2.25...v3.2.26) (2019-07-09)
 
