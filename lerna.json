@@ -8,6 +8,5 @@
     "--no-optional"
   ],
   "conventionalCommits": true,
-  "version": "3.2.29",
-  "useWorkspaces": true
+  "version": "3.2.29"
 }
