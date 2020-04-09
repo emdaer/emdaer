@@ -8,6 +8,7 @@ commitmsg: commitlint
 ci: commitlint-ci bootstrap lint type test
 
 bootstrap:
+	./node_modules/.bin/lerna exec "npm install"
 	./node_modules/.bin/lerna bootstrap
 	yarn install --force
 emdaer:
