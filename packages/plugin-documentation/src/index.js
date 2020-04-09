@@ -21,6 +21,7 @@ async function documentationPlugin({
 }: {
   sources: Array<string>,
 }): Promise<string> {
+  // @TODO make it work with TypeScript
   return documentation.formats.md(await documentation.build(sources, {}), {});
 }
 
