@@ -42,7 +42,7 @@
     "eslint-plugin-prettier": "^2.3.1",
     "flow-bin": "^0.45.0",
     "flow-remove-types": "^2.101.0",
-    "husky": "^0.13.3",
+    "husky": "^4.2.4",
     "jest": "^24.8.0",
     "jest-flow-transform": "^1.0.1",
     "lerna": "^3.20.2",
