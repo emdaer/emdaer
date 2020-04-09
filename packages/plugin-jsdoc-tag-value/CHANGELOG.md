@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.28](https://github.com/emdaer/emdaer/compare/v3.2.27...v3.2.28) (2020-04-09)
+
+
+### Reverts
+
+* Revert "chore: publish v3.2.27 [ci skip]" ([79e2f9d](https://github.com/emdaer/emdaer/commit/79e2f9d1eb82456740b9f74e2dd157e4a22f9f2d))
+
+
+
+
+
 
 
 **Note:** Version bump only for package @emdaer/plugin-jsdoc-tag-value

@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.28](https://github.com/emdaer/emdaer/compare/v3.2.27...v3.2.28) (2020-04-09)
+
+
+### Features
+
+* bump lerna ([a655b3e](https://github.com/emdaer/emdaer/commit/a655b3e5ca41c4d1f8e9af09c067dfa7e470c00c))
+* just trying to get it publishing again ([d34a1ba](https://github.com/emdaer/emdaer/commit/d34a1ba1029c4a82b60200e1f66936dd716c99d8))
+* just trying to get it publishing again take three ([4b13e02](https://github.com/emdaer/emdaer/commit/4b13e02e61d3c9d10cdcdbecb422fec54240f088))
+* just trying to get it publishing again take two ([fb98d31](https://github.com/emdaer/emdaer/commit/fb98d3172416e3bd2c8f9139650e63486f487d3b))
+
+
+### Reverts
+
+* Revert "chore: publish v3.2.27 [ci skip]" ([79e2f9d](https://github.com/emdaer/emdaer/commit/79e2f9d1eb82456740b9f74e2dd157e4a22f9f2d))
+
+
+
+
+
 
 
 **Note:** Version bump only for package emdaer
