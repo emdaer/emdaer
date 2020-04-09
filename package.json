@@ -3,6 +3,27 @@
   "description": "📓 emdaer is a tool for creating and maintaining better READMEs",
   "license": "MIT",
   "private": true,
+  "workspaces": [
+    "cli",
+    "core",
+    "meta",
+    "plugin-contributors-details-github",
+    "plugin-details",
+    "plugin-documentation",
+    "plugin-image",
+    "plugin-import",
+    "plugin-jsdoc-tag-value",
+    "plugin-license-reference",
+    "plugin-link",
+    "plugin-list",
+    "plugin-list-lerna-packages",
+    "plugin-shields",
+    "plugin-table",
+    "plugin-value-from-package",
+    "transform-github-emoji",
+    "transform-prettier",
+    "transform-table-of-contents"
+  ],
   "scripts": {
     "precommit": "make precommit",
     "commitmsg": "make commitmsg"
