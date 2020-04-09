@@ -17,5 +17,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "flow-remove-types": "^2.122.0"
   }
 }

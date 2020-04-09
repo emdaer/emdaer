@@ -21,6 +21,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@emdaer/plugin-value-from-package": "^3.2.29"
+    "@emdaer/plugin-value-from-package": "^3.2.29",
+    "flow-remove-types": "^2.122.0"
   }
 }

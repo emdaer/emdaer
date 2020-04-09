@@ -18,5 +18,8 @@
   "dependencies": {
     "fs-extra": "^8.1.0",
     "glob": "^7.1.2"
+  },
+  "devDependencies": {
+    "flow-remove-types": "^2.122.0"
   }
 }

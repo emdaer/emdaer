@@ -19,6 +19,7 @@
     "access": "public"
   },
   "devDependencies": {
+    "flow-remove-types": "^2.122.0",
     "fs-extra": "^8.1.0"
   }
 }

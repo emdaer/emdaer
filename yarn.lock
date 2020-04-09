@@ -1366,9 +1366,9 @@
     find-up "^2.1.0"
 
 "@emdaer/cli@file:packages/cli":
-  version "3.2.28"
+  version "3.2.29"
   dependencies:
-    "@emdaer/core" "^3.2.28"
+    "@emdaer/core" "^3.2.29"
     bluebird "^3.5.1"
     chalk "^2.4.1"
     commander "2.11.0"
@@ -1376,7 +1376,7 @@
     glob "^7.1.2"
     inquirer "^6.4.1"
 
-"@emdaer/core@^3.2.28":
+"@emdaer/core@^3.2.29":
   version "3.2.27"
   resolved "https://registry.yarnpkg.com/@emdaer/core/-/core-3.2.27.tgz#9a5c6abc605ad73c80b2e8bff22fbd95d256a817"
   integrity sha512-7FHNCG8v409igumN6mEAzE7+XXSYR9Hu9L0JsWBz2/gTBxegRaQqlrRuxoXXAkmUz4X6LUIJsRWPY+BMR/vS9g==
@@ -1386,69 +1386,69 @@
     marked "^0.3.19"
 
 "@emdaer/core@file:packages/core":
-  version "3.2.28"
+  version "3.2.29"
   dependencies:
     html-minifier "^4.0.0"
     js-yaml "3.13.1"
     marked "^0.3.19"
 
 "@emdaer/meta@file:packages/meta":
-  version "3.2.28"
+  version "3.2.29"
 
 "@emdaer/plugin-contributors-details-github@file:packages/plugin-contributors-details-github":
-  version "3.2.28"
+  version "3.2.29"
   dependencies:
     fs-extra "^8.1.0"
     glob "^7.1.2"
     node-fetch "^2.6.0"
 
 "@emdaer/plugin-details@file:packages/plugin-details":
-  version "3.2.28"
+  version "3.2.29"
 
 "@emdaer/plugin-documentation@file:packages/plugin-documentation":
-  version "3.2.28"
+  version "3.2.29"
   dependencies:
     documentation "11.0.1"
 
 "@emdaer/plugin-image@file:packages/plugin-image":
-  version "3.2.28"
+  version "3.2.29"
 
 "@emdaer/plugin-import@file:packages/plugin-import":
-  version "3.2.28"
+  version "3.2.29"
   dependencies:
-    "@emdaer/core" "^3.2.28"
+    "@emdaer/core" "^3.2.29"
     fs-extra "8.1.0"
     lodash.get "^4.4.2"
 
 "@emdaer/plugin-jsdoc-tag-value@file:packages/plugin-jsdoc-tag-value":
-  version "3.2.28"
+  version "3.2.29"
   dependencies:
     documentation "^11.0.1"
 
 "@emdaer/plugin-license-reference@file:packages/plugin-license-reference":
-  version "3.2.28"
+  version "3.2.29"
   dependencies:
-    "@emdaer/plugin-value-from-package" "^3.2.28"
+    "@emdaer/plugin-value-from-package" "^3.2.29"
 
 "@emdaer/plugin-link@file:packages/plugin-link":
-  version "3.2.28"
+  version "3.2.29"
 
 "@emdaer/plugin-list-lerna-packages@file:packages/plugin-list-lerna-packages":
-  version "3.2.28"
+  version "3.2.29"
   dependencies:
     fs-extra "^8.1.0"
     glob "^7.1.2"
 
 "@emdaer/plugin-list@file:packages/plugin-list":
-  version "3.2.28"
+  version "3.2.29"
 
 "@emdaer/plugin-shields@file:packages/plugin-shields":
-  version "3.2.28"
+  version "3.2.29"
 
 "@emdaer/plugin-table@file:packages/plugin-table":
-  version "3.2.28"
+  version "3.2.29"
 
-"@emdaer/plugin-value-from-package@^3.2.28":
+"@emdaer/plugin-value-from-package@^3.2.29":
   version "3.2.27"
   resolved "https://registry.yarnpkg.com/@emdaer/plugin-value-from-package/-/plugin-value-from-package-3.2.27.tgz#f6ab24f60163ddafe6298a411f9fcef4c1a9a85c"
   integrity sha512-rJKmQUgT884YA5t8P6yhRNecPRzVjjG9YTQxE0cBPPQOWMrnT0C/4x+9MHh4R3hD6JUNyXeaNGOgTvniP1x/pQ==
@@ -1456,22 +1456,22 @@
     fs-extra "8.1.0"
 
 "@emdaer/plugin-value-from-package@file:packages/plugin-value-from-package":
-  version "3.2.28"
+  version "3.2.29"
   dependencies:
     fs-extra "8.1.0"
 
 "@emdaer/transform-github-emoji@file:packages/transform-github-emoji":
-  version "3.2.28"
+  version "3.2.29"
   dependencies:
     node-emoji "1.10.0"
 
 "@emdaer/transform-prettier@file:packages/transform-prettier":
-  version "3.2.28"
+  version "3.2.29"
   dependencies:
     prettier "^1.12.0"
 
 "@emdaer/transform-table-of-contents@file:packages/transform-table-of-contents":
-  version "3.2.28"
+  version "3.2.29"
   dependencies:
     markdown-toc "^1.2.0"
 
@@ -5013,6 +5013,15 @@ from2@^2.1.0:
     inherits "^2.0.1"
     readable-stream "^2.0.0"
 
+fs-extra@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-3.0.1.tgz#3794f378c58b342ea7dbbb23095109c4b3b62291"
+  integrity sha1-N5TzeMWLNC6n27sjCVEJxLO2IpE=
+  dependencies:
+    graceful-fs "^4.1.2"
+    jsonfile "^3.0.0"
+    universalify "^0.1.0"
+
 fs-extra@8.1.0, fs-extra@^8.1.0:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-8.1.0.tgz#49d43c45a88cd9677668cb7be1b46efdb8d2e1c0"
@@ -6723,6 +6732,13 @@ json5@^2.1.2:
   integrity sha512-KXPvOm8K9IJKFM0bmdn8QXh7udDh1g/giieX0NLCaMnb4hEiVFqnop2ImTXCc5e0/oHz3LTqmHGtExn5hfMkOA==
   dependencies:
     minimist "^1.2.5"
+
+jsonfile@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-3.0.1.tgz#a5ecc6f65f53f662c4415c7675a0331d0992ec66"
+  integrity sha1-pezG9l9T9mLEQVx2daAzHQmS7GY=
+  optionalDependencies:
+    graceful-fs "^4.1.6"
 
 jsonfile@^4.0.0:
   version "4.0.0"
