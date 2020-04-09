@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.29](https://github.com/emdaer/emdaer/compare/v3.2.28...v3.2.29) (2020-04-09)
+
+
+### Bug Fixes
+
+* patch bump ([5c498d9](https://github.com/emdaer/emdaer/commit/5c498d9cf74eab3f82a0efbfc720554e9b1415eb))
+* unworkspace ([fe5b86f](https://github.com/emdaer/emdaer/commit/fe5b86fbdc9ea30b32d9fefc7d58ad946a3d4013))
+
+
+### Features
+
+* bump jest ([6e462a1](https://github.com/emdaer/emdaer/commit/6e462a10e6a306f3c06d16cf0b477c3dafd489a2))
+* todo ([27e245c](https://github.com/emdaer/emdaer/commit/27e245c5aedeb588bc4fb3623b628a4b9295e3d3))
+* try yarn workspaces ([68f8a69](https://github.com/emdaer/emdaer/commit/68f8a69f80c504b71f9c684c94238aacf2edaf56))
+* try yarn workspaces [#2](https://github.com/emdaer/emdaer/issues/2) ([f732cfa](https://github.com/emdaer/emdaer/commit/f732cfa59078c5b321abc96dbe70eea91da0aad4))
+* try yarn workspaces [#3](https://github.com/emdaer/emdaer/issues/3) ([038ecf1](https://github.com/emdaer/emdaer/commit/038ecf1120313a5dd81f27f81043557cb218d7b2))
+
+
+
+
+
 ## [3.2.28](https://github.com/emdaer/emdaer/compare/v3.2.27...v3.2.28) (2020-04-09)
 
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.29](https://github.com/emdaer/emdaer/compare/v3.2.28...v3.2.29) (2020-04-09)
+
+**Note:** Version bump only for package @emdaer/transform-prettier
+
+
+
+
+
 ## [3.2.28](https://github.com/emdaer/emdaer/compare/v3.2.27...v3.2.28) (2020-04-09)
 
 
