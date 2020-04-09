@@ -34,7 +34,7 @@
     "babel-eslint": "9.0.0",
     "commitlint": "^8.0.0",
     "eslint": "^4.9.0",
-    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-airbnb-base": "^13.2.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-flowtype": "^3.10.4",
     "eslint-plugin-import": "^2.8.0",
