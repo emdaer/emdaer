@@ -16,7 +16,7 @@
     "access": "public"
   },
   "dependencies": {
-    "documentation": "^11.0.1"
+    "documentation": "^12.3.0"
   },
   "devDependencies": {
     "flow-remove-types": "^2.122.0"
