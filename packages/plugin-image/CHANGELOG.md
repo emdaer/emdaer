@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.32](https://github.com/emdaer/emdaer/compare/v3.2.31...v3.2.32) (2020-04-10)
+
+
+### Bug Fixes
+
+* no lock ([ea15642](https://github.com/emdaer/emdaer/commit/ea15642c0798cab4d4dd35b3a0035bba34ed6527))
+
+
+
+
+
 ## [3.2.31](https://github.com/emdaer/emdaer/compare/v3.2.30...v3.2.31) (2020-04-09)
 
 **Note:** Version bump only for package @emdaer/plugin-image
