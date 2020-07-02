@@ -22,7 +22,7 @@
     "commander": "2.11.0",
     "fs-extra": "8.1.0",
     "glob": "^7.1.2",
-    "inquirer": "^6.4.1"
+    "inquirer": "^7.3.0"
   },
   "publishConfig": {
     "access": "public"
