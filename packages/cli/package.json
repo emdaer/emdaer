@@ -19,7 +19,7 @@
     "@emdaer/core": "^3.2.32",
     "bluebird": "^3.5.1",
     "chalk": "^2.4.1",
-    "commander": "2.11.0",
+    "commander": "7.0.0",
     "fs-extra": "8.1.0",
     "glob": "^7.1.2",
     "inquirer": "^6.4.1"
